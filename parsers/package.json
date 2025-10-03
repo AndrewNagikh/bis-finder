@@ -1,0 +1,35 @@
+{
+  "name": "bisfinder",
+  "version": "0.0.1",
+  "description": "Find BiS items for your spec",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . --ext .ts,.js",
+    "lint:fix": "eslint . --ext .ts,.js --fix",
+    "lint:check": "eslint . --ext .ts,.js --max-warnings 0",
+    "generate-data:tank": "ROLE=tank npx playwright test ./example.spec.ts",
+    "generate-data:healer": "ROLE=healer npx playwright test ./example.spec.ts",
+    "generate-data:dps": "ROLE=dps npx playwright test ./example.spec.ts",
+    "genetate-data:all": "npm run generate-data:tank && npm run generate-data:healer && npm run generate-data:dps"
+  },
+  "author": "Andrew Nagikh",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/css": "^0.11.1",
+    "@eslint/js": "^9.36.0",
+    "@eslint/json": "^0.13.2",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.5.2",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "globals": "^16.4.0",
+    "jiti": "^2.6.0",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.44.1"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.7"
+  }
+}
