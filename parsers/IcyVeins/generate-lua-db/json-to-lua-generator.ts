@@ -236,6 +236,83 @@ export class LuaDataGenerator {
   }
 
   /**
+   * Генерирует отдельный файл ClassSpecMapping.lua
+   */
+  public generateClassSpecMappingFile(outputPath: string): boolean {
+    console.log('Генерация ClassSpecMapping.lua файла...');
+
+    const luaContent = `local ADDON_NAME, ns = ...
+
+-- Маппинг классов и специализаций для IcyVeins
+-- Автоматически сгенерированный файл
+-- Сгенерировано: ${new Date().toISOString()}
+
+ns.IcyVeinsClassSpecMapping = ${this.jsObjectToLuaTable(this.classSpecMapping, 0)}
+
+-- Функция получения доступных специализаций для класса и роли
+function ns:GetAvailableSpecs(className, role)
+    if ns.IcyVeinsClassSpecMapping and ns.IcyVeinsClassSpecMapping[className] and ns.IcyVeinsClassSpecMapping[className][role] then
+        return ns.IcyVeinsClassSpecMapping[className][role]
+    end
+    return {}
+end
+
+-- Функция получения всех доступных ролей для класса
+function ns:GetAvailableRoles(className)
+    if not ns.IcyVeinsClassSpecMapping or not ns.IcyVeinsClassSpecMapping[className] then
+        return {}
+    end
+    
+    local roles = {}
+    for role, specs in pairs(ns.IcyVeinsClassSpecMapping[className]) do
+        if #specs > 0 then
+            table.insert(roles, role)
+        end
+    end
+    return roles
+end
+
+-- Функция получения всех классов
+function ns:GetAllClasses()
+    if not ns.IcyVeinsClassSpecMapping then
+        return {}
+    end
+    
+    local classes = {}
+    for className, _ in pairs(ns.IcyVeinsClassSpecMapping) do
+        table.insert(classes, className)
+    end
+    return classes
+end
+
+-- Функция проверки, поддерживает ли класс роль
+function ns:ClassSupportsRole(className, role)
+    local specs = self:GetAvailableSpecs(className, role)
+    return #specs > 0
+end`;
+
+    try {
+      // Создаем директорию если не существует
+      const dir = path.dirname(outputPath);
+      if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+      }
+
+      fs.writeFileSync(outputPath, luaContent, 'utf-8');
+      console.log(
+        `✅ ClassSpecMapping.lua файл успешно сгенерирован: ${outputPath}`
+      );
+      return true;
+    } catch (error) {
+      console.error(
+        '❌ Ошибка записи ClassSpecMapping.lua файла:',
+        (error as Error).message
+      );
+      return false;
+    }
+  }
+
+  /**
    * Генерирует Lua файл с данными
    */
   public generateLuaFile(outputPath: string): boolean {
@@ -374,5 +451,15 @@ export async function generateLuaDatabase(
   generator.generateStats();
 
   // Генерация Lua файла
-  return generator.generateLuaFile(config.outputPath);
+  const dataFileSuccess = generator.generateLuaFile(config.outputPath);
+
+  // Генерация ClassSpecMapping.lua файла
+  const classSpecMappingPath = config.outputPath.replace(
+    'IcyVeinsData.lua',
+    'ClassSpecMapping.lua'
+  );
+  const mappingFileSuccess =
+    generator.generateClassSpecMappingFile(classSpecMappingPath);
+
+  return dataFileSuccess && mappingFileSuccess;
 }

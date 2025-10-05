@@ -27,7 +27,7 @@ export async function processRoleFiles(
 
     for (let i = 0; i < links.length; i++) {
       const link = links[i];
-      await callback(link, i + 1, links.length);
+      await callback(link as string, i + 1, links.length);
     }
   } catch (err) {
     console.error('❌ Ошибка при работе с папкой или файлами:', err.message);

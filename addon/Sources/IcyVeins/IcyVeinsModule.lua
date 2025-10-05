@@ -8,6 +8,28 @@ IcyVeinsModule.name = "IcyVeins"
 IcyVeinsModule.displayName = "IcyVeins"
 IcyVeinsModule.data = nil -- Будет загружено из IcyVeinsData.lua
 
+-- Маппинг названий классов от игрового формата к формату в ClassSpecMapping
+local CLASS_NAME_MAPPING = {
+    ["Warrior"] = "WARRIOR",
+    ["Paladin"] = "PALADIN",
+    ["Hunter"] = "HUNTER",
+    ["Rogue"] = "ROGUE",
+    ["Priest"] = "PRIEST",
+    ["Death Knight"] = "DEATHKNIGHT",
+    ["Shaman"] = "SHAMAN",
+    ["Mage"] = "MAGE",
+    ["Warlock"] = "WARLOCK",
+    ["Monk"] = "MONK",
+    ["Druid"] = "DRUID",
+    ["Demon Hunter"] = "DEMONHUNTER",
+    ["Evoker"] = "EVOKER"
+}
+
+-- Функция для преобразования названия класса
+local function normalizeClassName(className)
+    return CLASS_NAME_MAPPING[className] or className:upper():gsub(" ", "")
+end
+
 -- Инициализация модуля
 function IcyVeinsModule:Initialize()
     -- Загружаем данные модуля
@@ -82,20 +104,22 @@ end
 
 -- Получение доступных специализаций для класса и роли
 function IcyVeinsModule:GetAvailableSpecs(className, role)
-    if ns.IcyVeinsClassSpecMapping and ns.IcyVeinsClassSpecMapping[className] and ns.IcyVeinsClassSpecMapping[className][role] then
-        return ns.IcyVeinsClassSpecMapping[className][role]
+    local normalizedClassName = normalizeClassName(className)
+    if ns.IcyVeinsClassSpecMapping and ns.IcyVeinsClassSpecMapping[normalizedClassName] and ns.IcyVeinsClassSpecMapping[normalizedClassName][role] then
+        return ns.IcyVeinsClassSpecMapping[normalizedClassName][role]
     end
     return {}
 end
 
 -- Получение всех доступных ролей для класса
 function IcyVeinsModule:GetAvailableRoles(className)
-    if not ns.IcyVeinsClassSpecMapping or not ns.IcyVeinsClassSpecMapping[className] then
+    local normalizedClassName = normalizeClassName(className)
+    if not ns.IcyVeinsClassSpecMapping or not ns.IcyVeinsClassSpecMapping[normalizedClassName] then
         return {}
     end
     
     local roles = {}
-    for role, specs in pairs(ns.IcyVeinsClassSpecMapping[className]) do
+    for role, specs in pairs(ns.IcyVeinsClassSpecMapping[normalizedClassName]) do
         if #specs > 0 then
             table.insert(roles, role)
         end

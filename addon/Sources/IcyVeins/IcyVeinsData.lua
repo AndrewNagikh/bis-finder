@@ -1,6 +1,6 @@
 -- Автоматически сгенерированный файл с данными о предметах
 -- Не редактируйте вручную! Используйте генератор.
--- Сгенерировано: 2025-10-05T15:09:20.376Z
+-- Сгенерировано: 2025-10-05T18:44:30.354Z
 
 local ADDON_NAME, ns = ...
 
@@ -3619,7 +3619,92 @@ ns.IcyVeinsData = {
                 source = "Fractillus in Manaforge Omega"
             }
         },
-        ["Holy Priest"] = {},
+        ["Holy Priest"] = {
+            {
+                itemType = "Weapon",
+                itemId = "237728",
+                itemName = "Voidglass Kris",
+                source = "Fractillus in Manaforge Omega"
+            },
+            {
+                itemType = "Off Hand",
+                itemId = "222566",
+                itemName = "Vagabond's Torch",
+                source = "Crafted — Inscription"
+            },
+            {
+                itemType = "Helm",
+                itemId = "237709",
+                itemName = "Dying Star's Veil",
+                source = "Forgeweaver Araz / Matrix Catalyst"
+            },
+            {
+                itemType = "Neck",
+                itemId = "242406",
+                itemName = "Salhadaar's Folly",
+                source = "Nexus King Salhadaar in Manaforge Omega"
+            },
+            {
+                itemType = "Shoulder",
+                itemId = "237707",
+                itemName = "Dying Star's Pyrelights",
+                source = "The Soul Hunters / Matrix Catalyst"
+            },
+            {
+                itemType = "Cloak",
+                itemId = "235499",
+                itemName = "Reshii Wraps",
+                source = "Reshii Wraps"
+            },
+            {
+                itemType = "Chest",
+                itemId = "237712",
+                itemName = "Dying Star's Cassock",
+                source = "Fractillus / Matrix Catalyst"
+            },
+            {
+                itemType = "Bracers",
+                itemId = "222815",
+                itemName = "Consecrated Cuffs",
+                source = "Crafted — Tailoring"
+            },
+            {
+                itemType = "Gloves",
+                itemId = "237710",
+                itemName = "Dying Star's Caress",
+                source = "Soulbinder Naazindhri / Matrix Catalyst"
+            },
+            {
+                itemType = "Belt",
+                itemId = "237559",
+                itemName = "Singularity Cincture",
+                source = "Dimensius The All Devouring in Manaforge Omega"
+            },
+            {
+                itemType = "Legs",
+                itemId = "237708",
+                itemName = "Dying Star's Leggings",
+                source = "Loom’ithar / Matrix Catalyst"
+            },
+            {
+                itemType = "Boots",
+                itemId = "243305",
+                itemName = "Interloper's Silken Striders",
+                source = "The Soul Hunters in Manaforge Omega"
+            },
+            {
+                itemType = "Rings (Any 2 of these)",
+                itemId = "237567",
+                itemName = "Logic Gate: Alpha",
+                source = "Plexus Sentinel in Manaforge Omega\n            Forgeweaver Araz in Manaforge Omega\n            The Dawnbreaker\n            Priory of the Sacred Flame\n            Halls of Atonement"
+            },
+            {
+                itemType = "Top Trinkets",
+                itemId = "242395",
+                itemName = "Astral Antenna",
+                source = "Loom’ithar in Manaforge Omega\n            Fractillus in Manaforge Omega\n            Priory of the Sacred Flame\n            Tazavesh: So'Leah's Gambit\n            The Dawnbreaker"
+            }
+        },
         ["Mistweaver Monk"] = {
             {
                 itemType = "Main Hand",

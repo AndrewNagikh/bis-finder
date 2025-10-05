@@ -20,7 +20,7 @@ test('find Mythic+ links with stealth protection', async () => {
       const newPage = await context.newPage();
 
       try {
-        // Красивое логирование начала обработки ссылки
+        // логирование начала обработки ссылки
         console.log(`\n📋 [${index}/${total}] Обработка ссылки:`);
         console.log(`🔗 ${link}`);
 
@@ -32,7 +32,6 @@ test('find Mythic+ links with stealth protection', async () => {
 
         const specName = formatRoleName(link);
         resultObj[specName] = result.data;
-
         // Логирование добавленных данных
         console.log(
           `✅ Данные добавлены: {${specName}: ${result.data.length} предметов}`

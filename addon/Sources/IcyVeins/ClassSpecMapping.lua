@@ -1,59 +1,138 @@
 local ADDON_NAME, ns = ...
 
 -- Маппинг классов и специализаций для IcyVeins
--- Создан на основе данных из IcyVeinsData.lua
+-- Автоматически сгенерированный файл
+-- Сгенерировано: 2025-10-05T18:44:30.359Z
 
 ns.IcyVeinsClassSpecMapping = {
-    ["Warrior"] = {
-        tank = {"Protection Warrior"},
-        dps = {"Fury Warrior", "Arms Warrior"}
+    WARRIOR = {
+        tank = {
+            "Protection Warrior"
+        },
+        dps = {
+            "Fury Warrior",
+            "Arms Warrior"
+        },
+        healer = {}
     },
-    ["Paladin"] = {
-        tank = {"Protection Paladin"},
-        dps = {"Retribution Paladin"},
-        healer = {"Holy Paladin"}
+    PALADIN = {
+        tank = {
+            "Protection Paladin"
+        },
+        dps = {
+            "Retribution Paladin"
+        },
+        healer = {
+            "Holy Paladin"
+        }
     },
-    ["Hunter"] = {
-        dps = {"Beast Mastery Hunter", "Marksmanship Hunter", "Survival Hunter"}
+    MONK = {
+        tank = {
+            "Brewmaster Monk"
+        },
+        dps = {
+            "Windwalker Monk"
+        },
+        healer = {
+            "Mistweaver Monk"
+        }
     },
-    ["Rogue"] = {
-        dps = {"Subtlety Rogue", "Assassination Rogue", "Outlaw Rogue"}
+    DEMONHUNTER = {
+        tank = {
+            "Vengeance Demon Hunter"
+        },
+        dps = {
+            "Havoc Demon Hunter"
+        },
+        healer = {}
     },
-    ["Priest"] = {
-        dps = {"Shadow Priest"},
-        healer = {"Holy Priest", "Discipline Priest"}
+    DRUID = {
+        tank = {
+            "Guardian Druid"
+        },
+        dps = {
+            "Feral Druid",
+            "Balance Druid"
+        },
+        healer = {
+            "Restoration Druid"
+        }
     },
-    ["Death Knight"] = {
-        tank = {"Blood Death Knight"},
-        dps = {"Frost Death Knight", "Unholy Death Knight"}
+    DEATHKNIGHT = {
+        tank = {
+            "Blood Death Knight"
+        },
+        dps = {
+            "Frost Death Knight",
+            "Unholy Death Knight"
+        },
+        healer = {}
     },
-    ["Shaman"] = {
-        dps = {"Elemental Shaman", "Enhancement Shaman"},
-        healer = {"Restoration Shaman"}
+    HUNTER = {
+        tank = {},
+        dps = {
+            "Beast Mastery Hunter",
+            "Marksmanship Hunter",
+            "Survival Hunter"
+        },
+        healer = {}
     },
-    ["Mage"] = {
-        dps = {"Arcane Mage", "Fire Mage", "Frost Mage"}
+    MAGE = {
+        tank = {},
+        dps = {
+            "Arcane Mage",
+            "Frost Mage",
+            "Fire Mage"
+        },
+        healer = {}
     },
-    ["Warlock"] = {
-        dps = {"Destruction Warlock", "Affliction Warlock", "Demonology Warlock"}
+    SHAMAN = {
+        tank = {},
+        dps = {
+            "Elemental Shaman",
+            "Enhancement Shaman"
+        },
+        healer = {
+            "Restoration Shaman"
+        }
     },
-    ["Monk"] = {
-        tank = {"Brewmaster Monk"},
-        dps = {"Windwalker Monk"},
-        healer = {"Mistweaver Monk"}
+    WARLOCK = {
+        tank = {},
+        dps = {
+            "Destruction Warlock",
+            "Demonology Warlock",
+            "Affliction Warlock"
+        },
+        healer = {}
     },
-    ["Druid"] = {
-        tank = {"Guardian Druid"},
-        dps = {"Balance Druid", "Feral Druid"},
-        healer = {"Restoration Druid"}
+    ROGUE = {
+        tank = {},
+        dps = {
+            "Subtlety Rogue",
+            "Assassination Rogue",
+            "Outlaw Rogue"
+        },
+        healer = {}
     },
-    ["Demon Hunter"] = {
-        tank = {"Vengeance Demon Hunter"},
-        dps = {"Havoc Demon Hunter"}
+    EVOKER = {
+        tank = {},
+        dps = {
+            "Devastation Evoker",
+            "Augmentation Evoker"
+        },
+        healer = {
+            "Preservation Evoker"
+        }
     },
-    ["Evoker"] = {
-        dps = {"Devastation Evoker"},
-        healer = {"Preservation Evoker"}
+    PRIEST = {
+        tank = {},
+        dps = {
+            "Shadow Priest"
+        },
+        healer = {
+            "Discipline Priest",
+            "Holy Priest"
+        }
     }
 }
 

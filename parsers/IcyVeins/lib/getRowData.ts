@@ -10,8 +10,16 @@ const selectors = {
 export async function safeGetRowData(
   page: Page,
   specLink: string,
-  retryCount: number = 0
+  retryCount: number = 0,
+  reloadAttempted: boolean = false
 ): Promise<{ data: any[]; selector: string; rowCount: number }> {
+  // Защита от бесконечной рекурсии
+  if (reloadAttempted && retryCount > 3) {
+    console.log(
+      'Превышено максимальное количество попыток, возвращаем пустой результат'
+    );
+    return { data: [], selector: 'max_retries', rowCount: 0 };
+  }
   try {
     // Проверяем, что страница еще активна
     if (page.isClosed()) {
@@ -77,8 +85,20 @@ export async function safeGetRowData(
     }
 
     if (rowDataCount === 0) {
-      return { data: [], selector: evalSelector, rowCount: 0 };
+      // Если данные не найдены и мы еще не пытались перезагрузить страницу
+      if (!reloadAttempted) {
+        console.log('Данные не найдены, перезагружаем страницу...');
+        await page.reload({ waitUntil: 'domcontentloaded' });
+        await sleep(Math.random() * 3000 + 2000); // Ждем после перезагрузки
+
+        // Повторяем попытку с флагом reloadAttempted = true и увеличиваем retryCount
+        return safeGetRowData(page, specLink, retryCount + 1, true);
+      } else {
+        console.log('Данные не найдены даже после перезагрузки страницы');
+        return { data: [], selector: evalSelector, rowCount: 0 };
+      }
     }
+
     // Извлекаем данные
     const rowsData = await page.locator(evalSelector).evaluateAll((rows) => {
       return rows
@@ -114,6 +134,17 @@ export async function safeGetRowData(
         })
         .filter(Boolean);
     });
+
+    // Проверяем, что после извлечения данных у нас есть предметы
+    if (rowsData.length === 0 && !reloadAttempted) {
+      console.log('Предметы не извлечены, перезагружаем страницу...');
+      await page.reload({ waitUntil: 'domcontentloaded' });
+      await sleep(Math.random() * 3000 + 2000); // Ждем после перезагрузки
+
+      // Повторяем попытку с флагом reloadAttempted = true и увеличиваем retryCount
+      return safeGetRowData(page, specLink, retryCount + 1, true);
+    }
+
     return { data: rowsData, selector: evalSelector, rowCount: rowDataCount };
   } catch (error: any) {
     console.error(`Error in safeGetRowData: ${error.message}`);
