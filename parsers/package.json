@@ -13,7 +13,8 @@
     "iv-generate-data:healer": "ROLE=healer npx playwright test ./IcyVeins/example.spec.ts",
     "iv-generate-data:dps": "ROLE=dps npx playwright test ./IcyVeins/example.spec.ts",
     "iv-generate-data:all": "npm run iv-generate-data:tank && npm run iv-generate-data:healer && npm run iv-generate-data:dps",
-    "iv-generate-lua-db": "npx tsc IcyVeins/generate-lua-db/*.ts --outDir temp --target es2020 --module esnext --moduleResolution node --allowSyntheticDefaultImports && node temp/IcyVeins/generate-lua-db/generate-db.js && rm -rf temp"
+    "iv-generate-lua-db": "npx tsc IcyVeins/generate-lua-db/*.ts --outDir temp --target es2020 --module esnext --moduleResolution node --allowSyntheticDefaultImports && node temp/IcyVeins/generate-lua-db/generate-db.js && rm -rf temp",
+    "create-archive": "npx tsc create-archive/*.ts --outDir temp --target es2020 --module esnext --moduleResolution node --allowSyntheticDefaultImports && mkdir -p temp/create-archive && mv temp/archive-addon.js temp/create-archive/ && node temp/create-archive/archive-addon.js && rm -rf temp"
   },
   "author": "Andrew Nagikh",
   "license": "ISC",
