@@ -4,11 +4,20 @@
 ## Author: YourName
 ## Version: 1.0
 ## SavedVariables: BiSFinderDB
+## OptionalDeps: LibDBIcon-1.0
 
+# Библиотеки
+Libs\LibStub\LibStub.lua
+Libs\LibDBIcon-1.0\CallbackHandler-1.0\CallbackHandler-1.0.lua
+Libs\LibDBIcon-1.0\LibDataBroker-1.1\LibDataBroker-1.1.lua
+Libs\LibDBIcon-1.0\LibDBIcon-1.0\LibDBIcon-1.0.lua
+
+# Основные файлы
 BiSFinder.lua
 UIElements.lua
 ClassButtons.lua
 SourceMenu.lua
+MinimapButton.lua
 Sources/SourceManager.lua
 Sources/IcyVeins/IcyVeinsData.lua
 Sources/IcyVeins/ClassSpecMapping.lua

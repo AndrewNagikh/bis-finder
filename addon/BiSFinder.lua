@@ -174,6 +174,18 @@ local function UpdateDisplay()
     end
 end
 
+-- Функция для переключения главного окна (для миникарты)
+function BiSFinder:ToggleMainFrame()
+    if mainFrame:IsShown() then
+        mainFrame:Hide()
+    else
+        mainFrame:Show()
+        -- Инициализируем начальное состояние
+        currentScreen = "class_selection"
+        UpdateDisplay()
+    end
+end
+
 
 -- Create main frame
 local function CreateMainFrame()
@@ -302,14 +314,47 @@ end
 -- Slash commands
 SLASH_BISFINDER1 = "/bisfinder"
 SLASH_BISFINDER2 = "/bisf"
-SlashCmdList["BISFINDER"] = function()
-    if mainFrame:IsShown() then
-        mainFrame:Hide()
+SlashCmdList["BISFINDER"] = function(msg)
+    local command = string.lower(msg or "")
+    
+    if command == "minimap" or command == "minimap toggle" then
+        -- Переключить видимость миникарты
+        if ns.MinimapButton then
+            ns.MinimapButton:Toggle()
+            print("|cFF00FF00BiSFinder|r: Миникарта " .. (ns.MinimapButton.minimapButton and ns.MinimapButton.minimapButton:IsVisible() and "показана" or "скрыта"))
+        else
+            print("|cFFFF0000BiSFinder|r: Модуль миникарты не загружен")
+        end
+    elseif command == "minimap show" then
+        -- Показать миникарту
+        if ns.MinimapButton then
+            ns.MinimapButton:Show()
+            print("|cFF00FF00BiSFinder|r: Миникарта показана")
+        end
+    elseif command == "minimap hide" then
+        -- Скрыть миникарту
+        if ns.MinimapButton then
+            ns.MinimapButton:Hide()
+            print("|cFF00FF00BiSFinder|r: Миникарта скрыта")
+        end
+    elseif command == "help" then
+        -- Показать справку
+        print("|cFF00FF00BiSFinder|r - Команды:")
+        print("|cFFFFFF00/bisf|r или |cFFFFFF00/bisfinder|r - Открыть/закрыть BiSFinder")
+        print("|cFFFFFF00/bisf minimap|r - Переключить видимость миникарты")
+        print("|cFFFFFF00/bisf minimap show|r - Показать миникарту")
+        print("|cFFFFFF00/bisf minimap hide|r - Скрыть миникарту")
+        print("|cFFFFFF00/bisf help|r - Показать эту справку")
     else
-        mainFrame:Show()
-        -- Инициализируем начальное состояние
-        currentScreen = "class_selection"
-        UpdateDisplay()
+        -- Основная команда - открыть/закрыть окно
+        if mainFrame:IsShown() then
+            mainFrame:Hide()
+        else
+            mainFrame:Show()
+            -- Инициализируем начальное состояние
+            currentScreen = "class_selection"
+            UpdateDisplay()
+        end
     end
 end
 
@@ -357,6 +402,12 @@ local function OnLoad(self, event, aname)
         end
         
         CreateMainFrame()
+        
+        -- Инициализируем миникарту
+        if ns.MinimapButton then
+            ns.MinimapButton:Initialize()
+        end
+        
         print("|cFF00FF00BiSFinder|r loaded! /bisf /bisfinder")
         self:UnregisterEvent("ADDON_LOADED")
     end
