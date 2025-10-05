@@ -1,6 +1,6 @@
 -- Автоматически сгенерированный файл с данными о предметах
 -- Не редактируйте вручную! Используйте генератор.
--- Сгенерировано: 2025-10-05T18:44:30.354Z
+-- Сгенерировано: 2025-10-05T19:23:37.658Z
 
 local ADDON_NAME, ns = ...
 
@@ -286,13 +286,49 @@ ns.IcyVeinsData = {
                 itemType = "Weapons (Dual Wield)",
                 itemId = "221128",
                 itemName = "Starforged Seraph's Mace",
-                source = "Priory of the Sacred Flame\n The Dawnbreaker"
+                source = "Priory of the Sacred Flame"
+            },
+            {
+                itemType = "Weapons (Dual Wield)",
+                itemId = "221144",
+                itemName = "Zephyrous Sail Carver",
+                source = "The Dawnbreaker"
             },
             {
                 itemType = "Trinkets",
                 itemId = "242401",
                 itemName = "Brand of Ceaseless Ire",
-                source = "The Soul Hunters\n Priory of the Sacred Flame\n Fractillus\n Nexus King Salhadaar\n Operation: Floodgate\n Soulbinder Naazindhri"
+                source = "The Soul Hunters"
+            },
+            {
+                itemType = "Trinkets",
+                itemId = "219309",
+                itemName = "Tome of Light's Devotion",
+                source = "Priory of the Sacred Flame"
+            },
+            {
+                itemType = "Trinkets",
+                itemId = "242396",
+                itemName = "Unyielding Netherprism",
+                source = "Fractillus"
+            },
+            {
+                itemType = "Trinkets",
+                itemId = "242403",
+                itemName = "Perfidious Projector",
+                source = "Nexus King Salhadaar"
+            },
+            {
+                itemType = "Trinkets",
+                itemId = "232543",
+                itemName = "Ringing Ritual Mud",
+                source = "Operation: Floodgate"
+            },
+            {
+                itemType = "Trinkets",
+                itemId = "242391",
+                itemName = "Soulbinder's Embrace",
+                source = "Soulbinder Naazindhri"
             }
         },
         ["Vengeance Demon Hunter"] = {
@@ -1192,15 +1228,33 @@ ns.IcyVeinsData = {
             },
             {
                 itemType = "Trinket #2",
+                itemId = "242397",
+                itemName = "Sigil of the Cosmic Hunt",
+                source = "The Soul Hunters"
+            },
+            {
+                itemType = "Trinket Alt.",
                 itemId = "242399",
                 itemName = "Screams of a Forgotten Sky",
                 source = "Dimensius The All Devouring"
             },
             {
                 itemType = "Trinket Alt.",
-                itemId = "242397",
-                itemName = "Sigil of the Cosmic Hunt",
-                source = "The Soul Hunters\n	Forgeweaver Araz\n	Tazavesh: Streets of Wonder\n	Operation: Floodgate"
+                itemId = "242402",
+                itemName = "Araz's Ritual Forge",
+                source = "Forgeweaver Araz"
+            },
+            {
+                itemType = "Trinket Alt.",
+                itemId = "185844",
+                itemName = "Ticking Sack of Terror",
+                source = "Tazavesh: Streets of Wonder"
+            },
+            {
+                itemType = "Trinket Alt.",
+                itemId = "232541",
+                itemName = "Improvised Seaforium Pacemaker",
+                source = "Operation: Floodgate"
             }
         },
         ["Destruction Warlock"] = {
@@ -1690,7 +1744,25 @@ ns.IcyVeinsData = {
                 itemType = "Trinket Alt.",
                 itemId = "185818",
                 itemName = "So'leah's Secret Technique",
-                source = "Tazavesh: So'Leah's Gambit\n	Operation: Floodgate\n	Priory of the Sacred Flame\n	The Soul Hunters"
+                source = "Tazavesh: So'Leah's Gambit"
+            },
+            {
+                itemType = "Trinket Alt.",
+                itemId = "232541",
+                itemName = "Improvised Seaforium Pacemaker",
+                source = "Operation: Floodgate"
+            },
+            {
+                itemType = "Trinket Alt.",
+                itemId = "219308",
+                itemName = "Signet of the Priory",
+                source = "Priory of the Sacred Flame"
+            },
+            {
+                itemType = "Trinket Alt.",
+                itemId = "242397",
+                itemName = "Sigil of the Cosmic Hunt",
+                source = "The Soul Hunters"
             }
         },
         ["Balance Druid"] = {
@@ -2026,9 +2098,9 @@ ns.IcyVeinsData = {
             },
             {
                 itemType = "Belt",
-                itemId = "242664",
-                itemName = "Durable Information Securing Container",
-                source = "Delves"
+                itemId = "178822",
+                itemName = "Cord of the Dark Word",
+                source = "Halls of Atonement"
             },
             {
                 itemType = "Legs",
@@ -2136,9 +2208,9 @@ ns.IcyVeinsData = {
             },
             {
                 itemType = "Belt",
-                itemId = "245965",
-                itemName = "Durable Information Securing Container",
-                source = "Chrome King Gallywix in Liberation of Undermine"
+                itemId = "237522",
+                itemName = "Colossal Lifetether",
+                source = "Loom’ithar in Manaforge Omega"
             },
             {
                 itemType = "Legs",
@@ -2200,7 +2272,19 @@ ns.IcyVeinsData = {
                 itemType = "Neck",
                 itemId = "237569",
                 itemName = "Duskblaze's Desperation",
-                source = "The Soul Hunters\n Halls of Atonement\n Soulbinder Naazindhri in Manaforge Omega"
+                source = "The Soul Hunters"
+            },
+            {
+                itemType = "Neck",
+                itemId = "178827",
+                itemName = "Sin Stained Pendant",
+                source = "Halls of Atonement"
+            },
+            {
+                itemType = "Neck",
+                itemId = "237568",
+                itemName = "Chrysalis of Sundered Souls",
+                source = "Soulbinder Naazindhri in Manaforge Omega"
             },
             {
                 itemType = "Shoulder",
@@ -2254,19 +2338,79 @@ ns.IcyVeinsData = {
                 itemType = "Rings",
                 itemId = "242491",
                 itemName = "Whispers of K'aresh",
-                source = "Eco-Dome Al'dani\n        Halls of Atonement\n        Forgeweaver Araz in Manaforge Omega\n        Plexus Sentinel in Manaforge Omega"
+                source = "Eco-Dome Al'dani"
+            },
+            {
+                itemType = "Rings",
+                itemId = "178824",
+                itemName = "Signet of the False Accuser",
+                source = "Halls of Atonement"
+            },
+            {
+                itemType = "Rings",
+                itemId = "237570",
+                itemName = "Logic Gate: Omega",
+                source = "Forgeweaver Araz in Manaforge Omega"
+            },
+            {
+                itemType = "Rings",
+                itemId = "237567",
+                itemName = "Logic Gate: Alpha",
+                source = "Plexus Sentinel in Manaforge Omega"
             },
             {
                 itemType = "Active Trinkets",
                 itemId = "242402",
                 itemName = "Araz's Ritual Forge",
-                source = "Forgeweaver Araz in Manaforge Omega\nEco-Dome Al'dani\nPriory of the Sacred Flame\nPvP"
+                source = "Forgeweaver Araz in Manaforge Omega"
+            },
+            {
+                itemType = "Active Trinkets",
+                itemId = "242494",
+                itemName = "Lily of the Eternal Weave",
+                source = "Eco-Dome Al'dani"
+            },
+            {
+                itemType = "Active Trinkets",
+                itemId = "219308",
+                itemName = "Signet of the Priory",
+                source = "Priory of the Sacred Flame"
+            },
+            {
+                itemType = "Active Trinkets",
+                itemId = "230638",
+                itemName = "Astral Gladiator's Badge of Ferocity",
+                source = "PvP"
             },
             {
                 itemType = "Passive Trinkets",
                 itemId = "242395",
                 itemName = "Astral Antenna",
-                source = "Loom’ithar in Manaforge Omega\nFractillus in Manaforge Omega\nEco-Dome Al'dani\nAra-Kara, City of Echoes\nThe Dawnbreaker"
+                source = "Loom’ithar in Manaforge Omega"
+            },
+            {
+                itemType = "Passive Trinkets",
+                itemId = "242392",
+                itemName = "Diamantine Voidcore",
+                source = "Fractillus in Manaforge Omega"
+            },
+            {
+                itemType = "Passive Trinkets",
+                itemId = "242497",
+                itemName = "Azhiccaran Parapodia",
+                source = "Eco-Dome Al'dani"
+            },
+            {
+                itemType = "Passive Trinkets",
+                itemId = "219314",
+                itemName = "Ara-Kara Sacbrood",
+                source = "Ara-Kara, City of Echoes"
+            },
+            {
+                itemType = "Passive Trinkets",
+                itemId = "219312",
+                itemName = "Empowering Crystal of Anub'ikkaj",
+                source = "The Dawnbreaker"
             }
         },
         ["Frost Mage"] = {
@@ -2510,9 +2654,9 @@ ns.IcyVeinsData = {
             },
             {
                 itemType = "Belt",
-                itemId = "242664",
-                itemName = "Durable Information Securing Container",
-                source = "Delves"
+                itemId = "178822",
+                itemName = "Cord of the Dark Word",
+                source = "Halls of Atonement"
             },
             {
                 itemType = "Legs",
@@ -2568,7 +2712,7 @@ ns.IcyVeinsData = {
                 itemType = "Main Hand",
                 itemId = "185823",
                 itemName = "Fatebreaker, Destroyer of Futures",
-                source = "Tazavesh: So'Leah's Gambit"
+                source = "Tazavesh: So'leah's Gambit"
             },
             {
                 itemType = "Off Hand",
@@ -2592,7 +2736,7 @@ ns.IcyVeinsData = {
                 itemType = "Neck",
                 itemId = "185820",
                 itemName = "Cabochon of the Infinite Flight",
-                source = "Tazavesh: So'Leah's Gambit"
+                source = "Tazavesh: So'leah's Gambit"
             },
             {
                 itemType = "Shoulder",
@@ -2670,7 +2814,25 @@ ns.IcyVeinsData = {
                 itemType = "Trinket Alt.",
                 itemId = "232541",
                 itemName = "Improvised Seaforium Pacemaker",
-                source = "Operation: Floodgate\n	Tazavesh: So'Leah's Gambit\n	Priory of the Sacred Flame\n	Eco-Dome Al'dani"
+                source = "Operation: Floodgate"
+            },
+            {
+                itemType = "Trinket Alt.",
+                itemId = "185818",
+                itemName = "So'leah's Secret Technique",
+                source = "Tazavesh: So'leah's Gambit"
+            },
+            {
+                itemType = "Trinket Alt.",
+                itemId = "219308",
+                itemName = "Signet of the Priory",
+                source = "Priory of the Sacred Flame"
+            },
+            {
+                itemType = "Trinket Alt.",
+                itemId = "219314",
+                itemName = "Ara-Kara Sacbrood",
+                source = "Eco-Dome Al'dani"
             }
         },
         ["Survival Hunter"] = {
@@ -2810,9 +2972,9 @@ ns.IcyVeinsData = {
             },
             {
                 itemType = "Bracers",
-                itemId = "219334",
-                itemName = "Rune-Branded Armbands",
-                source = "Crafted by Leatherworking"
+                itemId = "237546",
+                itemName = "Bindings of Lost Essence",
+                source = "Soulbinder Naazindhri"
             },
             {
                 itemType = "Gloves",
@@ -2944,9 +3106,9 @@ ns.IcyVeinsData = {
             },
             {
                 itemType = "Trinket #1",
-                itemId = "219314",
-                itemName = "Ara-Kara Sacbrood",
-                source = "Ara-Kara, City of Echoes"
+                itemId = "242399",
+                itemName = "Screams of a Forgotten Sky",
+                source = "Dimensius The All Devouring in Manaforge Omega"
             },
             {
                 itemType = "Trinket #2",
@@ -2978,7 +3140,7 @@ ns.IcyVeinsData = {
                 itemType = "Cloak",
                 itemId = "235499",
                 itemName = "Reshii Wraps",
-                source = "11.2 Campaign/td>"
+                source = "11.2 Campaign"
             },
             {
                 itemType = "Chest",
@@ -3052,7 +3214,19 @@ ns.IcyVeinsData = {
                 itemType = "Weapon",
                 itemId = "237735",
                 itemName = "Voidglass Sovereign's Blade",
-                source = "Nexus King Salhadaar in Manaforge Omega\n            Forgeweaver Araz in Manaforge Omega\n            Soulbinder Naazindhri in Manaforge Omega"
+                source = "Nexus King Salhadaar in Manaforge Omega"
+            },
+            {
+                itemType = "Weapon",
+                itemId = "237724",
+                itemName = "Iris of the Dark Beyond",
+                source = "Forgeweaver Araz in Manaforge Omega"
+            },
+            {
+                itemType = "Weapon",
+                itemId = "237730",
+                itemName = "Voidglass Spire",
+                source = "Soulbinder Naazindhri in Manaforge Omega"
             },
             {
                 itemType = "Helm",
@@ -3125,12 +3299,6 @@ ns.IcyVeinsData = {
                 itemId = "246281",
                 itemName = "Ring of the Panoply",
                 source = "Tazavesh: Streets of Wonder"
-            },
-            {
-                itemType = "Trinkets",
-                itemId = "",
-                itemName = "",
-                source = ""
             }
         }
     },
@@ -3696,13 +3864,61 @@ ns.IcyVeinsData = {
                 itemType = "Rings (Any 2 of these)",
                 itemId = "237567",
                 itemName = "Logic Gate: Alpha",
-                source = "Plexus Sentinel in Manaforge Omega\n            Forgeweaver Araz in Manaforge Omega\n            The Dawnbreaker\n            Priory of the Sacred Flame\n            Halls of Atonement"
+                source = "Plexus Sentinel in Manaforge Omega"
+            },
+            {
+                itemType = "Rings (Any 2 of these)",
+                itemId = "237570",
+                itemName = "Logic Gate: Omega",
+                source = "Forgeweaver Araz in Manaforge Omega"
+            },
+            {
+                itemType = "Rings (Any 2 of these)",
+                itemId = "221136",
+                itemName = "Devout Zealot's Ring",
+                source = "The Dawnbreaker"
+            },
+            {
+                itemType = "Rings (Any 2 of these)",
+                itemId = "221200",
+                itemName = "Radiant Necromancer's Band",
+                source = "Priory of the Sacred Flame"
+            },
+            {
+                itemType = "Rings (Any 2 of these)",
+                itemId = "178824",
+                itemName = "Signet of the False Accuser",
+                source = "Halls of Atonement"
             },
             {
                 itemType = "Top Trinkets",
                 itemId = "242395",
                 itemName = "Astral Antenna",
-                source = "Loom’ithar in Manaforge Omega\n            Fractillus in Manaforge Omega\n            Priory of the Sacred Flame\n            Tazavesh: So'Leah's Gambit\n            The Dawnbreaker"
+                source = "Loom’ithar in Manaforge Omega"
+            },
+            {
+                itemType = "Top Trinkets",
+                itemId = "242392",
+                itemName = "Diamantine Voidcore",
+                source = "Fractillus in Manaforge Omega"
+            },
+            {
+                itemType = "Top Trinkets",
+                itemId = "219308",
+                itemName = "Signet of the Priory",
+                source = "Priory of the Sacred Flame"
+            },
+            {
+                itemType = "Top Trinkets",
+                itemId = "185818",
+                itemName = "So'leah's Secret Technique",
+                source = "Tazavesh: So'Leah's Gambit"
+            },
+            {
+                itemType = "Top Trinkets",
+                itemId = "219312",
+                itemName = "Empowering Crystal of Anub'ikkaj",
+                source = "The Dawnbreaker"
             }
         },
         ["Mistweaver Monk"] = {
