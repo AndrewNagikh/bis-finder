@@ -1,11 +1,11 @@
 -- Автоматически сгенерированный файл с данными о предметах
 -- Не редактируйте вручную! Используйте генератор.
--- Сгенерировано: 2025-09-28T22:08:52.448Z
+-- Сгенерировано: 2025-10-05T15:09:20.376Z
 
 local ADDON_NAME, ns = ...
 
--- База данных предметов по ролям и специализациям
-ns.ItemData = {
+-- База данных предметов IcyVeins по ролям и специализациям
+ns.IcyVeinsData = {
     tank = {
         ["Protection Warrior"] = {
             {
@@ -3047,7 +3047,92 @@ ns.ItemData = {
                 source = "Loom’ithar"
             }
         },
-        ["Augmentation Evoker"] = {}
+        ["Augmentation Evoker"] = {
+            {
+                itemType = "Weapon",
+                itemId = "237735",
+                itemName = "Voidglass Sovereign's Blade",
+                source = "Nexus King Salhadaar in Manaforge Omega\n            Forgeweaver Araz in Manaforge Omega\n            Soulbinder Naazindhri in Manaforge Omega"
+            },
+            {
+                itemType = "Helm",
+                itemId = "237655",
+                itemName = "Spellweaver's Immaculate Focus",
+                source = "Forgeweaver Araz/Matrix Catalyst/Great Vault"
+            },
+            {
+                itemType = "Neck",
+                itemId = "237569",
+                itemName = "Duskblaze's Desperation",
+                source = "The Soul Hunters in Manaforge Omega"
+            },
+            {
+                itemType = "Shoulder",
+                itemId = "237653",
+                itemName = "Spellweaver's Immaculate Pauldrons",
+                source = "The Soul Hunters/Matrix Catalyst/Great Vault"
+            },
+            {
+                itemType = "Cloak",
+                itemId = "235499",
+                itemName = "Reshii Wraps",
+                source = "Season 3 Campaign Quests"
+            },
+            {
+                itemType = "Chest",
+                itemId = "237658",
+                itemName = "Spellweaver's Immaculate Crestward",
+                source = "Fractillus/Matrix Catalyst/Great Vault"
+            },
+            {
+                itemType = "Bracers",
+                itemId = "219342",
+                itemName = "Glyph-Etched Vambraces",
+                source = "Crafted — Leatherworking / Plexus Sentinel in Manaforge Omega"
+            },
+            {
+                itemType = "Gloves",
+                itemId = "237656",
+                itemName = "Spellweaver's Immaculate Scaleguards",
+                source = "Soulbinder Naazindhri/Matrix Catalyst/Great Vault"
+            },
+            {
+                itemType = "Belt",
+                itemId = "237522",
+                itemName = "Colossal Lifetether",
+                source = "Loom’ithar in Manaforge Omega/Crafted — Leatherworking"
+            },
+            {
+                itemType = "Legs",
+                itemId = "237654",
+                itemName = "Spellweaver's Immaculate Runeslacks",
+                source = "Loom’ithar/Matrix Catalyst/Great Vault"
+            },
+            {
+                itemType = "Boots",
+                itemId = "243308",
+                itemName = "Interloper's Chain Boots",
+                source = "The Soul Hunters in Manaforge Omega"
+            },
+            {
+                itemType = "Ring #1",
+                itemId = "242405",
+                itemName = "Band of the Shattered Soul",
+                source = "Dimensius The All Devouring in Manaforge Omega"
+            },
+            {
+                itemType = "Ring #2",
+                itemId = "246281",
+                itemName = "Ring of the Panoply",
+                source = "Tazavesh: Streets of Wonder"
+            },
+            {
+                itemType = "Trinkets",
+                itemId = "",
+                itemName = "",
+                source = ""
+            }
+        }
     },
     healer = {
         ["Restoration Druid"] = {
@@ -3637,173 +3722,22 @@ ns.ItemData = {
 }
 
 -- Маппинг классов WoW к доступным специализациям по ролям
-ns.ClassSpecMapping = {
-    WARRIOR = {
-        tank = {
-            "Protection Warrior"
-        },
-        dps = {
-            "Fury Warrior",
-            "Arms Warrior"
-        },
-        healer = {}
-    },
-    PALADIN = {
-        tank = {
-            "Protection Paladin"
-        },
-        dps = {
-            "Retribution Paladin"
-        },
-        healer = {
-            "Holy Paladin"
-        }
-    },
-    MONK = {
-        tank = {
-            "Brewmaster Monk"
-        },
-        dps = {
-            "Windwalker Monk"
-        },
-        healer = {
-            "Mistweaver Monk"
-        }
-    },
-    DEMONHUNTER = {
-        tank = {
-            "Vengeance Demon Hunter"
-        },
-        dps = {
-            "Havoc Demon Hunter"
-        },
-        healer = {}
-    },
-    DRUID = {
-        tank = {
-            "Guardian Druid"
-        },
-        dps = {
-            "Feral Druid",
-            "Balance Druid"
-        },
-        healer = {
-            "Restoration Druid"
-        }
-    },
-    DEATHKNIGHT = {
-        tank = {
-            "Blood Death Knight"
-        },
-        dps = {
-            "Frost Death Knight",
-            "Unholy Death Knight"
-        },
-        healer = {}
-    },
-    HUNTER = {
-        tank = {},
-        dps = {
-            "Beast Mastery Hunter",
-            "Marksmanship Hunter",
-            "Survival Hunter"
-        },
-        healer = {}
-    },
-    MAGE = {
-        tank = {},
-        dps = {
-            "Arcane Mage",
-            "Frost Mage",
-            "Fire Mage"
-        },
-        healer = {}
-    },
-    SHAMAN = {
-        tank = {},
-        dps = {
-            "Elemental Shaman",
-            "Enhancement Shaman"
-        },
-        healer = {
-            "Restoration Shaman"
-        }
-    },
-    WARLOCK = {
-        tank = {},
-        dps = {
-            "Destruction Warlock",
-            "Demonology Warlock",
-            "Affliction Warlock"
-        },
-        healer = {}
-    },
-    ROGUE = {
-        tank = {},
-        dps = {
-            "Subtlety Rogue",
-            "Assassination Rogue",
-            "Outlaw Rogue"
-        },
-        healer = {}
-    },
-    EVOKER = {
-        tank = {},
-        dps = {
-            "Devastation Evoker",
-            "Augmentation Evoker"
-        },
-        healer = {
-            "Preservation Evoker"
-        }
-    },
-    PRIEST = {
-        tank = {},
-        dps = {
-            "Shadow Priest"
-        },
-        healer = {
-            "Discipline Priest",
-            "Holy Priest"
-        }
-    }
-}
+-- ClassSpecMapping теперь находится в отдельном модуле ClassSpecMapping.lua
 
 -- Функция получения данных для роли и специализации
 function ns:GetItemsForSpec(role, specName)
-    if not self.ItemData[role] or not self.ItemData[role][specName] then
+    if not self.IcyVeinsData[role] or not self.IcyVeinsData[role][specName] then
         return {}
     end
-    return self.ItemData[role][specName]
+    return self.IcyVeinsData[role][specName]
 end
 
--- Функция получения доступных специализаций для класса и роли
-function ns:GetAvailableSpecs(className, role)
-    if not self.ClassSpecMapping[className] or not self.ClassSpecMapping[className][role] then
-        return {}
-    end
-    return self.ClassSpecMapping[className][role]
-end
+-- Функции GetAvailableSpecs и GetAvailableRoles теперь находятся в ClassSpecMapping.lua
 
--- Функция получения всех доступных ролей для класса
-function ns:GetAvailableRoles(className)
-    if not self.ClassSpecMapping[className] then
-        return {}
-    end
-    
-    local roles = {}
-    for role, specs in pairs(self.ClassSpecMapping[className]) do
-        if #specs > 0 then
-            table.insert(roles, role)
-        end
-    end
-    return roles
-end
-
-print("|cFF00FF00BiSFinder Data|r: База данных загружена с " .. 
+print("|cFF00FF00BiSFinder IcyVeins Data|r: База данных загружена с " .. 
       (function()
           local totalSpecs = 0
-          for role, roleData in pairs(ns.ItemData) do
+          for role, roleData in pairs(ns.IcyVeinsData) do
               for spec, items in pairs(roleData) do
                   totalSpecs = totalSpecs + 1
               end

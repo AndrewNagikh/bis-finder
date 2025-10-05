@@ -1,12 +1,12 @@
-import fs from 'fs';
-import path from 'path';
-import { 
-  ItemData, 
-  ClassSpecMapping, 
-  Role, 
-  ItemInfo, 
-  RoleData, 
-  LuaGeneratorOptions
+import * as fs from 'fs';
+import * as path from 'path';
+import {
+  ItemData,
+  ClassSpecMapping,
+  Role,
+  ItemInfo,
+  RoleData,
+  LuaGeneratorOptions,
 } from './types';
 
 /**
@@ -20,7 +20,7 @@ export class LuaDataGenerator {
     this.itemData = {
       tank: {},
       dps: {},
-      healer: {}
+      healer: {},
     };
   }
 
@@ -32,7 +32,10 @@ export class LuaDataGenerator {
       const content = fs.readFileSync(filepath, 'utf-8');
       return JSON.parse(content) as T;
     } catch (error) {
-      console.error(`Ошибка чтения файла ${filepath}:`, (error as Error).message);
+      console.error(
+        `Ошибка чтения файла ${filepath}:`,
+        (error as Error).message
+      );
       return null;
     }
   }
@@ -134,7 +137,7 @@ export class LuaDataGenerator {
       'Vengeance Demon Hunter': 'DEMONHUNTER',
       'Devastation Evoker': 'EVOKER',
       'Preservation Evoker': 'EVOKER',
-      'Augmentation Evoker': 'EVOKER'
+      'Augmentation Evoker': 'EVOKER',
     };
 
     return classNames[specName] || 'UNKNOWN';
@@ -147,10 +150,10 @@ export class LuaDataGenerator {
     const mapping: ClassSpecMapping = {};
 
     const roles: Role[] = ['tank', 'dps', 'healer'];
-    
-    roles.forEach(role => {
+
+    roles.forEach((role) => {
       const roleData = this.itemData[role];
-      Object.keys(roleData).forEach(specName => {
+      Object.keys(roleData).forEach((specName) => {
         const className = this.extractClassName(specName);
 
         if (!mapping[className]) {
@@ -169,7 +172,11 @@ export class LuaDataGenerator {
   /**
    * Обрабатывает JSON файлы и загружает данные
    */
-  public loadDataFromJsonFiles(tankFile: string, dpsFile: string, healerFile: string): boolean {
+  public loadDataFromJsonFiles(
+    tankFile: string,
+    dpsFile: string,
+    healerFile: string
+  ): boolean {
     console.log('Загрузка данных из JSON файлов...');
 
     let hasErrors = false;
@@ -179,7 +186,9 @@ export class LuaDataGenerator {
       const tankData = this.readJsonFile<RoleData>(tankFile);
       if (tankData) {
         this.itemData.tank = tankData;
-        console.log(`✅ Tank данные загружены: ${Object.keys(tankData).length} специализаций`);
+        console.log(
+          `✅ Tank данные загружены: ${Object.keys(tankData).length} специализаций`
+        );
       } else {
         hasErrors = true;
       }
@@ -192,7 +201,9 @@ export class LuaDataGenerator {
       const dpsData = this.readJsonFile<RoleData>(dpsFile);
       if (dpsData) {
         this.itemData.dps = dpsData;
-        console.log(`✅ DPS данные загружены: ${Object.keys(dpsData).length} специализаций`);
+        console.log(
+          `✅ DPS данные загружены: ${Object.keys(dpsData).length} специализаций`
+        );
       } else {
         hasErrors = true;
       }
@@ -205,7 +216,9 @@ export class LuaDataGenerator {
       const healerData = this.readJsonFile<RoleData>(healerFile);
       if (healerData) {
         this.itemData.healer = healerData;
-        console.log(`✅ Healer данные загружены: ${Object.keys(healerData).length} специализаций`);
+        console.log(
+          `✅ Healer данные загружены: ${Object.keys(healerData).length} специализаций`
+        );
       } else {
         hasErrors = true;
       }
@@ -213,9 +226,11 @@ export class LuaDataGenerator {
       console.warn(`⚠️  Файл ${healerFile} не найден`);
     }
 
-    // Генерируем маппинг классов и специализаций
+    // Генерируем маппинг классов и специализаций для внутреннего использования
     this.classSpecMapping = this.generateClassSpecMapping();
-    console.log('✅ Маппинг классов и специализаций сгенерирован');
+    console.log(
+      '✅ Маппинг классов и специализаций сгенерирован (для внутреннего использования)'
+    );
 
     return !hasErrors;
   }
@@ -232,47 +247,26 @@ export class LuaDataGenerator {
 
 local ADDON_NAME, ns = ...
 
--- База данных предметов по ролям и специализациям
-ns.ItemData = ${this.jsObjectToLuaTable(this.itemData, 0)}
+-- База данных предметов IcyVeins по ролям и специализациям
+ns.IcyVeinsData = ${this.jsObjectToLuaTable(this.itemData, 0)}
 
 -- Маппинг классов WoW к доступным специализациям по ролям
-ns.ClassSpecMapping = ${this.jsObjectToLuaTable(this.classSpecMapping, 0)}
+-- ClassSpecMapping теперь находится в отдельном модуле ClassSpecMapping.lua
 
 -- Функция получения данных для роли и специализации
 function ns:GetItemsForSpec(role, specName)
-    if not self.ItemData[role] or not self.ItemData[role][specName] then
+    if not self.IcyVeinsData[role] or not self.IcyVeinsData[role][specName] then
         return {}
     end
-    return self.ItemData[role][specName]
+    return self.IcyVeinsData[role][specName]
 end
 
--- Функция получения доступных специализаций для класса и роли
-function ns:GetAvailableSpecs(className, role)
-    if not self.ClassSpecMapping[className] or not self.ClassSpecMapping[className][role] then
-        return {}
-    end
-    return self.ClassSpecMapping[className][role]
-end
+-- Функции GetAvailableSpecs и GetAvailableRoles теперь находятся в ClassSpecMapping.lua
 
--- Функция получения всех доступных ролей для класса
-function ns:GetAvailableRoles(className)
-    if not self.ClassSpecMapping[className] then
-        return {}
-    end
-    
-    local roles = {}
-    for role, specs in pairs(self.ClassSpecMapping[className]) do
-        if #specs > 0 then
-            table.insert(roles, role)
-        end
-    end
-    return roles
-end
-
-print("|cFF00FF00BiSFinder Data|r: База данных загружена с " .. 
+print("|cFF00FF00BiSFinder IcyVeins Data|r: База данных загружена с " .. 
       (function()
           local totalSpecs = 0
-          for role, roleData in pairs(ns.ItemData) do
+          for role, roleData in pairs(ns.IcyVeinsData) do
               for spec, items in pairs(roleData) do
                   totalSpecs = totalSpecs + 1
               end
@@ -306,8 +300,8 @@ print("|cFF00FF00BiSFinder Data|r: База данных загружена с "
     let totalItems = 0;
 
     const roles: Role[] = ['tank', 'dps', 'healer'];
-    
-    roles.forEach(role => {
+
+    roles.forEach((role) => {
       const roleData = this.itemData[role];
       const specCount = Object.keys(roleData).length;
       totalSpecs += specCount;
@@ -318,10 +312,14 @@ print("|cFF00FF00BiSFinder Data|r: База данных загружена с "
       });
       totalItems += roleItems;
 
-      console.log(`📊 ${role.toUpperCase()}: ${specCount} специализаций, ${roleItems} предметов`);
+      console.log(
+        `📊 ${role.toUpperCase()}: ${specCount} специализаций, ${roleItems} предметов`
+      );
     });
 
-    console.log(`📈 ИТОГО: ${totalSpecs} специализаций, ${totalItems} предметов`);
+    console.log(
+      `📈 ИТОГО: ${totalSpecs} специализаций, ${totalItems} предметов`
+    );
     console.log(`🎮 Классы: ${Object.keys(this.classSpecMapping).join(', ')}`);
     console.log('=====================================\n');
   }
@@ -344,15 +342,17 @@ print("|cFF00FF00BiSFinder Data|r: База данных загружена с "
 /**
  * Основная функция генерации с настройками
  */
-export async function generateLuaDatabase(options?: Partial<LuaGeneratorOptions>): Promise<boolean> {
+export async function generateLuaDatabase(
+  options?: Partial<LuaGeneratorOptions>
+): Promise<boolean> {
   const defaultOptions: LuaGeneratorOptions = {
     jsonFiles: {
-      tank: './tank.json',
-      dps: './dps.json',
-      healer: './healer.json'
+      tank: './IcyVeins/bis-json-data/tank.json',
+      dps: './IcyVeins/bis-json-data/dps.json',
+      healer: './IcyVeins/bis-json-data/healer.json',
     },
-    outputPath: path.resolve('../addon/BiSFinderData.lua'),
-    addonName: 'BiSFinder'
+    outputPath: path.resolve('../addon/Sources/IcyVeins/IcyVeinsData.lua'),
+    addonName: 'BiSFinder',
   };
 
   const config = { ...defaultOptions, ...options };
@@ -360,8 +360,8 @@ export async function generateLuaDatabase(options?: Partial<LuaGeneratorOptions>
 
   // Загрузка данных
   const success = generator.loadDataFromJsonFiles(
-    config.jsonFiles.tank, 
-    config.jsonFiles.dps, 
+    config.jsonFiles.tank,
+    config.jsonFiles.dps,
     config.jsonFiles.healer
   );
 

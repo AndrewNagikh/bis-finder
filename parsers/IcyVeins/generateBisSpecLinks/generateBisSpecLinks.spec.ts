@@ -1,4 +1,4 @@
-import { test, expect, Page, BrowserContext } from '@playwright/test';
+import { test } from '@playwright/test';
 import fs from 'fs';
 import createStealthContext from 'lib/createStealthContext';
 import { sleep } from 'lib/helpers';
@@ -44,7 +44,7 @@ test('find Mythic+ links with stealth protection', async ({}) => {
 
       const roleFileName = role.split('/').pop()?.replace('tier-list', 'links');
       const roleFilePath = path.resolve(
-        `generateBisSpecLinks/data/${roleFileName}.txt`
+        `IcyVeins/generateBisSpecLinks/data/${roleFileName}.txt`
       );
       if (!fs.existsSync(roleFilePath)) {
         fs.writeFile(roleFilePath, '', (err) => {

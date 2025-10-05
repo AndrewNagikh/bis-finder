@@ -7,4 +7,9 @@
 
 BiSFinder.lua
 UIElements.lua
-BiSFinderData.lua
+ClassButtons.lua
+SourceMenu.lua
+Sources/SourceManager.lua
+Sources/IcyVeins/IcyVeinsData.lua
+Sources/IcyVeins/ClassSpecMapping.lua
+Sources/IcyVeins/IcyVeinsModule.lua

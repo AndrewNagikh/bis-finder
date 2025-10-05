@@ -1,5 +1,5 @@
 import { Page } from '@playwright/test';
-import { sleep } from './helpers';
+import { sleep } from 'lib/helpers';
 
 const selectors = {
   bisButton: 'span.toc_page_list_item > a:has-text("Gear and Best in Slot")',
@@ -11,9 +11,8 @@ export async function safeGetRowData(
   page: Page,
   specLink: string,
   retryCount: number = 0
-): Promise<any[]> {
+): Promise<{ data: any[]; selector: string; rowCount: number }> {
   try {
-    console.log(`Navigating to ${specLink} (attempt ${retryCount + 1})`);
     // Проверяем, что страница еще активна
     if (page.isClosed()) {
       throw new Error('Page was closed before navigation');
@@ -38,27 +37,48 @@ export async function safeGetRowData(
       // Игнорируем если кнопка не найдена
     }
 
-    // Определяем селектор
+    // Определяем селектор на основе URL и наличия rotation switches
     const isRotationSelectorPresent =
       (await page.locator(selectors.rotationSwitches).count()) > 0;
-    const evalSelector = isRotationSelectorPresent
-      ? 'div#area_1 div:nth-of-type(2) table tbody tr'
-      : 'div#area_1.image_block_content.selected table tbody tr';
+
+    let evalSelector: string;
+
+    // Специфичные селекторы для определенных страниц
+    const specificSelectors: Record<string, string> = {
+      'augmentation-evoker-pve-dps-gear-best-in-slot':
+        'div#area_1 span:nth-of-type(2) table tbody tr',
+      'holy-priest-pve-healing-gear-best-in-slot':
+        'div div:nth-of-type(2) table tbody tr',
+    };
+
+    // Проверяем, есть ли специфичный селектор для данной страницы
+    const specificSelector = Object.keys(specificSelectors).find((key) =>
+      specLink.includes(key)
+    );
+
+    if (specificSelector) {
+      evalSelector = specificSelectors[specificSelector]!;
+    } else if (isRotationSelectorPresent) {
+      evalSelector = 'div#area_1 div:nth-of-type(2) table tbody tr';
+    } else {
+      evalSelector = 'div#area_1.image_block_content.selected table tbody tr';
+    }
 
     // Ждем данные
+    let rowDataCount = 0;
     try {
       await page.waitForSelector(evalSelector, {
         timeout: 20000,
         state: 'visible',
       });
+      rowDataCount = await page.locator(evalSelector).count();
     } catch {
-      console.log('Data selector not found, skipping...');
-      return [];
+      return { data: [], selector: evalSelector, rowCount: 0 };
     }
-    const rowDataCount = await page.locator(evalSelector).count();
-    console.log(`Found ${rowDataCount} rows`);
 
-    if (rowDataCount === 0) return [];
+    if (rowDataCount === 0) {
+      return { data: [], selector: evalSelector, rowCount: 0 };
+    }
     // Извлекаем данные
     const rowsData = await page.locator(evalSelector).evaluateAll((rows) => {
       return rows
@@ -66,7 +86,6 @@ export async function safeGetRowData(
           const cells = Array.from(row.querySelectorAll('td'));
           if (cells.length < 3) return null;
           const itemType = cells[0]?.textContent?.trim() || '';
-          let wowheadLink = '';
           let itemId = '';
           let itemName = '';
           let source = '';
@@ -84,7 +103,6 @@ export async function safeGetRowData(
             if (match) itemId = match[1] as string;
           }
           if (aElement) {
-            wowheadLink = aElement.href;
             const dataWowhead = aElement.getAttribute('data-wowhead') || '';
             const match = dataWowhead.match(/item=(\d+)/);
             itemName = aElement.innerText;
@@ -96,7 +114,7 @@ export async function safeGetRowData(
         })
         .filter(Boolean);
     });
-    return rowsData;
+    return { data: rowsData, selector: evalSelector, rowCount: rowDataCount };
   } catch (error: any) {
     console.error(`Error in safeGetRowData: ${error.message}`);
 
@@ -113,10 +131,10 @@ export async function safeGetRowData(
           `Context/page was closed, retrying... (${retryCount + 1}/3)`
         );
         await sleep(5000); // Ждем перед повторной попыткой
-        return []; // Возвращаем пустой массив вместо повтора
+        return { data: [], selector: 'error', rowCount: 0 }; // Возвращаем пустой объект вместо повтора
       }
     }
 
-    return [];
+    return { data: [], selector: 'error', rowCount: 0 };
   }
 }

@@ -3,24 +3,29 @@
 
 local ADDON_NAME, ns = ...
 
--- Ensure the data file is loaded
--- BiSFinderData.lua should define ns.ItemData
--- It must be listed after BiSFinder.lua in the .toc so that ns.ItemData is available
--- Example in .toc:
--- ## SavedVariables: ...
--- BiSFinder.lua
--- BiSFinderData.lua
+-- Модульная структура источников данных
+-- Каждый источник данных находится в папке Sources/[SourceName]/
+-- Основная логика остается в BiSFinder.lua
 
 local BiSFinder = {}
 ns.BiSFinder = BiSFinder
--- local UIElements = require("UIElements")
 
 -- Local variables
 local mainFrame
+local sidebarFrame
+local contentFrame
+local contentTitle
 local currentRole = "tank"
 local currentSpec = nil
+local currentClass = nil
+local currentSource = "IcyVeins" -- Будет управляться через SourceManager
+local currentScreen = "class_selection" -- "class_selection" или "items"
+
+-- UI элементы для разных экранов
+local classButtons = {}
 local itemButtons = {}
 local headerTexts = {}
+local itemRows = {}
 
 -- Get player class and spec
 local function GetPlayerClassAndSpec()
@@ -31,9 +36,9 @@ local function GetPlayerClassAndSpec()
     if specIndex then
         local id, name = GetSpecializationInfo(specIndex)
         if name then
-            local roles = ns:GetAvailableRoles(playerClass)
+            local roles = ns.SourceManager:GetAvailableRoles(playerClass)
             for _, role in ipairs(roles) do
-                local specs = ns:GetAvailableSpecs(playerClass, role)
+                local specs = ns.SourceManager:GetAvailableSpecs(playerClass, role)
                 for _, spec in ipairs(specs) do
                     if string.find(spec, name) then
                         specName = spec
@@ -77,170 +82,222 @@ end
 local function ClearUI()
     for _,b in ipairs(itemButtons) do b:Hide() end; wipe(itemButtons)
     for _,h in ipairs(headerTexts) do h:Hide() end; wipe(headerTexts)
+    for _,r in ipairs(itemRows) do r:Hide() end; wipe(itemRows)
+    for _,b in ipairs(classButtons) do b:Hide() end; wipe(classButtons)
 end
 
--- Update displayed items
-local function UpdateItemDisplay()
+-- Объявляем функции заранее
+local ShowItemsScreen
+
+-- Показать экран выбора классов
+local function ShowClassSelectionScreen()
     ClearUI()
-    local items = ns.ItemData[currentRole][currentSpec] or {}
+    currentScreen = "class_selection"
+    
+    -- Получаем все классы
+    local allClasses = ns.SourceManager:GetAllClasses()
+    
+    local yOffset = -60 -- Увеличиваем отступ сверху, чтобы кнопки не загораживали заголовок
+    local buttonSpacing = 55
+    
+    -- Создаем кнопки для всех специализаций, которые поддерживают текущую роль
+    local specCount = 0
+    for i, className in ipairs(allClasses) do
+        local specs = ns.SourceManager:GetAvailableSpecs(className, currentRole)
+        for _, specName in ipairs(specs) do
+            specCount = specCount + 1
+            
+            local specBtn = ns:CreateClassButton(contentFrame, className, currentRole, specName, function(selectedClass)
+                currentClass = selectedClass
+                currentScreen = "items"
+                contentTitle:SetText("Items for " .. specName)
+                currentSpec = specName
+                ShowItemsScreen()
+            end)
+            
+            specBtn:SetPoint("TOPLEFT", contentFrame, "TOPLEFT", 20, yOffset)
+            specBtn:Show()
+            table.insert(classButtons, specBtn)
+            yOffset = yOffset - buttonSpacing
+        end
+    end
+    
+    
+    -- Устанавливаем высоту контентной области в зависимости от количества кнопок
+    local totalHeight = math.max(650, math.abs(yOffset) + 50)
+    contentFrame:SetHeight(totalHeight)
+end
+
+-- Показать экран с предметами
+ShowItemsScreen = function()
+    ClearUI()
+    currentScreen = "items"
+    
+    -- Используем SourceManager для получения предметов
+    local items = ns.SourceManager:GetItemsForSpec(currentSpec)
 
     if #items == 0 then
-        local no = mainFrame:CreateFontString(nil,"OVERLAY","GameFontNormal")
-        no:SetPoint("CENTER", mainFrame, "CENTER", 0, -50)
+        local no = contentFrame:CreateFontString(nil,"OVERLAY","GameFontNormal")
+        no:SetPoint("CENTER", contentFrame, "CENTER", 0, -50)
         no:SetText("No data for spec"); no:SetTextColor(1,0,0)
         table.insert(headerTexts, no)
+        contentFrame:SetHeight(650)
         return
     end
 
     local grouped, order = GroupItemsByType(items)
-    local x0, y0 = 20, -80
-    local col, row = 0, 0
+    local x0, y0 = 20, -60 -- Увеличиваем отступ сверху для заголовка
+    local rowHeight = 60 -- Высота строки (уменьшена, так как названия предметов убраны)
     local yOffset = y0
 
-    local buttonSize = 40           -- размер кнопки
-    local headerToItemGap = 15       -- отступ между заголовком и кнопками
-    local rowGap = 15               -- отступ между строками
-    local previousBlockLength = 0
-    local rowHeight = buttonSize + rowGap
+    -- Создаем строки для каждого типа предмета
+    for i, itemType in ipairs(order) do
+        local itemsOfType = grouped[itemType]
+        local rowFrame = ns:CreateItemRow(contentFrame, itemType, itemsOfType, x0, yOffset)
+        rowFrame:Show()
+        table.insert(itemRows, rowFrame)
+        
+        yOffset = yOffset - rowHeight
+    end
 
-    local maxR, w = 6,200
-    local itemsInCol, maxItemsInCol = 0,6
-    local previousItemCount = nil
+    -- Устанавливаем размер фрейма в зависимости от количества строк
+    local totalHeight = math.max(650, math.abs(yOffset) + 100)
+    contentFrame:SetHeight(totalHeight)
+end
 
-    for i, t in ipairs(order) do
-        local list = grouped[t]
-        if itemsInCol + #list > maxItemsInCol then
-            itemsInCol = 0
-            row = 0
-            col = col + 1
-            yOffset = y0
-        end
-        local headerY = yOffset
-        local h = ns:CreateItemTypeHeader(mainFrame, t, x0 + col*w, headerY)
-        table.insert(headerTexts, h)
-        local ix, iy = x0 + col*w, headerY - headerToItemGap
-        for i, it in ipairs(list) do
-            local btn = ns:CreateItemButton(mainFrame, it)
-            local colOffset = math.floor((i - 1) / maxR)
-            local rowOffset = (i - 1) % maxR
-            local btnX = ix + colOffset * 160
-            local btnY = iy - rowOffset * rowHeight
-            btn:SetPoint("TOPLEFT", mainFrame, "TOPLEFT", btnX, btnY)
-            btn:Show()
-            table.insert(itemButtons, btn)
-            itemsInCol = itemsInCol + 1
-        end
-
-        yOffset = yOffset - (#list * rowHeight + headerToItemGap)
-        row = row + 1
-        if row >= maxR  then
-            itemsInCol = 0
-            row = 0
-            col = col + 1
-            yOffset = y0
-        end
-        if #order == i then
-            mainFrame:SetWidth((col+1)*w + 40)
-        end
+-- Обновить отображение в зависимости от текущего экрана
+local function UpdateDisplay()
+    if currentScreen == "class_selection" then
+        ShowClassSelectionScreen()
+    elseif currentScreen == "items" then
+        ShowItemsScreen()
     end
 end
 
--- Create role dropdown
-local function CreateRoleDropdown()
-    local dd = CreateFrame("Frame","BiSFinderRoleDD",mainFrame,"UIDropDownMenuTemplate")
-    dd:SetPoint("TOPLEFT",mainFrame,"TOPLEFT",20,-30)
-    UIDropDownMenu_SetWidth(dd,120); UIDropDownMenu_SetText(dd,"TANK")
-    local function Init(self)
-        local info = UIDropDownMenu_CreateInfo()
-        local cls = select(2,UnitClass("player"))
-        local roles = ns:GetAvailableRoles(cls)
-        for _,r in ipairs({"tank","dps","healer"}) do
-            info.text = r:upper()
-            info.value = r
-            info.func = function()
-                currentRole = r
-                UIDropDownMenu_SetSelectedValue(dd,r)
-                UIDropDownMenu_SetText(dd,r:upper())
-                UpdateSpecDropdown()
-                UpdateItemDisplay()
-            end
-            info.colorCode = tContains(roles, r) and "|cFF00FF00" or "|cFFFF6600"
-            UIDropDownMenu_AddButton(info)
-        end
-    end
-    UIDropDownMenu_Initialize(dd,Init)
-    return dd
-end
-
--- Create spec dropdown
-local function CreateSpecDropdown()
-    local dd = CreateFrame("Frame","BiSFinderSpecDD",mainFrame,"UIDropDownMenuTemplate")
-    dd:SetPoint("TOPLEFT",mainFrame,"TOPLEFT",160,-30)
-    UIDropDownMenu_SetWidth(dd,200)
-    return dd
-end
-
--- Update spec dropdown
-function UpdateSpecDropdown()
-    local dd = _G["BiSFinderSpecDD"]
-    if not dd then return end
-    local cls = select(2,UnitClass("player"))
-    local specs = ns:GetAvailableSpecs(cls, currentRole)
-    for spec,_ in pairs(ns.ItemData[currentRole]) do
-        if not tContains(specs, spec) then table.insert(specs, spec) end
-    end
-
-    local function Init(self)
-        local info = UIDropDownMenu_CreateInfo()
-        local _, ps = GetPlayerClassAndSpec()
-        for _, s in ipairs(specs) do
-            info.text = s; info.value = s
-            info.func = function()
-                currentSpec = s
-                UIDropDownMenu_SetSelectedValue(dd, s)
-                UIDropDownMenu_SetText(dd, s)
-                UpdateItemDisplay()
-            end
-            if s == ps then info.colorCode = "|cFF00FF00" end
-            UIDropDownMenu_AddButton(info)
-        end
-    end
-
-    UIDropDownMenu_Initialize(dd, Init)
-    local _, ps = GetPlayerClassAndSpec()
-    if ps then
-        currentSpec = ps
-        UIDropDownMenu_SetSelectedValue(dd, ps)
-        UIDropDownMenu_SetText(dd, ps)
-    elseif #specs > 0 then
-        currentSpec = specs[1]
-        UIDropDownMenu_SetSelectedValue(dd, currentSpec)
-        UIDropDownMenu_SetText(dd, currentSpec)
-    end
-end
 
 -- Create main frame
 local function CreateMainFrame()
-    mainFrame = CreateFrame("Frame","BiSFinderMain",UIParent,"BasicFrameTemplateWithInset")
-    mainFrame:SetSize(500,550); mainFrame:SetPoint("CENTER")
+    mainFrame = CreateFrame("Frame","BiSFinderMain",UIParent)
+    mainFrame:SetSize(900,700); mainFrame:SetPoint("CENTER")
     mainFrame:SetMovable(true); mainFrame:EnableMouse(true)
     mainFrame:RegisterForDrag("LeftButton")
     mainFrame:SetScript("OnDragStart", mainFrame.StartMoving)
     mainFrame:SetScript("OnDragStop", mainFrame.StopMovingOrSizing)
 
+    -- Создаем собственный фон в стиле Details!
+    local bg = mainFrame:CreateTexture(nil, "BACKGROUND")
+    bg:SetAllPoints()
+    bg:SetColorTexture(0.15, 0.15, 0.15, 0.98) -- Темно-серый фон как в Details!
+    
+    -- Создаем собственную рамку
+    local border = mainFrame:CreateTexture(nil, "BORDER")
+    border:SetAllPoints()
+    border:SetColorTexture(0.25, 0.25, 0.25, 0.9) -- Светлее фона для контраста
+    border:SetPoint("TOPLEFT", bg, "TOPLEFT", -2, 2)
+    border:SetPoint("BOTTOMRIGHT", bg, "BOTTOMRIGHT", 2, -2)
+
     mainFrame.title = mainFrame:CreateFontString(nil,"OVERLAY","GameFontHighlight")
-    mainFrame.title:SetPoint("LEFT", mainFrame.TitleBg, "LEFT", 5, 0)
+    mainFrame.title:SetPoint("TOPLEFT", mainFrame, "TOPLEFT", 20, -15)
     mainFrame.title:SetText("BiSFinder")
+    mainFrame.title:SetTextColor(1, 1, 1) -- Белый текст
+    mainFrame.title:SetFont(mainFrame.title:GetFont(), 18, "OUTLINE")
+    
+
+    local closeButton = CreateFrame("Button", nil, mainFrame)
+    closeButton:SetSize(25, 25)
+    closeButton:SetPoint("TOPRIGHT", mainFrame, "TOPRIGHT", -8, -8)
+    
+    local closeBg = closeButton:CreateTexture(nil, "BACKGROUND")
+    closeBg:SetAllPoints()
+    closeBg:SetColorTexture(0.2, 0.2, 0.2, 0.9) -- Темно-серый фон
+    
+    local closeText = closeButton:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+    closeText:SetAllPoints()
+    closeText:SetText("×")
+    closeText:SetTextColor(1, 1, 1) -- Белый текст
+    closeText:SetFont(closeText:GetFont(), 16, "OUTLINE")
+    closeText:SetJustifyH("CENTER")
+    
+    closeButton:SetScript("OnClick", function(self, button)
+        if button == "LeftButton" then
+            mainFrame:Hide()
+        end
+    end)
+    
+    closeButton:SetScript("OnEnter", function(self)
+        closeBg:SetColorTexture(0.3, 0.3, 0.3, 0.9) -- Светлее при наведении
+    end)
+    
+    closeButton:SetScript("OnLeave", function(self)
+        closeBg:SetColorTexture(0.2, 0.2, 0.2, 0.9) -- Возвращаем исходный цвет
+    end)
 
     local inst = mainFrame:CreateFontString(nil,"OVERLAY","GameFontNormalSmall")
     inst:SetPoint("BOTTOMLEFT",mainFrame,"BOTTOMLEFT",10,10)
-    inst:SetText("Shift+Click to link"); inst:SetTextColor(0.7,0.7,0.7)
+    inst:SetText("Shift+Click to link"); inst:SetTextColor(0.8,0.8,0.8) -- Светлее для лучшей читаемости
 
-    CreateRoleDropdown()
-    CreateSpecDropdown()
+    -- Создаем боковое меню (всегда видимое)
+    sidebarFrame = ns.SourceMenu:CreateMenuFrame(mainFrame)
+    
+    -- Создаем скролл-фрейм для контентной области
+    local scrollFrame = CreateFrame("ScrollFrame", nil, mainFrame, "UIPanelScrollFrameTemplate")
+    scrollFrame:SetSize(660, 650) -- Высота должна совпадать с боковым меню
+    scrollFrame:SetPoint("TOPLEFT", sidebarFrame, "TOPRIGHT", 5, 0) -- Выравниваем по верхнему краю
+    scrollFrame:SetPoint("BOTTOMLEFT", sidebarFrame, "BOTTOMRIGHT", 5, 0) -- И по нижнему краю
+    
+    -- Создаем контентную область внутри скролла
+    contentFrame = CreateFrame("Frame", nil, scrollFrame)
+    contentFrame:SetSize(640, 650) -- Высота должна совпадать с боковым меню
+    scrollFrame:SetScrollChild(contentFrame)
+    
+
+    local contentBg = contentFrame:CreateTexture(nil, "BACKGROUND")
+    contentBg:SetAllPoints()
+    contentBg:SetColorTexture(0.12, 0.12, 0.12, 0.98) -- Темно-серый фон
+    
+    -- Добавляем рамку для контентной области
+    local contentBorder = contentFrame:CreateTexture(nil, "BORDER")
+    contentBorder:SetAllPoints()
+    contentBorder:SetColorTexture(0.2, 0.2, 0.2, 0.9) -- Светлее фона
+    contentBorder:SetPoint("TOPLEFT", contentBg, "TOPLEFT", -2, 2)
+    contentBorder:SetPoint("BOTTOMRIGHT", contentBg, "BOTTOMRIGHT", 2, -2)
+    
+    -- Заголовок контентной области в стиле Details!
+    contentTitle = contentFrame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+    contentTitle:SetPoint("TOPLEFT", contentFrame, "TOPLEFT", 20, -20)
+    contentTitle:SetText("Select Class")
+    contentTitle:SetTextColor(1, 1, 1) -- Белый текст
+    contentTitle:SetFont(contentTitle:GetFont(), 16, "OUTLINE")
+    
+    -- Настраиваем callback для SourceMenu
+    ns.SourceMenu:SetOnChangeCallback(function(event, source, role, class)
+        if event == "role_changed" then
+            currentRole = role
+            currentClass = nil
+            currentScreen = "class_selection"
+            contentTitle:SetText("Select Class")
+            UpdateDisplay()
+        elseif event == "show_class_selection" then
+            currentScreen = "class_selection"
+            contentTitle:SetText("Select Class")
+            UpdateDisplay()
+        elseif event == "class_selected" then
+            currentClass = class
+            currentScreen = "items"
+            contentTitle:SetText("Items for " .. ns:GetClassName(class))
+            -- Получаем первую доступную специализацию для выбранного класса и роли
+            local specs = ns.SourceManager:GetAvailableSpecs(class, role)
+            if #specs > 0 then
+                currentSpec = specs[1]
+            end
+            UpdateDisplay()
+        end
+    end)
+
     mainFrame:Hide()
     return mainFrame
 end
+
 
 -- Slash commands
 SLASH_BISFINDER1 = "/bisfinder"
@@ -250,14 +307,9 @@ SlashCmdList["BISFINDER"] = function()
         mainFrame:Hide()
     else
         mainFrame:Show()
-        local cls, ps = GetPlayerClassAndSpec()
-        for r,_ in pairs(ns.ItemData) do
-            if ns.ItemData[r][ps] then currentRole = r; break end
-        end
-        local rd = _G["BiSFinderRoleDD"]
-        if rd then UIDropDownMenu_SetText(rd, currentRole:upper()) end
-        UpdateSpecDropdown()
-        UpdateItemDisplay()
+        -- Инициализируем начальное состояние
+        currentScreen = "class_selection"
+        UpdateDisplay()
     end
 end
 
@@ -268,17 +320,24 @@ eventFrame:SetScript("OnEvent", function()
     if mainFrame:IsShown() then
         local _, ps = GetPlayerClassAndSpec()
         if ps and ps ~= currentSpec then
-            for r,_ in pairs(ns.ItemData) do
-                if ns.ItemData[r][ps] then
-                    currentRole = r
-                    currentSpec = ps
-                    break
+            -- Используем SourceManager для поиска роли
+        local allClasses = ns.SourceManager:GetAllClasses()
+        for _, className in ipairs(allClasses) do
+            local roles = ns.SourceManager:GetAvailableRoles(className)
+            for _, role in ipairs(roles) do
+                local specs = ns.SourceManager:GetAvailableSpecs(className, role)
+                for _, spec in ipairs(specs) do
+                    if spec == ps then
+                        currentRole = role
+                        currentSpec = ps
+                        break
+                    end
                 end
+                if currentRole then break end
             end
-            local rd = _G["BiSFinderRoleDD"]
-            if rd then UIDropDownMenu_SetText(rd, currentRole:upper()) end
-            UpdateSpecDropdown()
-            UpdateItemDisplay()
+            if currentRole then break end
+        end
+            UpdateDisplay()
         end
     end
 end)
@@ -286,6 +345,17 @@ end)
 -- Initialization on ADDON_LOADED
 local function OnLoad(self, event, aname)
     if aname == ADDON_NAME then
+        -- Инициализируем SourceManager
+        if ns.SourceManager then
+            -- Регистрируем модуль IcyVeins
+            if ns.IcyVeinsModule then
+                ns.SourceManager:RegisterSource(ns.IcyVeinsModule)
+            end
+            
+            -- Инициализируем все источники
+            ns.SourceManager:InitializeAllSources()
+        end
+        
         CreateMainFrame()
         print("|cFF00FF00BiSFinder|r loaded! /bisf /bisfinder")
         self:UnregisterEvent("ADDON_LOADED")
