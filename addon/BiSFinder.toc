@@ -1,4 +1,4 @@
-## Interface: 11200
+## Interface: 110002
 ## Title: BiSFinder
 ## Notes: Finder for best-in-slot gear per class/spec
 ## Author: YourName
