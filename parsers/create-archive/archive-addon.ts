@@ -91,8 +91,8 @@ class AddonArchiver {
    * Копирует файлы аддона во временную папку
    */
   private async copyAddonFiles(tempDir: string): Promise<void> {
-    const addonName = path.basename(this.options.addonPath);
-    const targetDir = path.join(tempDir, addonName);
+    // Создаем папку BiSFinder в корне архива
+    const targetDir = path.join(tempDir, 'BiSFinder');
     fs.mkdirSync(targetDir, { recursive: true });
 
     await this.copyDirectory(this.options.addonPath, targetDir);
@@ -146,21 +146,13 @@ class AddonArchiver {
   ): Promise<void> {
     try {
       // Используем системную команду zip
-      // Переходим в папку с аддоном и архивируем его содержимое
-      const addonDir = path.join(
-        sourceDir,
-        path.basename(this.options.addonPath)
-      );
-      const command = `cd "${addonDir}" && zip -r "${archivePath}" .`;
+      // Создаем архив с корневой папкой BiSFinder
+      const command = `cd "${sourceDir}" && zip -r "${archivePath}" .`;
       execSync(command, { stdio: 'pipe' });
     } catch (error) {
       // Если zip не доступен, пробуем tar
       try {
-        const addonDir = path.join(
-          sourceDir,
-          path.basename(this.options.addonPath)
-        );
-        const command = `cd "${addonDir}" && tar -czf "${archivePath.replace('.zip', '.tar.gz')}" .`;
+        const command = `cd "${sourceDir}" && tar -czf "${archivePath.replace('.zip', '.tar.gz')}" .`;
         execSync(command, { stdio: 'pipe' });
         console.log('📦 Создан TAR.GZ архив вместо ZIP');
       } catch (tarError) {

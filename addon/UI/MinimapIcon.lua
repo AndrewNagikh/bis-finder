@@ -19,6 +19,10 @@ local BiSFinderLDB = LibStub("LibDataBroker-1.1"):NewDataObject("BiSFinder", {
                     MainFrame:Hide()
                 else
                     MainFrame:Show()
+                    -- Автоматически открываем контент по специализации игрока
+                    if ns.AutoOpenPlayerSpec then
+                        ns:AutoOpenPlayerSpec()
+                    end
                 end
             else
                 -- Если MainFrame не существует, создаем его
@@ -26,6 +30,10 @@ local BiSFinderLDB = LibStub("LibDataBroker-1.1"):NewDataObject("BiSFinder", {
                     local frame = ns.CreateMainFrame()
                     if frame then
                         frame:Show()
+                        -- Автоматически открываем контент по специализации игрока
+                        if ns.AutoOpenPlayerSpec then
+                            ns:AutoOpenPlayerSpec()
+                        end
                     end
                 else
                     -- Используем команду как fallback

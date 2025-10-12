@@ -1,6 +1,6 @@
 local ADDON_NAME, ns = ...
 
-function ns:GetPlayerSpecId()
+function ns:GetPlayerSpecName()
     local _, _, classId = UnitClass("player")
     local specIndex = GetSpecialization()
     
@@ -8,13 +8,12 @@ function ns:GetPlayerSpecId()
         return nil
     end
     
-    local _, _, _, _, _, _, _, _, _, specId = GetSpecializationInfo(specIndex)
-    if not specId then
+    local specName, specDescription, specIcon, specBackground, specRole, specPrimaryStat, specId = GetSpecializationInfo(specIndex)
+    
+    if not specName then
         return nil
     end
     
-    -- Создаем ключ в формате ns.specMap: "ClassID_SpecID"
-    local specKey = classId .. "_" .. specId
-    
-    return specKey
+    -- Возвращаем specName как есть (может быть числом или строкой)
+    return specName
 end

@@ -4,31 +4,30 @@ ns.specMap = {
     tank = {
         -- Массив для сохранения порядка
         order = {
-            "protectionwarrior", "protectionpaladin", "brewmastermonk", 
-            "vengeancedemonhunter", "guardiandruid", "blooddeathknight"
+            73, 66, 268, 581, 104, 250
         },
         -- Данные специализаций
-        ["protectionwarrior"] = {
+        [73] = { -- Protection Warrior
             name = "Protection Warrior", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\Tank\\ProtectionWarrior.png"
         },
-        ["protectionpaladin"] = {
+        [66] = { -- Protection Paladin
             name = "Protection Paladin", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\Tank\\ProtectionPaladin.png"
         },
-        ["brewmastermonk"] = {
+        [268] = { -- Brewmaster Monk
             name = "Brewmaster Monk", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\Tank\\BrewmasterMonk.png"
         },
-        ["vengeancedemonhunter"] = {
+        [581] = { -- Vengeance Demon Hunter
             name = "Vengeance Demon Hunter", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\Tank\\VengeanceDemonHunter.png"
         },
-        ["guardiandruid"] = {
+        [104] = { -- Guardian Druid
             name = "Guardian Druid", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\Tank\\GuardianDruid.png"
         },
-        ["blooddeathknight"] = {
+        [250] = { -- Blood Death Knight
             name = "Blood Death Knight", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\Tank\\BloodDeathKnight.png"
         }
@@ -37,121 +36,110 @@ ns.specMap = {
     dps = {
         -- Массив для сохранения порядка
         order = {
-            "beastmasteryhunter", "marksmanshiphunter", "survivalhunter",
-            "havocdemonhunter", "frostdeathknight", "unholydeathknight",
-            "arcanemage", "frostmage", "firemage",
-            "elementalshaman", "enhancementshaman",
-            "destructionwarlock", "demonologywarlock", "afflictionwarlock",
-            "subtletyrogue", "assassinationrogue", "outlawrogue",
-            "furywarrior", "armswarrior",
-            "retributionpaladin",
-            "feraldruid", "balancedruid",
-            "devastationevoker", "augmentationevoker",
-            "shadowpriest",
-            "windwalkermonk"
+            253, 254, 255, 577, 251, 252, 62, 64, 63, 262, 263, 267, 266, 265, 261, 259, 260, 72, 71, 70, 103, 102, 1467, 1473, 258, 269
         },
         -- Данные специализаций
-        ["beastmasteryhunter"] = { 
+        [253] = { -- Beast Mastery Hunter
             name = "Beast Mastery Hunter", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\BeastMasteryHunter.png"
         },
-        ["marksmanshiphunter"] = { 
+        [254] = { -- Marksmanship Hunter
             name = "Marksmanship Hunter", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\MarksmanshipHunter.png"
         },
-        ["survivalhunter"] = { 
+        [255] = { -- Survival Hunter
             name = "Survival Hunter", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\SurvivalHunter.png"
         },
-        ["havocdemonhunter"] = { 
+        [577] = { -- Havoc Demon Hunter
             name = "Havoc Demon Hunter", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\HavocDemonHunter.png"
         },
-        ["frostdeathknight"] = { 
+        [251] = { -- Frost Death Knight
             name = "Frost Death Knight", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\FrostDeathKnight.png"
         },
-        ["unholydeathknight"] = { 
+        [252] = { -- Unholy Death Knight
             name = "Unholy Death Knight", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\UnholyDeathKnight.png"
         },
-        ["arcanemage"] = { 
+        [62] = { -- Arcane Mage
             name = "Arcane Mage", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\ArcaneMage.png"
         },
-        ["frostmage"] = { 
+        [64] = { -- Frost Mage
             name = "Frost Mage", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\FrostMage.png"
         },
-        ["firemage"] = { 
+        [63] = { -- Fire Mage
             name = "Fire Mage", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\FireMage.png"
         },
-        ["elementalshaman"] = { 
+        [262] = { -- Elemental Shaman
             name = "Elemental Shaman", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\ElementalShaman.png"
         },
-        ["enhancementshaman"] = { 
+        [263] = { -- Enhancement Shaman
             name = "Enhancement Shaman", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\EnhancementShaman.png"
         },
-        ["destructionwarlock"] = { 
+        [267] = { -- Destruction Warlock
             name = "Destruction Warlock", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\DestructionWarlock.png"
         },
-        ["demonologywarlock"] = { 
+        [266] = { -- Demonology Warlock
             name = "Demonology Warlock", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\DemonologyWarlock.png"
         },
-        ["afflictionwarlock"] = { 
+        [265] = { -- Affliction Warlock
             name = "Affliction Warlock", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\AfflictionWarlock.png"
         },
-        ["subtletyrogue"] = { 
+        [261] = { -- Subtlety Rogue
             name = "Subtlety Rogue", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\SubtletyRogue.png"
         },
-        ["assassinationrogue"] = { 
+        [259] = { -- Assassination Rogue
             name = "Assassination Rogue", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\AssassinationRogue.png"
         },
-        ["outlawrogue"] = { 
+        [260] = { -- Outlaw Rogue
             name = "Outlaw Rogue", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\OutlawRogue.png"
         },
-        ["furywarrior"] = { 
+        [72] = { -- Fury Warrior
             name = "Fury Warrior", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\FuryWarrior.png"
         },
-        ["armswarrior"] = { 
+        [71] = { -- Arms Warrior
             name = "Arms Warrior", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\ArmsWarrior.png"
         },
-        ["retributionpaladin"] = { 
+        [70] = { -- Retribution Paladin
             name = "Retribution Paladin", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\RetributionPaladin.png"
         },
-        ["feraldruid"] = { 
+        [103] = { -- Feral Druid
             name = "Feral Druid", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\FeralDruid.png"
         },
-        ["balancedruid"] = { 
+        [102] = { -- Balance Druid
             name = "Balance Druid", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\BalanceDruid.png"
         },
-        ["devastationevoker"] = { 
+        [1467] = { -- Devastation Evoker
             name = "Devastation Evoker", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\DevastationEvoker.png"
         },
-        ["augmentationevoker"] = { 
+        [1473] = { -- Augmentation Evoker
             name = "Augmentation Evoker", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\AugmentationEvoker.png"
         },
-        ["shadowpriest"] = { 
+        [258] = { -- Shadow Priest
             name = "Shadow Priest", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\ShadowPriest.png"
         },
-        ["windwalkermonk"] = { 
+        [269] = { -- Windwalker Monk
             name = "Windwalker Monk", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\WindwalkerMonk.png"
         },
@@ -160,35 +148,34 @@ ns.specMap = {
     healer = {
         -- Массив для сохранения порядка
         order = {
-            "restorationdruid", "restorationshaman", "disciplinepriest", 
-            "holypriest", "holypaladin", "preservationevoker", "mistweavermonk"
+            105, 264, 256, 257, 65, 1468, 270
         },
         -- Данные специализаций
-        ["restorationdruid"] = {
+        [105] = { -- Restoration Druid
             name = "Restoration Druid",
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\Healer\\RestorationDruid.png"
         },
-        ["restorationshaman"] = {
+        [264] = { -- Restoration Shaman
             name = "Restoration Shaman",
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\Healer\\RestorationShaman.png"
         },
-        ["disciplinepriest"] = {
+        [256] = { -- Discipline Priest
             name = "Discipline Priest",
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\Healer\\DisciplinePriest.png"
         },
-        ["holypriest"] = {
+        [257] = { -- Holy Priest
             name = "Holy Priest",
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\Healer\\HolyPriest.png"
         },
-        ["holypaladin"] = {
+        [65] = { -- Holy Paladin
             name = "Holy Paladin",
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\Healer\\HolyPaladin.png"
         },
-        ["preservationevoker"] = {
+        [1468] = { -- Preservation Evoker
             name = "Preservation Evoker",
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\Healer\\PreservationEvoker.png"
         },
-        ["mistweavermonk"] = {
+        [270] = { -- Mistweaver Monk
             name = "Mistweaver Monk",
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\Healer\\MistweaverMonk.png"
         }

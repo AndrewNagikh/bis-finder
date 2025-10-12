@@ -11,14 +11,14 @@ function ns:CreateMainFrame()
         
         -- Создаем кнопку закрытия
         ns:CreateCloseButton(MainFrame)
-        
-        -- Делаем MainFrame видимым
-        MainFrame:Show()
 
         -- Создаем SideBar и ContentFrame
         ns:CreateSideBar(MainFrame)
         ns:CreateMainContentFrame(MainFrame)
         ns:CreateRoleShooseFrame(MainFrame)
+        
+        -- Скрываем MainFrame по умолчанию
+        MainFrame:Hide()
     end
     return MainFrame
 end
@@ -41,6 +41,102 @@ local function InitializeAddon()
     end)
 end
 
+-- Функция для автоматического открытия контента по специализации игрока
+function ns:AutoOpenPlayerSpec()
+    if not ns.GetPlayerSpecName then
+        return
+    end
+    
+    local playerSpecName = ns:GetPlayerSpecName()
+    if not playerSpecName then
+        return
+    end
+    
+    -- Определяем роль игрока по специализации
+    local playerRole = nil
+    local specId = nil
+    
+    -- Ищем специализацию в specMap
+    for roleId, roleData in pairs(ns.specMap) do
+        -- Если playerSpecName является числом, ищем по ключу
+        if type(playerSpecName) == "number" then
+            if roleData[playerSpecName] then
+                playerRole = roleId
+                specId = playerSpecName
+                break
+            end
+        else
+            -- Если playerSpecName является строкой, ищем по названию
+            for specIdKey, specData in pairs(roleData) do
+                if type(specData) == "table" and specData.name == playerSpecName then
+                    playerRole = roleId
+                    specId = specIdKey
+                    break
+                end
+            end
+        end
+        
+        if playerRole then
+            break
+        end
+    end
+    
+    if not playerRole or not specId then
+        return
+    end
+    
+    -- Устанавливаем выбранную роль
+    if ns.UpdateSelectedRole then
+        ns:UpdateSelectedRole(playerRole)
+    end
+    
+    -- Устанавливаем выбранную специализацию
+    if ns.UpdateSelectedSpecId then
+        ns:UpdateSelectedSpecId(specId)
+    end
+    
+    -- Устанавливаем источник предметов по умолчанию (overroll)
+    if ns.UpdateSelectedItemSource then
+        ns:UpdateSelectedItemSource("overroll")
+    end
+    
+    -- Обновляем заголовок с названием специализации
+    if ns.UpdateMainContentTitleWithSpec then
+        local specDisplayName = playerSpecName
+        -- Если playerSpecName является числом, получаем правильное название из specMap
+        if type(playerSpecName) == "number" and ns.specMap[playerRole] and ns.specMap[playerRole][playerSpecName] then
+            specDisplayName = ns.specMap[playerRole][playerSpecName].name
+        end
+        ns:UpdateMainContentTitleWithSpec(specDisplayName)
+    end
+    
+    -- Скрываем старые экраны перед показом новых
+    if ns.RoleShooseFrame then
+        ns.RoleShooseFrame:Hide()
+    end
+    if ns.SpecChooseFrame then
+        ns.SpecChooseFrame:Hide()
+    end
+    -- Скрываем кнопки специализаций
+    if ns.specButtons then
+        for _, button in pairs(ns.specButtons) do
+            if button and button.Hide then
+                button:Hide()
+            end
+        end
+    end
+    
+    -- Показываем ItemSourceChooseFrame
+    if ns.CreateItemSourceChooseFrame and ns.MainContentFrame then
+        ns:CreateItemSourceChooseFrame(ns.MainContentFrame)
+    end
+    
+    -- Показываем контент предметов
+    if ns.CreateIcyVeinsContent then
+        ns:CreateIcyVeinsContent()
+    end
+end
+
 -- Обработчик события загрузки аддона
 local frame = CreateFrame("Frame")
 frame:RegisterEvent("ADDON_LOADED")
@@ -55,6 +151,18 @@ SlashCmdList["BISF"] = function()
     local MainFrame = ns:CreateMainFrame()
     if MainFrame then
         MainFrame:Show()
+        -- Автоматически открываем контент по специализации игрока
+        ns:AutoOpenPlayerSpec()
+    end
+end
+
+SLASH_BISFINDER1 = "/bisfinder"
+SlashCmdList["BISFINDER"] = function()
+    local MainFrame = ns:CreateMainFrame()
+    if MainFrame then
+        MainFrame:Show()
+        -- Автоматически открываем контент по специализации игрока
+        ns:AutoOpenPlayerSpec()
     end
 end
 
