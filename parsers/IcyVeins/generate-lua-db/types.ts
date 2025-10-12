@@ -19,6 +19,12 @@ export interface ItemData {
   healer: RoleData;
 }
 
+export interface IcyVeinsDataStructure {
+  overroll: ItemData;
+  raid: ItemData;
+  mythic: ItemData;
+}
+
 export interface ClassSpecMapping {
   [className: string]: {
     tank: string[];

@@ -1,18 +1,29 @@
 import { Page } from '@playwright/test';
 import { sleep } from 'lib/helpers';
+import parseRows from './parseRows';
 
-const selectors = {
-  bisButton: 'span.toc_page_list_item > a:has-text("Gear and Best in Slot")',
-  adBlockerButton: 'button:has-text("or continue with ad blocker")',
-  rotationSwitches: '#area_1 table.rotation_switches.centered',
-} as const;
+export type TIcyVeinsSourceMap = 'overrall' | 'raid' | 'mythic';
+
+const icyVeinsSourceMap = {
+  overrall: '#area_1',
+  raid: '#area_2',
+  mythic: '#area_3',
+};
 
 export async function safeGetRowData(
   page: Page,
+  icyVeinsSource: TIcyVeinsSourceMap = 'overrall',
   specLink: string,
   retryCount: number = 0,
   reloadAttempted: boolean = false
 ): Promise<{ data: any[]; selector: string; rowCount: number }> {
+  const area = icyVeinsSourceMap[icyVeinsSource];
+  const selectors = {
+    bisButton: 'span.toc_page_list_item > a:has-text("Gear and Best in Slot")',
+    adBlockerButton: 'button:has-text("or continue with ad blocker")',
+    rotationSwitches: `${area} table.rotation_switches.centered`,
+  } as const;
+
   // Защита от бесконечной рекурсии
   if (reloadAttempted && retryCount > 3) {
     console.log(
@@ -20,6 +31,7 @@ export async function safeGetRowData(
     );
     return { data: [], selector: 'max_retries', rowCount: 0 };
   }
+
   try {
     // Проверяем, что страница еще активна
     if (page.isClosed()) {
@@ -49,14 +61,41 @@ export async function safeGetRowData(
     const isRotationSelectorPresent =
       (await page.locator(selectors.rotationSwitches).count()) > 0;
 
+    // Отладочная информация
+    console.log(`   🔍 Отладка для источника ${icyVeinsSource}:`);
+    console.log(`   📍 Область: ${area}`);
+    console.log(
+      `   🔄 Переключатели ротации: ${isRotationSelectorPresent ? 'найдены' : 'не найдены'}`
+    );
+
+    // Проверяем наличие различных элементов
+    const areaExists = (await page.locator(area).count()) > 0;
+    const imageBlockExists =
+      (await page.locator(`div${area}.image_block_content`).count()) > 0;
+    const selectedImageBlockExists =
+      (await page.locator(`div${area}.image_block_content.selected`).count()) >
+      0;
+    const tableExists = (await page.locator(`${area} table`).count()) > 0;
+
+    console.log(
+      `   📦 Элемент ${area}: ${areaExists ? 'найден' : 'не найден'}`
+    );
+    console.log(
+      `   🖼️ image_block_content: ${imageBlockExists ? 'найден' : 'не найден'}`
+    );
+    console.log(
+      `   ✅ selected image_block_content: ${selectedImageBlockExists ? 'найден' : 'не найден'}`
+    );
+    console.log(
+      `   📊 Таблица в области: ${tableExists ? 'найдена' : 'не найдена'}`
+    );
+
     let evalSelector: string;
 
     // Специфичные селекторы для определенных страниц
     const specificSelectors: Record<string, string> = {
-      'augmentation-evoker-pve-dps-gear-best-in-slot':
-        'div#area_1 span:nth-of-type(2) table tbody tr',
-      'holy-priest-pve-healing-gear-best-in-slot':
-        'div div:nth-of-type(2) table tbody tr',
+      'augmentation-evoker-pve-dps-gear-best-in-slot': `div${area} span:nth-of-type(2) table tbody tr`,
+      'holy-priest-pve-healing-gear-best-in-slot': `div${icyVeinsSource === 'mythic' ? '#mplus' : icyVeinsSource === 'raid' ? '#raid' : '#overall'} table tbody tr`,
     };
 
     // Проверяем, есть ли специфичный селектор для данной страницы
@@ -65,22 +104,47 @@ export async function safeGetRowData(
     );
 
     if (specificSelector) {
-      evalSelector = specificSelectors[specificSelector]!;
+      evalSelector = specificSelectors[specificSelector] as string;
     } else if (isRotationSelectorPresent) {
-      evalSelector = 'div#area_1 div:nth-of-type(2) table tbody tr';
+      evalSelector = `div${area} div:nth-of-type(2) table tbody tr`;
     } else {
-      evalSelector = 'div#area_1.image_block_content.selected table tbody tr';
+      // Для overrall (#area_1) используем селектор с selected, для остальных - без
+      if (icyVeinsSource === 'overrall') {
+        const selectedSelector = `div${area}.image_block_content.selected table tbody tr`;
+        const count = await page.locator(selectedSelector).count();
+        if (count > 0) {
+          evalSelector = selectedSelector;
+          console.log(
+            `   🎯 Выбран селектор: ${selectedSelector} (найдено: ${count} элементов)`
+          );
+        } else {
+          evalSelector = `${area} table tbody tr`;
+          console.log(`   🎯 Fallback селектор: ${evalSelector}`);
+        }
+      } else {
+        // Для raid и mythic используем упрощенный селектор без tbody
+        evalSelector = `${area} table tr`;
+        const count = await page.locator(evalSelector).count();
+        console.log(
+          `   🎯 Выбран селектор: ${evalSelector} (найдено: ${count} элементов)`
+        );
+      }
     }
 
-    // Ждем данные
+    // Получаем данные напрямую без waitForSelector
     let rowDataCount = 0;
     try {
-      await page.waitForSelector(evalSelector, {
-        timeout: 20000,
-        state: 'visible',
-      });
       rowDataCount = await page.locator(evalSelector).count();
-    } catch {
+      console.log(
+        `   📊 Найдено строк с селектором ${evalSelector}: ${rowDataCount}`
+      );
+
+      if (rowDataCount === 0) {
+        console.log(`   ⚠️ Селектор не нашел элементов: ${evalSelector}`);
+        return { data: [], selector: evalSelector, rowCount: 0 };
+      }
+    } catch (error) {
+      console.log(`   ⚠️ Ошибка при поиске селектора: ${evalSelector}`);
       return { data: [], selector: evalSelector, rowCount: 0 };
     }
 
@@ -92,7 +156,13 @@ export async function safeGetRowData(
         await sleep(Math.random() * 3000 + 2000); // Ждем после перезагрузки
 
         // Повторяем попытку с флагом reloadAttempted = true и увеличиваем retryCount
-        return safeGetRowData(page, specLink, retryCount + 1, true);
+        return safeGetRowData(
+          page,
+          icyVeinsSource,
+          specLink,
+          retryCount + 1,
+          true
+        );
       } else {
         console.log('Данные не найдены даже после перезагрузки страницы');
         return { data: [], selector: evalSelector, rowCount: 0 };
@@ -100,95 +170,7 @@ export async function safeGetRowData(
     }
 
     // Извлекаем данные
-    const rowsData = await page.locator(evalSelector).evaluateAll((rows) => {
-      return rows
-        .map((row) => {
-          const cells = Array.from(row.querySelectorAll('td'));
-          if (cells.length < 3) return null;
-          const itemType = cells[0]?.textContent?.trim() || '';
-
-          // Проверяем, есть ли списки в ячейках (множественные предметы)
-          const itemList = cells[1]?.querySelector('ul');
-          const sourceList = cells[2]?.querySelector('ul');
-
-          if (itemList && sourceList) {
-            // Обрабатываем случай с множественными предметами
-            const itemElements = Array.from(itemList.querySelectorAll('li'));
-            const sourceElements = Array.from(
-              sourceList.querySelectorAll('li')
-            );
-
-            const items = [];
-            for (let i = 0; i < itemElements.length; i++) {
-              const itemElement = itemElements[i];
-              const sourceElement = sourceElements[i];
-
-              let itemId = '';
-              let itemName = '';
-              const source = sourceElement?.textContent?.trim() || '';
-
-              // Ищем ссылку на предмет в элементе
-              const aElement = itemElement?.querySelector(
-                'a[data-wowhead]'
-              ) as HTMLAnchorElement;
-              const spanElement = itemElement?.querySelector(
-                'span[data-wowhead]'
-              ) as HTMLSpanElement;
-
-              if (spanElement) {
-                const dataWowhead = spanElement.getAttribute('data-wowhead');
-                const match = dataWowhead?.match(/item=(\d+)/);
-                itemName = spanElement.textContent?.trim() || '';
-                if (match) itemId = match[1] as string;
-              }
-              if (aElement) {
-                const dataWowhead = aElement.getAttribute('data-wowhead') || '';
-                const match = dataWowhead.match(/item=(\d+)/);
-                itemName = aElement.textContent?.trim() || '';
-                if (match) itemId = match[1] as string;
-              }
-
-              if (itemId && itemName) {
-                items.push({ itemType, itemId, itemName, source });
-              }
-            }
-
-            return items.length > 0 ? items : null;
-          } else {
-            // Обрабатываем обычный случай (один предмет)
-            let itemId = '';
-            let itemName = '';
-            let source = '';
-
-            const aElement = cells[1]?.querySelector(
-              'a[data-wowhead]'
-            ) as HTMLAnchorElement;
-            const spanElement = cells[1]?.querySelector(
-              'span[data-wowhead]'
-            ) as HTMLSpanElement;
-
-            if (spanElement) {
-              const dataWowhead = spanElement.getAttribute('data-wowhead');
-              const match = dataWowhead?.match(/item=(\d+)/);
-              itemName = spanElement.textContent?.trim() || '';
-              if (match) itemId = match[1] as string;
-            }
-            if (aElement) {
-              const dataWowhead = aElement.getAttribute('data-wowhead') || '';
-              const match = dataWowhead.match(/item=(\d+)/);
-              itemName = aElement.textContent?.trim() || '';
-              if (match) itemId = match[1] as string;
-            }
-
-            source = cells[2]?.textContent?.trim() || '';
-            return itemId && itemName
-              ? { itemType, itemId, itemName, source }
-              : null;
-          }
-        })
-        .filter(Boolean)
-        .flat(); // Разворачиваем массивы предметов в плоский массив
-    });
+    const rowsData = await parseRows(page, evalSelector);
 
     // Проверяем, что после извлечения данных у нас есть предметы
     if (rowsData.length === 0 && !reloadAttempted) {
@@ -197,7 +179,13 @@ export async function safeGetRowData(
       await sleep(Math.random() * 3000 + 2000); // Ждем после перезагрузки
 
       // Повторяем попытку с флагом reloadAttempted = true и увеличиваем retryCount
-      return safeGetRowData(page, specLink, retryCount + 1, true);
+      return safeGetRowData(
+        page,
+        icyVeinsSource,
+        specLink,
+        retryCount + 1,
+        true
+      );
     }
 
     return { data: rowsData, selector: evalSelector, rowCount: rowDataCount };

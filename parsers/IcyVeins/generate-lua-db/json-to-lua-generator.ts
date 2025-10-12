@@ -4,8 +4,8 @@ import {
   ItemData,
   ClassSpecMapping,
   Role,
-  ItemInfo,
   RoleData,
+  IcyVeinsDataStructure,
   LuaGeneratorOptions,
 } from './types';
 
@@ -13,14 +13,26 @@ import {
  * Генератор Lua файла базы данных из JSON файлов с данными о предметах
  */
 export class LuaDataGenerator {
-  private itemData: ItemData;
+  private itemData: IcyVeinsDataStructure;
   private classSpecMapping: ClassSpecMapping = {};
 
   constructor() {
     this.itemData = {
-      tank: {},
-      dps: {},
-      healer: {},
+      overroll: {
+        tank: {},
+        dps: {},
+        healer: {},
+      },
+      raid: {
+        tank: {},
+        dps: {},
+        healer: {},
+      },
+      mythic: {
+        tank: {},
+        dps: {},
+        healer: {},
+      },
     };
   }
 
@@ -150,19 +162,22 @@ export class LuaDataGenerator {
     const mapping: ClassSpecMapping = {};
 
     const roles: Role[] = ['tank', 'dps', 'healer'];
+    const sources = ['overroll', 'raid', 'mythic'] as const;
 
     roles.forEach((role) => {
-      const roleData = this.itemData[role];
-      Object.keys(roleData).forEach((specName) => {
-        const className = this.extractClassName(specName);
+      sources.forEach((source) => {
+        const roleData = this.itemData[source][role];
+        Object.keys(roleData).forEach((specName) => {
+          const className = this.extractClassName(specName);
 
-        if (!mapping[className]) {
-          mapping[className] = { tank: [], dps: [], healer: [] };
-        }
+          if (!mapping[className]) {
+            mapping[className] = { tank: [], dps: [], healer: [] };
+          }
 
-        if (!mapping[className]?.[role].includes(specName)) {
-          mapping[className]?.[role].push(specName);
-        }
+          if (!mapping[className]?.[role].includes(specName)) {
+            mapping[className]?.[role].push(specName);
+          }
+        });
       });
     });
 
@@ -180,136 +195,42 @@ export class LuaDataGenerator {
     console.log('Загрузка данных из JSON файлов...');
 
     let hasErrors = false;
+    const sources = ['overroll', 'raid', 'mythic'] as const;
+    const roles = [
+      { file: tankFile, role: 'tank' as Role },
+      { file: dpsFile, role: 'dps' as Role },
+      { file: healerFile, role: 'healer' as Role },
+    ];
 
-    // Загружаем данные для танков
-    if (fs.existsSync(tankFile)) {
-      const tankData = this.readJsonFile<RoleData>(tankFile);
-      if (tankData) {
-        this.itemData.tank = tankData;
-        console.log(
-          `✅ Tank данные загружены: ${Object.keys(tankData).length} специализаций`
-        );
+    // Загружаем данные для каждой роли
+    roles.forEach(({ file, role }) => {
+      if (fs.existsSync(file)) {
+        const roleData = this.readJsonFile<Record<string, any>>(file);
+        if (roleData) {
+          // Извлекаем данные для каждого источника
+          sources.forEach((source) => {
+            Object.keys(roleData).forEach((specName) => {
+              if (roleData[specName] && roleData[specName][source]) {
+                this.itemData[source][role][specName] =
+                  roleData[specName][source];
+              }
+            });
+          });
+          console.log(
+            `✅ ${role.toUpperCase()} данные загружены: ${Object.keys(roleData).length} специализаций`
+          );
+        } else {
+          hasErrors = true;
+        }
       } else {
-        hasErrors = true;
+        console.warn(`⚠️  Файл ${file} не найден`);
       }
-    } else {
-      console.warn(`⚠️  Файл ${tankFile} не найден`);
-    }
-
-    // Загружаем данные для DPS
-    if (fs.existsSync(dpsFile)) {
-      const dpsData = this.readJsonFile<RoleData>(dpsFile);
-      if (dpsData) {
-        this.itemData.dps = dpsData;
-        console.log(
-          `✅ DPS данные загружены: ${Object.keys(dpsData).length} специализаций`
-        );
-      } else {
-        hasErrors = true;
-      }
-    } else {
-      console.warn(`⚠️  Файл ${dpsFile} не найден`);
-    }
-
-    // Загружаем данные для хилеров
-    if (fs.existsSync(healerFile)) {
-      const healerData = this.readJsonFile<RoleData>(healerFile);
-      if (healerData) {
-        this.itemData.healer = healerData;
-        console.log(
-          `✅ Healer данные загружены: ${Object.keys(healerData).length} специализаций`
-        );
-      } else {
-        hasErrors = true;
-      }
-    } else {
-      console.warn(`⚠️  Файл ${healerFile} не найден`);
-    }
+    });
 
     // Генерируем маппинг классов и специализаций для внутреннего использования
     this.classSpecMapping = this.generateClassSpecMapping();
-    console.log(
-      '✅ Маппинг классов и специализаций сгенерирован (для внутреннего использования)'
-    );
 
     return !hasErrors;
-  }
-
-  /**
-   * Генерирует отдельный файл ClassSpecMapping.lua
-   */
-  public generateClassSpecMappingFile(outputPath: string): boolean {
-    console.log('Генерация ClassSpecMapping.lua файла...');
-
-    const luaContent = `local ADDON_NAME, ns = ...
-
--- Маппинг классов и специализаций для IcyVeins
--- Автоматически сгенерированный файл
--- Сгенерировано: ${new Date().toISOString()}
-
-ns.IcyVeinsClassSpecMapping = ${this.jsObjectToLuaTable(this.classSpecMapping, 0)}
-
--- Функция получения доступных специализаций для класса и роли
-function ns:GetAvailableSpecs(className, role)
-    if ns.IcyVeinsClassSpecMapping and ns.IcyVeinsClassSpecMapping[className] and ns.IcyVeinsClassSpecMapping[className][role] then
-        return ns.IcyVeinsClassSpecMapping[className][role]
-    end
-    return {}
-end
-
--- Функция получения всех доступных ролей для класса
-function ns:GetAvailableRoles(className)
-    if not ns.IcyVeinsClassSpecMapping or not ns.IcyVeinsClassSpecMapping[className] then
-        return {}
-    end
-    
-    local roles = {}
-    for role, specs in pairs(ns.IcyVeinsClassSpecMapping[className]) do
-        if #specs > 0 then
-            table.insert(roles, role)
-        end
-    end
-    return roles
-end
-
--- Функция получения всех классов
-function ns:GetAllClasses()
-    if not ns.IcyVeinsClassSpecMapping then
-        return {}
-    end
-    
-    local classes = {}
-    for className, _ in pairs(ns.IcyVeinsClassSpecMapping) do
-        table.insert(classes, className)
-    end
-    return classes
-end
-
--- Функция проверки, поддерживает ли класс роль
-function ns:ClassSupportsRole(className, role)
-    local specs = self:GetAvailableSpecs(className, role)
-    return #specs > 0
-end`;
-
-    try {
-      // Создаем директорию если не существует
-      const dir = path.dirname(outputPath);
-      if (!fs.existsSync(dir)) {
-        fs.mkdirSync(dir, { recursive: true });
-      }
-
-      fs.writeFileSync(outputPath, luaContent, 'utf-8');
-      console.log(
-        `✅ ClassSpecMapping.lua файл успешно сгенерирован: ${outputPath}`
-      );
-      return true;
-    } catch (error) {
-      console.error(
-        '❌ Ошибка записи ClassSpecMapping.lua файла:',
-        (error as Error).message
-      );
-      return false;
-    }
   }
 
   /**
@@ -325,31 +246,7 @@ end`;
 local ADDON_NAME, ns = ...
 
 -- База данных предметов IcyVeins по ролям и специализациям
-ns.IcyVeinsData = ${this.jsObjectToLuaTable(this.itemData, 0)}
-
--- Маппинг классов WoW к доступным специализациям по ролям
--- ClassSpecMapping теперь находится в отдельном модуле ClassSpecMapping.lua
-
--- Функция получения данных для роли и специализации
-function ns:GetItemsForSpec(role, specName)
-    if not self.IcyVeinsData[role] or not self.IcyVeinsData[role][specName] then
-        return {}
-    end
-    return self.IcyVeinsData[role][specName]
-end
-
--- Функции GetAvailableSpecs и GetAvailableRoles теперь находятся в ClassSpecMapping.lua
-
-print("|cFF00FF00BiSFinder IcyVeins Data|r: База данных загружена с " .. 
-      (function()
-          local totalSpecs = 0
-          for role, roleData in pairs(ns.IcyVeinsData) do
-              for spec, items in pairs(roleData) do
-                  totalSpecs = totalSpecs + 1
-              end
-          end
-          return totalSpecs
-      end)() .. " специализациями")`;
+ns.IcyVeinsData = ${this.jsObjectToLuaTable(this.itemData, 0)}`;
 
     try {
       // Создаем директорию если не существует
@@ -375,28 +272,45 @@ print("|cFF00FF00BiSFinder IcyVeins Data|r: База данных загруже
 
     let totalSpecs = 0;
     let totalItems = 0;
+    const sourceStats: Record<string, number> = {
+      overroll: 0,
+      raid: 0,
+      mythic: 0,
+    };
 
     const roles: Role[] = ['tank', 'dps', 'healer'];
 
-    roles.forEach((role) => {
-      const roleData = this.itemData[role];
-      const specCount = Object.keys(roleData).length;
-      totalSpecs += specCount;
+    const sources = ['overroll', 'raid', 'mythic'] as const;
 
+    roles.forEach((role) => {
       let roleItems = 0;
-      Object.values(roleData).forEach((items: ItemInfo[]) => {
-        roleItems += items.length;
+      let roleSpecs = 0;
+
+      sources.forEach((source) => {
+        const roleData = this.itemData[source][role];
+        const specCount = Object.keys(roleData).length;
+        roleSpecs = Math.max(roleSpecs, specCount);
+
+        Object.values(roleData).forEach((specData: any[]) => {
+          roleItems += specData.length;
+          sourceStats[source] += specData.length;
+        });
       });
+
+      totalSpecs += roleSpecs;
       totalItems += roleItems;
 
       console.log(
-        `📊 ${role.toUpperCase()}: ${specCount} специализаций, ${roleItems} предметов`
+        `📊 ${role.toUpperCase()}: ${roleSpecs} специализаций, ${roleItems} предметов`
       );
     });
 
     console.log(
       `📈 ИТОГО: ${totalSpecs} специализаций, ${totalItems} предметов`
     );
+    console.log(`   • Overall: ${sourceStats.overroll} предметов`);
+    console.log(`   • Raid: ${sourceStats.raid} предметов`);
+    console.log(`   • Mythic: ${sourceStats.mythic} предметов`);
     console.log(`🎮 Классы: ${Object.keys(this.classSpecMapping).join(', ')}`);
     console.log('=====================================\n');
   }
@@ -404,7 +318,7 @@ print("|cFF00FF00BiSFinder IcyVeins Data|r: База данных загруже
   /**
    * Получить загруженные данные
    */
-  public getItemData(): ItemData {
+  public getItemData(): IcyVeinsDataStructure {
     return this.itemData;
   }
 
@@ -453,13 +367,5 @@ export async function generateLuaDatabase(
   // Генерация Lua файла
   const dataFileSuccess = generator.generateLuaFile(config.outputPath);
 
-  // Генерация ClassSpecMapping.lua файла
-  const classSpecMappingPath = config.outputPath.replace(
-    'IcyVeinsData.lua',
-    'ClassSpecMapping.lua'
-  );
-  const mappingFileSuccess =
-    generator.generateClassSpecMappingFile(classSpecMappingPath);
-
-  return dataFileSuccess && mappingFileSuccess;
+  return dataFileSuccess;
 }
