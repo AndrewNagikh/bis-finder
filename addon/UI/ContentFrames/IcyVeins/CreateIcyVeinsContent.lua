@@ -50,23 +50,25 @@ function ns:CreateIcyVeinsContent(parent)
         return contentFrame
     end
     
-    -- Группируем предметы по itemType
+    -- Группируем предметы по itemType, сохраняя порядок
     local itemsByType = {}
+    local itemTypeOrder = {} -- Массив для сохранения порядка типов предметов
+    
     for _, item in ipairs(specData) do
         if not itemsByType[item.itemType] then
             itemsByType[item.itemType] = {}
+            table.insert(itemTypeOrder, item.itemType) -- Сохраняем порядок появления
         end
         table.insert(itemsByType[item.itemType], item)
     end
     
-    -- Создаем строки для каждого типа предметов
+    -- Создаем строки для каждого типа предметов в правильном порядке
     local itemRows = {}
-    local i = 1
-    for itemType, items in pairs(itemsByType) do
+    for i, itemType in ipairs(itemTypeOrder) do
+        local items = itemsByType[itemType]
         local yOffset = -((i - 1) * (60 + 0)) -- 60px высота строки
         local row = ns:CreateItemRow(contentFrame, itemType, items, yOffset)
         itemRows[itemType] = row
-        i = i + 1
     end
     
     -- Сохраняем ссылки на строки
@@ -115,6 +117,9 @@ function ns:UpdateIcyVeinsScrollContent()
             local rowHeight = 60
             local totalHeight = rowCount * rowHeight
             ns.ContentFrame:SetHeight(totalHeight)
+        else
+            -- Если нет строк, устанавливаем минимальную высоту
+            ns.ContentFrame:SetHeight(100)
         end
     end
 end
