@@ -2,75 +2,83 @@
 
 <div align="center">
 
-![BiSFinder Logo](addon/UI/logo.png)
+![BiSFinder Logo](addon/Textures/logo.png)
 
-**Найдите лучшее снаряжение для вашей специализации в World of Warcraft**
+**Find the best gear for your specialization in World of Warcraft**
 
 [![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/yourusername/BiSFinder/releases)
-[![WoW Version](https://img.shields.io/badge/WoW%20Version-11.0.2-green.svg)](https://worldofwarcraft.com)
+[![WoW Version](https://img.shields.io/badge/WoW%20Version-11.2.0-green.svg)](https://worldofwarcraft.com)
 
 </div>
 
 ---
 
-## 📖 Описание
+## 📖 Description
 
-**BiSFinder** — это аддон для World of Warcraft, который помогает игрокам находить лучшее снаряжение (Best-in-Slot) для их класса и специализации.
+**BiSFinder** is a World of Warcraft addon that helps players find the best gear (Best-in-Slot) for their class and specialization.
 
-### ✨ Основные возможности
+### ✨ Key Features
 
-- 🎮 **Автоматическое определение специализации** — аддон автоматически определяет вашу текущую специализацию
-- 🎯 **Фильтрация по ролям** — Tank, DPS, Healer
+- 🎮 **Automatic specialization detection** — the addon automatically detects your current specialization
+- 🎯 **Role filtering** — Tank, DPS, Healer
+- 🏆 **Item information** — item IDs, names, sources
+- 🗺️ **Minimap icon** — quick access to the addon interface
 
-## 🚀 Установка
+## 🚀 Installation
 
-### Через CurseForge (Рекомендуется)
-1. Перейдите на [страницу аддона в CurseForge](https://www.curseforge.com/wow/addons/bisfinder)
-2. Нажмите кнопку "Install" или "Download"
-3. Аддон автоматически установится через CurseForge App
+### Via CurseForge (Recommended)
+1. Go to the [addon page on CurseForge](https://www.curseforge.com/wow/addons/bisfinder)
+2. Click "Install" or "Download"
+3. The addon will automatically install via CurseForge App
 
-### Ручная установка
-1. Скачайте последнюю версию аддона из [Releases](https://github.com/yourusername/BiSFinder/releases)
-2. Распакуйте архив в папку `World of Warcraft\_retail_\Interface\AddOns\`
-3. Убедитесь, что папка называется `BiSFinder`
-4. Перезапустите игру
+### Manual Installation
+1. Download the latest version from [Releases](https://github.com/yourusername/BiSFinder/releases)
+2. Extract the archive to `World of Warcraft\_retail_\Interface\AddOns\`
+3. Make sure the folder is named `BiSFinder`
+4. Restart the game
 
-## 🎮 Использование
+## 🎮 Usage
 
-### Запуск аддона
-- **Команда в чате**: `/bisfinder` или `/bisf` — автоматически открывает контент для вашей специализации
-- **Иконка на миникарте**: кликните по иконке аддона
-- **Команды миникарты**:
-  - `/bisfinder minimap show` — показать иконку
-  - `/bisfinder minimap hide` — скрыть иконку
-  - `/bisfinder minimap toggle` — переключить видимость
+### Launching the Addon
+- **Chat command**: `/bisfinder` or `/bisf` — automatically opens content for your specialization
+- **Minimap icon**: click on the addon icon
+- **Minimap commands**:
+  - `/bisfinder minimap show` — show icon
+  - `/bisfinder minimap hide` — hide icon
+  - `/bisfinder minimap toggle` — toggle visibility
 
-### Интерфейс аддона
+### Addon Interface
 
-Аддон автоматически определяет вашу текущую специализацию и показывает соответствующий контент. При этом вы можете переключиться на любую другую роль или специализацию.
+The addon automatically detects your current specialization and shows the corresponding content. You can switch to any other role or specialization.
 
-#### 🎯 Выбор роли
-Выберите роль в игре:
-- **🛡️ Tank** — танк
-- **⚔️ DPS** — урон
-- **💚 Healer** — лекарь
+#### 🎯 Role Selection
+Choose your role in the game:
+- **🛡️ Tank** — tank
+- **⚔️ DPS** — damage dealer
+- **💚 Healer** — healer
 
-#### 🎭 Выбор специализации
-После выбора роли выберите специализацию из списка доступных для выбранного класса.
+#### 🎭 Specialization Selection
+After selecting a role, choose a specialization from the list available for the selected class.
 
-#### 📋 Просмотр снаряжения
-Аддон отобразит список рекомендуемого снаряжения с информацией о:
-- **Типе предмета** (шлем, нагрудник, оружие и т.д.)
-- **Названии предмета**
-- **Источнике получения** (рейд, подземелье, PvP и т.д.)
+#### 📋 Gear Viewing
+The addon will display a list of recommended gear with information about:
+- **Item type** (helmet, chest, weapon, etc.)
+- **Item name**
+- **Source** (raid, dungeon, PvP, etc.)
 
+## 🔧 Compatibility
 
-- **CurseForge**: [Страница аддона](https://www.curseforge.com/wow/addons/bisfinder)
+- **WoW Version**: 11.2.0+
+- **Interface**: 11200
+
+## 📞 Support
+
+- **CurseForge**: [Addon page](https://www.curseforge.com/wow/addons/bisfinder)
 
 ---
 
 <div align="center">
 
-**Сделано с ❤️ для сообщества World of Warcraft**
+**Made with ❤️ for the World of Warcraft community**
 
 </div>
