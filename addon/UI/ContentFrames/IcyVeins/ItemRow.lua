@@ -41,15 +41,25 @@ function ns:CreateItemRow(parent, itemType, items, yOffset)
         -- Создаем тултип
         button:SetScript("OnEnter", function(self)
             GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
-            GameTooltip:SetHyperlink("item:" .. (item.itemId or ""))
             
-            -- Добавляем Source информацию
-            if item.source then
-                GameTooltip:AddLine(" ")
-                GameTooltip:AddLine("Source: " .. item.source, 1, 1, 1)
-            end
-            
+            -- Показываем информацию о предмете
+            local itemLink = "item:" .. (item.itemId or "")
+            GameTooltip:SetHyperlink(itemLink)
             GameTooltip:Show()
+            
+            -- Добавляем Source информацию с небольшой задержкой
+            if item.source then
+                C_Timer.After(0.05, function()
+                    if GameTooltip:IsOwned(self) then
+                        GameTooltip:AddLine(" ")
+                        GameTooltip:AddLine("----------------------------------------", 0.5, 0.5, 0.5, 1)
+                        GameTooltip:AddLine("|cffffd700SOURCE:|r", 1, 1, 1, 1)
+                        GameTooltip:AddLine("|cff00ff00" .. item.source .. "|r", 1, 1, 1, 1)
+                        GameTooltip:AddLine("----------------------------------------", 0.5, 0.5, 0.5, 1)
+                        GameTooltip:Show()
+                    end
+                end)
+            end
         end)
         
         button:SetScript("OnLeave", function(self)

@@ -9,7 +9,7 @@ import { processRoleFiles, formatRoleName } from './lib/helpers';
 test.describe.configure({ mode: 'parallel' });
 
 test('find Mythic+ links with stealth protection', async () => {
-  test.setTimeout(900000); // 5 минут на тест
+  test.setTimeout(900000);
   const role = process.env.ROLE;
   const resultObj: Record<
     string,

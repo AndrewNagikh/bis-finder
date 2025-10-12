@@ -3,8 +3,8 @@
 ## Notes: Finder for best-in-slot gear per class/spec
 ## Author: YourName
 ## Version: 1.0
-## SavedVariables: BiSFinderDB
-## OptionalDeps: LibDBIcon-1.0
+## SavedVariables: BiSFinderDB, BiSFinderMinimapDB
+## OptionalDeps: LibDataBroker-1.1, LibDBIcon-1.0
 
 # Библиотеки
 Libs\LibStub\LibStub.lua
@@ -32,3 +32,4 @@ UI/ContentFrames/ItemSourceChoose/CreateItemSourceChooseFrame.lua
 UI/ContentFrames/IcyVeins/ItemRow.lua
 UI/ContentFrames/IcyVeins/CreateIcyVeinsContent.lua
 Sources/IcyVeins/IcyVeinsData.lua
+UI/MinimapIcon.lua
