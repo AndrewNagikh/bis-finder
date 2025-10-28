@@ -16,7 +16,6 @@ test('find Mythic+ links with stealth protection', async () => {
     { overroll: any[]; raid: any[]; mythic: any[] }
   > = {};
 
-  // Определяем источники данных для парсинга
   const sources: TIcyVeinsSourceMap[] = ['overrall', 'raid', 'mythic'];
 
   await processRoleFiles(
@@ -109,9 +108,9 @@ test('find Mythic+ links with stealth protection', async () => {
 
     Object.values(resultObj).forEach(
       (specData: { overroll: any[]; raid: any[]; mythic: any[] }) => {
-        sourceStats.overroll += specData.overroll.length;
-        sourceStats.raid += specData.raid.length;
-        sourceStats.mythic += specData.mythic.length;
+        (sourceStats.overroll as number) += specData.overroll.length;
+        (sourceStats.raid as number) += specData.raid.length;
+        (sourceStats.mythic as number) += specData.mythic.length;
         totalItems +=
           specData.overroll.length +
           specData.raid.length +

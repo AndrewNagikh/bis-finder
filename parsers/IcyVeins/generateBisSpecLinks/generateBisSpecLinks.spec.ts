@@ -4,7 +4,7 @@ import createStealthContext from 'lib/createStealthContext';
 import { sleep } from 'lib/helpers';
 import path from 'path';
 
-test('find Mythic+ links with stealth protection', async ({}) => {
+test('find Mythic+ links with stealth protection', async () => {
   test.setTimeout(300000); // 5 минут на тест
 
   const context = await createStealthContext();
