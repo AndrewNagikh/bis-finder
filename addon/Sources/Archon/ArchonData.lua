@@ -1,0 +1,9567 @@
+-- Автоматически сгенерированный файл с данными о предметах (Archon)
+-- Не редактируйте вручную! Используйте генератор.
+-- Сгенерировано: 2025-11-04T19:58:36.075Z
+
+local ADDON_NAME, ns = ...
+
+-- База данных предметов Archon по ролям и специализациям
+ns.ArchonData = {
+    raid = {
+        tank = {
+            ["Protection Warrior"] = {
+                talents = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAAwYGzMzMzMmNjZZwYMaMLjZYsMmZG2mZGzADDAAAAAAsMGAYGbAGYDWWMaMDgZBmNYmB",
+                items = {
+                    {
+                        itemId = "237610",
+                        itemName = "Living Weapon's Faceshield",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "185820",
+                        itemName = "Cabochon of the Infinite Flight",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237608",
+                        itemName = "Living Weapon's Ramparts",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237613",
+                        itemName = "Living Weapon's Bulwark",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222435",
+                        itemName = "Everforged Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237611",
+                        itemName = "Living Weapon's Crushers",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222431",
+                        itemName = "Everforged Greatbelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237609",
+                        itemName = "Living Weapon's Legguards",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243307",
+                        itemName = "Interloper's Plated Sabatons",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "185813",
+                        itemName = "Signet of Collapsing Stars",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "222440",
+                        itemName = "Everforged Longsword",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222432",
+                        itemName = "Everforged Defender",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222587"
+                        }
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242401",
+                        itemName = "Brand of Ceaseless Ire",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Protection Paladin"] = {
+                talents = "CIEAAAAAAAAAAAAAAAAAAAAAAsZMYWGLzMzMzMLbzMzYmtxwAAAAAAAAAAg2amZWMMzMGzwWbAADMAAbDAAAAYmZbbptZGLMYAYwMMG",
+                items = {
+                    {
+                        itemId = "237619",
+                        itemName = "Lightmane of the Lucent Battalion",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "185842",
+                        itemName = "Ornately Engraved Amplifier",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "237617",
+                        itemName = "Chargers of the Lucent Battalion",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238044",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237622",
+                        itemName = "Cuirass of the Lucent Battalion",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222435",
+                        itemName = "Everforged Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213455",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237620",
+                        itemName = "Protectors of the Lucent Battalion",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222431",
+                        itemName = "Everforged Greatbelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "237618",
+                        itemName = "Cuisses of the Lucent Battalion",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243307",
+                        itemName = "Interloper's Plated Sabatons",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "221136",
+                        itemName = "Devout Zealot's Ring",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213455",
+                            "213455",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222587",
+                            "213455",
+                            "213455",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "222440",
+                        itemName = "Everforged Longsword",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222432",
+                        itemName = "Everforged Defender",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222587"
+                        }
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242401",
+                        itemName = "Brand of Ceaseless Ire",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Brewmaster Monk"] = {
+                talents = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgxGmxMmlZsNmZGDAAAAAAwyCGxMDMzmxGw2MzMMbDzYzyMxsNbzMDzGAAsBAAAMbzSzMzswMsB",
+                items = {
+                    {
+                        itemId = "237673",
+                        itemName = "Half-Mask of Fallen Storms",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213467"
+                        }
+                    },
+                    {
+                        itemId = "252009",
+                        itemName = "Bloodstained Memento",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213467"
+                        }
+                    },
+                    {
+                        itemId = "237671",
+                        itemName = "Glyphs of Fallen Storms",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238042",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237676",
+                        itemName = "Gi of Fallen Storms",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222596",
+                            "213467",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237674",
+                        itemName = "Grasp of Fallen Storms",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219502",
+                        itemName = "Adrenal Surge Clasp",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222596",
+                            "213467"
+                        }
+                    },
+                    {
+                        itemId = "237672",
+                        itemName = "Legwraps of Fallen Storms",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222596",
+                            "213467",
+                            "213467",
+                            "223680"
+                        }
+                    },
+                    {
+                        itemId = "221141",
+                        itemName = "High Nerubian Signet",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213467",
+                            "213467",
+                            "223680"
+                        }
+                    },
+                    {
+                        itemId = "237739",
+                        itemName = "Obliteration Beamglaive",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242401",
+                        itemName = "Brand of Ceaseless Ire",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "246344",
+                        itemName = "Cursed Stone Idol",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Guardian Druid"] = {
+                talents = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzYmhZWmZMjZMzYhZGmFLDMbGGNRzMzyMLzMzyYGAAAAAAwwYALbzshxsMAmAAAA2gBgFjhB",
+                items = {
+                    {
+                        itemId = "237682",
+                        itemName = "Skymane of the Mother Eagle",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "185820",
+                        itemName = "Cabochon of the Infinite Flight",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "237680",
+                        itemName = "Ritual Pauldrons of the Mother Eagle",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237685",
+                        itemName = "Vest of the Mother Eagle",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222581",
+                            "213485",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237683",
+                        itemName = "Wings of the Mother Eagle",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219331",
+                        itemName = "Rune-Branded Waistband",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222581",
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "237681",
+                        itemName = "Breeches of the Mother Eagle",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "185813",
+                        itemName = "Signet of Collapsing Stars",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213485",
+                            "213485",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222581",
+                            "213485",
+                            "213485",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "222448",
+                        itemName = "Charged Halberd",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "232541",
+                        itemName = "Improvised Seaforium Pacemaker",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242401",
+                        itemName = "Brand of Ceaseless Ire",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Vengeance Demon Hunter"] = {
+                talents = "CUkAAAAAAAAAAAAAAAAAAAAAAAAmZMmZMMjMzMMDzMbjxMsNDzMmZMY2mZmNzMmZYGAAAAmtZwwYZhJMYmhxC",
+                items = {
+                    {
+                        itemId = "237691",
+                        itemName = "Charhound's Vicious Scalp",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "185842",
+                        itemName = "Ornately Engraved Amplifier",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237689",
+                        itemName = "Charhound's Vicious Hornguards",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237694",
+                        itemName = "Charhound's Vicious Bindings",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237692",
+                        itemName = "Charhound's Vicious Felclaws",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219331",
+                        itemName = "Rune-Branded Waistband",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237690",
+                        itemName = "Charhound's Vicious Hidecoat",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "246281",
+                        itemName = "Ring of the Panoply",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "221136",
+                        itemName = "Devout Zealot's Ring",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "222441",
+                        itemName = "Everforged Warglaive",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222441",
+                        itemName = "Everforged Warglaive",
+                        itemType = "Off-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242401",
+                        itemName = "Brand of Ceaseless Ire",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Blood Death Knight"] = {
+                talents = "CoPAAAAAAAAAAAAAAAAAAAAAAwwYmZGzYmZGGGzMNzYYmZmxAAAAAzMzMzMzMzmZmxAAAYmZmBAAAYgBmxoxyGglBsBwMYDA",
+                items = {
+                    {
+                        itemId = "237628",
+                        itemName = "Hollow Sentinel's Stonemask",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213473"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222593",
+                            "213743",
+                            "213473"
+                        }
+                    },
+                    {
+                        itemId = "237626",
+                        itemName = "Hollow Sentinel's Perches",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238042",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237631",
+                        itemName = "Hollow Sentinel's Breastplate",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222435",
+                        itemName = "Everforged Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222593",
+                            "213473",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237629",
+                        itemName = "Hollow Sentinel's Gauntlets",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222431",
+                        itemName = "Everforged Greatbelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222593",
+                            "213473"
+                        }
+                    },
+                    {
+                        itemId = "237627",
+                        itemName = "Hollow Sentinel's Stonekilt",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243307",
+                        itemName = "Interloper's Plated Sabatons",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222593",
+                            "213473",
+                            "213473",
+                            "223680"
+                        }
+                    },
+                    {
+                        itemId = "221141",
+                        itemName = "High Nerubian Signet",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213473",
+                            "213473",
+                            "223680"
+                        }
+                    },
+                    {
+                        itemId = "222447",
+                        itemName = "Charged Claymore",
+                        itemType = "Main-Hand",
+                        enchantments = {
+                            "222593"
+                        }
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242401",
+                        itemName = "Brand of Ceaseless Ire",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            }
+        },
+        dps = {
+            ["Frost Death Knight"] = {
+                talents = "CsPAAAAAAAAAAAAAAAAAAAAAAMDwMzYGjxwYGzMzMjZmRzMGjhZGgZmZmZmZmBAAAAAAAAAAAjltBGwCYZYCMWwMzMmZghB",
+                items = {
+                    {
+                        itemId = "237628",
+                        itemName = "Hollow Sentinel's Stonemask",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222593",
+                            "213743",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237626",
+                        itemName = "Hollow Sentinel's Perches",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237631",
+                        itemName = "Hollow Sentinel's Breastplate",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222435",
+                        itemName = "Everforged Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237629",
+                        itemName = "Hollow Sentinel's Gauntlets",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222431",
+                        itemName = "Everforged Greatbelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222593",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237627",
+                        itemName = "Hollow Sentinel's Stonekilt",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243307",
+                        itemName = "Interloper's Plated Sabatons",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "213458",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237567",
+                        itemName = "Logic Gate: Alpha",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213458",
+                            "213458",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "222447",
+                        itemName = "Charged Claymore",
+                        itemType = "Main-Hand",
+                        enchantments = {
+                            "222593"
+                        }
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242396",
+                        itemName = "Unyielding Netherprism",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Havoc Demon Hunter"] = {
+                talents = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZmZmZmZMzMjhJDzAAAAAAAmFjxMjZmZbMzGWmZwYYssNbzghx2GTYGzMDDL",
+                items = {
+                    {
+                        itemId = "237691",
+                        itemName = "Charhound's Vicious Scalp",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222593",
+                            "213743",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237689",
+                        itemName = "Charhound's Vicious Hornguards",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238044",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237694",
+                        itemName = "Charhound's Vicious Bindings",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237692",
+                        itemName = "Charhound's Vicious Felclaws",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219331",
+                        itemName = "Rune-Branded Waistband",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222593",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237690",
+                        itemName = "Charhound's Vicious Hidecoat",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "213458",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "237567",
+                        itemName = "Logic Gate: Alpha",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213458",
+                            "213458",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "222441",
+                        itemName = "Everforged Warglaive",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222441",
+                        itemName = "Everforged Warglaive",
+                        itemType = "Off-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "246344",
+                        itemName = "Cursed Stone Idol",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Beast Mastery Hunter"] = {
+                talents = "C0PAAAAAAAAAAAAAAAAAAAAAAYMbDMgBMbsFYsAAAAAAgZGbzgZmBzMMzyMzMzgZMTmxMmxMzwMDDjhZGmlhZbZGsBAAAAAAzA",
+                items = {
+                    {
+                        itemId = "237646",
+                        itemName = "Midnight Herald's Cowl",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "185820",
+                        itemName = "Cabochon of the Infinite Flight",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237644",
+                        itemName = "Midnight Herald's Shadowguards",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237649",
+                        itemName = "Midnight Herald's Hauberk",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219342",
+                        itemName = "Glyph-Etched Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237647",
+                        itemName = "Midnight Herald's Gloves",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219339",
+                        itemName = "Glyph-Etched Binding",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237645",
+                        itemName = "Midnight Herald's Petticoat",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243308",
+                        itemName = "Interloper's Chain Boots",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "185813",
+                        itemName = "Signet of Collapsing Stars",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "221969",
+                        itemName = "P.0.W. x2",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242396",
+                        itemName = "Unyielding Netherprism",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Elemental Shaman"] = {
+                talents = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAAMbz22MzMzY2mlxMgZmZAAAAAAbmxwGsAzwQjNAwsMNDYjxMNMzMjhlZMjFzyMLziZMYYmtBA",
+                items = {
+                    {
+                        itemId = "237637",
+                        itemName = "Aspect of Channeled Fury",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222584",
+                            "213743",
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "237635",
+                        itemName = "Fangs of Channeled Fury",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237640",
+                        itemName = "Furs of Channeled Fury",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219342",
+                        itemName = "Glyph-Etched Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222584",
+                            "213494",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237638",
+                        itemName = "Claws of Channeled Fury",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219339",
+                        itemName = "Glyph-Etched Binding",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222584",
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "237636",
+                        itemName = "Tassets of Channeled Fury",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243308",
+                        itemName = "Interloper's Chain Boots",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222584",
+                            "213494",
+                            "213494",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "178824",
+                        itemName = "Signet of the False Accuser",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213494",
+                            "213494",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237728",
+                        itemName = "Voidglass Kris",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222432",
+                        itemName = "Everforged Defender",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222584"
+                        }
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Arcane Mage"] = {
+                talents = "C4DAAAAAAAAAAAAAAAAAAAAAAMzgZbGMjHYmZDGzMMmGzyMAAAAAAMAgZmplZbZGAAbAAAAAAsBgxgZWmlZMzYMDzMzMjZMLjB",
+                items = {
+                    {
+                        itemId = "237718",
+                        itemName = "Augur's Ephemeral Wide-Brim",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "237568",
+                        itemName = "Chrysalis of Sundered Souls",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "237716",
+                        itemName = "Augur's Ephemeral Orbs of Power",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238042",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237721",
+                        itemName = "Augur's Ephemeral Habiliments",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222815",
+                        itemName = "Consecrated Cuffs",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222581",
+                            "213485",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237719",
+                        itemName = "Augur's Ephemeral Mitts",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222816",
+                        itemName = "Consecrated Cord",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222581",
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "237717",
+                        itemName = "Augur's Ephemeral Trousers",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243305",
+                        itemName = "Interloper's Silken Striders",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222581",
+                            "213485",
+                            "213485",
+                            "223680"
+                        }
+                    },
+                    {
+                        itemId = "185813",
+                        itemName = "Signet of Collapsing Stars",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213485",
+                            "213485",
+                            "223680"
+                        }
+                    },
+                    {
+                        itemId = "237730",
+                        itemName = "Voidglass Spire",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242497",
+                        itemName = "Azhiccaran Parapodia",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Fury Warrior"] = {
+                talents = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQjhxsZmhZWGMzCzMzYGmhZ22mZMzMLAzMzYmxywwMzMAAAIGbbDsAGwMMBGsBA",
+                items = {
+                    {
+                        itemId = "237610",
+                        itemName = "Living Weapon's Faceshield",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "178827",
+                        itemName = "Sin Stained Pendant",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "237608",
+                        itemName = "Living Weapon's Ramparts",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237613",
+                        itemName = "Living Weapon's Bulwark",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222435",
+                        itemName = "Everforged Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222584",
+                            "213494",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237611",
+                        itemName = "Living Weapon's Crushers",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222431",
+                        itemName = "Everforged Greatbelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222584",
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "237609",
+                        itemName = "Living Weapon's Legguards",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243307",
+                        itemName = "Interloper's Plated Sabatons",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "178824",
+                        itemName = "Signet of the False Accuser",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213494",
+                            "213494",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222584",
+                            "213494",
+                            "213494",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "234490",
+                        itemName = "Circuit Breaker",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222447",
+                        itemName = "Charged Claymore",
+                        itemType = "Off-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "246344",
+                        itemName = "Cursed Stone Idol",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Subtlety Rogue"] = {
+                talents = "CUQAAAAAAAAAAAAAAAAAAAAAAAAM2mBAAAAAgZZMWmGzYmxMzYMDzMjhxsNLGzstMzMmZmBMWmlBAAAgZwAYMbGGYgZhFaxGM",
+                items = {
+                    {
+                        itemId = "237664",
+                        itemName = "Hood of the Sudden Eclipse",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213473"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222590",
+                            "213743",
+                            "213473"
+                        }
+                    },
+                    {
+                        itemId = "237552",
+                        itemName = "Deathbound Shoulderpads",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237667",
+                        itemName = "Tactical Vest of the Sudden Eclipse",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222590",
+                            "213473",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237665",
+                        itemName = "Deathgrips of the Sudden Eclipse",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "237533",
+                        itemName = "Atomic Phasebelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "213473"
+                        }
+                    },
+                    {
+                        itemId = "237663",
+                        itemName = "Pants of the Sudden Eclipse",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222590",
+                            "213473",
+                            "213473",
+                            "223680"
+                        }
+                    },
+                    {
+                        itemId = "221141",
+                        itemName = "High Nerubian Signet",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213473",
+                            "213473",
+                            "223680"
+                        }
+                    },
+                    {
+                        itemId = "237729",
+                        itemName = "Prodigious Gene Splicer",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222438",
+                        itemName = "Everforged Stabber",
+                        itemType = "Off-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242396",
+                        itemName = "Unyielding Netherprism",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Feral Druid"] = {
+                talents = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbzmZWYmZmZzmZsNzMzYmBAAAAAYJY2MwMjaGziZZmZWGzYGAAAAAAYAAAAAamlZZmZbAALgZAYhBD",
+                items = {
+                    {
+                        itemId = "237682",
+                        itemName = "Skymane of the Mother Eagle",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222584",
+                            "213743",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237680",
+                        itemName = "Ritual Pauldrons of the Mother Eagle",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237685",
+                        itemName = "Vest of the Mother Eagle",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222584",
+                            "213458",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237683",
+                        itemName = "Wings of the Mother Eagle",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219331",
+                        itemName = "Rune-Branded Waistband",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222584",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237681",
+                        itemName = "Breeches of the Mother Eagle",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "178824",
+                        itemName = "Signet of the False Accuser",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213458",
+                            "213458",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222584",
+                            "213458",
+                            "213458",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237739",
+                        itemName = "Obliteration Beamglaive",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Outlaw Rogue"] = {
+                talents = "CQQAAAAAAAAAAAAAAAAAAAAAAAAMz2MYMzYmZmZYGegxMzMMzMz0yMmtZAAAAAAw2yYGMzwCsMbDAAAAzMzAwY2MMwAzCL0CbGA",
+                items = {
+                    {
+                        itemId = "237664",
+                        itemName = "Hood of the Sudden Eclipse",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213467"
+                        }
+                    },
+                    {
+                        itemId = "237568",
+                        itemName = "Chrysalis of Sundered Souls",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213467"
+                        }
+                    },
+                    {
+                        itemId = "237662",
+                        itemName = "Smokemantle of the Sudden Eclipse",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238042",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237667",
+                        itemName = "Tactical Vest of the Sudden Eclipse",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222596",
+                            "213467",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237665",
+                        itemName = "Deathgrips of the Sudden Eclipse",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219331",
+                        itemName = "Rune-Branded Waistband",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222596",
+                            "213467"
+                        }
+                    },
+                    {
+                        itemId = "237663",
+                        itemName = "Pants of the Sudden Eclipse",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222596",
+                            "213467",
+                            "213467",
+                            "223796"
+                        }
+                    },
+                    {
+                        itemId = "185813",
+                        itemName = "Signet of Collapsing Stars",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213467",
+                            "213467",
+                            "223796"
+                        }
+                    },
+                    {
+                        itemId = "222440",
+                        itemName = "Everforged Longsword",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222440",
+                        itemName = "Everforged Longsword",
+                        itemType = "Off-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242397",
+                        itemName = "Sigil of the Cosmic Hunt",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Unholy Death Knight"] = {
+                talents = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMzYGjxwMzMzMTDzYMzMGAAAAAAAAmZmZDzYmBAsNDzY2mZmxYGgFzihBGY2YoxCGgZAMA",
+                items = {
+                    {
+                        itemId = "237628",
+                        itemName = "Hollow Sentinel's Stonemask",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213491"
+                        }
+                    },
+                    {
+                        itemId = "178827",
+                        itemName = "Sin Stained Pendant",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213491"
+                        }
+                    },
+                    {
+                        itemId = "237626",
+                        itemName = "Hollow Sentinel's Perches",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237631",
+                        itemName = "Hollow Sentinel's Breastplate",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222435",
+                        itemName = "Everforged Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222593",
+                            "213491",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237629",
+                        itemName = "Hollow Sentinel's Gauntlets",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222431",
+                        itemName = "Everforged Greatbelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222593",
+                            "213491"
+                        }
+                    },
+                    {
+                        itemId = "237627",
+                        itemName = "Hollow Sentinel's Stonekilt",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243307",
+                        itemName = "Interloper's Plated Sabatons",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "178824",
+                        itemName = "Signet of the False Accuser",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213491",
+                            "213491",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "242491",
+                        itemName = "Whispers of K'aresh",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213491",
+                            "213491",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "222447",
+                        itemName = "Charged Claymore",
+                        itemType = "Main-Hand",
+                        enchantments = {
+                            "222593"
+                        }
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "246344",
+                        itemName = "Cursed Stone Idol",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Destruction Warlock"] = {
+                talents = "CsQAAAAAAAAAAAAAAAAAAAAAAAmZmZmZEzmBmtZmZYWmFDzMzsMzY2WMzAAAAAzMDLzMLzAGzYYBGYbYhGLYAAAAAAAMMmBA",
+                items = {
+                    {
+                        itemId = "237700",
+                        itemName = "Inquisitor's Portal to Madness",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213491"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222593",
+                            "213743",
+                            "213491"
+                        }
+                    },
+                    {
+                        itemId = "237698",
+                        itemName = "Inquisitor's Gaze of Madness",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238044",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237703",
+                        itemName = "Inquisitor's Robes of Madness",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222815",
+                        itemName = "Consecrated Cuffs",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222593",
+                            "213491",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237701",
+                        itemName = "Inquisitor's Clutches of Madness",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222816",
+                        itemName = "Consecrated Cord",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222593",
+                            "213491"
+                        }
+                    },
+                    {
+                        itemId = "237699",
+                        itemName = "Inquisitor's Leggings of Madness",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243305",
+                        itemName = "Interloper's Silken Striders",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "237567",
+                        itemName = "Logic Gate: Alpha",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213491",
+                            "213491",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222593",
+                            "213491",
+                            "213491",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "237728",
+                        itemName = "Voidglass Kris",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222566",
+                        itemName = "Vagabond's Torch",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222593"
+                        }
+                    },
+                    {
+                        itemId = "242392",
+                        itemName = "Diamantine Voidcore",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Balance Druid"] = {
+                talents = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALUmtMGzMwDYWGLzMDwMGLzsNjlxMjZmFjZGzMjNswAMAbbjNMNzsMAAAAYjZmxAbGDD",
+                items = {
+                    {
+                        itemId = "237682",
+                        itemName = "Skymane of the Mother Eagle",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222584",
+                            "213743",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237680",
+                        itemName = "Ritual Pauldrons of the Mother Eagle",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237685",
+                        itemName = "Vest of the Mother Eagle",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222584",
+                            "213458",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237683",
+                        itemName = "Wings of the Mother Eagle",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "237533",
+                        itemName = "Atomic Phasebelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237681",
+                        itemName = "Breeches of the Mother Eagle",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222584",
+                            "213458",
+                            "213458",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237567",
+                        itemName = "Logic Gate: Alpha",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213458",
+                            "213458",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237730",
+                        itemName = "Voidglass Spire",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Retribution Paladin"] = {
+                talents = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAYAAamltZmtltxYbMz22MbAAAAAAY00MMMzYbGMbDzysNDDDmhhlF2AAAgZm2mlZbGAwGwAgxYGmB",
+                items = {
+                    {
+                        itemId = "237619",
+                        itemName = "Lightmane of the Lucent Battalion",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222593",
+                            "213743",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237617",
+                        itemName = "Chargers of the Lucent Battalion",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237622",
+                        itemName = "Cuirass of the Lucent Battalion",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222435",
+                        itemName = "Everforged Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237620",
+                        itemName = "Protectors of the Lucent Battalion",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222431",
+                        itemName = "Everforged Greatbelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222593",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237618",
+                        itemName = "Cuisses of the Lucent Battalion",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243307",
+                        itemName = "Interloper's Plated Sabatons",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "237567",
+                        itemName = "Logic Gate: Alpha",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213458",
+                            "213458",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "213458",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237737",
+                        itemName = "Photon Sabre Prime",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Windwalker Monk"] = {
+                talents = "C0QAAAAAAAAAAAAAAAAAAAAAAMzsMAmZMLzMmZGAAAAAAAAAAAssMMiZGYGGWMzYbmZGmthZwyMBAwyMzgZG2mBAwGAYWmlmZmZBwM",
+                items = {
+                    {
+                        itemId = "237673",
+                        itemName = "Half-Mask of Fallen Storms",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222584",
+                            "213743",
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "237671",
+                        itemName = "Glyphs of Fallen Storms",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237676",
+                        itemName = "Gi of Fallen Storms",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222584",
+                            "213494",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237674",
+                        itemName = "Grasp of Fallen Storms",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219331",
+                        itemName = "Rune-Branded Waistband",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222584",
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "237672",
+                        itemName = "Legwraps of Fallen Storms",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222584",
+                            "213494",
+                            "213494",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237570",
+                        itemName = "Logic Gate: Omega",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213494",
+                            "213494",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237739",
+                        itemName = "Obliteration Beamglaive",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Affliction Warlock"] = {
+                talents = "CkQAAAAAAAAAAAAAAAAAAAAAAMMzMmZmZEzmhxsNzDMDzyAAAAmZMzyMjxyMzMLmxMDAYeALwAziRjZAMbglZAAAAAAAAwMsA",
+                items = {
+                    {
+                        itemId = "237700",
+                        itemName = "Inquisitor's Portal to Madness",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222593",
+                            "213743",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237698",
+                        itemName = "Inquisitor's Gaze of Madness",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238044",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237703",
+                        itemName = "Inquisitor's Robes of Madness",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222815",
+                        itemName = "Consecrated Cuffs",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237701",
+                        itemName = "Inquisitor's Clutches of Madness",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222816",
+                        itemName = "Consecrated Cord",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222593",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237699",
+                        itemName = "Inquisitor's Leggings of Madness",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243305",
+                        itemName = "Interloper's Silken Striders",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "213458",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237567",
+                        itemName = "Logic Gate: Alpha",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213458",
+                            "213458",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237728",
+                        itemName = "Voidglass Kris",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222566",
+                        itemName = "Vagabond's Torch",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222593"
+                        }
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242497",
+                        itemName = "Azhiccaran Parapodia",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Shadow Priest"] = {
+                talents = "CIQAAAAAAAAAAAAAAAAAAAAAAMMMAAAAAAAAAAAAYMWGjZmZbZjZmZmZmZZwsxMzMjZjBGjhZxsN1MDWwMAzsZZY2MAkxYBA2mB",
+                items = {
+                    {
+                        itemId = "237709",
+                        itemName = "Dying Star's Veil",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "178827",
+                        itemName = "Sin Stained Pendant",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "237707",
+                        itemName = "Dying Star's Pyrelights",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237712",
+                        itemName = "Dying Star's Cassock",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222815",
+                        itemName = "Consecrated Cuffs",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222584",
+                            "213494",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237710",
+                        itemName = "Dying Star's Caress",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222816",
+                        itemName = "Consecrated Cord",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222584",
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "237708",
+                        itemName = "Dying Star's Leggings",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243305",
+                        itemName = "Interloper's Silken Striders",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "178824",
+                        itemName = "Signet of the False Accuser",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213494",
+                            "213494",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222584",
+                            "213494",
+                            "213494",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237728",
+                        itemName = "Voidglass Kris",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222566",
+                        itemName = "Vagabond's Torch",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222584"
+                        }
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Marksmanship Hunter"] = {
+                talents = "C4PAAAAAAAAAAAAAAAAAAAAAAYMbDMgBMbsEYWAAAAAAAAAAAAAgZMjZMzMMjMjxwMDzywssMD2GmxYZbzMzMmFzMMmZmlNDLDzM",
+                items = {
+                    {
+                        itemId = "237646",
+                        itemName = "Midnight Herald's Cowl",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222593",
+                            "213743",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237644",
+                        itemName = "Midnight Herald's Shadowguards",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238044",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237649",
+                        itemName = "Midnight Herald's Hauberk",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219342",
+                        itemName = "Glyph-Etched Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "219341",
+                        itemName = "Glyph-Etched Gauntlets",
+                        itemType = "Gloves",
+                        enchantments = {
+                            "222593"
+                        }
+                    },
+                    {
+                        itemId = "237522",
+                        itemName = "Colossal Lifetether",
+                        itemType = "Belt",
+                        enchantments = {
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237645",
+                        itemName = "Midnight Herald's Petticoat",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243308",
+                        itemName = "Interloper's Chain Boots",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "237567",
+                        itemName = "Logic Gate: Alpha",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213458",
+                            "213458",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "213458",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "237732",
+                        itemName = "Piercing Strandbow",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242396",
+                        itemName = "Unyielding Netherprism",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Demonology Warlock"] = {
+                talents = "CoQAAAAAAAAAAAAAAAAAAAAAAgxMzMzMjY2MWGziZmhZbAAAAAAAAAAMAjZMsADsMsQDLMzYGbjZ2mxMzMGzYYmZmZGYGAAA",
+                items = {
+                    {
+                        itemId = "237700",
+                        itemName = "Inquisitor's Portal to Madness",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222587",
+                            "213743",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237698",
+                        itemName = "Inquisitor's Gaze of Madness",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237703",
+                        itemName = "Inquisitor's Robes of Madness",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222815",
+                        itemName = "Consecrated Cuffs",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237701",
+                        itemName = "Inquisitor's Clutches of Madness",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222816",
+                        itemName = "Consecrated Cord",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237699",
+                        itemName = "Inquisitor's Leggings of Madness",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243305",
+                        itemName = "Interloper's Silken Striders",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "221136",
+                        itemName = "Devout Zealot's Ring",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "237728",
+                        itemName = "Voidglass Kris",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222566",
+                        itemName = "Vagabond's Torch",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222587"
+                        }
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242497",
+                        itemName = "Azhiccaran Parapodia",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Survival Hunter"] = {
+                talents = "C8PAAAAAAAAAAAAAAAAAAAAAAMGYglxoxyAY2AbzMWmZmZmZYMzMzYMGzMmFAAAAAAgmxMmxMzwMMDjhZGGDzyyMYDAAAAAGAA",
+                items = {
+                    {
+                        itemId = "237646",
+                        itemName = "Midnight Herald's Cowl",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213491"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222593",
+                            "213743",
+                            "213491"
+                        }
+                    },
+                    {
+                        itemId = "237644",
+                        itemName = "Midnight Herald's Shadowguards",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237649",
+                        itemName = "Midnight Herald's Hauberk",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219342",
+                        itemName = "Glyph-Etched Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222593",
+                            "213491",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "219341",
+                        itemName = "Glyph-Etched Gauntlets",
+                        itemType = "Gloves",
+                        enchantments = {
+                            "222593"
+                        }
+                    },
+                    {
+                        itemId = "219339",
+                        itemName = "Glyph-Etched Binding",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222593",
+                            "213491"
+                        }
+                    },
+                    {
+                        itemId = "237645",
+                        itemName = "Midnight Herald's Petticoat",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243308",
+                        itemName = "Interloper's Chain Boots",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "178824",
+                        itemName = "Signet of the False Accuser",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213491",
+                            "213491",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222593",
+                            "213491",
+                            "213491",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237739",
+                        itemName = "Obliteration Beamglaive",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Enhancement Shaman"] = {
+                talents = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMDmZGjtZmZGsNzYZYAAAAAAAAAAbA2MjhNYBmhhGsAALTzMDWWMzMzwYmZbYZmZCMMLzMAAjB",
+                items = {
+                    {
+                        itemId = "237637",
+                        itemName = "Aspect of Channeled Fury",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213482"
+                        }
+                    },
+                    {
+                        itemId = "178827",
+                        itemName = "Sin Stained Pendant",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213482"
+                        }
+                    },
+                    {
+                        itemId = "237635",
+                        itemName = "Fangs of Channeled Fury",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237640",
+                        itemName = "Furs of Channeled Fury",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219342",
+                        itemName = "Glyph-Etched Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222584",
+                            "213482",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237638",
+                        itemName = "Claws of Channeled Fury",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219339",
+                        itemName = "Glyph-Etched Binding",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222584",
+                            "213482"
+                        }
+                    },
+                    {
+                        itemId = "237636",
+                        itemName = "Tassets of Channeled Fury",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243308",
+                        itemName = "Interloper's Chain Boots",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222584",
+                            "213482",
+                            "213482",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "242491",
+                        itemName = "Whispers of K'aresh",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213482",
+                            "213482",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "237738",
+                        itemName = "Unbound Training Claws",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222451",
+                        itemName = "Charged Slicer",
+                        itemType = "Off-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Assassination Rogue"] = {
+                talents = "CMQAAAAAAAAAAAAAAAAAAAAAAMjZmhxMYAAAAAAYWGsMDAAAAAAttNzMmZmBzMzysNzMjZwwMzMmZz2YGADsAzY0Y2AsNgNA",
+                items = {
+                    {
+                        itemId = "237664",
+                        itemName = "Hood of the Sudden Eclipse",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222593",
+                            "213743",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237662",
+                        itemName = "Smokemantle of the Sudden Eclipse",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238044",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237667",
+                        itemName = "Tactical Vest of the Sudden Eclipse",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237665",
+                        itemName = "Deathgrips of the Sudden Eclipse",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "237533",
+                        itemName = "Atomic Phasebelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237663",
+                        itemName = "Pants of the Sudden Eclipse",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "237567",
+                        itemName = "Logic Gate: Alpha",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213458",
+                            "213458",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "213458",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "237729",
+                        itemName = "Prodigious Gene Splicer",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222438",
+                        itemName = "Everforged Stabber",
+                        itemType = "Off-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242396",
+                        itemName = "Unyielding Netherprism",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Fire Mage"] = {
+                talents = "C8DAAAAAAAAAAAAAAAAAAAAAAYMMbzgZmZMLGYmhpxMjZAAAAAAYAAzMTLzyyMAAbGzgxMjZGziZZMMzwMbzwMLDDAAAAAAA",
+                items = {
+                    {
+                        itemId = "237718",
+                        itemName = "Augur's Ephemeral Wide-Brim",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "237569",
+                        itemName = "Duskblaze's Desperation",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "237716",
+                        itemName = "Augur's Ephemeral Orbs of Power",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237721",
+                        itemName = "Augur's Ephemeral Habiliments",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222815",
+                        itemName = "Consecrated Cuffs",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222581",
+                            "213485",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237719",
+                        itemName = "Augur's Ephemeral Mitts",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222816",
+                        itemName = "Consecrated Cord",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222581",
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "237717",
+                        itemName = "Augur's Ephemeral Trousers",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243305",
+                        itemName = "Interloper's Silken Striders",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222581",
+                            "213485",
+                            "213485",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "242491",
+                        itemName = "Whispers of K'aresh",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213485",
+                            "213485",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "237730",
+                        itemName = "Voidglass Spire",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242392",
+                        itemName = "Diamantine Voidcore",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242497",
+                        itemName = "Azhiccaran Parapodia",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Arms Warrior"] = {
+                talents = "CcEAAAAAAAAAAAAAAAAAAAAAAAMjZmxMmZ2mlllZGAAAADmGmZWMzwMGMjNzMDzwMMAAAAAAA8AjZZmZGgwYbbgFwAmhJwAbA",
+                items = {
+                    {
+                        itemId = "237610",
+                        itemName = "Living Weapon's Faceshield",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "185842",
+                        itemName = "Ornately Engraved Amplifier",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "237608",
+                        itemName = "Living Weapon's Ramparts",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237613",
+                        itemName = "Living Weapon's Bulwark",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222435",
+                        itemName = "Everforged Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213455",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237611",
+                        itemName = "Living Weapon's Crushers",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222431",
+                        itemName = "Everforged Greatbelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "237609",
+                        itemName = "Living Weapon's Legguards",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243307",
+                        itemName = "Interloper's Plated Sabatons",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222587",
+                            "213455",
+                            "213455",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "221136",
+                        itemName = "Devout Zealot's Ring",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213455",
+                            "213455",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "222447",
+                        itemName = "Charged Claymore",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242394",
+                        itemName = "Eradicating Arcanocore",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Devastation Evoker"] = {
+                talents = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGzMMzsYGMgBjZaGzMZMWmZmZGGzsNDYGzsNmZ2mZGMDMjZgNwCYGmALglhB",
+                items = {
+                    {
+                        itemId = "237655",
+                        itemName = "Spellweaver's Immaculate Focus",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222587",
+                            "213743",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237653",
+                        itemName = "Spellweaver's Immaculate Pauldrons",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237658",
+                        itemName = "Spellweaver's Immaculate Crestward",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219342",
+                        itemName = "Glyph-Etched Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237656",
+                        itemName = "Spellweaver's Immaculate Scaleguards",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219339",
+                        itemName = "Glyph-Etched Binding",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237654",
+                        itemName = "Spellweaver's Immaculate Runeslacks",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243308",
+                        itemName = "Interloper's Chain Boots",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "213479",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "237567",
+                        itemName = "Logic Gate: Alpha",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213479",
+                            "213479",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "237730",
+                        itemName = "Voidglass Spire",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Augmentation Evoker"] = {
+                talents = "CEcBAAAAAAAAAAAAAAAAAAAAAgxMbzMzgBzMLzMzMjZ2AAAAAAAAwMD4BMGTNMzMAAAAYGzsNmZ2GzMwMbzYwCsMGGbDgZQshxA",
+                items = {
+                    {
+                        itemId = "237655",
+                        itemName = "Spellweaver's Immaculate Focus",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222587",
+                            "213743",
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "237653",
+                        itemName = "Spellweaver's Immaculate Pauldrons",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238044",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237658",
+                        itemName = "Spellweaver's Immaculate Crestward",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219342",
+                        itemName = "Glyph-Etched Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213455",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237656",
+                        itemName = "Spellweaver's Immaculate Scaleguards",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219339",
+                        itemName = "Glyph-Etched Binding",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "237654",
+                        itemName = "Spellweaver's Immaculate Runeslacks",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243308",
+                        itemName = "Interloper's Chain Boots",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222587",
+                            "213455",
+                            "213455",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "237567",
+                        itemName = "Logic Gate: Alpha",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213455",
+                            "213455",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "237730",
+                        itemName = "Voidglass Spire",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242392",
+                        itemName = "Diamantine Voidcore",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Frost Mage"] = {
+                talents = "CAEAAAAAAAAAAAAAAAAAAAAAAYGbmNDmhxsYYmZGNGjxMjhZmZYmZmZmxMzMzMzMDMzyMNzsNLAAAwCAAAAAAGAAAAAAAAA",
+                items = {
+                    {
+                        itemId = "237718",
+                        itemName = "Augur's Ephemeral Wide-Brim",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213461"
+                        }
+                    },
+                    {
+                        itemId = "237568",
+                        itemName = "Chrysalis of Sundered Souls",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213461"
+                        }
+                    },
+                    {
+                        itemId = "237716",
+                        itemName = "Augur's Ephemeral Orbs of Power",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238042",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237721",
+                        itemName = "Augur's Ephemeral Habiliments",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222815",
+                        itemName = "Consecrated Cuffs",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222596",
+                            "213461",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237719",
+                        itemName = "Augur's Ephemeral Mitts",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222816",
+                        itemName = "Consecrated Cord",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222596",
+                            "213461"
+                        }
+                    },
+                    {
+                        itemId = "237717",
+                        itemName = "Augur's Ephemeral Trousers",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243305",
+                        itemName = "Interloper's Silken Striders",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222596",
+                            "213461",
+                            "213461",
+                            "223680"
+                        }
+                    },
+                    {
+                        itemId = "185813",
+                        itemName = "Signet of Collapsing Stars",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213461",
+                            "213461",
+                            "223680"
+                        }
+                    },
+                    {
+                        itemId = "237730",
+                        itemName = "Voidglass Spire",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242392",
+                        itemName = "Diamantine Voidcore",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242497",
+                        itemName = "Azhiccaran Parapodia",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            }
+        },
+        healer = {
+            ["Restoration Druid"] = {
+                talents = "CkGAAAAAAAAAAAAAAAAAAAAAAsxMzYxMzMzsY2GDGLLjtFbzAAAAAAAAAAAAYbQ2gJDzMjZxsMzYZGzMDAAAAAAAMAAAAAgZbmtmtZWsxYGYYWAN",
+                items = {
+                    {
+                        itemId = "237682",
+                        itemName = "Skymane of the Mother Eagle",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213482"
+                        }
+                    },
+                    {
+                        itemId = "178827",
+                        itemName = "Sin Stained Pendant",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213746",
+                            "213482"
+                        }
+                    },
+                    {
+                        itemId = "237680",
+                        itemName = "Ritual Pauldrons of the Mother Eagle",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237685",
+                        itemName = "Vest of the Mother Eagle",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222584",
+                            "213482",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237683",
+                        itemName = "Wings of the Mother Eagle",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219331",
+                        itemName = "Rune-Branded Waistband",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222584",
+                            "213482"
+                        }
+                    },
+                    {
+                        itemId = "237681",
+                        itemName = "Breeches of the Mother Eagle",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222584",
+                            "213482",
+                            "213482",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "242491",
+                        itemName = "Whispers of K'aresh",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213482",
+                            "213482",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "237730",
+                        itemName = "Voidglass Spire",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "190958",
+                        itemName = "So'leah's Secret Technique",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242392",
+                        itemName = "Diamantine Voidcore",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Restoration Shaman"] = {
+                talents = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZmZbmthZegZzsNWMsYxMLwAGwswEYsgZmFLzsNzYkZbxMz0YmhhxixMWMLDziZAAwA",
+                items = {
+                    {
+                        itemId = "237637",
+                        itemName = "Aspect of Channeled Fury",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "185842",
+                        itemName = "Ornately Engraved Amplifier",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237635",
+                        itemName = "Fangs of Channeled Fury",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237640",
+                        itemName = "Furs of Channeled Fury",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219342",
+                        itemName = "Glyph-Etched Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237638",
+                        itemName = "Claws of Channeled Fury",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "237522",
+                        itemName = "Colossal Lifetether",
+                        itemType = "Belt",
+                        enchantments = {
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237636",
+                        itemName = "Tassets of Channeled Fury",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243308",
+                        itemName = "Interloper's Chain Boots",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "246281",
+                        itemName = "Ring of the Panoply",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "237728",
+                        itemName = "Voidglass Kris",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "237723",
+                        itemName = "Ward of the Weaving-Beast",
+                        itemType = "Off-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "190958",
+                        itemName = "So'leah's Secret Technique",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Discipline Priest"] = {
+                talents = "CAQAAAAAAAAAAAAAAAAAAAAAAAgtZmZMGjxMzYmNz2MzMzMAAAAAAAAAAAWmlZbwMzgZhhxYMMLegtZaMxyAzMAQAmtZbDM2sBAA",
+                items = {
+                    {
+                        itemId = "237709",
+                        itemName = "Dying Star's Veil",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "185820",
+                        itemName = "Cabochon of the Infinite Flight",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213746",
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "237707",
+                        itemName = "Dying Star's Pyrelights",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237712",
+                        itemName = "Dying Star's Cassock",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222815",
+                        itemName = "Consecrated Cuffs",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222581",
+                            "213485",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237710",
+                        itemName = "Dying Star's Caress",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222816",
+                        itemName = "Consecrated Cord",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222581",
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "237708",
+                        itemName = "Dying Star's Leggings",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243305",
+                        itemName = "Interloper's Silken Striders",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "185813",
+                        itemName = "Signet of Collapsing Stars",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213485",
+                            "213485",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222581",
+                            "213485",
+                            "213485",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "222568",
+                        itemName = "Vagabond's Bounding Baton",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242393",
+                        itemName = "Loom'ithar's Living Silk",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242497",
+                        itemName = "Azhiccaran Parapodia",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Holy Paladin"] = {
+                talents = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYAAzAAAMAbjZYmxMjlZMLzMsMDmZbz0WMjZMzMMwslBAMwAbAbMLzMmZZ2mZmlGAAAgFAD2MDMMA",
+                items = {
+                    {
+                        itemId = "237619",
+                        itemName = "Lightmane of the Lucent Battalion",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "185820",
+                        itemName = "Cabochon of the Infinite Flight",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213746",
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "237617",
+                        itemName = "Chargers of the Lucent Battalion",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237622",
+                        itemName = "Cuirass of the Lucent Battalion",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222435",
+                        itemName = "Everforged Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213455",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237620",
+                        itemName = "Protectors of the Lucent Battalion",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222431",
+                        itemName = "Everforged Greatbelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "237618",
+                        itemName = "Cuisses of the Lucent Battalion",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243307",
+                        itemName = "Interloper's Plated Sabatons",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "185813",
+                        itemName = "Signet of Collapsing Stars",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213455",
+                            "213455",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222587",
+                            "213455",
+                            "213455",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "222444",
+                        itemName = "Charged Hexsword",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222432",
+                        itemName = "Everforged Defender",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222587"
+                        }
+                    },
+                    {
+                        itemId = "242393",
+                        itemName = "Loom'ithar's Living Silk",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Mistweaver Monk"] = {
+                talents = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmFLzsMmFz2YmxG2sNbMbMbWmZWWYoZmZgZYGAbzMzwsxMDzyMBAAAAY2m2mtZWmNAAAAYD",
+                items = {
+                    {
+                        itemId = "237673",
+                        itemName = "Half-Mask of Fallen Storms",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "185820",
+                        itemName = "Cabochon of the Infinite Flight",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237671",
+                        itemName = "Glyphs of Fallen Storms",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237676",
+                        itemName = "Gi of Fallen Storms",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237674",
+                        itemName = "Grasp of Fallen Storms",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219331",
+                        itemName = "Rune-Branded Waistband",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237672",
+                        itemName = "Legwraps of Fallen Storms",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "221136",
+                        itemName = "Devout Zealot's Ring",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "222568",
+                        itemName = "Vagabond's Bounding Baton",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "190958",
+                        itemName = "So'leah's Secret Technique",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242393",
+                        itemName = "Loom'ithar's Living Silk",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Preservation Evoker"] = {
+                talents = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2GDwMzYWMzMbDAAAmZYMjxwMxYGAAAYbmZmmxyMzMGzAAwY2swCMwMM0gxCMA",
+                items = {
+                    {
+                        itemId = "237655",
+                        itemName = "Spellweaver's Immaculate Focus",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213491"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222587",
+                            "213743",
+                            "213491"
+                        }
+                    },
+                    {
+                        itemId = "237653",
+                        itemName = "Spellweaver's Immaculate Pauldrons",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237658",
+                        itemName = "Spellweaver's Immaculate Crestward",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219342",
+                        itemName = "Glyph-Etched Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213491",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237656",
+                        itemName = "Spellweaver's Immaculate Scaleguards",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219339",
+                        itemName = "Glyph-Etched Binding",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213491"
+                        }
+                    },
+                    {
+                        itemId = "237654",
+                        itemName = "Spellweaver's Immaculate Runeslacks",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243308",
+                        itemName = "Interloper's Chain Boots",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222587",
+                            "213491",
+                            "213491",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "221136",
+                        itemName = "Devout Zealot's Ring",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213491",
+                            "213491",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237730",
+                        itemName = "Voidglass Spire",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242392",
+                        itemName = "Diamantine Voidcore",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242393",
+                        itemName = "Loom'ithar's Living Silk",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Holy Priest"] = {
+                talents = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAzmxDMGjZYGzMmZmx2MzMAAAAglZZ2GMzMYWYWmxgBLsxMzUzCAzsgFCjZZAGLwCGLDA",
+                items = {
+                    {
+                        itemId = "237709",
+                        itemName = "Dying Star's Veil",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "185820",
+                        itemName = "Cabochon of the Infinite Flight",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213746",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237707",
+                        itemName = "Dying Star's Pyrelights",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238044",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237712",
+                        itemName = "Dying Star's Cassock",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222815",
+                        itemName = "Consecrated Cuffs",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237710",
+                        itemName = "Dying Star's Caress",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222816",
+                        itemName = "Consecrated Cord",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222593",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237708",
+                        itemName = "Dying Star's Leggings",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243305",
+                        itemName = "Interloper's Silken Striders",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "221136",
+                        itemName = "Devout Zealot's Ring",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213458",
+                            "213458",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "185813",
+                        itemName = "Signet of Collapsing Stars",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213458",
+                            "213458",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "222568",
+                        itemName = "Vagabond's Bounding Baton",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "190958",
+                        itemName = "So'leah's Secret Technique",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242393",
+                        itemName = "Loom'ithar's Living Silk",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            }
+        }
+    },
+    mythic = {
+        tank = {
+            ["Protection Warrior"] = {
+                talents = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAAwYGzMzMzMmNjZZwYMaMLjZYsMmZG2mZGzADDAAAAAAsMGAYGbAGYDWWMaMDgZBmNYmB",
+                items = {
+                    {
+                        itemId = "237610",
+                        itemName = "Living Weapon's Faceshield",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "185820",
+                        itemName = "Cabochon of the Infinite Flight",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237608",
+                        itemName = "Living Weapon's Ramparts",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237613",
+                        itemName = "Living Weapon's Bulwark",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222435",
+                        itemName = "Everforged Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237611",
+                        itemName = "Living Weapon's Crushers",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222431",
+                        itemName = "Everforged Greatbelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237609",
+                        itemName = "Living Weapon's Legguards",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243307",
+                        itemName = "Interloper's Plated Sabatons",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "185813",
+                        itemName = "Signet of Collapsing Stars",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "222440",
+                        itemName = "Everforged Longsword",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222432",
+                        itemName = "Everforged Defender",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222587"
+                        }
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242401",
+                        itemName = "Brand of Ceaseless Ire",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Protection Paladin"] = {
+                talents = "CIEAAAAAAAAAAAAAAAAAAAAAAsZMYWGLzMzMzMLbzMzYmtxwAAAAAAAAAAg2amZWMMzMGzwWbAADMAAbDAAAAYmZbbptZGLMYAYwMMG",
+                items = {
+                    {
+                        itemId = "237619",
+                        itemName = "Lightmane of the Lucent Battalion",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "185842",
+                        itemName = "Ornately Engraved Amplifier",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "237617",
+                        itemName = "Chargers of the Lucent Battalion",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238044",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237622",
+                        itemName = "Cuirass of the Lucent Battalion",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222435",
+                        itemName = "Everforged Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213455",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237620",
+                        itemName = "Protectors of the Lucent Battalion",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222431",
+                        itemName = "Everforged Greatbelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "237618",
+                        itemName = "Cuisses of the Lucent Battalion",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243307",
+                        itemName = "Interloper's Plated Sabatons",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "221136",
+                        itemName = "Devout Zealot's Ring",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213455",
+                            "213455",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222587",
+                            "213455",
+                            "213455",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "222440",
+                        itemName = "Everforged Longsword",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222432",
+                        itemName = "Everforged Defender",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222587"
+                        }
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242401",
+                        itemName = "Brand of Ceaseless Ire",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Brewmaster Monk"] = {
+                talents = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgxGmxMmlZsNmZGDAAAAAAwyCGxMDMzmxGw2MzMMbDzYzyMxsNbzMDzGAAsBAAAMbzSzMzswMsB",
+                items = {
+                    {
+                        itemId = "237673",
+                        itemName = "Half-Mask of Fallen Storms",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213467"
+                        }
+                    },
+                    {
+                        itemId = "252009",
+                        itemName = "Bloodstained Memento",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213467"
+                        }
+                    },
+                    {
+                        itemId = "237671",
+                        itemName = "Glyphs of Fallen Storms",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238042",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237676",
+                        itemName = "Gi of Fallen Storms",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222596",
+                            "213467",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237674",
+                        itemName = "Grasp of Fallen Storms",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219502",
+                        itemName = "Adrenal Surge Clasp",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222596",
+                            "213467"
+                        }
+                    },
+                    {
+                        itemId = "237672",
+                        itemName = "Legwraps of Fallen Storms",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222596",
+                            "213467",
+                            "213467",
+                            "223680"
+                        }
+                    },
+                    {
+                        itemId = "221141",
+                        itemName = "High Nerubian Signet",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213467",
+                            "213467",
+                            "223680"
+                        }
+                    },
+                    {
+                        itemId = "237739",
+                        itemName = "Obliteration Beamglaive",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242401",
+                        itemName = "Brand of Ceaseless Ire",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "246344",
+                        itemName = "Cursed Stone Idol",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Guardian Druid"] = {
+                talents = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzYmhZWmZMjZMzYhZGmFLDMbGGNRzMzyMLzMzyYGAAAAAAwwYALbzshxsMAmAAAA2gBgFjhB",
+                items = {
+                    {
+                        itemId = "237682",
+                        itemName = "Skymane of the Mother Eagle",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "185820",
+                        itemName = "Cabochon of the Infinite Flight",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "237680",
+                        itemName = "Ritual Pauldrons of the Mother Eagle",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237685",
+                        itemName = "Vest of the Mother Eagle",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222581",
+                            "213485",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237683",
+                        itemName = "Wings of the Mother Eagle",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219331",
+                        itemName = "Rune-Branded Waistband",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222581",
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "237681",
+                        itemName = "Breeches of the Mother Eagle",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "185813",
+                        itemName = "Signet of Collapsing Stars",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213485",
+                            "213485",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222581",
+                            "213485",
+                            "213485",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "222448",
+                        itemName = "Charged Halberd",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "232541",
+                        itemName = "Improvised Seaforium Pacemaker",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242401",
+                        itemName = "Brand of Ceaseless Ire",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Vengeance Demon Hunter"] = {
+                talents = "CUkAAAAAAAAAAAAAAAAAAAAAAAAmZMmZMMjMzMMDzMbjxMsNDzMmZMY2mZmNzMmZYGAAAAmtZwwYZhJMYmhxC",
+                items = {
+                    {
+                        itemId = "237691",
+                        itemName = "Charhound's Vicious Scalp",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "185842",
+                        itemName = "Ornately Engraved Amplifier",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237689",
+                        itemName = "Charhound's Vicious Hornguards",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237694",
+                        itemName = "Charhound's Vicious Bindings",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237692",
+                        itemName = "Charhound's Vicious Felclaws",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219331",
+                        itemName = "Rune-Branded Waistband",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237690",
+                        itemName = "Charhound's Vicious Hidecoat",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "246281",
+                        itemName = "Ring of the Panoply",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "221136",
+                        itemName = "Devout Zealot's Ring",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "222441",
+                        itemName = "Everforged Warglaive",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222441",
+                        itemName = "Everforged Warglaive",
+                        itemType = "Off-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242401",
+                        itemName = "Brand of Ceaseless Ire",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Blood Death Knight"] = {
+                talents = "CoPAAAAAAAAAAAAAAAAAAAAAAwwYmZGzYmZGGGzMNzYYmZmxAAAAAzMzMzMzMzmZmxAAAYmZmBAAAYgBmxoxyGglBsBwMYDA",
+                items = {
+                    {
+                        itemId = "237628",
+                        itemName = "Hollow Sentinel's Stonemask",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213473"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222593",
+                            "213743",
+                            "213473"
+                        }
+                    },
+                    {
+                        itemId = "237626",
+                        itemName = "Hollow Sentinel's Perches",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238042",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237631",
+                        itemName = "Hollow Sentinel's Breastplate",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222435",
+                        itemName = "Everforged Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222593",
+                            "213473",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237629",
+                        itemName = "Hollow Sentinel's Gauntlets",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222431",
+                        itemName = "Everforged Greatbelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222593",
+                            "213473"
+                        }
+                    },
+                    {
+                        itemId = "237627",
+                        itemName = "Hollow Sentinel's Stonekilt",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243307",
+                        itemName = "Interloper's Plated Sabatons",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222593",
+                            "213473",
+                            "213473",
+                            "223680"
+                        }
+                    },
+                    {
+                        itemId = "221141",
+                        itemName = "High Nerubian Signet",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213473",
+                            "213473",
+                            "223680"
+                        }
+                    },
+                    {
+                        itemId = "222447",
+                        itemName = "Charged Claymore",
+                        itemType = "Main-Hand",
+                        enchantments = {
+                            "222593"
+                        }
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242401",
+                        itemName = "Brand of Ceaseless Ire",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            }
+        },
+        dps = {
+            ["Frost Death Knight"] = {
+                talents = "CsPAAAAAAAAAAAAAAAAAAAAAAMDwMzYGjxwYGzMzMjZmRzMGjhZGgZmZmZmZmBAAAAAAAAAAAjltBGwCYZYCMWwMzMmZghB",
+                items = {
+                    {
+                        itemId = "237628",
+                        itemName = "Hollow Sentinel's Stonemask",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222593",
+                            "213743",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237626",
+                        itemName = "Hollow Sentinel's Perches",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237631",
+                        itemName = "Hollow Sentinel's Breastplate",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222435",
+                        itemName = "Everforged Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237629",
+                        itemName = "Hollow Sentinel's Gauntlets",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222431",
+                        itemName = "Everforged Greatbelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222593",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237627",
+                        itemName = "Hollow Sentinel's Stonekilt",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243307",
+                        itemName = "Interloper's Plated Sabatons",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "213458",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237567",
+                        itemName = "Logic Gate: Alpha",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213458",
+                            "213458",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "222447",
+                        itemName = "Charged Claymore",
+                        itemType = "Main-Hand",
+                        enchantments = {
+                            "222593"
+                        }
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242396",
+                        itemName = "Unyielding Netherprism",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Havoc Demon Hunter"] = {
+                talents = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZmZmZmZMzMjhJDzAAAAAAAmFjxMjZmZbMzGWmZwYYssNbzghx2GTYGzMDDL",
+                items = {
+                    {
+                        itemId = "237691",
+                        itemName = "Charhound's Vicious Scalp",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222593",
+                            "213743",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237689",
+                        itemName = "Charhound's Vicious Hornguards",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238044",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237694",
+                        itemName = "Charhound's Vicious Bindings",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237692",
+                        itemName = "Charhound's Vicious Felclaws",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219331",
+                        itemName = "Rune-Branded Waistband",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222593",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237690",
+                        itemName = "Charhound's Vicious Hidecoat",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "213458",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "237567",
+                        itemName = "Logic Gate: Alpha",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213458",
+                            "213458",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "222441",
+                        itemName = "Everforged Warglaive",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222441",
+                        itemName = "Everforged Warglaive",
+                        itemType = "Off-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "246344",
+                        itemName = "Cursed Stone Idol",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Beast Mastery Hunter"] = {
+                talents = "C0PAAAAAAAAAAAAAAAAAAAAAAYMbDMgBMbsFYsAAAAAAgZGbzgZmBzMMzyMzMzgZMTmxMmxMzwMDDjhZGmlhZbZGsBAAAAAAzA",
+                items = {
+                    {
+                        itemId = "237646",
+                        itemName = "Midnight Herald's Cowl",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "185820",
+                        itemName = "Cabochon of the Infinite Flight",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237644",
+                        itemName = "Midnight Herald's Shadowguards",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237649",
+                        itemName = "Midnight Herald's Hauberk",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219342",
+                        itemName = "Glyph-Etched Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237647",
+                        itemName = "Midnight Herald's Gloves",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219339",
+                        itemName = "Glyph-Etched Binding",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237645",
+                        itemName = "Midnight Herald's Petticoat",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243308",
+                        itemName = "Interloper's Chain Boots",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "185813",
+                        itemName = "Signet of Collapsing Stars",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "221969",
+                        itemName = "P.0.W. x2",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242396",
+                        itemName = "Unyielding Netherprism",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Elemental Shaman"] = {
+                talents = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAAMbz22MzMzY2mlxMgZmZAAAAAAbmxwGsAzwQjNAwsMNDYjxMNMzMjhlZMjFzyMLziZMYYmtBA",
+                items = {
+                    {
+                        itemId = "237637",
+                        itemName = "Aspect of Channeled Fury",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222584",
+                            "213743",
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "237635",
+                        itemName = "Fangs of Channeled Fury",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237640",
+                        itemName = "Furs of Channeled Fury",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219342",
+                        itemName = "Glyph-Etched Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222584",
+                            "213494",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237638",
+                        itemName = "Claws of Channeled Fury",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219339",
+                        itemName = "Glyph-Etched Binding",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222584",
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "237636",
+                        itemName = "Tassets of Channeled Fury",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243308",
+                        itemName = "Interloper's Chain Boots",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222584",
+                            "213494",
+                            "213494",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "178824",
+                        itemName = "Signet of the False Accuser",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213494",
+                            "213494",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237728",
+                        itemName = "Voidglass Kris",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222432",
+                        itemName = "Everforged Defender",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222584"
+                        }
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Arcane Mage"] = {
+                talents = "C4DAAAAAAAAAAAAAAAAAAAAAAMzgZbGMjHYmZDGzMMmGzyMAAAAAAMAgZmplZbZGAAbAAAAAAsBgxgZWmlZMzYMDzMzMjZMLjB",
+                items = {
+                    {
+                        itemId = "237718",
+                        itemName = "Augur's Ephemeral Wide-Brim",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "237568",
+                        itemName = "Chrysalis of Sundered Souls",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "237716",
+                        itemName = "Augur's Ephemeral Orbs of Power",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238042",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237721",
+                        itemName = "Augur's Ephemeral Habiliments",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222815",
+                        itemName = "Consecrated Cuffs",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222581",
+                            "213485",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237719",
+                        itemName = "Augur's Ephemeral Mitts",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222816",
+                        itemName = "Consecrated Cord",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222581",
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "237717",
+                        itemName = "Augur's Ephemeral Trousers",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243305",
+                        itemName = "Interloper's Silken Striders",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222581",
+                            "213485",
+                            "213485",
+                            "223680"
+                        }
+                    },
+                    {
+                        itemId = "185813",
+                        itemName = "Signet of Collapsing Stars",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213485",
+                            "213485",
+                            "223680"
+                        }
+                    },
+                    {
+                        itemId = "237730",
+                        itemName = "Voidglass Spire",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242497",
+                        itemName = "Azhiccaran Parapodia",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Fury Warrior"] = {
+                talents = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQjhxsZmhZWGMzCzMzYGmhZ22mZMzMLAzMzYmxywwMzMAAAIGbbDsAGwMMBGsBA",
+                items = {
+                    {
+                        itemId = "237610",
+                        itemName = "Living Weapon's Faceshield",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "178827",
+                        itemName = "Sin Stained Pendant",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "237608",
+                        itemName = "Living Weapon's Ramparts",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237613",
+                        itemName = "Living Weapon's Bulwark",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222435",
+                        itemName = "Everforged Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222584",
+                            "213494",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237611",
+                        itemName = "Living Weapon's Crushers",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222431",
+                        itemName = "Everforged Greatbelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222584",
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "237609",
+                        itemName = "Living Weapon's Legguards",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243307",
+                        itemName = "Interloper's Plated Sabatons",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "178824",
+                        itemName = "Signet of the False Accuser",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213494",
+                            "213494",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222584",
+                            "213494",
+                            "213494",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "234490",
+                        itemName = "Circuit Breaker",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222447",
+                        itemName = "Charged Claymore",
+                        itemType = "Off-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "246344",
+                        itemName = "Cursed Stone Idol",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Subtlety Rogue"] = {
+                talents = "CUQAAAAAAAAAAAAAAAAAAAAAAAAM2mBAAAAAgZZMWmGzYmxMzYMDzMjhxsNLGzstMzMmZmBMWmlBAAAgZwAYMbGGYgZhFaxGM",
+                items = {
+                    {
+                        itemId = "237664",
+                        itemName = "Hood of the Sudden Eclipse",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213473"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222590",
+                            "213743",
+                            "213473"
+                        }
+                    },
+                    {
+                        itemId = "237552",
+                        itemName = "Deathbound Shoulderpads",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237667",
+                        itemName = "Tactical Vest of the Sudden Eclipse",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222590",
+                            "213473",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237665",
+                        itemName = "Deathgrips of the Sudden Eclipse",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "237533",
+                        itemName = "Atomic Phasebelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "213473"
+                        }
+                    },
+                    {
+                        itemId = "237663",
+                        itemName = "Pants of the Sudden Eclipse",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222590",
+                            "213473",
+                            "213473",
+                            "223680"
+                        }
+                    },
+                    {
+                        itemId = "221141",
+                        itemName = "High Nerubian Signet",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213473",
+                            "213473",
+                            "223680"
+                        }
+                    },
+                    {
+                        itemId = "237729",
+                        itemName = "Prodigious Gene Splicer",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222438",
+                        itemName = "Everforged Stabber",
+                        itemType = "Off-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242396",
+                        itemName = "Unyielding Netherprism",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Feral Druid"] = {
+                talents = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbzmZWYmZmZzmZsNzMzYmBAAAAAYJY2MwMjaGziZZmZWGzYGAAAAAAYAAAAAamlZZmZbAALgZAYhBD",
+                items = {
+                    {
+                        itemId = "237682",
+                        itemName = "Skymane of the Mother Eagle",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222584",
+                            "213743",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237680",
+                        itemName = "Ritual Pauldrons of the Mother Eagle",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237685",
+                        itemName = "Vest of the Mother Eagle",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222584",
+                            "213458",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237683",
+                        itemName = "Wings of the Mother Eagle",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219331",
+                        itemName = "Rune-Branded Waistband",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222584",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237681",
+                        itemName = "Breeches of the Mother Eagle",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "178824",
+                        itemName = "Signet of the False Accuser",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213458",
+                            "213458",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222584",
+                            "213458",
+                            "213458",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237739",
+                        itemName = "Obliteration Beamglaive",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Outlaw Rogue"] = {
+                talents = "CQQAAAAAAAAAAAAAAAAAAAAAAAAMz2MYMzYmZmZYGegxMzMMzMz0yMmtZAAAAAAw2yYGMzwCsMbDAAAAzMzAwY2MMwAzCL0CbGA",
+                items = {
+                    {
+                        itemId = "237664",
+                        itemName = "Hood of the Sudden Eclipse",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213467"
+                        }
+                    },
+                    {
+                        itemId = "237568",
+                        itemName = "Chrysalis of Sundered Souls",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213467"
+                        }
+                    },
+                    {
+                        itemId = "237662",
+                        itemName = "Smokemantle of the Sudden Eclipse",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238042",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237667",
+                        itemName = "Tactical Vest of the Sudden Eclipse",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222596",
+                            "213467",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237665",
+                        itemName = "Deathgrips of the Sudden Eclipse",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219331",
+                        itemName = "Rune-Branded Waistband",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222596",
+                            "213467"
+                        }
+                    },
+                    {
+                        itemId = "237663",
+                        itemName = "Pants of the Sudden Eclipse",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222596",
+                            "213467",
+                            "213467",
+                            "223796"
+                        }
+                    },
+                    {
+                        itemId = "185813",
+                        itemName = "Signet of Collapsing Stars",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213467",
+                            "213467",
+                            "223796"
+                        }
+                    },
+                    {
+                        itemId = "222440",
+                        itemName = "Everforged Longsword",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222440",
+                        itemName = "Everforged Longsword",
+                        itemType = "Off-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242397",
+                        itemName = "Sigil of the Cosmic Hunt",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Unholy Death Knight"] = {
+                talents = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMzYGjxwMzMzMTDzYMzMGAAAAAAAAmZmZDzYmBAsNDzY2mZmxYGgFzihBGY2YoxCGgZAMA",
+                items = {
+                    {
+                        itemId = "237628",
+                        itemName = "Hollow Sentinel's Stonemask",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213491"
+                        }
+                    },
+                    {
+                        itemId = "178827",
+                        itemName = "Sin Stained Pendant",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213491"
+                        }
+                    },
+                    {
+                        itemId = "237626",
+                        itemName = "Hollow Sentinel's Perches",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237631",
+                        itemName = "Hollow Sentinel's Breastplate",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222435",
+                        itemName = "Everforged Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222593",
+                            "213491",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237629",
+                        itemName = "Hollow Sentinel's Gauntlets",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222431",
+                        itemName = "Everforged Greatbelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222593",
+                            "213491"
+                        }
+                    },
+                    {
+                        itemId = "237627",
+                        itemName = "Hollow Sentinel's Stonekilt",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243307",
+                        itemName = "Interloper's Plated Sabatons",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "178824",
+                        itemName = "Signet of the False Accuser",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213491",
+                            "213491",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "242491",
+                        itemName = "Whispers of K'aresh",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213491",
+                            "213491",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "222447",
+                        itemName = "Charged Claymore",
+                        itemType = "Main-Hand",
+                        enchantments = {
+                            "222593"
+                        }
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "246344",
+                        itemName = "Cursed Stone Idol",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Destruction Warlock"] = {
+                talents = "CsQAAAAAAAAAAAAAAAAAAAAAAAmZmZmZEzmhxsZmZYWmNjxMzsYGzyyMzAAAAAYmtlZmlZsADMLGNmBwshNMAAAAAAAmxYGAA",
+                items = {
+                    {
+                        itemId = "237700",
+                        itemName = "Inquisitor's Portal to Madness",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222587",
+                            "213743",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237698",
+                        itemName = "Inquisitor's Gaze of Madness",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237703",
+                        itemName = "Inquisitor's Robes of Madness",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222815",
+                        itemName = "Consecrated Cuffs",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237701",
+                        itemName = "Inquisitor's Clutches of Madness",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222816",
+                        itemName = "Consecrated Cord",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237699",
+                        itemName = "Inquisitor's Leggings of Madness",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243305",
+                        itemName = "Interloper's Silken Striders",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "237567",
+                        itemName = "Logic Gate: Alpha",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "237728",
+                        itemName = "Voidglass Kris",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222566",
+                        itemName = "Vagabond's Torch",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222587"
+                        }
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242497",
+                        itemName = "Azhiccaran Parapodia",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Balance Druid"] = {
+                talents = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALUmtGGzMAzCLzMzCDjFzyMLzMbzMzMzMLmlxwgNswAMW2mZDjZbAMBAAAYxMjBYzYGD",
+                items = {
+                    {
+                        itemId = "237682",
+                        itemName = "Skymane of the Mother Eagle",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "178827",
+                        itemName = "Sin Stained Pendant",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "237680",
+                        itemName = "Ritual Pauldrons of the Mother Eagle",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237685",
+                        itemName = "Vest of the Mother Eagle",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222584",
+                            "213494",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237683",
+                        itemName = "Wings of the Mother Eagle",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219331",
+                        itemName = "Rune-Branded Waistband",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222584",
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "237681",
+                        itemName = "Breeches of the Mother Eagle",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "178824",
+                        itemName = "Signet of the False Accuser",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213494",
+                            "213494",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "242491",
+                        itemName = "Whispers of K'aresh",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213494",
+                            "213494",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "222568",
+                        itemName = "Vagabond's Bounding Baton",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242494",
+                        itemName = "Lily of the Eternal Weave",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242497",
+                        itemName = "Azhiccaran Parapodia",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Retribution Paladin"] = {
+                talents = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAYAgRmltZmtltZGbGz2mZbAAAAAAY2aaGGmZsNDmthxsNzy2YGMYYZhNAAAYmptZZ2mBAsBMAgxMMA",
+                items = {
+                    {
+                        itemId = "237619",
+                        itemName = "Lightmane of the Lucent Battalion",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "185842",
+                        itemName = "Ornately Engraved Amplifier",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237617",
+                        itemName = "Chargers of the Lucent Battalion",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237622",
+                        itemName = "Cuirass of the Lucent Battalion",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222435",
+                        itemName = "Everforged Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237620",
+                        itemName = "Protectors of the Lucent Battalion",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222431",
+                        itemName = "Everforged Greatbelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222593",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237618",
+                        itemName = "Cuisses of the Lucent Battalion",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243307",
+                        itemName = "Interloper's Plated Sabatons",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "178824",
+                        itemName = "Signet of the False Accuser",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213458",
+                            "213458",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "221136",
+                        itemName = "Devout Zealot's Ring",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213458",
+                            "213458",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "222443",
+                        itemName = "Everforged Greataxe",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Windwalker Monk"] = {
+                talents = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYAMzM2mZMzMDAAAAAAAAAAALLDjmZmBmBsww2MzMMbMzwsMTAAsMmhZmhtZAAsBAmlZpZmZWAMD",
+                items = {
+                    {
+                        itemId = "237673",
+                        itemName = "Half-Mask of Fallen Storms",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222584",
+                            "213743",
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "237671",
+                        itemName = "Glyphs of Fallen Storms",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237676",
+                        itemName = "Gi of Fallen Storms",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222584",
+                            "213494",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237674",
+                        itemName = "Grasp of Fallen Storms",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219331",
+                        itemName = "Rune-Branded Waistband",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222584",
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "237672",
+                        itemName = "Legwraps of Fallen Storms",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222584",
+                            "213494",
+                            "213494",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "178824",
+                        itemName = "Signet of the False Accuser",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213494",
+                            "213494",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "221159",
+                        itemName = "Harvester's Interdiction",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242396",
+                        itemName = "Unyielding Netherprism",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Affliction Warlock"] = {
+                talents = "CkQAAAAAAAAAAAAAAAAAAAAAAMMzMmZmZEzmhxsNzDMDzyAAAAmZMzyMjxyMzMLmxMDAYeALwAziRjZAMbglZAAAAAAAAwMsA",
+                items = {
+                    {
+                        itemId = "237700",
+                        itemName = "Inquisitor's Portal to Madness",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222593",
+                            "213743",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237698",
+                        itemName = "Inquisitor's Gaze of Madness",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238044",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237703",
+                        itemName = "Inquisitor's Robes of Madness",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222815",
+                        itemName = "Consecrated Cuffs",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237701",
+                        itemName = "Inquisitor's Clutches of Madness",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222816",
+                        itemName = "Consecrated Cord",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222593",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237699",
+                        itemName = "Inquisitor's Leggings of Madness",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243305",
+                        itemName = "Interloper's Silken Striders",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "213458",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237567",
+                        itemName = "Logic Gate: Alpha",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213458",
+                            "213458",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237728",
+                        itemName = "Voidglass Kris",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222566",
+                        itemName = "Vagabond's Torch",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222593"
+                        }
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242497",
+                        itemName = "Azhiccaran Parapodia",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Shadow Priest"] = {
+                talents = "CIQAAAAAAAAAAAAAAAAAAAAAAMMMAAAAAAAAAAAAYMWGjZmZbZjZmZmZmZZwsxMzMjZjBGjhZxsN1MDWwMAzsZZY2MAkxYBA2mB",
+                items = {
+                    {
+                        itemId = "237709",
+                        itemName = "Dying Star's Veil",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "178827",
+                        itemName = "Sin Stained Pendant",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "237707",
+                        itemName = "Dying Star's Pyrelights",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237712",
+                        itemName = "Dying Star's Cassock",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222815",
+                        itemName = "Consecrated Cuffs",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222584",
+                            "213494",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237710",
+                        itemName = "Dying Star's Caress",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222816",
+                        itemName = "Consecrated Cord",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222584",
+                            "213494"
+                        }
+                    },
+                    {
+                        itemId = "237708",
+                        itemName = "Dying Star's Leggings",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243305",
+                        itemName = "Interloper's Silken Striders",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "178824",
+                        itemName = "Signet of the False Accuser",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213494",
+                            "213494",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222584",
+                            "213494",
+                            "213494",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237728",
+                        itemName = "Voidglass Kris",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222566",
+                        itemName = "Vagabond's Torch",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222584"
+                        }
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Marksmanship Hunter"] = {
+                talents = "C4PAAAAAAAAAAAAAAAAAAAAAAYMbDMgBMbsEYWAAAAAAAAAAAAAgZMjZMzMMjMjxwMDzywssMD2GmxYZbzMzMmFzMMmZmlNDLDzM",
+                items = {
+                    {
+                        itemId = "237646",
+                        itemName = "Midnight Herald's Cowl",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "185842",
+                        itemName = "Ornately Engraved Amplifier",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237644",
+                        itemName = "Midnight Herald's Shadowguards",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238044",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237649",
+                        itemName = "Midnight Herald's Hauberk",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219342",
+                        itemName = "Glyph-Etched Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "219341",
+                        itemName = "Glyph-Etched Gauntlets",
+                        itemType = "Gloves",
+                        enchantments = {
+                            "222593"
+                        }
+                    },
+                    {
+                        itemId = "219339",
+                        itemName = "Glyph-Etched Binding",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222593",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237645",
+                        itemName = "Midnight Herald's Petticoat",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243308",
+                        itemName = "Interloper's Chain Boots",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "237567",
+                        itemName = "Logic Gate: Alpha",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213458",
+                            "213458",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "221136",
+                        itemName = "Devout Zealot's Ring",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213458",
+                            "213458",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "221969",
+                        itemName = "P.0.W. x2",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242396",
+                        itemName = "Unyielding Netherprism",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Demonology Warlock"] = {
+                talents = "CoQAAAAAAAAAAAAAAAAAAAAAAgxMzMzMjY2MWGziZmhZbAAAAAAAAAAMAjZMsADsMsQDLMzYGbjZ2mxMzMGzYYmZmZGYGAAA",
+                items = {
+                    {
+                        itemId = "237700",
+                        itemName = "Inquisitor's Portal to Madness",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222587",
+                            "213743",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237698",
+                        itemName = "Inquisitor's Gaze of Madness",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237703",
+                        itemName = "Inquisitor's Robes of Madness",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222815",
+                        itemName = "Consecrated Cuffs",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237701",
+                        itemName = "Inquisitor's Clutches of Madness",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222816",
+                        itemName = "Consecrated Cord",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237699",
+                        itemName = "Inquisitor's Leggings of Madness",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243305",
+                        itemName = "Interloper's Silken Striders",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "221136",
+                        itemName = "Devout Zealot's Ring",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "237728",
+                        itemName = "Voidglass Kris",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222566",
+                        itemName = "Vagabond's Torch",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222587"
+                        }
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242497",
+                        itemName = "Azhiccaran Parapodia",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Survival Hunter"] = {
+                talents = "C8PAAAAAAAAAAAAAAAAAAAAAAMGYglxoxyAY2AbzMWmZmZmZYMzMzYMGzMmFAAAAAAgmxMmxMzwMMDjhZGGDzyyMYDAAAAAGAA",
+                items = {
+                    {
+                        itemId = "237646",
+                        itemName = "Midnight Herald's Cowl",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213491"
+                        }
+                    },
+                    {
+                        itemId = "178827",
+                        itemName = "Sin Stained Pendant",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213491"
+                        }
+                    },
+                    {
+                        itemId = "237644",
+                        itemName = "Midnight Herald's Shadowguards",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237649",
+                        itemName = "Midnight Herald's Hauberk",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219342",
+                        itemName = "Glyph-Etched Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222593",
+                            "213491",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "219341",
+                        itemName = "Glyph-Etched Gauntlets",
+                        itemType = "Gloves",
+                        enchantments = {
+                            "222593"
+                        }
+                    },
+                    {
+                        itemId = "219339",
+                        itemName = "Glyph-Etched Binding",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222593",
+                            "213491"
+                        }
+                    },
+                    {
+                        itemId = "237645",
+                        itemName = "Midnight Herald's Petticoat",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243308",
+                        itemName = "Interloper's Chain Boots",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "178824",
+                        itemName = "Signet of the False Accuser",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213491",
+                            "213491",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222593",
+                            "213491",
+                            "213491",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "222448",
+                        itemName = "Charged Halberd",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "232541",
+                        itemName = "Improvised Seaforium Pacemaker",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "246344",
+                        itemName = "Cursed Stone Idol",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Enhancement Shaman"] = {
+                talents = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMDMzDMDzMz8AzMLzMYZAAAAAAAAAA2AsZGDbwCMDDNYBAz2kBmFGzMjZmZmNmlZmpZjlhxYAAGD",
+                items = {
+                    {
+                        itemId = "237637",
+                        itemName = "Aspect of Channeled Fury",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213482"
+                        }
+                    },
+                    {
+                        itemId = "178827",
+                        itemName = "Sin Stained Pendant",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213482"
+                        }
+                    },
+                    {
+                        itemId = "237635",
+                        itemName = "Fangs of Channeled Fury",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237640",
+                        itemName = "Furs of Channeled Fury",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219342",
+                        itemName = "Glyph-Etched Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222584",
+                            "213482",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237638",
+                        itemName = "Claws of Channeled Fury",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219339",
+                        itemName = "Glyph-Etched Binding",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222584",
+                            "213482"
+                        }
+                    },
+                    {
+                        itemId = "237636",
+                        itemName = "Tassets of Channeled Fury",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243308",
+                        itemName = "Interloper's Chain Boots",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242491",
+                        itemName = "Whispers of K'aresh",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213482",
+                            "213482",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "178824",
+                        itemName = "Signet of the False Accuser",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213482",
+                            "213482",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237738",
+                        itemName = "Unbound Training Claws",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222451",
+                        itemName = "Charged Slicer",
+                        itemType = "Off-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Assassination Rogue"] = {
+                talents = "CMQAAAAAAAAAAAAAAAAAAAAAAYmZMzMmBAAAAAAYWmxsMDAAAAAAttMzMYmBzMzysNYMmZmZmZmZYzyYGgNzyADYBsNMBGWGA",
+                items = {
+                    {
+                        itemId = "237664",
+                        itemName = "Hood of the Sudden Eclipse",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222593",
+                            "213743",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237662",
+                        itemName = "Smokemantle of the Sudden Eclipse",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237667",
+                        itemName = "Tactical Vest of the Sudden Eclipse",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237665",
+                        itemName = "Deathgrips of the Sudden Eclipse",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "237533",
+                        itemName = "Atomic Phasebelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237663",
+                        itemName = "Pants of the Sudden Eclipse",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "213458",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237567",
+                        itemName = "Logic Gate: Alpha",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213458",
+                            "213458",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "222438",
+                        itemName = "Everforged Stabber",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222438",
+                        itemName = "Everforged Stabber",
+                        itemType = "Off-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242396",
+                        itemName = "Unyielding Netherprism",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Fire Mage"] = {
+                talents = "C8DAAAAAAAAAAAAAAAAAAAAAAYGMbGMDzMLwYmhpxMzyMDAAAAAgBAMzMtMLLzAAsZmZwYmxMjZxsMGmZ2Mz2M2mBGAAAAAAA",
+                items = {
+                    {
+                        itemId = "237718",
+                        itemName = "Augur's Ephemeral Wide-Brim",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "178827",
+                        itemName = "Sin Stained Pendant",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "237716",
+                        itemName = "Augur's Ephemeral Orbs of Power",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237721",
+                        itemName = "Augur's Ephemeral Habiliments",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222815",
+                        itemName = "Consecrated Cuffs",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222581",
+                            "213485",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237719",
+                        itemName = "Augur's Ephemeral Mitts",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222816",
+                        itemName = "Consecrated Cord",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222581",
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "237717",
+                        itemName = "Augur's Ephemeral Trousers",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243305",
+                        itemName = "Interloper's Silken Striders",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242491",
+                        itemName = "Whispers of K'aresh",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213485",
+                            "213485",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222581",
+                            "213485",
+                            "213485",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "237730",
+                        itemName = "Voidglass Spire",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242392",
+                        itemName = "Diamantine Voidcore",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242497",
+                        itemName = "Azhiccaran Parapodia",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Arms Warrior"] = {
+                talents = "CcEAAAAAAAAAAAAAAAAAAAAAAghZmxMmxMz2stsMmBAAAYw0wYWGzwYZMzM2MzMmZwwAAAAAAAwMmtBDYLGwmZMsBDMDb0AWA",
+                items = {
+                    {
+                        itemId = "237610",
+                        itemName = "Living Weapon's Faceshield",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "185842",
+                        itemName = "Ornately Engraved Amplifier",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "237608",
+                        itemName = "Living Weapon's Ramparts",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238044",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237613",
+                        itemName = "Living Weapon's Bulwark",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222435",
+                        itemName = "Everforged Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213455",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237611",
+                        itemName = "Living Weapon's Crushers",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222431",
+                        itemName = "Everforged Greatbelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "237609",
+                        itemName = "Living Weapon's Legguards",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243307",
+                        itemName = "Interloper's Plated Sabatons",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "221136",
+                        itemName = "Devout Zealot's Ring",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213455",
+                            "213455",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222587",
+                            "213455",
+                            "213455",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "222447",
+                        itemName = "Charged Claymore",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "246344",
+                        itemName = "Cursed Stone Idol",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Devastation Evoker"] = {
+                talents = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmZGYGmxMDMMGz0wMTmtZWmxMzMzYmlZAGzsNmZMzMwAjBLwyY0YbAMDAbYG",
+                items = {
+                    {
+                        itemId = "237655",
+                        itemName = "Spellweaver's Immaculate Focus",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "185842",
+                        itemName = "Ornately Engraved Amplifier",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "237653",
+                        itemName = "Spellweaver's Immaculate Pauldrons",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237658",
+                        itemName = "Spellweaver's Immaculate Crestward",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219342",
+                        itemName = "Glyph-Etched Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213455",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237656",
+                        itemName = "Spellweaver's Immaculate Scaleguards",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219339",
+                        itemName = "Glyph-Etched Binding",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "237654",
+                        itemName = "Spellweaver's Immaculate Runeslacks",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243308",
+                        itemName = "Interloper's Chain Boots",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222587",
+                            "213455",
+                            "213455",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "221136",
+                        itemName = "Devout Zealot's Ring",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213455",
+                            "213455",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "237730",
+                        itemName = "Voidglass Spire",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Augmentation Evoker"] = {
+                talents = "CEcBAAAAAAAAAAAAAAAAAAAAAgZZmtZmZGGYmlZMzMmZDAAAAAMAAYmBGGD1wMzAAAAgZmZ2GzMbjZGDzsZMYBWGDjtBwMI2wYA",
+                items = {
+                    {
+                        itemId = "237655",
+                        itemName = "Spellweaver's Immaculate Focus",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222587",
+                            "213743",
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "237653",
+                        itemName = "Spellweaver's Immaculate Pauldrons",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238044",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237658",
+                        itemName = "Spellweaver's Immaculate Crestward",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219342",
+                        itemName = "Glyph-Etched Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213455",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237656",
+                        itemName = "Spellweaver's Immaculate Scaleguards",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219339",
+                        itemName = "Glyph-Etched Binding",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "237654",
+                        itemName = "Spellweaver's Immaculate Runeslacks",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243308",
+                        itemName = "Interloper's Chain Boots",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222587",
+                            "213455",
+                            "213455",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "221136",
+                        itemName = "Devout Zealot's Ring",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213455",
+                            "213455",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "222568",
+                        itemName = "Vagabond's Bounding Baton",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242494",
+                        itemName = "Lily of the Eternal Weave",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242497",
+                        itemName = "Azhiccaran Parapodia",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Frost Mage"] = {
+                talents = "CAEAAAAAAAAAAAAAAAAAAAAAAMzYzsZwMegZmNgZGNGzMmZmhhZwDMzMzMzMzMzMmZmxMzyMNzsMLAAAwCAAAAAAmNAAAAAAAA",
+                items = {
+                    {
+                        itemId = "237718",
+                        itemName = "Augur's Ephemeral Wide-Brim",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213461"
+                        }
+                    },
+                    {
+                        itemId = "252009",
+                        itemName = "Bloodstained Memento",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213461"
+                        }
+                    },
+                    {
+                        itemId = "237716",
+                        itemName = "Augur's Ephemeral Orbs of Power",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238042",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237721",
+                        itemName = "Augur's Ephemeral Habiliments",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222815",
+                        itemName = "Consecrated Cuffs",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222596",
+                            "213461",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237719",
+                        itemName = "Augur's Ephemeral Mitts",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222816",
+                        itemName = "Consecrated Cord",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222596",
+                            "213461"
+                        }
+                    },
+                    {
+                        itemId = "237717",
+                        itemName = "Augur's Ephemeral Trousers",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243305",
+                        itemName = "Interloper's Silken Striders",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222596",
+                            "213461",
+                            "213461",
+                            "223680"
+                        }
+                    },
+                    {
+                        itemId = "185813",
+                        itemName = "Signet of Collapsing Stars",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213461",
+                            "213461",
+                            "223680"
+                        }
+                    },
+                    {
+                        itemId = "222568",
+                        itemName = "Vagabond's Bounding Baton",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242497",
+                        itemName = "Azhiccaran Parapodia",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            }
+        },
+        healer = {
+            ["Restoration Druid"] = {
+                talents = "CkGAAAAAAAAAAAAAAAAAAAAAAsxMzYxMzMzsY2GDGLLjtFbzAAAAAAAAAAAAYbQ2gJDzMjZxsMzYZGzMDAAAAAAAMAAAAAgZbmtmtZWsxYGYYWAN",
+                items = {
+                    {
+                        itemId = "237682",
+                        itemName = "Skymane of the Mother Eagle",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213482"
+                        }
+                    },
+                    {
+                        itemId = "185820",
+                        itemName = "Cabochon of the Infinite Flight",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213746",
+                            "213482"
+                        }
+                    },
+                    {
+                        itemId = "237680",
+                        itemName = "Ritual Pauldrons of the Mother Eagle",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237685",
+                        itemName = "Vest of the Mother Eagle",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222584",
+                            "213482",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237683",
+                        itemName = "Wings of the Mother Eagle",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219331",
+                        itemName = "Rune-Branded Waistband",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222584",
+                            "213482"
+                        }
+                    },
+                    {
+                        itemId = "237681",
+                        itemName = "Breeches of the Mother Eagle",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "185813",
+                        itemName = "Signet of Collapsing Stars",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213482",
+                            "213482",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222584",
+                            "213482",
+                            "213482",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "237730",
+                        itemName = "Voidglass Spire",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242392",
+                        itemName = "Diamantine Voidcore",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242393",
+                        itemName = "Loom'ithar's Living Silk",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Restoration Shaman"] = {
+                talents = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZmZbmthZegZzsNWMsYxMLwAGwswEYsgZmFLzsNzYkZbxMz0YmhhxixMWMLDziZAAwA",
+                items = {
+                    {
+                        itemId = "237637",
+                        itemName = "Aspect of Channeled Fury",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213461"
+                        }
+                    },
+                    {
+                        itemId = "185842",
+                        itemName = "Ornately Engraved Amplifier",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213461"
+                        }
+                    },
+                    {
+                        itemId = "237635",
+                        itemName = "Fangs of Channeled Fury",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238044",
+                            "223731"
+                        }
+                    },
+                    {
+                        itemId = "237640",
+                        itemName = "Furs of Channeled Fury",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219342",
+                        itemName = "Glyph-Etched Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213461",
+                            "223713"
+                        }
+                    },
+                    {
+                        itemId = "237638",
+                        itemName = "Claws of Channeled Fury",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219339",
+                        itemName = "Glyph-Etched Binding",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213461"
+                        }
+                    },
+                    {
+                        itemId = "237636",
+                        itemName = "Tassets of Channeled Fury",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243308",
+                        itemName = "Interloper's Chain Boots",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222587",
+                            "213461",
+                            "213461",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "221136",
+                        itemName = "Devout Zealot's Ring",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213461",
+                            "213461",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "222445",
+                        itemName = "Charged Runeaxe",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222432",
+                        itemName = "Everforged Defender",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222587"
+                        }
+                    },
+                    {
+                        itemId = "190958",
+                        itemName = "So'leah's Secret Technique",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242393",
+                        itemName = "Loom'ithar's Living Silk",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Discipline Priest"] = {
+                talents = "CAQAAAAAAAAAAAAAAAAAAAAAAAgtZmZMGjxMzYmNz2MzMzMAAAAAAAAAAAWmlZbwMzgZhhxYMMLegtZaMxyAzMAQAmtZbDM2sBAA",
+                items = {
+                    {
+                        itemId = "237709",
+                        itemName = "Dying Star's Veil",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "185820",
+                        itemName = "Cabochon of the Infinite Flight",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213746",
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "237707",
+                        itemName = "Dying Star's Pyrelights",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237712",
+                        itemName = "Dying Star's Cassock",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222815",
+                        itemName = "Consecrated Cuffs",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222581",
+                            "213485",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237710",
+                        itemName = "Dying Star's Caress",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222816",
+                        itemName = "Consecrated Cord",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222581",
+                            "213485"
+                        }
+                    },
+                    {
+                        itemId = "237708",
+                        itemName = "Dying Star's Leggings",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243305",
+                        itemName = "Interloper's Silken Striders",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "185813",
+                        itemName = "Signet of Collapsing Stars",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213485",
+                            "213485",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222581",
+                            "213485",
+                            "213485",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "222568",
+                        itemName = "Vagabond's Bounding Baton",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242393",
+                        itemName = "Loom'ithar's Living Silk",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242497",
+                        itemName = "Azhiccaran Parapodia",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Holy Paladin"] = {
+                talents = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYAAzAAAMAbjZYmxMjlZMLzMsMDmZbz0WMjZMzMMwslBAMwAbAbMLzMmZZ2mZmlGAAAgFAD2MDMMA",
+                items = {
+                    {
+                        itemId = "237619",
+                        itemName = "Lightmane of the Lucent Battalion",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "185820",
+                        itemName = "Cabochon of the Infinite Flight",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213746",
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "237617",
+                        itemName = "Chargers of the Lucent Battalion",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237622",
+                        itemName = "Cuirass of the Lucent Battalion",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222435",
+                        itemName = "Everforged Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213455",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237620",
+                        itemName = "Protectors of the Lucent Battalion",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222431",
+                        itemName = "Everforged Greatbelt",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213455"
+                        }
+                    },
+                    {
+                        itemId = "237618",
+                        itemName = "Cuisses of the Lucent Battalion",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243307",
+                        itemName = "Interloper's Plated Sabatons",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "185813",
+                        itemName = "Signet of Collapsing Stars",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213455",
+                            "213455",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "222587",
+                            "213455",
+                            "213455",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "222444",
+                        itemName = "Charged Hexsword",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222432",
+                        itemName = "Everforged Defender",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222587"
+                        }
+                    },
+                    {
+                        itemId = "242393",
+                        itemName = "Loom'ithar's Living Silk",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Mistweaver Monk"] = {
+                talents = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmFLzsMmFz2YmxG2sNbMbMbWmZWWYoZmZgZYGAbzMzwsxMDzyMBAAAAY2m2mtZWmNAAAAYD",
+                items = {
+                    {
+                        itemId = "237673",
+                        itemName = "Half-Mask of Fallen Storms",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "185820",
+                        itemName = "Cabochon of the Infinite Flight",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213743",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237671",
+                        itemName = "Glyphs of Fallen Storms",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238045",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237676",
+                        itemName = "Gi of Fallen Storms",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219334",
+                        itemName = "Rune-Branded Armbands",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237674",
+                        itemName = "Grasp of Fallen Storms",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219331",
+                        itemName = "Rune-Branded Waistband",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213479"
+                        }
+                    },
+                    {
+                        itemId = "237672",
+                        itemName = "Legwraps of Fallen Storms",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243306",
+                        itemName = "Interloper's Reinforced Sandals",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222587",
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "221136",
+                        itemName = "Devout Zealot's Ring",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213479",
+                            "213479",
+                            "223674"
+                        }
+                    },
+                    {
+                        itemId = "222568",
+                        itemName = "Vagabond's Bounding Baton",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "190958",
+                        itemName = "So'leah's Secret Technique",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242393",
+                        itemName = "Loom'ithar's Living Silk",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Preservation Evoker"] = {
+                talents = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2GDwMzYWMzMbDAAAmZYMjxwMxYGAAAYbmZmmxyMzMGzAAwY2swCMwMM0gxCMA",
+                items = {
+                    {
+                        itemId = "237655",
+                        itemName = "Spellweaver's Immaculate Focus",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213491"
+                        }
+                    },
+                    {
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemType = "Neck",
+                        enchantments = {
+                            "222587",
+                            "213743",
+                            "213491"
+                        }
+                    },
+                    {
+                        itemId = "237653",
+                        itemName = "Spellweaver's Immaculate Pauldrons",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238046",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237658",
+                        itemName = "Spellweaver's Immaculate Crestward",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219342",
+                        itemName = "Glyph-Etched Vambraces",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222587",
+                            "213491",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237656",
+                        itemName = "Spellweaver's Immaculate Scaleguards",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "219339",
+                        itemName = "Glyph-Etched Binding",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222587",
+                            "213491"
+                        }
+                    },
+                    {
+                        itemId = "237654",
+                        itemName = "Spellweaver's Immaculate Runeslacks",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243308",
+                        itemName = "Interloper's Chain Boots",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "222587",
+                            "213491",
+                            "213491",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "221136",
+                        itemName = "Devout Zealot's Ring",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213491",
+                            "213491",
+                            "223677"
+                        }
+                    },
+                    {
+                        itemId = "237730",
+                        itemName = "Voidglass Spire",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242392",
+                        itemName = "Diamantine Voidcore",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242393",
+                        itemName = "Loom'ithar's Living Silk",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            },
+            ["Holy Priest"] = {
+                talents = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAzmxDMGjZYGzMmZmx2MzMAAAAglZZ2GMzMYWYWmxgBLsxMzUzCAzsgFCjZZAGLwCGLDA",
+                items = {
+                    {
+                        itemId = "237709",
+                        itemName = "Dying Star's Veil",
+                        itemType = "Helm",
+                        enchantments = {
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "185820",
+                        itemName = "Cabochon of the Infinite Flight",
+                        itemType = "Neck",
+                        enchantments = {
+                            "213746",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237707",
+                        itemName = "Dying Star's Pyrelights",
+                        itemType = "Shoulder",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "235499",
+                        itemName = "Reshii Wraps",
+                        itemType = "Cloak",
+                        enchantments = {
+                            "238044",
+                            "223737"
+                        }
+                    },
+                    {
+                        itemId = "237712",
+                        itemName = "Dying Star's Cassock",
+                        itemType = "Chest",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222815",
+                        itemName = "Consecrated Cuffs",
+                        itemType = "Bracers",
+                        enchantments = {
+                            "222593",
+                            "213458",
+                            "223719"
+                        }
+                    },
+                    {
+                        itemId = "237710",
+                        itemName = "Dying Star's Caress",
+                        itemType = "Gloves",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "222816",
+                        itemName = "Consecrated Cord",
+                        itemType = "Belt",
+                        enchantments = {
+                            "222593",
+                            "213458"
+                        }
+                    },
+                    {
+                        itemId = "237708",
+                        itemName = "Dying Star's Leggings",
+                        itemType = "Legs",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "243305",
+                        itemName = "Interloper's Silken Striders",
+                        itemType = "Boots",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "221136",
+                        itemName = "Devout Zealot's Ring",
+                        itemType = "Ring#1",
+                        enchantments = {
+                            "213458",
+                            "213458",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "185813",
+                        itemName = "Signet of Collapsing Stars",
+                        itemType = "Ring#2",
+                        enchantments = {
+                            "213458",
+                            "213458",
+                            "223662"
+                        }
+                    },
+                    {
+                        itemId = "222568",
+                        itemName = "Vagabond's Bounding Baton",
+                        itemType = "Main-Hand",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "190958",
+                        itemName = "So'leah's Secret Technique",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242393",
+                        itemName = "Loom'ithar's Living Silk",
+                        itemType = "Trinket#2",
+                        enchantments = {}
+                    }
+                }
+            }
+        }
+    }
+}

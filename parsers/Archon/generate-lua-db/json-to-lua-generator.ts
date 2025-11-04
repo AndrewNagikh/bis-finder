@@ -1,0 +1,425 @@
+import * as fs from 'fs';
+import * as path from 'path';
+import {
+  ArchonItemInfo,
+  ArchonSourceData,
+  ArchonDataStructure,
+  ClassSpecMapping,
+  Role,
+  LuaGeneratorOptions,
+} from './types';
+
+/**
+ * Генератор Lua файла базы данных из JSON файлов с данными о предметах (Archon)
+ */
+export class ArchonLuaDataGenerator {
+  private itemData: ArchonDataStructure;
+  private classSpecMapping: ClassSpecMapping = {};
+
+  constructor() {
+    this.itemData = {
+      raid: {
+        tank: {},
+        dps: {},
+        healer: {},
+      },
+      mythic: {
+        tank: {},
+        dps: {},
+        healer: {},
+      },
+    };
+  }
+
+  /**
+   * Маппинг специализаций к ролям
+   */
+  private getSpecRole(specName: string): Role | null {
+    const specRoleMap: Record<string, Role> = {
+      // Tanks
+      'Protection Warrior': 'tank',
+      'Protection Paladin': 'tank',
+      'Guardian Druid': 'tank',
+      'Blood Death Knight': 'tank',
+      'Brewmaster Monk': 'tank',
+      'Vengeance Demon Hunter': 'tank',
+      // DPS
+      'Arms Warrior': 'dps',
+      'Fury Warrior': 'dps',
+      'Retribution Paladin': 'dps',
+      'Beast Mastery Hunter': 'dps',
+      'Marksmanship Hunter': 'dps',
+      'Survival Hunter': 'dps',
+      'Assassination Rogue': 'dps',
+      'Outlaw Rogue': 'dps',
+      'Subtlety Rogue': 'dps',
+      'Elemental Shaman': 'dps',
+      'Enhancement Shaman': 'dps',
+      'Affliction Warlock': 'dps',
+      'Demonology Warlock': 'dps',
+      'Destruction Warlock': 'dps',
+      'Balance Druid': 'dps',
+      'Feral Druid': 'dps',
+      'Frost Death Knight': 'dps',
+      'Unholy Death Knight': 'dps',
+      'Arcane Mage': 'dps',
+      'Fire Mage': 'dps',
+      'Frost Mage': 'dps',
+      'Windwalker Monk': 'dps',
+      'Shadow Priest': 'dps',
+      'Havoc Demon Hunter': 'dps',
+      'Devastation Evoker': 'dps',
+      'Augmentation Evoker': 'dps',
+      // Healers
+      'Holy Paladin': 'healer',
+      'Restoration Shaman': 'healer',
+      'Discipline Priest': 'healer',
+      'Restoration Druid': 'healer',
+      'Mistweaver Monk': 'healer',
+      'Preservation Evoker': 'healer',
+      'Holy Priest': 'healer',
+    };
+
+    return specRoleMap[specName] || null;
+  }
+
+  /**
+   * Читает JSON файл и возвращает объект
+   */
+  private readJsonFile<T = any>(filepath: string): T | null {
+    try {
+      const content = fs.readFileSync(filepath, 'utf-8');
+      return JSON.parse(content) as T;
+    } catch (error) {
+      console.error(
+        `Ошибка чтения файла ${filepath}:`,
+        (error as Error).message
+      );
+      return null;
+    }
+  }
+
+  /**
+   * Преобразует JS объект в Lua таблицу (строковое представление)
+   */
+  private jsObjectToLuaTable(obj: any, indent: number = 0): string {
+    const spaces = '    '.repeat(indent);
+
+    if (Array.isArray(obj)) {
+      if (obj.length === 0) return '{}';
+
+      let result = '{\n';
+      obj.forEach((item, index) => {
+        result += `${spaces}    ${this.jsObjectToLuaTable(item, indent + 1)}`;
+        if (index < obj.length - 1) result += ',';
+        result += '\n';
+      });
+      result += `${spaces}}`;
+      return result;
+    } else if (typeof obj === 'object' && obj !== null) {
+      const keys = Object.keys(obj);
+      if (keys.length === 0) return '{}';
+
+      let result = '{\n';
+      keys.forEach((key, index) => {
+        const luaKey = this.escapeLuaKey(key);
+        const value = this.jsObjectToLuaTable(obj[key], indent + 1);
+        result += `${spaces}    ${luaKey} = ${value}`;
+        if (index < keys.length - 1) result += ',';
+        result += '\n';
+      });
+      result += `${spaces}}`;
+      return result;
+    } else if (typeof obj === 'string') {
+      return `"${obj.replace(/"/g, '\\"').replace(/\n/g, '\\n')}"`;
+    } else if (typeof obj === 'number') {
+      return obj.toString();
+    } else if (typeof obj === 'boolean') {
+      return obj ? 'true' : 'false';
+    } else {
+      return 'nil';
+    }
+  }
+
+  /**
+   * Экранирует ключ для Lua таблицы
+   */
+  private escapeLuaKey(key: string): string {
+    // Если ключ содержит пробелы или специальные символы, заключаем в квадратные скобки
+    if (/^[a-zA-Z_][a-zA-Z0-9_]*$/.test(key)) {
+      return key;
+    } else {
+      return `["${key.replace(/"/g, '\\"')}"]`;
+    }
+  }
+
+  /**
+   * Извлекает название класса из специализации
+   */
+  private extractClassName(specName: string): string {
+    const classNames: Record<string, string> = {
+      'Protection Warrior': 'WARRIOR',
+      'Arms Warrior': 'WARRIOR',
+      'Fury Warrior': 'WARRIOR',
+      'Protection Paladin': 'PALADIN',
+      'Retribution Paladin': 'PALADIN',
+      'Holy Paladin': 'PALADIN',
+      'Beast Mastery Hunter': 'HUNTER',
+      'Marksmanship Hunter': 'HUNTER',
+      'Survival Hunter': 'HUNTER',
+      'Assassination Rogue': 'ROGUE',
+      'Outlaw Rogue': 'ROGUE',
+      'Subtlety Rogue': 'ROGUE',
+      'Elemental Shaman': 'SHAMAN',
+      'Enhancement Shaman': 'SHAMAN',
+      'Restoration Shaman': 'SHAMAN',
+      'Affliction Warlock': 'WARLOCK',
+      'Demonology Warlock': 'WARLOCK',
+      'Destruction Warlock': 'WARLOCK',
+      'Balance Druid': 'DRUID',
+      'Feral Druid': 'DRUID',
+      'Guardian Druid': 'DRUID',
+      'Restoration Druid': 'DRUID',
+      'Blood Death Knight': 'DEATHKNIGHT',
+      'Frost Death Knight': 'DEATHKNIGHT',
+      'Unholy Death Knight': 'DEATHKNIGHT',
+      'Arcane Mage': 'MAGE',
+      'Fire Mage': 'MAGE',
+      'Frost Mage': 'MAGE',
+      'Brewmaster Monk': 'MONK',
+      'Mistweaver Monk': 'MONK',
+      'Windwalker Monk': 'MONK',
+      'Holy Priest': 'PRIEST',
+      'Discipline Priest': 'PRIEST',
+      'Shadow Priest': 'PRIEST',
+      'Havoc Demon Hunter': 'DEMONHUNTER',
+      'Vengeance Demon Hunter': 'DEMONHUNTER',
+      'Devastation Evoker': 'EVOKER',
+      'Preservation Evoker': 'EVOKER',
+      'Augmentation Evoker': 'EVOKER',
+    };
+
+    return classNames[specName] || 'UNKNOWN';
+  }
+
+  /**
+   * Генерирует маппинг классов и специализаций
+   */
+  private generateClassSpecMapping(): ClassSpecMapping {
+    const mapping: ClassSpecMapping = {};
+
+    const roles: Role[] = ['tank', 'dps', 'healer'];
+    const sources = ['raid', 'mythic'] as const;
+
+    roles.forEach((role) => {
+      sources.forEach((source) => {
+        const roleData = this.itemData[source][role];
+        Object.keys(roleData).forEach((specName) => {
+          const className = this.extractClassName(specName);
+
+          if (!mapping[className]) {
+            mapping[className] = { tank: [], dps: [], healer: [] };
+          }
+
+          if (!mapping[className]?.[role].includes(specName)) {
+            mapping[className]?.[role].push(specName);
+          }
+        });
+      });
+    });
+
+    return mapping;
+  }
+
+  /**
+   * Обрабатывает JSON файлы и загружает данные
+   */
+  public loadDataFromJsonFiles(
+    tankFile: string,
+    dpsFile: string,
+    healerFile: string
+  ): boolean {
+    console.log('Загрузка данных из JSON файлов...');
+
+    let hasErrors = false;
+    const sources = ['raid', 'mythic'] as const;
+    const roles = [
+      { file: tankFile, role: 'tank' as Role },
+      { file: dpsFile, role: 'dps' as Role },
+      { file: healerFile, role: 'healer' as Role },
+    ];
+
+    // Загружаем данные для каждой роли
+    roles.forEach(({ file, role }) => {
+      if (fs.existsSync(file)) {
+        const roleData = this.readJsonFile<Record<string, any>>(file);
+        if (roleData) {
+          // Структура Archon: { "SpecName": { "raid": { "talents": "...", "items": [...] }, "mythic": { ... } } }
+          Object.keys(roleData).forEach((specName) => {
+            const specData = roleData[specName];
+            if (specData && typeof specData === 'object') {
+              // Извлекаем данные для каждого источника
+              sources.forEach((source) => {
+                if (
+                  specData[source] &&
+                  typeof specData[source] === 'object' &&
+                  specData[source].talents !== undefined &&
+                  Array.isArray(specData[source].items)
+                ) {
+                  // Файлы уже разделены по ролям, поэтому просто добавляем данные
+                  this.itemData[source][role][specName] = specData[source];
+                }
+              });
+            }
+          });
+          console.log(
+            `✅ ${role.toUpperCase()} данные загружены: ${Object.keys(roleData).length} специализаций`
+          );
+        } else {
+          hasErrors = true;
+        }
+      } else {
+        console.warn(`⚠️  Файл ${file} не найден`);
+      }
+    });
+
+    // Генерируем маппинг классов и специализаций для внутреннего использования
+    this.classSpecMapping = this.generateClassSpecMapping();
+
+    return !hasErrors;
+  }
+
+  /**
+   * Генерирует Lua файл с данными
+   */
+  public generateLuaFile(outputPath: string): boolean {
+    console.log('Генерация Lua файла...');
+
+    const luaContent = `-- Автоматически сгенерированный файл с данными о предметах (Archon)
+-- Не редактируйте вручную! Используйте генератор.
+-- Сгенерировано: ${new Date().toISOString()}
+
+local ADDON_NAME, ns = ...
+
+-- База данных предметов Archon по ролям и специализациям
+ns.ArchonData = ${this.jsObjectToLuaTable(this.itemData, 0)}`;
+
+    try {
+      // Создаем директорию если не существует
+      const dir = path.dirname(outputPath);
+      if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+      }
+
+      fs.writeFileSync(outputPath, luaContent, 'utf-8');
+      console.log(`✅ Lua файл успешно сгенерирован: ${outputPath}`);
+      return true;
+    } catch (error) {
+      console.error('❌ Ошибка записи Lua файла:', (error as Error).message);
+      return false;
+    }
+  }
+
+  /**
+   * Генерирует статистику по загруженным данным
+   */
+  public generateStats(): void {
+    console.log('\n=== Статистика загруженных данных ===');
+
+    let totalSpecs = 0;
+    let totalItems = 0;
+    const sourceStats: Record<string, number> = {
+      raid: 0,
+      mythic: 0,
+    };
+
+    const roles: Role[] = ['tank', 'dps', 'healer'];
+
+    const sources = ['raid', 'mythic'] as const;
+
+    roles.forEach((role) => {
+      let roleItems = 0;
+      let roleSpecs = 0;
+
+      sources.forEach((source) => {
+        const roleData = this.itemData[source][role];
+        const specCount = Object.keys(roleData).length;
+        roleSpecs = Math.max(roleSpecs, specCount);
+
+        Object.values(roleData).forEach((specData: ArchonSourceData) => {
+          roleItems += specData.items.length;
+          sourceStats[source] += specData.items.length;
+        });
+      });
+
+      totalSpecs += roleSpecs;
+      totalItems += roleItems;
+
+      console.log(
+        `📊 ${role.toUpperCase()}: ${roleSpecs} специализаций, ${roleItems} предметов`
+      );
+    });
+
+    console.log(
+      `📈 ИТОГО: ${totalSpecs} специализаций, ${totalItems} предметов`
+    );
+    console.log(`   • Raid: ${sourceStats.raid} предметов`);
+    console.log(`   • Mythic: ${sourceStats.mythic} предметов`);
+    console.log(`🎮 Классы: ${Object.keys(this.classSpecMapping).join(', ')}`);
+    console.log('=====================================\n');
+  }
+
+  /**
+   * Получить загруженные данные
+   */
+  public getItemData(): ArchonDataStructure {
+    return this.itemData;
+  }
+
+  /**
+   * Получить маппинг классов
+   */
+  public getClassSpecMapping(): ClassSpecMapping {
+    return this.classSpecMapping;
+  }
+}
+
+/**
+ * Основная функция генерации с настройками
+ */
+export async function generateLuaDatabase(
+  options?: Partial<LuaGeneratorOptions>
+): Promise<boolean> {
+  const defaultOptions: LuaGeneratorOptions = {
+    jsonFiles: {
+      tank: './Archon/bis-json-data/tank.json',
+      dps: './Archon/bis-json-data/dps.json',
+      healer: './Archon/bis-json-data/healer.json',
+    },
+    outputPath: path.resolve('../addon/Sources/Archon/ArchonData.lua'),
+    addonName: 'BiSFinder',
+  };
+
+  const config = { ...defaultOptions, ...options };
+  const generator = new ArchonLuaDataGenerator();
+
+  // Загрузка данных
+  const success = generator.loadDataFromJsonFiles(
+    config.jsonFiles.tank,
+    config.jsonFiles.dps,
+    config.jsonFiles.healer
+  );
+
+  if (!success) {
+    console.error('❌ Ошибки при загрузке данных');
+    return false;
+  }
+
+  // Генерация статистики
+  generator.generateStats();
+
+  // Генерация Lua файла
+  const dataFileSuccess = generator.generateLuaFile(config.outputPath);
+
+  return dataFileSuccess;
+}

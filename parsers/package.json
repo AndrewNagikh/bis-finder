@@ -19,6 +19,7 @@
     "archon-generate-data:healer": "ROLE=healer npx playwright test ./Archon/archon.spec.ts",
     "archon-generate-data:dps": "ROLE=dps npx playwright test ./Archon/archon.spec.ts",
     "archon-generate-data:all": "npm run archon-generate-data:tank && npm run archon-generate-data:healer && npm run archon-generate-data:dps",
+    "archon-generate-lua-db": "npx tsc Archon/generate-lua-db/*.ts --outDir temp --target es2020 --module esnext --moduleResolution node --allowSyntheticDefaultImports && node temp/Archon/generate-lua-db/generate-db.js && rm -rf temp",
     "create-archive": "npx tsc create-archive/*.ts --outDir temp --target es2020 --module esnext --moduleResolution node --allowSyntheticDefaultImports && mkdir -p temp/create-archive && mv temp/archive-addon.js temp/create-archive/ && node temp/create-archive/archive-addon.js && rm -rf temp"
   },
   "author": "Andrew Nagikh",

@@ -29,3 +29,23 @@ export async function processRoleFiles(
     console.error('❌ Ошибка при работе с папкой или файлами:', err.message);
   }
 }
+
+export const getArchonClassName = (url: string) => {
+  const parts = url.split('/');
+
+  const part5 = parts[5] || '';
+  const part6 = parts[6] || '';
+
+  function formatPart(part: string) {
+    return part
+      .split('-')
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1)) // капитализируем первую букву
+      .join(' ');
+  }
+
+  const formatted5 = formatPart(part5);
+  const formatted6 = formatPart(part6);
+
+  // Объединяем два слова через пробел
+  return `${formatted5} ${formatted6}`;
+};
