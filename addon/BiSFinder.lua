@@ -9,6 +9,32 @@ function ns:CreateMainFrame()
         MainFrame:SetBackdrop({ bgFile = "Interface\\Buttons\\WHITE8x8" })
         MainFrame:SetBackdropColor(0.078, 0.078, 0.078, 1)
         
+        -- Делаем окно перетаскиваемым
+        MainFrame:SetMovable(true)
+        MainFrame:RegisterForDrag("LeftButton")
+        MainFrame:SetScript("OnDragStart", function(self)
+            self:StartMoving()
+        end)
+        MainFrame:SetScript("OnDragStop", function(self)
+            self:StopMovingOrSizing()
+        end)
+        
+        -- Создаем область для перетаскивания в верхней части окна
+        local dragRegion = CreateFrame("Frame", nil, MainFrame)
+        dragRegion:SetPoint("TOPLEFT", MainFrame, "TOPLEFT", 0, 0)
+        dragRegion:SetPoint("TOPRIGHT", MainFrame, "TOPRIGHT", 0, 0)
+        dragRegion:SetHeight(66) -- Высота области для перетаскивания (верхняя часть окна)
+        dragRegion:EnableMouse(true)
+        dragRegion:RegisterForDrag("LeftButton")
+        dragRegion:SetScript("OnMouseDown", function(self, button)
+            if button == "LeftButton" then
+                MainFrame:StartMoving()
+            end
+        end)
+        dragRegion:SetScript("OnMouseUp", function(self)
+            MainFrame:StopMovingOrSizing()
+        end)
+        
         -- Создаем кнопку закрытия
         ns:CreateCloseButton(MainFrame)
 
@@ -100,14 +126,9 @@ function ns:AutoOpenPlayerSpec()
         ns:UpdateSelectedItemSource("overroll")
     end
     
-    -- Обновляем заголовок с названием специализации
-    if ns.UpdateMainContentTitleWithSpec then
-        local specDisplayName = playerSpecName
-        -- Если playerSpecName является числом, получаем правильное название из specMap
-        if type(playerSpecName) == "number" and ns.specMap[playerRole] and ns.specMap[playerRole][playerSpecName] then
-            specDisplayName = ns.specMap[playerRole][playerSpecName].name
-        end
-        ns:UpdateMainContentTitleWithSpec(specDisplayName)
+    -- Обновляем заголовок с текстурой специализации
+    if ns.UpdateMainContentTitleWithSpec and specId then
+        ns:UpdateMainContentTitleWithSpec(specId)
     end
     
     -- Скрываем старые экраны перед показом новых
@@ -131,9 +152,16 @@ function ns:AutoOpenPlayerSpec()
         ns:CreateItemSourceChooseFrame(ns.MainContentFrame)
     end
     
-    -- Показываем контент предметов
-    if ns.CreateIcyVeinsContent then
-        ns:CreateIcyVeinsContent()
+    -- Показываем контент предметов в зависимости от источника
+    local selectedSourceId = ns:GetSelectedSourceId()
+    if selectedSourceId == "archon" then
+        if ns.CreateArchonContent then
+            ns:CreateArchonContent()
+        end
+    else
+        if ns.CreateIcyVeinsContent then
+            ns:CreateIcyVeinsContent()
+        end
     end
 end
 

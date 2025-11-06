@@ -1,8 +1,12 @@
 local ADDON_NAME, ns = ...
 
 function ns:CreateItemSourceButton(parent, text, onClickCallback, xOffset)
+    local selectedSourceId = ns:GetSelectedSourceId()
     local button = CreateFrame("Button", nil, parent, "BackdropTemplate")
-    button:SetSize(130, 30)
+    
+    -- Устанавливаем размер в зависимости от источника
+    local buttonWidth = (selectedSourceId == "archon") and 213 or 130
+    button:SetSize(buttonWidth, 30)
     button:SetPoint("TOPLEFT", parent, "TOPLEFT", xOffset or 0, -15)
 
     button:SetBackdrop({

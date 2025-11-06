@@ -5,6 +5,10 @@ function ns:HasDataForSource(sourceId)
     if not ns.IcyVeinsData then
         return false
     end
+
+    if not ns.ArchonData then
+        return false
+    end
     
     -- Для IcyVeins всегда есть данные (в itemSourceId: overroll, mythic, raid)
     if sourceId == "icyveins" then
@@ -13,7 +17,7 @@ function ns:HasDataForSource(sourceId)
     
     -- Для других источников (например, Archon) пока нет данных
     if sourceId == "archon" then
-        return false
+        return true
     end
     
     return false
@@ -35,7 +39,8 @@ function ns:CreateSideBarMenu(parent)
     -- Создаем кнопки динамически
     local buttonConfigs = {
         { id = "icyveins", text = "Icy Veins" },
-        { id = "archon", text = "Archon" }
+        { id = "archon", text = "Archon" },
+        { id = "about", text = "About" }
     }
     
     for _, config in ipairs(buttonConfigs) do
@@ -57,10 +62,53 @@ function ns:CreateSideBarMenu(parent)
                 if ns.UpdateMainContentTitle then
                     ns:UpdateMainContentTitle()
                 end
+                -- Сбрасываем роль
+                if ns.UpdateSelectedRole then
+                    ns:UpdateSelectedRole("tank")
+                end
+                -- Обновляем визуальное состояние кнопки роли
+                if ns.roleButtons then
+                    for _, btn in pairs(ns.roleButtons) do
+                        btn:SetSelected(false)
+                    end
+                    if ns.roleButtons["tank"] then
+                        ns.roleButtons["tank"]:SetSelected(true)
+                    end
+                end
                 
                 -- Проверяем наличие данных для источника
-                if ns:HasDataForSource(config.id) then
+                if config.id == "about" then
+                    -- Показываем контент About
+                    -- Скрываем все остальные элементы
+                    if ns.RoleShooseFrame then
+                        ns.RoleShooseFrame:Hide()
+                    end
+                    if ns.ItemSourceChooseFrame then
+                        ns.ItemSourceChooseFrame:Hide()
+                    end
+                    if ns.specButtons then
+                        for _, btn in pairs(ns.specButtons) do
+                            btn:Hide()
+                        end
+                    end
+                    if ns.itemRows then
+                        for _, row in pairs(ns.itemRows) do
+                            row:Hide()
+                        end
+                    end
+                    if ns.noDataMessage then
+                        ns.noDataMessage:Hide()
+                    end
+                    -- Показываем контент About
+                    if ns.CreateAboutContent and ns.MainContentFrame then
+                        ns:CreateAboutContent()
+                    end
+                elseif ns:HasDataForSource(config.id) then
                     -- Есть данные - показываем обычный интерфейс
+                    -- Скрываем контент About если он есть
+                    if ns.aboutContentFrame then
+                        ns.aboutContentFrame:Hide()
+                    end
                     -- Показываем меню выбора роли
                     if ns.RoleShooseFrame then
                         ns.RoleShooseFrame:Show()
@@ -85,6 +133,9 @@ function ns:CreateSideBarMenu(parent)
                 else
                     -- Нет данных - показываем сообщение "нет данных"
                     -- Скрываем все остальные элементы
+                    if ns.aboutContentFrame then
+                        ns.aboutContentFrame:Hide()
+                    end
                     if ns.RoleShooseFrame then
                         ns.RoleShooseFrame:Hide()
                     end
@@ -120,7 +171,12 @@ function ns:CreateSideBarMenu(parent)
         ns.sideBarButtons[defaultSourceId]:SetSelected(true)
         
         -- Проверяем наличие данных для источника по умолчанию
-        if not ns:HasDataForSource(defaultSourceId) then
+        if defaultSourceId == "about" then
+            -- Показываем контент About
+            if ns.CreateAboutContent and ns.MainContentFrame then
+                ns:CreateAboutContent()
+            end
+        elseif not ns:HasDataForSource(defaultSourceId) then
             -- Нет данных - показываем сообщение "нет данных"
             if ns.ContentFrame then
                 ns:ShowNoDataMessage(ns.ContentFrame)

@@ -47,7 +47,6 @@ local BiSFinderLDB = LibStub("LibDataBroker-1.1"):NewDataObject("BiSFinder", {
     OnTooltipShow = function(tooltip)
         tooltip:SetText("BiSFinder")
         tooltip:AddLine("Left-click to toggle main window", 1, 1, 1)
-        tooltip:AddLine("Right-click for options (coming soon)", 1, 1, 1)
     end,
 })
 

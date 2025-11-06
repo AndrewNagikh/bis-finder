@@ -59,9 +59,9 @@ function ns:CreateButtonList(parent)
                 if ns.UpdateSelectedSpecId then
                     ns:UpdateSelectedSpecId(specId)
                 end
-                -- Обновляем заголовок с названием специализации
+                -- Обновляем заголовок с текстурой специализации
                 if ns.UpdateMainContentTitleWithSpec then
-                    ns:UpdateMainContentTitleWithSpec(specData.name)
+                    ns:UpdateMainContentTitleWithSpec(specId)
                 end
                 -- Скрываем кнопки специализаций
                 if ns.specButtons then
@@ -77,9 +77,16 @@ function ns:CreateButtonList(parent)
                 if ns.CreateItemSourceChooseFrame and ns.MainContentFrame then
                     ns:CreateItemSourceChooseFrame(ns.MainContentFrame)
                 end
-                -- Показываем контент предметов
-                if ns.CreateIcyVeinsContent then
-                    ns:CreateIcyVeinsContent()
+                -- Показываем контент предметов в зависимости от источника
+                local selectedSourceId = ns:GetSelectedSourceId()
+                if selectedSourceId == "archon" then
+                    if ns.CreateArchonContent then
+                        ns:CreateArchonContent()
+                    end
+                else
+                    if ns.CreateIcyVeinsContent then
+                        ns:CreateIcyVeinsContent()
+                    end
                 end
             end, yOffset, specId)
             specButtons[specId] = button

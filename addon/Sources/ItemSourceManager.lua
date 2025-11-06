@@ -6,7 +6,7 @@ ns.itemSourcesMap = {
     ["raid"] = "Raid",
 }
 
-ns.selectedItemSourceId = "overroll" -- Default item source
+ns.selectedItemSourceId = "mythic" -- Default item source
 
 function ns:UpdateSelectedItemSource(source)
     -- Сохраняем выбранный id источника предметов

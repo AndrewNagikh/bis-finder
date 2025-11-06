@@ -24,6 +24,7 @@ UI/SideBar/SideBarButton.lua
 UI/SideBar/SideBarMenu.lua
 UI/SideBar/SideBar.lua
 UI/ContentFrames/CreateMainContentFrame.lua
+UI/ContentFrames/CopyTalentsButton/CopyTalentsButton.lua
 UI/ContentFrames/RoleShooseFrame/RoleButton.lua
 UI/ContentFrames/RoleShooseFrame/CreateRoleShooseFrame.lua
 UI/ContentFrames/SpecShoose/CreateSpecChooseButton.lua
@@ -31,5 +32,8 @@ UI/ContentFrames/ItemSourceChoose/ItemSourceButton.lua
 UI/ContentFrames/ItemSourceChoose/CreateItemSourceChooseFrame.lua
 UI/ContentFrames/IcyVeins/ItemRow.lua
 UI/ContentFrames/IcyVeins/CreateIcyVeinsContent.lua
+UI/ContentFrames/Archon/CreateArchonContent.lua
+UI/ContentFrames/About/CreateAboutContent.lua
 Sources/IcyVeins/IcyVeinsData.lua
+Sources/Archon/ArchonData.lua
 UI/MinimapIcon.lua

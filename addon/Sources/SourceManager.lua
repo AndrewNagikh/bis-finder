@@ -3,6 +3,7 @@ local ADDON_NAME, ns = ...
 ns.sourcesMap = {
     ["icyveins"] = "IcyVeins",
     ["archon"] = "Archon",
+    ["about"] = "About",
 }
 
 ns.selectedSourceId = "icyveins"

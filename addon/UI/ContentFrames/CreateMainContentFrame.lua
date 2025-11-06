@@ -12,6 +12,18 @@ function ns:CreateMainContentFrame(parent)
     title:SetTextColor(1, 1, 1, 1)
     title:SetFont("Fonts\\FRIZQT__.TTF", 20, "OUTLINE")
 
+    -- Создаем текстуру для отображения текстуры специализации
+    local specTexture = MainContentFrame:CreateTexture(nil, "OVERLAY")
+    specTexture:SetSize(280, 45) -- Размер как у кнопок специализаций
+    specTexture:SetPoint("TOPLEFT", MainContentFrame, "TOPLEFT", 10, -20)
+    specTexture:Hide() -- Скрываем по умолчанию
+
+    -- Создаем кнопку Copy Talents
+    local copyTalentsButton = nil
+    if ns.CreateCopyTalentsButton then
+        copyTalentsButton = ns:CreateCopyTalentsButton(MainContentFrame, specTexture)
+    end
+
     local currentSourceId = ns:GetSelectedSourceId()
     local sourceName = ns.sourcesMap[currentSourceId] or "IcyVeins"
     title:SetText("Search for your BiS (" .. sourceName .. ")")
@@ -19,20 +31,68 @@ function ns:CreateMainContentFrame(parent)
     -- Функция для обновления заголовка
     function ns:UpdateMainContentTitle()
         local currentSourceId = ns:GetSelectedSourceId()
-        local sourceName = ns.sourcesMap[currentSourceId] or "IcyVeins"
-        title:SetText("Search for your BiS (" .. sourceName .. ")")
+        if currentSourceId == "about" then
+            title:SetText("About")
+        else
+            local sourceName = ns.sourcesMap[currentSourceId] or "IcyVeins"
+            title:SetText("Search for your BiS (" .. sourceName .. ")")
+        end
+        -- Скрываем текстуру специализации и показываем текст
+        specTexture:Hide()
+        title:Show()
+        -- Скрываем кнопку Copy Talents
+        if copyTalentsButton then
+            copyTalentsButton:Hide()
+        end
     end
 
-    -- Функция для обновления заголовка с названием специализации
-    function ns:UpdateMainContentTitleWithSpec(specName)
-        title:SetText(specName)
+    -- Функция для обновления заголовка с текстурой специализации
+    function ns:UpdateMainContentTitleWithSpec(specId)
+        local selectedRoleId = ns:GetSelectedRoleId()
+        local selectedSourceId = ns:GetSelectedSourceId()
+        
+        if selectedRoleId and ns.specMap and ns.specMap[selectedRoleId] and ns.specMap[selectedRoleId][specId] then
+            local specData = ns.specMap[selectedRoleId][specId]
+            if specData.texture then
+                -- Показываем текстуру специализации
+                specTexture:SetTexture(specData.texture)
+                specTexture:Show()
+                title:Hide()
+                
+                -- Показываем кнопку Copy Talents только для Archon
+                if copyTalentsButton then
+                    if selectedSourceId == "archon" then
+                        copyTalentsButton:Show()
+                    else
+                        copyTalentsButton:Hide()
+                    end
+                end
+            else
+                -- Fallback на текст если текстуры нет
+                specTexture:Hide()
+                title:SetText(specData.name or "")
+                title:Show()
+                -- Скрываем кнопку Copy Talents
+                if copyTalentsButton then
+                    copyTalentsButton:Hide()
+                end
+            end
+        else
+            -- Fallback на текст если данных нет
+            specTexture:Hide()
+            title:Show()
+            -- Скрываем кнопку Copy Talents
+            if copyTalentsButton then
+                copyTalentsButton:Hide()
+            end
+        end
     end
 
     ns:CreateRoleShooseFrame(MainContentFrame)
     
     -- Создаем скролл-фрейм для кнопок специализаций
     local scrollFrame = CreateFrame("ScrollFrame", nil, MainContentFrame, "UIPanelScrollFrameTemplate")
-    scrollFrame:SetPoint("TOPLEFT", MainContentFrame, "TOPLEFT", 0, -120)
+    scrollFrame:SetPoint("TOPLEFT", MainContentFrame, "TOPLEFT", 0, -130)
     scrollFrame:SetPoint("BOTTOMRIGHT", MainContentFrame, "BOTTOMRIGHT", -20, 20)
     
     -- Создаем контент-фрейм для кнопок

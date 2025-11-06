@@ -3,7 +3,7 @@ local ADDON_NAME, ns = ...
 function ns:CreateRoleShooseFrame(parent)
     if not ns.RoleShooseFrame then
         ns.RoleShooseFrame = CreateFrame("Frame", "RoleShooseFrame", parent, "BackdropTemplate")
-        ns.RoleShooseFrame:SetPoint("TOPLEFT", parent, "TOPLEFT", -10, -54)
+        ns.RoleShooseFrame:SetPoint("TOPLEFT", parent, "TOPLEFT", -10, -64)
         ns.RoleShooseFrame:SetSize(510, 60)
         ns.RoleShooseFrame:SetBackdrop({ bgFile = "Interface\\Buttons\\WHITE8x8", insets = { left = 23, right = 23, top = 10, bottom = 10 } })
         ns.RoleShooseFrame:SetBackdropColor(0.294, 0.294, 0.294, 1)

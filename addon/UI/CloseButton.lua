@@ -5,6 +5,7 @@ function ns:CreateCloseButton(parent)
     local closeButton = CreateFrame("Button", nil, parent, "BackdropTemplate")
     closeButton:SetPoint("TOPRIGHT", parent, "TOPRIGHT", -10, -10)
     closeButton:SetSize(20, 20)
+    closeButton:SetFrameLevel(parent:GetFrameLevel() + 100) -- Очень высокий уровень, чтобы быть поверх всего
     closeButton:SetBackdrop({
         bgFile = "Interface\\Buttons\\WHITE8x8",
         edgeFile = "Interface\\Buttons\\WHITE8x8",
@@ -45,6 +46,7 @@ function ns:CreateCloseButton(parent)
     end)
     
     closeButton:EnableMouse(true)
+    closeButton:RegisterForClicks("AnyUp") -- Регистрируем все клики
     
     return closeButton
 end
