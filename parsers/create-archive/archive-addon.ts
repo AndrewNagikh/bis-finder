@@ -130,7 +130,13 @@ class AddonArchiver {
   private shouldExclude(name: string): boolean {
     return this.options.excludePatterns.some((pattern) => {
       if (pattern.includes('*')) {
-        const regex = new RegExp(pattern.replace(/\*/g, '.*'));
+        // Экранируем специальные символы регулярных выражений, кроме *
+        // Преобразуем * в .*, но экранируем точки и другие спецсимволы
+        const escapedPattern = pattern
+          .replace(/[.+?^${}()|[\]\\]/g, '\\$&') // Экранируем спецсимволы
+          .replace(/\*/g, '.*'); // Заменяем * на .*
+        // Якорим регулярное выражение для точного совпадения
+        const regex = new RegExp(`^${escapedPattern}$`);
         return regex.test(name);
       }
       return name === pattern;
