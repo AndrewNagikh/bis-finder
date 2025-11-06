@@ -8,16 +8,24 @@ export const extractArchonRows = async (
   context: BrowserContext
 ): Promise<{ taletns: string; items: any[] }> => {
   if (source === 'raid') {
-    await page
+    const raidLink = await page
       .locator('a.tabbed-select__tab--rounded-square')
       .filter({ hasText: 'Raid' })
-      .click();
+      .getAttribute('href');
+    await page.goto(`https://www.archon.gg${raidLink}`, {
+      timeout: 55000,
+      waitUntil: 'domcontentloaded',
+    });
   }
   if (source === 'mythic') {
-    await page
+    const mythicLink = await page
       .locator('a.tabbed-select__tab--rounded-square')
       .filter({ hasText: 'Mythic+' })
-      .click();
+      .getAttribute('href');
+    await page.goto(`https://www.archon.gg${mythicLink}`, {
+      timeout: 55000,
+      waitUntil: 'domcontentloaded',
+    });
   }
   const data: { taletns: string; items: any[] } = { taletns: '', items: [] };
   // save talents
