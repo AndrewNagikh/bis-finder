@@ -1,6 +1,6 @@
 -- Автоматически сгенерированный файл с данными о предметах
 -- Не редактируйте вручную! Используйте генератор.
--- Сгенерировано: 2025-11-06T19:17:57.108Z
+-- Сгенерировано: 2025-12-07T12:38:52.049Z
 
 local ADDON_NAME, ns = ...
 
@@ -37,7 +37,7 @@ ns.IcyVeinsData = {
                     itemType = "Chest",
                     itemId = "178814",
                     itemName = "Breastplate of Otherworldly Influence",
-                    source = "High Adjucator Aleez, in Halls of Atonement"
+                    source = "High Adjucator Aleez in Halls of Atonement"
                 },
                 {
                     itemType = "Bracers",
@@ -85,7 +85,7 @@ ns.IcyVeinsData = {
                     itemType = "Trinket #1",
                     itemId = "219309",
                     itemName = "Tome of Light's Devotion",
-                    source = "Baron Braunpyke, in Priory of the Sacred Flame"
+                    source = "Baron Braunpyke in Priory of the Sacred Flame"
                 },
                 {
                     itemType = "Trinket #2",
@@ -1247,9 +1247,9 @@ ns.IcyVeinsData = {
                 },
                 {
                     itemType = "Trinket Alt.",
-                    itemId = "185844",
-                    itemName = "Ticking Sack of Terror",
-                    source = "Tazavesh: Streets of Wonder"
+                    itemId = "242396",
+                    itemName = "Unyielding Netherprism",
+                    source = "Fractillus"
                 },
                 {
                     itemType = "Trinket Alt.",
@@ -1449,9 +1449,9 @@ ns.IcyVeinsData = {
                 },
                 {
                     itemType = "Trinket #2",
-                    itemId = "232541",
-                    itemName = "Improvised Seaforium Pacemaker",
-                    source = "Operation: Floodgate"
+                    itemId = "242402",
+                    itemName = "Araz's Ritual Forge",
+                    source = "Forgeweaver Araz in Manaforge Omega"
                 }
             },
             ["Fury Warrior"] = {
@@ -4029,7 +4029,7 @@ ns.IcyVeinsData = {
                     itemType = "Helm",
                     itemId = "237610",
                     itemName = "Living Weapon's Faceshield",
-                    source = "Any Helm,Matrix Catalyst/Great Vault"
+                    source = "Any Helm, Matrix Catalyst/Great Vault"
                 },
                 {
                     itemType = "Neck",
@@ -4041,7 +4041,7 @@ ns.IcyVeinsData = {
                     itemType = "Shoulder",
                     itemId = "237608",
                     itemName = "Living Weapon's Ramparts",
-                    source = "Any shoulders,Matrix Catalyst/Great Vault"
+                    source = "Any shoulders, Matrix Catalyst/Great Vault"
                 },
                 {
                     itemType = "Cloak",
@@ -4053,25 +4053,25 @@ ns.IcyVeinsData = {
                     itemType = "Chest",
                     itemId = "178814",
                     itemName = "Breastplate of Otherworldly Influence",
-                    source = "High Adjudicator Aleez, in Halls of Atonement"
+                    source = "High Adjudicator Aleez in Halls of Atonement"
                 },
                 {
                     itemType = "Bracers",
                     itemId = "185815",
                     itemName = "Vambraces of Verification",
-                    source = "Zo'phex the Sentinel, in Tazavesh: Streets of Wonder"
+                    source = "Zo'phex the Sentinel in Tazavesh: Streets of Wonder"
                 },
                 {
                     itemType = "Gloves",
                     itemId = "237611",
                     itemName = "Living Weapon's Crushers",
-                    source = "Any gloves,Matrix Catalyst/Great Vault"
+                    source = "Any gloves, Matrix Catalyst/Great Vault"
                 },
                 {
                     itemType = "Belt",
                     itemId = "234505",
                     itemName = "Venture Contractor's Floodlight",
-                    source = "Demolition Duo, in Operation: Floodgate"
+                    source = "Demolition Duo in Operation: Floodgate"
                 },
                 {
                     itemType = "Legs",
@@ -4083,31 +4083,31 @@ ns.IcyVeinsData = {
                     itemType = "Boots",
                     itemId = "185787",
                     itemName = "Implacable Weatherproof Treads",
-                    source = "Mailroom Mayhem, in Tazavesh: Streets of Wonder"
+                    source = "Mailroom Mayhem in Tazavesh: Streets of Wonder"
                 },
                 {
                     itemType = "Ring #1",
                     itemId = "242491",
                     itemName = "Whispers of K'aresh",
-                    source = "Soul-Scribe, in Eco-Dome Al'dani"
+                    source = "Soul-Scribe in Eco-Dome Al'dani"
                 },
                 {
                     itemType = "Ring #2",
                     itemId = "246281",
                     itemName = "Ring of the Panoply",
-                    source = "The Grand Menegerie, in Tazavesh: Streets of Wonder"
+                    source = "The Grand Menegerie in Tazavesh: Streets of Wonder"
                 },
                 {
                     itemType = "Trinket #1",
                     itemId = "219309",
                     itemName = "Tome of Light's Devotion",
-                    source = "Baron Braunpyke, in Priory of the Sacred Flame"
+                    source = "Baron Braunpyke in Priory of the Sacred Flame"
                 },
                 {
                     itemType = "Trinket #2",
                     itemId = "232541",
                     itemName = "Improvised Seaforium Pacemaker",
-                    source = "Keeza Quickfuse, in Operation: Floodgate"
+                    source = "Keeza Quickfuse in Operation: Floodgate"
                 },
                 {
                     itemType = "Weapon",
@@ -5218,6 +5218,12 @@ ns.IcyVeinsData = {
                     itemId = "242399",
                     itemName = "Screams of a Forgotten Sky",
                     source = "Dimensius The All Devouring"
+                },
+                {
+                    itemType = "Trinket Alt.",
+                    itemId = "242396",
+                    itemName = "Unyielding Netherprism",
+                    source = "Fractillus"
                 },
                 {
                     itemType = "Trinket Alt.",
@@ -6739,9 +6745,9 @@ ns.IcyVeinsData = {
                 },
                 {
                     itemType = "Trinket Alt",
-                    itemId = "242397",
-                    itemName = "Sigil of the Cosmic Hunt",
-                    source = "The Soul Hunters"
+                    itemId = "242396",
+                    itemName = "Unyielding Netherprism",
+                    source = "Fractillus"
                 }
             },
             ["Survival Hunter"] = {
@@ -9319,9 +9325,9 @@ ns.IcyVeinsData = {
                 },
                 {
                     itemType = "Trinket #2",
-                    itemId = "242397",
-                    itemName = "Sigil of the Cosmic Hunt",
-                    source = "The Soul Hunters in Manaforge Omega"
+                    itemId = "242402",
+                    itemName = "Araz's Ritual Forge",
+                    source = "Forgeweaver Araz in Manaforge Omega"
                 }
             },
             ["Fury Warrior"] = {
@@ -9604,12 +9610,6 @@ ns.IcyVeinsData = {
                     itemId = "219308",
                     itemName = "Signet of the Priory",
                     source = "Priory of the Sacred Flame"
-                },
-                {
-                    itemType = "Trinket Alt",
-                    itemId = "185818",
-                    itemName = "So'leah's Secret Technique",
-                    source = "Tazavesh: So'leah's Gambit"
                 },
                 {
                     itemType = "Trinket Alt.",
