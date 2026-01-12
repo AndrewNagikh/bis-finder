@@ -1,6 +1,6 @@
 -- Автоматически сгенерированный файл с данными о предметах
 -- Не редактируйте вручную! Используйте генератор.
--- Сгенерировано: 2025-12-07T12:38:52.049Z
+-- Сгенерировано: 2026-01-12T13:46:46.952Z
 
 local ADDON_NAME, ns = ...
 
@@ -67,7 +67,7 @@ ns.IcyVeinsData = {
                     itemType = "Boots",
                     itemId = "243307",
                     itemName = "Interloper's Plated Sabatons",
-                    source = "Nexus King Salhadaar in Manaforge Omega"
+                    source = "The Soul Hunters in Manaforge Omega"
                 },
                 {
                     itemType = "Ring #1",
@@ -4751,9 +4751,9 @@ ns.IcyVeinsData = {
                 },
                 {
                     itemType = "Neck",
-                    itemId = "178827",
-                    itemName = "Sin Stained Pendant",
-                    source = "Halls of Atonement"
+                    itemId = "185842",
+                    itemName = "Ornately Engraved Amplifier",
+                    source = "Tazavesh: So'leah's Gambit"
                 },
                 {
                     itemType = "Shoulder",

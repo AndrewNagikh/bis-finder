@@ -1,6 +1,6 @@
 -- Автоматически сгенерированный файл с данными о предметах (Archon)
 -- Не редактируйте вручную! Используйте генератор.
--- Сгенерировано: 2025-12-07T12:48:42.896Z
+-- Сгенерировано: 2026-01-12T13:56:07.950Z
 
 local ADDON_NAME, ns = ...
 
@@ -98,8 +98,8 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "185813",
-                        itemName = "Signet of Collapsing Stars",
+                        itemId = "242405",
+                        itemName = "Band of the Shattered Soul",
                         itemType = "Ring#2",
                         enchantments = {
                             "213479",
@@ -165,7 +165,7 @@ ns.ArchonData = {
                         itemName = "Reshii Wraps",
                         itemType = "Cloak",
                         enchantments = {
-                            "238044",
+                            "238045",
                             "223737"
                         }
                     },
@@ -213,21 +213,21 @@ ns.ArchonData = {
                         enchantments = {}
                     },
                     {
-                        itemId = "215135",
-                        itemName = "Ring of Earthen Craftsmanship",
+                        itemId = "237567",
+                        itemName = "Logic Gate: Alpha",
                         itemType = "Ring#1",
                         enchantments = {
-                            "222587",
                             "213455",
                             "213455",
                             "223674"
                         }
                     },
                     {
-                        itemId = "237567",
-                        itemName = "Logic Gate: Alpha",
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
                         itemType = "Ring#2",
                         enchantments = {
+                            "222587",
                             "213455",
                             "213455",
                             "223674"
@@ -260,7 +260,7 @@ ns.ArchonData = {
                 }
             },
             ["Brewmaster Monk"] = {
-                talents = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgxGmxMmlZsNmZGAAAAAAAWWwImZgZYsxgtZmZYWGzM2mlHYiZb2mZGmNAAYZWmWmtZWGAAAAmhNA",
+                talents = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgxGmxMmlZsNmZGAAAAAAAWWwImZgZYsBsNzMDz2Ymx2sMTMbz2MzwsBAALzy0ysNzyAAAAwMsB",
                 items = {
                     {
                         itemId = "237673",
@@ -360,8 +360,8 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "237739",
-                        itemName = "Obliteration Beamglaive",
+                        itemId = "221159",
+                        itemName = "Harvester's Interdiction",
                         itemType = "Main-Hand",
                         enchantments = {}
                     },
@@ -380,7 +380,7 @@ ns.ArchonData = {
                 }
             },
             ["Guardian Druid"] = {
-                talents = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzYMzMzyMMmZwYxMMzsYZAgRTmmZmlZ2mZGjZYAAAAAAYMzAAAAANz2sMzsMAAWYMAsYGM",
+                talents = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzYmhZWmZMjZMzYhZGmFLDYzwoJyMziZbmZWGzYAAAAAAwwYALbzshxsMAmAAAA2MmBgFjhB",
                 items = {
                     {
                         itemId = "237682",
@@ -605,27 +605,27 @@ ns.ArchonData = {
                         enchantments = {}
                     },
                     {
-                        itemId = "222440",
-                        itemName = "Everforged Longsword",
+                        itemId = "222441",
+                        itemName = "Everforged Warglaive",
                         itemType = "Off-Hand",
-                        enchantments = {}
-                    },
-                    {
-                        itemId = "219309",
-                        itemName = "Tome of Light's Devotion",
-                        itemType = "Trinket#1",
                         enchantments = {}
                     },
                     {
                         itemId = "242401",
                         itemName = "Brand of Ceaseless Ire",
+                        itemType = "Trinket#1",
+                        enchantments = {}
+                    },
+                    {
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
                         itemType = "Trinket#2",
                         enchantments = {}
                     }
                 }
             },
             ["Blood Death Knight"] = {
-                talents = "CoPAAAAAAAAAAAAAAAAAAAAAAwwgZYGzMGLzYmZmmZMjZGGDAAAAMzMzMzMzMbmZGDAAgZmZmBAAAMwAzY0YZDw2A2AMzgNA",
+                talents = "CoPAAAAAAAAAAAAAAAAAAAAAAwwgZMzYmZGLDzMz0MjhZGGDAAAAMzMzMjZmZzMzYAAAMzMzMAAAgBGYGjGLbA2GwGgZGjNA",
                 items = {
                     {
                         itemId = "237628",
@@ -636,11 +636,10 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "215136",
-                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemId = "237568",
+                        itemName = "Chrysalis of Sundered Souls",
                         itemType = "Neck",
                         enchantments = {
-                            "222596",
                             "213743",
                             "213461"
                         }
@@ -747,14 +746,14 @@ ns.ArchonData = {
         },
         dps = {
             ["Frost Death Knight"] = {
-                talents = "CsPAAAAAAAAAAAAAAAAAAAAAAMDgZGzYMGLDzMzMzMmZGxYmxwMDwMzMzMzMzAAAAAAAAAAAgxy2ADYBsMMBGLYmZmZmBGG",
+                talents = "CsPAAAAAAAAAAAAAAAAAAAAAAMDgZGzYMGLDzMzMzMmZGZGjxwMDwMzMzMzMzAAAAAAAAAAAgxy2ADYBsMMBGLYmZmZmBGG",
                 items = {
                     {
                         itemId = "237628",
                         itemName = "Hollow Sentinel's Stonemask",
                         itemType = "Helm",
                         enchantments = {
-                            "213491"
+                            "213458"
                         }
                     },
                     {
@@ -764,7 +763,7 @@ ns.ArchonData = {
                         enchantments = {
                             "222593",
                             "213743",
-                            "213491"
+                            "213458"
                         }
                     },
                     {
@@ -794,7 +793,7 @@ ns.ArchonData = {
                         itemType = "Bracers",
                         enchantments = {
                             "222593",
-                            "213491",
+                            "213458",
                             "223713"
                         }
                     },
@@ -812,7 +811,7 @@ ns.ArchonData = {
                         itemType = "Belt",
                         enchantments = {
                             "222593",
-                            "213491"
+                            "213458"
                         }
                     },
                     {
@@ -832,19 +831,18 @@ ns.ArchonData = {
                         itemName = "Logic Gate: Alpha",
                         itemType = "Ring#1",
                         enchantments = {
-                            "213491",
-                            "213491",
+                            "213458",
+                            "213458",
                             "223677"
                         }
                     },
                     {
-                        itemId = "215135",
-                        itemName = "Ring of Earthen Craftsmanship",
+                        itemId = "237570",
+                        itemName = "Logic Gate: Omega",
                         itemType = "Ring#2",
                         enchantments = {
-                            "222593",
-                            "213491",
-                            "213491",
+                            "213458",
+                            "213458",
                             "223677"
                         }
                     },
@@ -1083,8 +1081,8 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "185813",
-                        itemName = "Signet of Collapsing Stars",
+                        itemId = "242405",
+                        itemName = "Band of the Shattered Soul",
                         itemType = "Ring#2",
                         enchantments = {
                             "213470",
@@ -1113,7 +1111,7 @@ ns.ArchonData = {
                 }
             },
             ["Elemental Shaman"] = {
-                talents = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAAMbzy2MjZGzysMGMYmBAAAAwiZWgBMgZjJwsAAmtpZAbLMz0wMzMbDLzMzgZZYWGzMmZMzsBA",
+                talents = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAAMbzy2MjZGzysMGMYmBAAAAwiZWgBMgZjJwsAAmtpZMYzwMNMzM2YWmZmxmZZYWGzMmZMzsBA",
                 items = {
                     {
                         itemId = "237637",
@@ -1329,8 +1327,8 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "185813",
-                        itemName = "Signet of Collapsing Stars",
+                        itemId = "242405",
+                        itemName = "Band of the Shattered Soul",
                         itemType = "Ring#2",
                         enchantments = {
                             "213485",
@@ -1367,7 +1365,7 @@ ns.ArchonData = {
                 }
             },
             ["Fury Warrior"] = {
-                talents = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQjhhNzMMzygZWYmZGzwMMz22MjZmZBYmZGzMWGGmZmBAAAxYbbgFwAmhJwMsBA",
+                talents = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQjhZsZmhZWGMzCzMzYGmhZ22mZMzMLAzMzYmxywwMzMAAAIGbbDsAGwMMBGsBA",
                 items = {
                     {
                         itemId = "237610",
@@ -1471,8 +1469,8 @@ ns.ArchonData = {
                         enchantments = {}
                     },
                     {
-                        itemId = "222447",
-                        itemName = "Charged Claymore",
+                        itemId = "222443",
+                        itemName = "Everforged Greataxe",
                         itemType = "Off-Hand",
                         enchantments = {}
                     },
@@ -1491,7 +1489,7 @@ ns.ArchonData = {
                 }
             },
             ["Subtlety Rogue"] = {
-                talents = "CUQAAAAAAAAAAAAAAAAAAAAAAAAM2mBAAAAAgZZMWmGzsMGzYMMMzMzwY2mlZM22mZmZmZGwYZ2GAAAAmBDgxsZYgBmFWoFbwA",
+                talents = "CUQAAAAAAAAAAAAAAAAAAAAAAAAM2mBAAAAAALjZWmGzsMGzYMMMzMzwY2mlZMjtZmZmZmxAWmtBAAAgZwAYMbGGYgZhFaxGM",
                 items = {
                     {
                         itemId = "237664",
@@ -1623,7 +1621,7 @@ ns.ArchonData = {
                         itemName = "Skymane of the Mother Eagle",
                         itemType = "Helm",
                         enchantments = {
-                            "213482"
+                            "213458"
                         }
                     },
                     {
@@ -1633,7 +1631,7 @@ ns.ArchonData = {
                         enchantments = {
                             "222584",
                             "213743",
-                            "213482"
+                            "213458"
                         }
                     },
                     {
@@ -1663,7 +1661,7 @@ ns.ArchonData = {
                         itemType = "Bracers",
                         enchantments = {
                             "222584",
-                            "213482",
+                            "213458",
                             "223713"
                         }
                     },
@@ -1679,7 +1677,7 @@ ns.ArchonData = {
                         itemType = "Belt",
                         enchantments = {
                             "222584",
-                            "213482"
+                            "213458"
                         }
                     },
                     {
@@ -1700,8 +1698,8 @@ ns.ArchonData = {
                         itemType = "Ring#1",
                         enchantments = {
                             "222584",
-                            "213482",
-                            "213482",
+                            "213458",
+                            "213458",
                             "223677"
                         }
                     },
@@ -1710,8 +1708,8 @@ ns.ArchonData = {
                         itemName = "Logic Gate: Omega",
                         itemType = "Ring#2",
                         enchantments = {
-                            "213482",
-                            "213482",
+                            "213458",
+                            "213458",
                             "223677"
                         }
                     },
@@ -1840,8 +1838,8 @@ ns.ArchonData = {
                         enchantments = {}
                     },
                     {
-                        itemId = "222440",
-                        itemName = "Everforged Longsword",
+                        itemId = "234493",
+                        itemName = "Geezle's Coercive Volt-Ohmmeter",
                         itemType = "Off-Hand",
                         enchantments = {}
                     },
@@ -1939,21 +1937,21 @@ ns.ArchonData = {
                         enchantments = {}
                     },
                     {
-                        itemId = "215135",
-                        itemName = "Ring of Earthen Craftsmanship",
+                        itemId = "237570",
+                        itemName = "Logic Gate: Omega",
                         itemType = "Ring#1",
                         enchantments = {
-                            "222593",
                             "213491",
                             "213491",
                             "223677"
                         }
                     },
                     {
-                        itemId = "237570",
-                        itemName = "Logic Gate: Omega",
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
                         itemType = "Ring#2",
                         enchantments = {
+                            "222593",
                             "213491",
                             "213491",
                             "223677"
@@ -1987,7 +1985,7 @@ ns.ArchonData = {
                         itemName = "Inquisitor's Portal to Madness",
                         itemType = "Helm",
                         enchantments = {
-                            "213458"
+                            "213491"
                         }
                     },
                     {
@@ -1997,7 +1995,7 @@ ns.ArchonData = {
                         enchantments = {
                             "222593",
                             "213743",
-                            "213458"
+                            "213491"
                         }
                     },
                     {
@@ -2027,7 +2025,7 @@ ns.ArchonData = {
                         itemType = "Bracers",
                         enchantments = {
                             "222593",
-                            "213458",
+                            "213491",
                             "223713"
                         }
                     },
@@ -2043,7 +2041,7 @@ ns.ArchonData = {
                         itemType = "Belt",
                         enchantments = {
                             "222593",
-                            "213458"
+                            "213491"
                         }
                     },
                     {
@@ -2063,8 +2061,8 @@ ns.ArchonData = {
                         itemName = "Logic Gate: Alpha",
                         itemType = "Ring#1",
                         enchantments = {
-                            "213458",
-                            "213458",
+                            "213491",
+                            "213491",
                             "223662"
                         }
                     },
@@ -2074,8 +2072,8 @@ ns.ArchonData = {
                         itemType = "Ring#2",
                         enchantments = {
                             "222593",
-                            "213458",
-                            "213458",
+                            "213491",
+                            "213491",
                             "223662"
                         }
                     },
@@ -2129,8 +2127,8 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "237680",
-                        itemName = "Ritual Pauldrons of the Mother Eagle",
+                        itemId = "237552",
+                        itemName = "Deathbound Shoulderpads",
                         itemType = "Shoulder",
                         enchantments = {}
                     },
@@ -2475,7 +2473,7 @@ ns.ArchonData = {
                 }
             },
             ["Affliction Warlock"] = {
-                talents = "CkQAAAAAAAAAAAAAAAAAAAAAAAzMzMzMjY2MwsNzMDzyAAAAmZMziZmxyMzMLGmZAAzYBGYWMaMDgZDsMDAAAAAAAAmxsB",
+                talents = "CkQAAAAAAAAAAAAAAAAAAAAAAAzMzMzMjY2MwsNzMDz2AAAAmZMziZmxyMzMLGmZAAzYBGYWMaMDgZDsMDAAAAAAAAmxsB",
                 items = {
                     {
                         itemId = "237700",
@@ -2506,7 +2504,7 @@ ns.ArchonData = {
                         itemName = "Reshii Wraps",
                         itemType = "Cloak",
                         enchantments = {
-                            "238044",
+                            "238045",
                             "223731"
                         }
                     },
@@ -2560,7 +2558,7 @@ ns.ArchonData = {
                         enchantments = {
                             "213458",
                             "213458",
-                            "223677"
+                            "223674"
                         }
                     },
                     {
@@ -2571,7 +2569,7 @@ ns.ArchonData = {
                             "222593",
                             "213458",
                             "213458",
-                            "223677"
+                            "223674"
                         }
                     },
                     {
@@ -2614,11 +2612,10 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "215136",
-                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemId = "237569",
+                        itemName = "Duskblaze's Desperation",
                         itemType = "Neck",
                         enchantments = {
-                            "222584",
                             "213743",
                             "213482"
                         }
@@ -2682,21 +2679,21 @@ ns.ArchonData = {
                         enchantments = {}
                     },
                     {
-                        itemId = "215135",
-                        itemName = "Ring of Earthen Craftsmanship",
+                        itemId = "237570",
+                        itemName = "Logic Gate: Omega",
                         itemType = "Ring#1",
                         enchantments = {
-                            "222584",
                             "213482",
                             "213482",
                             "223677"
                         }
                     },
                     {
-                        itemId = "237570",
-                        itemName = "Logic Gate: Omega",
+                        itemId = "215135",
+                        itemName = "Ring of Earthen Craftsmanship",
                         itemType = "Ring#2",
                         enchantments = {
+                            "222584",
                             "213482",
                             "213482",
                             "223677"
@@ -2883,7 +2880,7 @@ ns.ArchonData = {
                         itemName = "Reshii Wraps",
                         itemType = "Cloak",
                         enchantments = {
-                            "238044",
+                            "238045",
                             "223731"
                         }
                     },
@@ -2966,8 +2963,8 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "242395",
-                        itemName = "Astral Antenna",
+                        itemId = "242392",
+                        itemName = "Diamantine Voidcore",
                         itemType = "Trinket#1",
                         enchantments = {}
                     },
@@ -2987,7 +2984,7 @@ ns.ArchonData = {
                         itemName = "Midnight Herald's Cowl",
                         itemType = "Helm",
                         enchantments = {
-                            "213458"
+                            "213491"
                         }
                     },
                     {
@@ -2997,7 +2994,7 @@ ns.ArchonData = {
                         enchantments = {
                             "222593",
                             "213743",
-                            "213458"
+                            "213491"
                         }
                     },
                     {
@@ -3027,7 +3024,7 @@ ns.ArchonData = {
                         itemType = "Bracers",
                         enchantments = {
                             "222593",
-                            "213458",
+                            "213491",
                             "223713"
                         }
                     },
@@ -3045,7 +3042,7 @@ ns.ArchonData = {
                         itemType = "Belt",
                         enchantments = {
                             "222593",
-                            "213458"
+                            "213491"
                         }
                     },
                     {
@@ -3066,18 +3063,18 @@ ns.ArchonData = {
                         itemType = "Ring#1",
                         enchantments = {
                             "222593",
-                            "213458",
-                            "213458",
+                            "213491",
+                            "213491",
                             "223677"
                         }
                     },
                     {
-                        itemId = "178824",
-                        itemName = "Signet of the False Accuser",
+                        itemId = "237570",
+                        itemName = "Logic Gate: Omega",
                         itemType = "Ring#2",
                         enchantments = {
-                            "213458",
-                            "213458",
+                            "213491",
+                            "213491",
                             "223677"
                         }
                     },
@@ -3160,11 +3157,10 @@ ns.ArchonData = {
                         enchantments = {}
                     },
                     {
-                        itemId = "219339",
-                        itemName = "Glyph-Etched Binding",
+                        itemId = "237554",
+                        itemName = "Clasp of Furious Freedom",
                         itemType = "Belt",
                         enchantments = {
-                            "222584",
                             "213482"
                         }
                     },
@@ -3353,14 +3349,14 @@ ns.ArchonData = {
                 }
             },
             ["Fire Mage"] = {
-                talents = "C8DAAAAAAAAAAAAAAAAAAAAAAYMMbzgZmZMLGYmhpxMjZAAAAAAYAAzMTLzyyMAAbGzgxMjZGziZZMMzwMbzwMLDDAAAAAAA",
+                talents = "C8DAAAAAAAAAAAAAAAAAAAAAAYGMbzgZMjZxDwYmhpxMjZAAAAAAYAAzMTLzyyMAAbGzgxMjZGziZZMMzwMbzwMLDDAAAAAAA",
                 items = {
                     {
                         itemId = "237718",
                         itemName = "Augur's Ephemeral Wide-Brim",
                         itemType = "Helm",
                         enchantments = {
-                            "213485"
+                            "213482"
                         }
                     },
                     {
@@ -3369,7 +3365,7 @@ ns.ArchonData = {
                         itemType = "Neck",
                         enchantments = {
                             "213743",
-                            "213485"
+                            "213482"
                         }
                     },
                     {
@@ -3399,7 +3395,7 @@ ns.ArchonData = {
                         itemType = "Bracers",
                         enchantments = {
                             "222581",
-                            "213485",
+                            "213482",
                             "223713"
                         }
                     },
@@ -3410,12 +3406,11 @@ ns.ArchonData = {
                         enchantments = {}
                     },
                     {
-                        itemId = "222816",
-                        itemName = "Consecrated Cord",
+                        itemId = "237538",
+                        itemName = "Forgeweaver's Journal Holster",
                         itemType = "Belt",
                         enchantments = {
-                            "222581",
-                            "213485"
+                            "213482"
                         }
                     },
                     {
@@ -3436,8 +3431,8 @@ ns.ArchonData = {
                         itemType = "Ring#1",
                         enchantments = {
                             "222581",
-                            "213485",
-                            "213485",
+                            "213482",
+                            "213482",
                             "223674"
                         }
                     },
@@ -3446,16 +3441,24 @@ ns.ArchonData = {
                         itemName = "Band of the Shattered Soul",
                         itemType = "Ring#2",
                         enchantments = {
-                            "213485",
-                            "213485",
+                            "213482",
+                            "213482",
                             "223674"
                         }
                     },
                     {
-                        itemId = "237730",
-                        itemName = "Voidglass Spire",
+                        itemId = "237735",
+                        itemName = "Voidglass Sovereign's Blade",
                         itemType = "Main-Hand",
                         enchantments = {}
+                    },
+                    {
+                        itemId = "222566",
+                        itemName = "Vagabond's Torch",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222581"
+                        }
                     },
                     {
                         itemId = "242392",
@@ -3483,11 +3486,10 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "215136",
-                        itemName = "Amulet of Earthen Craftsmanship",
+                        itemId = "237568",
+                        itemName = "Chrysalis of Sundered Souls",
                         itemType = "Neck",
                         enchantments = {
-                            "222587",
                             "213743",
                             "213455"
                         }
@@ -3504,7 +3506,7 @@ ns.ArchonData = {
                         itemType = "Cloak",
                         enchantments = {
                             "238045",
-                            "223737"
+                            "223731"
                         }
                     },
                     {
@@ -3572,8 +3574,8 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "222447",
-                        itemName = "Charged Claymore",
+                        itemId = "237737",
+                        itemName = "Photon Sabre Prime",
                         itemType = "Main-Hand",
                         enchantments = {}
                     },
@@ -3947,10 +3949,18 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "237730",
-                        itemName = "Voidglass Spire",
+                        itemId = "237728",
+                        itemName = "Voidglass Kris",
                         itemType = "Main-Hand",
                         enchantments = {}
+                    },
+                    {
+                        itemId = "222566",
+                        itemName = "Vagabond's Torch",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222596"
+                        }
                     },
                     {
                         itemId = "242392",
@@ -4026,11 +4036,10 @@ ns.ArchonData = {
                         enchantments = {}
                     },
                     {
-                        itemId = "219331",
-                        itemName = "Rune-Branded Waistband",
+                        itemId = "237679",
+                        itemName = "Dreamsash of the Mother Eagle",
                         itemType = "Belt",
                         enchantments = {
-                            "222584",
                             "213482"
                         }
                     },
@@ -4080,8 +4089,8 @@ ns.ArchonData = {
                         enchantments = {}
                     },
                     {
-                        itemId = "242393",
-                        itemName = "Loom'ithar's Living Silk",
+                        itemId = "242400",
+                        itemName = "Nexus-King's Command",
                         itemType = "Trinket#2",
                         enchantments = {}
                     }
@@ -4146,11 +4155,10 @@ ns.ArchonData = {
                         enchantments = {}
                     },
                     {
-                        itemId = "219339",
-                        itemName = "Glyph-Etched Binding",
+                        itemId = "237522",
+                        itemName = "Colossal Lifetether",
                         itemType = "Belt",
                         enchantments = {
-                            "222587",
                             "213479"
                         }
                     },
@@ -4178,8 +4186,8 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "246281",
-                        itemName = "Ring of the Panoply",
+                        itemId = "242405",
+                        itemName = "Band of the Shattered Soul",
                         itemType = "Ring#2",
                         enchantments = {
                             "213479",
@@ -4221,7 +4229,7 @@ ns.ArchonData = {
                         itemName = "Dying Star's Veil",
                         itemType = "Helm",
                         enchantments = {
-                            "213458"
+                            "213482"
                         }
                     },
                     {
@@ -4231,7 +4239,7 @@ ns.ArchonData = {
                         enchantments = {
                             "222587",
                             "213746",
-                            "213458"
+                            "213482"
                         }
                     },
                     {
@@ -4261,7 +4269,7 @@ ns.ArchonData = {
                         itemType = "Bracers",
                         enchantments = {
                             "222587",
-                            "213458",
+                            "213482",
                             "223719"
                         }
                     },
@@ -4277,7 +4285,7 @@ ns.ArchonData = {
                         itemType = "Belt",
                         enchantments = {
                             "222587",
-                            "213458"
+                            "213482"
                         }
                     },
                     {
@@ -4298,26 +4306,34 @@ ns.ArchonData = {
                         itemType = "Ring#1",
                         enchantments = {
                             "222587",
-                            "213458",
-                            "213458",
+                            "213482",
+                            "213482",
                             "223674"
                         }
                     },
                     {
-                        itemId = "237567",
-                        itemName = "Logic Gate: Alpha",
+                        itemId = "242405",
+                        itemName = "Band of the Shattered Soul",
                         itemType = "Ring#2",
                         enchantments = {
-                            "213458",
-                            "213458",
+                            "213482",
+                            "213482",
                             "223674"
                         }
                     },
                     {
-                        itemId = "237730",
-                        itemName = "Voidglass Spire",
+                        itemId = "237728",
+                        itemName = "Voidglass Kris",
                         itemType = "Main-Hand",
                         enchantments = {}
+                    },
+                    {
+                        itemId = "222566",
+                        itemName = "Vagabond's Torch",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222587"
+                        }
                     },
                     {
                         itemId = "242392",
@@ -4392,11 +4408,10 @@ ns.ArchonData = {
                         enchantments = {}
                     },
                     {
-                        itemId = "222431",
-                        itemName = "Everforged Greatbelt",
+                        itemId = "237550",
+                        itemName = "Fresh Ethereal Fetters",
                         itemType = "Belt",
                         enchantments = {
-                            "222584",
                             "213482"
                         }
                     },
@@ -4580,7 +4595,7 @@ ns.ArchonData = {
                 }
             },
             ["Preservation Evoker"] = {
-                talents = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZMbzghZGzixMbjZGAAwMDjBGzIMDAAAwMzMxsNzMz2MzAgZMDsAWAzwEYD2MMA",
+                talents = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZMLzghZGzixMbjZGAAwMDjBGzIMDAAAwMzMxsNzMz2MzAgZMDsAWAzwEYD2MMA",
                 items = {
                     {
                         itemId = "237655",
@@ -4877,7 +4892,7 @@ ns.ArchonData = {
                         itemName = "Everforged Vambraces",
                         itemType = "Bracers",
                         enchantments = {
-                            "222587",
+                            "222581",
                             "213470",
                             "223719"
                         }
@@ -4893,7 +4908,7 @@ ns.ArchonData = {
                         itemName = "Everforged Greatbelt",
                         itemType = "Belt",
                         enchantments = {
-                            "222587",
+                            "222581",
                             "213470"
                         }
                     },
@@ -4914,7 +4929,7 @@ ns.ArchonData = {
                         itemName = "Ring of Earthen Craftsmanship",
                         itemType = "Ring#1",
                         enchantments = {
-                            "222587",
+                            "222581",
                             "213470",
                             "213470",
                             "223674"
@@ -4931,8 +4946,8 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "222440",
-                        itemName = "Everforged Longsword",
+                        itemId = "185824",
+                        itemName = "Blade of Grievous Harm",
                         itemType = "Main-Hand",
                         enchantments = {}
                     },
@@ -4941,7 +4956,7 @@ ns.ArchonData = {
                         itemName = "Everforged Defender",
                         itemType = "Off-Hand",
                         enchantments = {
-                            "222587"
+                            "222581"
                         }
                     },
                     {
@@ -5206,7 +5221,7 @@ ns.ArchonData = {
                 }
             },
             ["Guardian Druid"] = {
-                talents = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzYmhZWmZMjZMzYhZGmFLDMbGGNRmZWMbzMzyYGDAAAAAAGGDYZbmNMmlBwEAAAwmxMAsYgB",
+                talents = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzYmhZWmZMjZMzYhZGmFLDMbGGNRzMziZbmZWGzAAAAAAAGGDYZbmNMmlBwEAAAwGmBgFjhB",
                 items = {
                     {
                         itemId = "237682",
@@ -5336,10 +5351,11 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "185842",
-                        itemName = "Ornately Engraved Amplifier",
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
                         itemType = "Neck",
                         enchantments = {
+                            "222587",
                             "213743",
                             "213479"
                         }
@@ -5450,7 +5466,7 @@ ns.ArchonData = {
                 }
             },
             ["Blood Death Knight"] = {
-                talents = "CoPAAAAAAAAAAAAAAAAAAAAAAwwYmZYGzMzwMmZmpZGDzMmxAAAAAzMzMzMzMzmZmxAAAYmZmBAAAYgBmxoxyGglBsBwMYDA",
+                talents = "CoPAAAAAAAAAAAAAAAAAAAAAAwYGzMDzYmZGGzYmpZGzYMzMGAAAAYYmZmZGz2MzMGAAwMzMjBAAAMW2GYALgthJwwCAzgNA",
                 items = {
                     {
                         itemId = "237628",
@@ -5465,7 +5481,7 @@ ns.ArchonData = {
                         itemName = "Amulet of Earthen Craftsmanship",
                         itemType = "Neck",
                         enchantments = {
-                            "222593",
+                            "222590",
                             "213743",
                             "213473"
                         }
@@ -5496,7 +5512,7 @@ ns.ArchonData = {
                         itemName = "Everforged Vambraces",
                         itemType = "Bracers",
                         enchantments = {
-                            "222593",
+                            "222590",
                             "213473",
                             "223719"
                         }
@@ -5512,7 +5528,7 @@ ns.ArchonData = {
                         itemName = "Everforged Greatbelt",
                         itemType = "Belt",
                         enchantments = {
-                            "222593",
+                            "222590",
                             "213473"
                         }
                     },
@@ -5533,7 +5549,7 @@ ns.ArchonData = {
                         itemName = "Ring of Earthen Craftsmanship",
                         itemType = "Ring#1",
                         enchantments = {
-                            "222593",
+                            "222590",
                             "213473",
                             "213473",
                             "223680"
@@ -5554,7 +5570,7 @@ ns.ArchonData = {
                         itemName = "Charged Claymore",
                         itemType = "Main-Hand",
                         enchantments = {
-                            "222593"
+                            "222590"
                         }
                     },
                     {
@@ -5822,7 +5838,7 @@ ns.ArchonData = {
                 }
             },
             ["Beast Mastery Hunter"] = {
-                talents = "C0PAAAAAAAAAAAAAAAAAAAAAAYMbDMgBMbsFYsAAAAAAgZGbzgZmBzMMzyMzMzgZMTmxMmxMzwMDDjhZGmlhZbZGsBAAAAAAzA",
+                talents = "C0PAAAAAAAAAAAAAAAAAAAAAAYMbDMgBMbsFYsAAAAAAgZGbzgZmBzMMzyMzMzgZMTmxMmhZGmZYYMMzwsMjZbZGsBAAAAAAzA",
                 items = {
                     {
                         itemId = "237646",
@@ -5942,7 +5958,7 @@ ns.ArchonData = {
                 }
             },
             ["Elemental Shaman"] = {
-                talents = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAAMbz2yMzMzY2mlxMgZmZAAAAAAbmxwGsAzwQjNAwsMNDYDMNYmZWGWmxMziZZmlZZmxghZ2GA",
+                talents = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAAMbz2yMzMzY2mlxMgZmZAAAAAAbmxwGsAzwQjNAwsMNDYDjpBzMz2wyMmxiZZmlZZmxghZ2GA",
                 items = {
                     {
                         itemId = "237637",
@@ -6070,7 +6086,7 @@ ns.ArchonData = {
                 }
             },
             ["Arcane Mage"] = {
-                talents = "C4DAAAAAAAAAAAAAAAAAAAAAAMzgZbGMzYmZDYmhx0MzyMAAAAAAMAgZmplZbZGAAbAAAAAAsBgxgZWmlZMzYMDzMzMjZMLjB",
+                talents = "C4DAAAAAAAAAAAAAAAAAAAAAAYGMbzgZYmZBGzMMmmZWmBAAAAAgBAMzMtMbLzAAYDAAAAAgNAMGMzysMjZGjZYmZmZMjZZM",
                 items = {
                     {
                         itemId = "237718",
@@ -6169,10 +6185,18 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "237730",
-                        itemName = "Voidglass Spire",
+                        itemId = "237728",
+                        itemName = "Voidglass Kris",
                         itemType = "Main-Hand",
                         enchantments = {}
+                    },
+                    {
+                        itemId = "222566",
+                        itemName = "Vagabond's Torch",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222581"
+                        }
                     },
                     {
                         itemId = "242392",
@@ -6189,7 +6213,7 @@ ns.ArchonData = {
                 }
             },
             ["Fury Warrior"] = {
-                talents = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQjhxsZmhZWGMzCzMzYGmhZ22mZMzMLAzMzYmxywwMzMAAAIGbbDsAGwMMBGsBA",
+                talents = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQjhxsxMMz2gZWYmZmZGmhZ22mZMzMLAzMzYmxywwMzMAAAIGbbDsAGwMMBGsBA",
                 items = {
                     {
                         itemId = "237610",
@@ -6373,10 +6397,11 @@ ns.ArchonData = {
                         enchantments = {}
                     },
                     {
-                        itemId = "237533",
-                        itemName = "Atomic Phasebelt",
+                        itemId = "219331",
+                        itemName = "Rune-Branded Waistband",
                         itemType = "Belt",
                         enchantments = {
+                            "222590",
                             "213497"
                         }
                     },
@@ -6404,8 +6429,8 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "237567",
-                        itemName = "Logic Gate: Alpha",
+                        itemId = "221141",
+                        itemName = "High Nerubian Signet",
                         itemType = "Ring#2",
                         enchantments = {
                             "213497",
@@ -6440,14 +6465,14 @@ ns.ArchonData = {
                 }
             },
             ["Feral Druid"] = {
-                talents = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbzmZWYmZmZzmZsNzMzYmBAAAAAYJY2MwMjaGzCLzMzyYGzAAAAAAADAAAAQzsMLzMbDAYBmZAYhBD",
+                talents = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbzmZWYmZmZzmZsNzMzYmBAAAAAYJY2MwMjaGzyYZmZWGzYAAAAAAADAAAAQzsMLzMbDAYBmZAYhBD",
                 items = {
                     {
                         itemId = "237682",
                         itemName = "Skymane of the Mother Eagle",
                         itemType = "Helm",
                         enchantments = {
-                            "213458"
+                            "213491"
                         }
                     },
                     {
@@ -6457,7 +6482,7 @@ ns.ArchonData = {
                         enchantments = {
                             "222584",
                             "213743",
-                            "213458"
+                            "213491"
                         }
                     },
                     {
@@ -6487,7 +6512,7 @@ ns.ArchonData = {
                         itemType = "Bracers",
                         enchantments = {
                             "222584",
-                            "213458",
+                            "213491",
                             "223713"
                         }
                     },
@@ -6503,7 +6528,7 @@ ns.ArchonData = {
                         itemType = "Belt",
                         enchantments = {
                             "222584",
-                            "213458"
+                            "213491"
                         }
                     },
                     {
@@ -6524,8 +6549,8 @@ ns.ArchonData = {
                         itemType = "Ring#1",
                         enchantments = {
                             "222584",
-                            "213458",
-                            "213458",
+                            "213491",
+                            "213491",
                             "223677"
                         }
                     },
@@ -6534,8 +6559,8 @@ ns.ArchonData = {
                         itemName = "Signet of the False Accuser",
                         itemType = "Ring#2",
                         enchantments = {
-                            "213458",
-                            "213458",
+                            "213491",
+                            "213491",
                             "223677"
                         }
                     },
@@ -6601,11 +6626,10 @@ ns.ArchonData = {
                         enchantments = {}
                     },
                     {
-                        itemId = "219334",
-                        itemName = "Rune-Branded Armbands",
+                        itemId = "237660",
+                        itemName = "Armbands of the Sudden Eclipse",
                         itemType = "Bracers",
                         enchantments = {
-                            "222581",
                             "213467",
                             "223713"
                         }
@@ -6685,7 +6709,7 @@ ns.ArchonData = {
                 }
             },
             ["Unholy Death Knight"] = {
-                talents = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMDzYmxwMzMzMTDzYMzMGAAAAAAAAmZmZDzYmBAsNDzY2mZmxYGgFzihBGY2YoxCGgZAMA",
+                talents = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMzYGjZGmxMzMTDDjZmxMAAAAAAAAmZmZDzYmBAsNDzY2mZmxYGgFzihBGY2YoxCGgZAMA",
                 items = {
                     {
                         itemId = "237628",
@@ -6807,7 +6831,7 @@ ns.ArchonData = {
                 }
             },
             ["Destruction Warlock"] = {
-                talents = "CsQAAAAAAAAAAAAAAAAAAAAAAAmZmZmZEzmhxsZmZYWmNjxMzsYGzyyMzAAAAAYmtlZmlZsADMLGNmBwshNMAAAAAAAmxYGAA",
+                talents = "CsQAAAAAAAAAAAAAAAAAAAAAAMMmxMzMjY2MMmNzMDzysZMzMzsMzwyyMzAAAAAYmtlZml5BAjZMsADsNsQjFMAAAAAAAmxwAA",
                 items = {
                     {
                         itemId = "237700",
@@ -6897,8 +6921,8 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "237567",
-                        itemName = "Logic Gate: Alpha",
+                        itemId = "221136",
+                        itemName = "Devout Zealot's Ring",
                         itemType = "Ring#2",
                         enchantments = {
                             "213479",
@@ -6935,7 +6959,7 @@ ns.ArchonData = {
                 }
             },
             ["Balance Druid"] = {
-                talents = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALUs1MGzMAzCLzMzCDzsYWmZZmZbmZmZmZxsMGGshFGgxy2MbYMbDgJAAAALmZMAbGGD",
+                talents = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALUmtmxYmBYWYZmZWYYsYWmZZmZbmZmZmZxsMGGshFGgxy2MbYMbDgJAAAALmZMAbGGD",
                 items = {
                     {
                         itemId = "237682",
@@ -6946,10 +6970,11 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "178827",
-                        itemName = "Sin Stained Pendant",
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
                         itemType = "Neck",
                         enchantments = {
+                            "222584",
                             "213743",
                             "213494"
                         }
@@ -7034,8 +7059,8 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "222568",
-                        itemName = "Vagabond's Bounding Baton",
+                        itemId = "237730",
+                        itemName = "Voidglass Spire",
                         itemType = "Main-Hand",
                         enchantments = {}
                     },
@@ -7054,7 +7079,7 @@ ns.ArchonData = {
                 }
             },
             ["Retribution Paladin"] = {
-                talents = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAYAgRmltZmtltZGLGz2mZbAAAAAAY2aaGGmZsNDmthxsNzy2YGMDDLLsBAAAzMtNLz2MAgNgBAMMMA",
+                talents = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAYAAyssNzstsNzYxY22MbDAAAAAAzWTzsYYmx2MY2GGz2MLbjZwghlF2AAAgZm2mlZbGAwGwAAGzwA",
                 items = {
                     {
                         itemId = "237619",
@@ -7174,7 +7199,7 @@ ns.ArchonData = {
                 }
             },
             ["Windwalker Monk"] = {
-                talents = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYAMzM2mZMzMDAAAAAAAAAAALLDjmZmBmBsww2MzMMbMzwsMTAAsMmhZmhtZAAsBAmlZpZmZWAMD",
+                talents = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYAMzM2mZMzMDAAAAAAAAAAALLDjYmhxMMswM2mZmhZjZGsMTAAsMmhZmhtZAAsBAmlZpZmZWAMD",
                 items = {
                     {
                         itemId = "237673",
@@ -7294,14 +7319,14 @@ ns.ArchonData = {
                 }
             },
             ["Affliction Warlock"] = {
-                talents = "CkQAAAAAAAAAAAAAAAAAAAAAAMMzMmZmZEzmhZmNzMDzyAAAAmZMzyMjxyMzMLmxMDAYYBGYWMaMDgZDsMDAAAAAAAAmhFA",
+                talents = "CkQAAAAAAAAAAAAAAAAAAAAAAAzMzMzMjY2MWGzmZmhZZAAAAzMmZZmxYZmZmFzYmBAMPgFYgZxoxMAmNwyMAAAAAAAAYGWA",
                 items = {
                     {
                         itemId = "237700",
                         itemName = "Inquisitor's Portal to Madness",
                         itemType = "Helm",
                         enchantments = {
-                            "213491"
+                            "213458"
                         }
                     },
                     {
@@ -7311,7 +7336,7 @@ ns.ArchonData = {
                         enchantments = {
                             "222593",
                             "213743",
-                            "213491"
+                            "213458"
                         }
                     },
                     {
@@ -7325,7 +7350,7 @@ ns.ArchonData = {
                         itemName = "Reshii Wraps",
                         itemType = "Cloak",
                         enchantments = {
-                            "238045",
+                            "238044",
                             "223731"
                         }
                     },
@@ -7341,7 +7366,7 @@ ns.ArchonData = {
                         itemType = "Bracers",
                         enchantments = {
                             "222593",
-                            "213491",
+                            "213458",
                             "223713"
                         }
                     },
@@ -7357,7 +7382,7 @@ ns.ArchonData = {
                         itemType = "Belt",
                         enchantments = {
                             "222593",
-                            "213491"
+                            "213458"
                         }
                     },
                     {
@@ -7378,8 +7403,8 @@ ns.ArchonData = {
                         itemType = "Ring#1",
                         enchantments = {
                             "222593",
-                            "213491",
-                            "213491",
+                            "213458",
+                            "213458",
                             "223677"
                         }
                     },
@@ -7388,8 +7413,8 @@ ns.ArchonData = {
                         itemName = "Logic Gate: Alpha",
                         itemType = "Ring#2",
                         enchantments = {
-                            "213491",
-                            "213491",
+                            "213458",
+                            "213458",
                             "223677"
                         }
                     },
@@ -7408,14 +7433,14 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "242402",
-                        itemName = "Araz's Ritual Forge",
+                        itemId = "242395",
+                        itemName = "Astral Antenna",
                         itemType = "Trinket#1",
                         enchantments = {}
                     },
                     {
-                        itemId = "242497",
-                        itemName = "Azhiccaran Parapodia",
+                        itemId = "242402",
+                        itemName = "Araz's Ritual Forge",
                         itemType = "Trinket#2",
                         enchantments = {}
                     }
@@ -7522,10 +7547,18 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "222568",
-                        itemName = "Vagabond's Bounding Baton",
+                        itemId = "237728",
+                        itemName = "Voidglass Kris",
                         itemType = "Main-Hand",
                         enchantments = {}
+                    },
+                    {
+                        itemId = "222566",
+                        itemName = "Vagabond's Torch",
+                        itemType = "Off-Hand",
+                        enchantments = {
+                            "222584"
+                        }
                     },
                     {
                         itemId = "242395",
@@ -7634,8 +7667,8 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "221136",
-                        itemName = "Devout Zealot's Ring",
+                        itemId = "237567",
+                        itemName = "Logic Gate: Alpha",
                         itemType = "Ring#2",
                         enchantments = {
                             "213458",
@@ -7664,7 +7697,7 @@ ns.ArchonData = {
                 }
             },
             ["Demonology Warlock"] = {
-                talents = "CoQAAAAAAAAAAAAAAAAAAAAAAgxMzMzMjY2MWGziZmhZbAAAAAAAAAAMAjZMsADsMsQDLMzYGbjZ2mxMzMGzYYmZmZGYGAAA",
+                talents = "CoQAAAAAAAAAAAAAAAAAAAAAAMbGzYmZmRMbGGzmZmhZbAAAAAAAAAAMAjZMsADsMsQDLMzYGbjZ2mxMzMGzYYmZmZGYGAAA",
                 items = {
                     {
                         itemId = "237700",
@@ -7792,7 +7825,7 @@ ns.ArchonData = {
                 }
             },
             ["Survival Hunter"] = {
-                talents = "C8PAAAAAAAAAAAAAAAAAAAAAAMGYglxoxyAY2AbzMWmZmZmZYMzMzYMGzMmFAAAAAAgmxMmhZmxMYYMmZGGzYWMD2AAAAAgBAA",
+                talents = "C8PAAAAAAAAAAAAAAAAAAAAAAMGYglxoxyAY2AbzMWmZmZmZYMzMzYMGzMmFAAAAAAgmhxMmZmxMYYMMzwsMMLLzgNAAAAAYAA",
                 items = {
                     {
                         itemId = "237646",
@@ -7912,7 +7945,7 @@ ns.ArchonData = {
                 }
             },
             ["Enhancement Shaman"] = {
-                talents = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMDMzDMDzMz8AzMLzMYZAAAAAAAAAA2AsZGDbwCMDDNYBAzykBssYmZmhZMz2wyMzkFWGLjZGAgxA",
+                talents = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMDMzDMDzMz8AzMLzMYZAAAAAAAAAA2AsZGDbwCMDDNYBAzykBswMzMDzMzsMjlZmJLsMMmZAAGD",
                 items = {
                     {
                         itemId = "237637",
@@ -7997,7 +8030,7 @@ ns.ArchonData = {
                             "222584",
                             "213482",
                             "213482",
-                            "223677"
+                            "223674"
                         }
                     },
                     {
@@ -8007,12 +8040,12 @@ ns.ArchonData = {
                         enchantments = {
                             "213482",
                             "213482",
-                            "223677"
+                            "223674"
                         }
                     },
                     {
-                        itemId = "237738",
-                        itemName = "Unbound Training Claws",
+                        itemId = "222451",
+                        itemName = "Charged Slicer",
                         itemType = "Main-Hand",
                         enchantments = {}
                     },
@@ -8162,7 +8195,7 @@ ns.ArchonData = {
                 }
             },
             ["Fire Mage"] = {
-                talents = "C8DAAAAAAAAAAAAAAAAAAAAAAYGMbzgZYmZBGzMMNmZWmBAAAAAgBAMzMtMLLzAAsZmZwYmxMjZxsMGmZ2Mz2M2mBGAAAAAAA",
+                talents = "C8DAAAAAAAAAAAAAAAAAAAAAAMzAbGMDzMLeA8AzMMNmZWmZAAAAAAMAgZmplZZZGAgNzMDGzMmZMLmlxwMzmZ2mxyMwAAAAAAAA",
                 items = {
                     {
                         itemId = "237718",
@@ -8281,7 +8314,7 @@ ns.ArchonData = {
                 }
             },
             ["Arms Warrior"] = {
-                talents = "CcEAAAAAAAAAAAAAAAAAAAAAAghZmxMmxMz2stsMmBAAAYw0MGWmZGGLjZmxmZmxMwwAAAAAAAwMmtBDYLGwmZMsBDMDb0AWA",
+                talents = "CcEAAAAAAAAAAAAAAAAAAAAAAghZmxMmxMz2stsMmBAAAYw0wYWGzwYZmZmxmZmhZwwAAAAAAAwMmtBDYLGwmZMsBDMDb0AWA",
                 items = {
                     {
                         itemId = "237610",
@@ -8311,7 +8344,7 @@ ns.ArchonData = {
                         itemName = "Reshii Wraps",
                         itemType = "Cloak",
                         enchantments = {
-                            "238045",
+                            "238044",
                             "223731"
                         }
                     },
@@ -8400,7 +8433,7 @@ ns.ArchonData = {
                 }
             },
             ["Devastation Evoker"] = {
-                talents = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmZGYGmxMz4BMjxYmGmZysNzyMmZmZGzsMDAsNMzyMzADwgFYZMasNAmBgNMD",
+                talents = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmZGYGmxMDMjx4BmwMTmtZWmxMzMzYmlZAYmtxMz2MzADMGsALjRjtBwMAshZA",
                 items = {
                     {
                         itemId = "237655",
@@ -8520,7 +8553,7 @@ ns.ArchonData = {
                 }
             },
             ["Augmentation Evoker"] = {
-                talents = "CEcBAAAAAAAAAAAAAAAAAAAAAgZZmtZmZGGYmlZMzMmZDAAAAAMAAYmBGGD1wMzAAAAgZmZ2GzMbjZGDzsZMYBWGDjtBwMI2wYA",
+                talents = "CEcBAAAAAAAAAAAAAAAAAAAAAgZZmtZmZGGYmlZMzMmZDAAAAAAAAzMwwYmpGmZGAAAAYmZ2GzMGzMGmZzYwCsMGGbDgZQshxA",
                 items = {
                     {
                         itemId = "237655",
@@ -8640,7 +8673,7 @@ ns.ArchonData = {
                 }
             },
             ["Frost Mage"] = {
-                talents = "CAEAAAAAAAAAAAAAAAAAAAAAAYGbsZwMMzsAjZGNGzMLzMzwwM4BmZmZmZmZmZGzMzYmZZmmZWmFAAAYBAAAAAAzGAAAAAAAA",
+                talents = "CAEAAAAAAAAAAAAAAAAAAAAAAMzYjNjHwMjZmNPAMzoxYMLzMzwwM4BmZmZmZmZmZGzMzYmZZmmZWmFAAAYBAAAAAAzGAAAAAAAA",
                 items = {
                     {
                         itemId = "237718",
@@ -8761,7 +8794,7 @@ ns.ArchonData = {
         },
         healer = {
             ["Restoration Druid"] = {
-                talents = "CkGAAAAAAAAAAAAAAAAAAAAAAsBzYZZmZmZWMbjBjllx2itZAAAAAAAAAAAAsMIbGmmhZ8AmFzyMjlZMmBAAAAAAAGAAAAAwsNzWzyML2YmZgxMLgG",
+                talents = "CkGAAAAAAAAAAAAAAAAAAAAAAsBzYZZmZmZWMbjBjllx2itZAAAAAAAAAAAAsMIbGmmZM8AmFzyMjlZMmBAAAAAAAGAAAAAwsNzWzyML2YmZgxMLgG",
                 items = {
                     {
                         itemId = "237682",
@@ -8772,10 +8805,11 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "185820",
-                        itemName = "Cabochon of the Infinite Flight",
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
                         itemType = "Neck",
                         enchantments = {
+                            "222581",
                             "213746",
                             "213470"
                         }
@@ -8818,11 +8852,10 @@ ns.ArchonData = {
                         enchantments = {}
                     },
                     {
-                        itemId = "219331",
-                        itemName = "Rune-Branded Waistband",
+                        itemId = "237679",
+                        itemName = "Dreamsash of the Mother Eagle",
                         itemType = "Belt",
                         enchantments = {
-                            "222581",
                             "213470"
                         }
                     },
@@ -8881,7 +8914,7 @@ ns.ArchonData = {
                 }
             },
             ["Restoration Shaman"] = {
-                talents = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZmZbmthZegZzsNWMsYxMLwAGwswEYsgZmFLzsMzMkZjZmpxMDDsMjZsYWGLziZAAwA",
+                talents = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZmZbmthZegZzsNWMsYxMLwAGwswEYsgZmFLzsNzMjMbYmpxMDDsYMjFzyYZWmZAAwA",
                 items = {
                     {
                         itemId = "237637",
@@ -9009,7 +9042,7 @@ ns.ArchonData = {
                 }
             },
             ["Discipline Priest"] = {
-                talents = "CAQAAAAAAAAAAAAAAAAAAAAAAADsNzMjxYMmZGzsZ2mZmZmBAAAAAAAAAAwilZ7BwMzgZhxMGjhZhtZamJWGYmBACwsNbbgxmNAA",
+                talents = "CAQAAAAAAAAAAAAAAAAAAAAAAAgtZmZMGjxMzYmNz2MzMzMAAAAAAAAAAAWmlZbwMzgZhhxYMMLegtZaMxyAzMAQAmtZbDM2sBAA",
                 items = {
                     {
                         itemId = "237709",
@@ -9020,10 +9053,11 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "185820",
-                        itemName = "Cabochon of the Infinite Flight",
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
                         itemType = "Neck",
                         enchantments = {
+                            "222581",
                             "213746",
                             "213485"
                         }
@@ -9108,8 +9142,8 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "222568",
-                        itemName = "Vagabond's Bounding Baton",
+                        itemId = "237730",
+                        itemName = "Voidglass Spire",
                         itemType = "Main-Hand",
                         enchantments = {}
                     },
@@ -9128,23 +9162,24 @@ ns.ArchonData = {
                 }
             },
             ["Holy Paladin"] = {
-                talents = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYAAzAAAMAbjZYmxMjlZMLzMsMDmZbz0WMjZMzMMwslBAMAYDYjZZmxMLz2Mzs0AAAAsAYwmZwMMA",
+                talents = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAYAAzAAAAYbMDzMmZsMjZZmhlZwMbbm2iZWmxMzwAzWGAwAgNgNmtZGzsMbzMzSDAAAwCgBbmBzsBA",
                 items = {
                     {
                         itemId = "237619",
                         itemName = "Lightmane of the Lucent Battalion",
                         itemType = "Helm",
                         enchantments = {
-                            "213455"
+                            "213479"
                         }
                     },
                     {
-                        itemId = "185820",
-                        itemName = "Cabochon of the Infinite Flight",
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
                         itemType = "Neck",
                         enchantments = {
-                            "213746",
-                            "213455"
+                            "222587",
+                            "213743",
+                            "213479"
                         }
                     },
                     {
@@ -9174,7 +9209,7 @@ ns.ArchonData = {
                         itemType = "Bracers",
                         enchantments = {
                             "222587",
-                            "213455",
+                            "213479",
                             "223719"
                         }
                     },
@@ -9190,7 +9225,7 @@ ns.ArchonData = {
                         itemType = "Belt",
                         enchantments = {
                             "222587",
-                            "213455"
+                            "213479"
                         }
                     },
                     {
@@ -9211,8 +9246,8 @@ ns.ArchonData = {
                         itemType = "Ring#1",
                         enchantments = {
                             "222587",
-                            "213455",
-                            "213455",
+                            "213479",
+                            "213479",
                             "223674"
                         }
                     },
@@ -9221,8 +9256,8 @@ ns.ArchonData = {
                         itemName = "Signet of Collapsing Stars",
                         itemType = "Ring#2",
                         enchantments = {
-                            "213455",
-                            "213455",
+                            "213479",
+                            "213479",
                             "223674"
                         }
                     },
@@ -9266,10 +9301,11 @@ ns.ArchonData = {
                         }
                     },
                     {
-                        itemId = "185820",
-                        itemName = "Cabochon of the Infinite Flight",
+                        itemId = "215136",
+                        itemName = "Amulet of Earthen Craftsmanship",
                         itemType = "Neck",
                         enchantments = {
+                            "222587",
                             "213743",
                             "213479"
                         }
@@ -9374,7 +9410,7 @@ ns.ArchonData = {
                 }
             },
             ["Preservation Evoker"] = {
-                talents = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2GDwMzYWMzMbDAAAmZMjZMGmJGzAAAAbzMz0MWmZMGzAAwY2swCMwMM0gxCMD",
+                talents = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2GDwMzYWMzMbDAAAmZMjZMGmJmZGAAAYbmZmM2mZMGzAAwY2swCMwMM0gxCMA",
                 items = {
                     {
                         itemId = "237655",
@@ -9509,7 +9545,7 @@ ns.ArchonData = {
                         itemName = "Amulet of Earthen Craftsmanship",
                         itemType = "Neck",
                         enchantments = {
-                            "222593",
+                            "222581",
                             "213746",
                             "213458"
                         }
@@ -9540,7 +9576,7 @@ ns.ArchonData = {
                         itemName = "Consecrated Cuffs",
                         itemType = "Bracers",
                         enchantments = {
-                            "222593",
+                            "222581",
                             "213458",
                             "223719"
                         }
@@ -9556,7 +9592,7 @@ ns.ArchonData = {
                         itemName = "Consecrated Cord",
                         itemType = "Belt",
                         enchantments = {
-                            "222593",
+                            "222581",
                             "213458"
                         }
                     },
@@ -9577,7 +9613,7 @@ ns.ArchonData = {
                         itemName = "Ring of Earthen Craftsmanship",
                         itemType = "Ring#1",
                         enchantments = {
-                            "222593",
+                            "222581",
                             "213458",
                             "213458",
                             "223662"
