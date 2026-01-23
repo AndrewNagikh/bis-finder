@@ -50,8 +50,16 @@ local BiSFinderLDB = LibStub("LibDataBroker-1.1"):NewDataObject("BiSFinder", {
     end,
 })
 
+-- Флаг для отслеживания регистрации
+local isRegistered = false
+
 -- Создаем иконку на миникарте
 function ns:CreateMinimapIcon()
+    -- Проверяем, не зарегистрирован ли уже объект
+    if isRegistered then
+        return
+    end
+    
     -- Проверяем доступность библиотек
     local LDB = LibStub("LibDataBroker-1.1", true)
     local LDI = LibStub("LibDBIcon-1.0", true)
@@ -60,8 +68,19 @@ function ns:CreateMinimapIcon()
         return
     end
     
+    -- Проверяем, не зарегистрирован ли объект в LibDBIcon
+    if LDI.objects and LDI.objects["BiSFinder"] then
+        isRegistered = true
+        -- Показываем иконку если она не скрыта
+        if not BiSFinderMinimapDB.hide then
+            LDI:Show("BiSFinder")
+        end
+        return
+    end
+    
     -- Регистрируем иконку с базой данных настроек
     LDI:Register("BiSFinder", BiSFinderLDB, BiSFinderMinimapDB)
+    isRegistered = true
     
     -- Показываем иконку если она не скрыта
     if not BiSFinderMinimapDB.hide then

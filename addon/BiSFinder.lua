@@ -59,12 +59,7 @@ local function InitializeAddon()
         end
     end
     
-    -- Создаем иконку на миникарте с задержкой (чтобы MinimapIcon.lua успел загрузиться)
-    C_Timer.After(0.5, function()
-        if ns.CreateMinimapIcon then
-            ns:CreateMinimapIcon()
-        end
-    end)
+    -- Иконка на миникарте создается автоматически в MinimapIcon.lua при загрузке файла
 end
 
 -- Функция для автоматического открытия контента по специализации игрока

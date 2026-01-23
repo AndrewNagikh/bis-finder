@@ -1,4 +1,4 @@
-## Interface: 110002
+## Interface: 120000
 ## Title: BiSFinder
 ## Notes: Finder for best-in-slot gear per class/spec
 ## Author: YourName
@@ -7,7 +7,7 @@
 ## OptionalDeps: LibDataBroker-1.1, LibDBIcon-1.0
 
 # Библиотеки
-Libs\LibStub\LibStub.lua
+Libs\LibDBIcon-1.0\LibStub\LibStub.lua
 Libs\LibDBIcon-1.0\CallbackHandler-1.0\CallbackHandler-1.0.lua
 Libs\LibDBIcon-1.0\LibDataBroker-1.1\LibDataBroker-1.1.lua
 Libs\LibDBIcon-1.0\LibDBIcon-1.0\LibDBIcon-1.0.lua

@@ -94,7 +94,7 @@ export async function safeGetRowData(
 
     // Специфичные селекторы для определенных страниц
     const specificSelectors: Record<string, string> = {
-      'augmentation-evoker-pve-dps-gear-best-in-slot': `div${area} span:nth-of-type(2) table tbody tr`,
+      'augmentation-evoker-pve-dps-gear-best-in-slot': `div${area} span table tbody tr`,
       'holy-priest-pve-healing-gear-best-in-slot': `div${icyVeinsSource === 'mythic' ? '#mplus' : icyVeinsSource === 'raid' ? '#raid' : '#overall'} table tbody tr`,
     };
 

@@ -1,6 +1,6 @@
 -- Автоматически сгенерированный файл с данными о предметах
 -- Не редактируйте вручную! Используйте генератор.
--- Сгенерировано: 2026-01-12T13:46:46.952Z
+-- Сгенерировано: 2026-01-23T21:21:34.759Z
 
 local ADDON_NAME, ns = ...
 
@@ -435,7 +435,7 @@ ns.IcyVeinsData = {
                     itemType = "Weapon",
                     itemId = "221159",
                     itemName = "Harvester's Interdiction",
-                    source = "Ara-Kara, City of Echoes or Great Vault (729)"
+                    source = "Ara-Kara, City of Echoes or Great Vault"
                 },
                 {
                     itemType = "Helm",
@@ -625,9 +625,9 @@ ns.IcyVeinsData = {
             ["Beast Mastery Hunter"] = {
                 {
                     itemType = "Weapon",
-                    itemId = "237733",
-                    itemName = "Lacerated Current Caster",
-                    source = "Fractillus in Manaforge Omega"
+                    itemId = "234492",
+                    itemName = "Keeza's 'B.' B.B.B.F.G",
+                    source = "Operation: Floodgate, or in Great Vault"
                 },
                 {
                     itemType = "Helm",
@@ -637,9 +637,9 @@ ns.IcyVeinsData = {
                 },
                 {
                     itemType = "Neck ( Pack Leader)",
-                    itemId = "237569",
-                    itemName = "Duskblaze's Desperation",
-                    source = "The Soul Hunters in Manaforge Omega"
+                    itemId = "185842",
+                    itemName = "Ornately Engraved Amplifier",
+                    source = "Tazavesh: Streets of Wonder, or in Great Vault"
                 },
                 {
                     itemType = "Neck ( Dark Ranger)",
@@ -657,7 +657,7 @@ ns.IcyVeinsData = {
                     itemType = "Cloak",
                     itemId = "235499",
                     itemName = "Reshii Wraps",
-                    source = "Season 3 Questline"
+                    source = "Pre-Patch Questline"
                 },
                 {
                     itemType = "Chest",
@@ -681,7 +681,7 @@ ns.IcyVeinsData = {
                     itemType = "Belt",
                     itemId = "234501",
                     itemName = "Portable Power Generator",
-                    source = "Operation: Floodgate (710), or in Great Vault"
+                    source = "Operation: Floodgate, or in Great Vault"
                 },
                 {
                     itemType = "Legs",
@@ -703,15 +703,15 @@ ns.IcyVeinsData = {
                 },
                 {
                     itemType = "Ring #2 ( Pack Leader)",
-                    itemId = "242491",
-                    itemName = "Whispers of K'aresh",
-                    source = "Eco-Dome Al'dani (710), or in Great Vault"
+                    itemId = "221136",
+                    itemName = "Devout Zealot's Ring",
+                    source = "The Dawnbreaker, or in Great Vault"
                 },
                 {
                     itemType = "Ring #2 ( Dark Ranger)",
                     itemId = "246281",
                     itemName = "Ring of the Panoply",
-                    source = "Tazavesh: Streets of Wonder (710), or in Great Vault"
+                    source = "Tazavesh: Streets of Wonder, or in Great Vault"
                 },
                 {
                     itemType = "Trinket #1 ( Dark Ranger)",
@@ -726,16 +726,10 @@ ns.IcyVeinsData = {
                     source = "Loom’ithar in Manaforge Omega"
                 },
                 {
-                    itemType = "Trinket #2 ( Dark Ranger)",
-                    itemId = "242402",
-                    itemName = "Araz's Ritual Forge",
-                    source = "Forgeweaver Araz in Manaforge Omega"
-                },
-                {
-                    itemType = "Trinket #2 ( Pack Leader)",
-                    itemId = "219314",
-                    itemName = "Ara-Kara Sacbrood",
-                    source = "Ara-Kara, City of Echoes (710), or in Great Vault"
+                    itemType = "Trinket #2",
+                    itemId = "232541",
+                    itemName = "Improvised Seaforium Pacemaker",
+                    source = "Operation: Floodgate, or in Great Vault"
                 }
             },
             ["Frost Death Knight"] = {
@@ -747,9 +741,9 @@ ns.IcyVeinsData = {
                 },
                 {
                     itemType = "Neck",
-                    itemId = "242406",
-                    itemName = "Salhadaar's Folly",
-                    source = "Nexus King Salhadaar"
+                    itemId = "178827",
+                    itemName = "Sin Stained Pendant",
+                    source = "Halls of Atonement"
                 },
                 {
                     itemType = "Shoulder",
@@ -824,108 +818,16 @@ ns.IcyVeinsData = {
                     source = "Loom’ithar"
                 },
                 {
-                    itemType = "2H Weapon",
-                    itemId = "222447",
-                    itemName = "Charged Claymore",
+                    itemType = "Main Hand Weapon",
+                    itemId = "237734",
+                    itemName = "Oath-Breaker's Recompense",
+                    source = "Nexus King Salhadaar"
+                },
+                {
+                    itemType = "Offhand Weapon",
+                    itemId = "222440",
+                    itemName = "Everforged Longsword",
                     source = "Blacksmithing"
-                }
-            },
-            ["Arcane Mage"] = {
-                {
-                    itemType = "Weapon",
-                    itemId = "237735",
-                    itemName = "Voidglass Sovereign's Blade",
-                    source = "Nexus King Salhadaar in Manaforge Omega"
-                },
-                {
-                    itemType = "Off-Hand",
-                    itemId = "222566",
-                    itemName = "Vagabond's Torch",
-                    source = "Crafted — Inscription"
-                },
-                {
-                    itemType = "Helm",
-                    itemId = "237718",
-                    itemName = "Augur's Ephemeral Wide-Brim",
-                    source = "Forgeweaver Araz/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Neck",
-                    itemId = "252009",
-                    itemName = "Bloodstained Memento",
-                    source = "Great Vault"
-                },
-                {
-                    itemType = "Shoulder",
-                    itemId = "237716",
-                    itemName = "Augur's Ephemeral Orbs of Power",
-                    source = "The Soul Hunters/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Cloak",
-                    itemId = "235499",
-                    itemName = "Reshii Wraps",
-                    source = "Main Story — Socketed with  Pure Precise Fiber"
-                },
-                {
-                    itemType = "Chest",
-                    itemId = "237721",
-                    itemName = "Augur's Ephemeral Habiliments",
-                    source = "Fractillus/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Bracers",
-                    itemId = "222815",
-                    itemName = "Consecrated Cuffs",
-                    source = "Crafted — Tailoring"
-                },
-                {
-                    itemType = "Gloves",
-                    itemId = "246275",
-                    itemName = "Codebreaker's Cunning Handwraps",
-                    source = "Great Vault"
-                },
-                {
-                    itemType = "Belt",
-                    itemId = "237559",
-                    itemName = "Singularity Cincture",
-                    source = "Dimensius The All Devouring in Manaforge Omega"
-                },
-                {
-                    itemType = "Legs",
-                    itemId = "237717",
-                    itemName = "Augur's Ephemeral Trousers",
-                    source = "Loom’ithar/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Boots",
-                    itemId = "243305",
-                    itemName = "Interloper's Silken Striders",
-                    source = "The Soul Hunters in Manaforge Omega"
-                },
-                {
-                    itemType = "Ring #1",
-                    itemId = "221200",
-                    itemName = "Radiant Necromancer's Band",
-                    source = "Great Vault"
-                },
-                {
-                    itemType = "Ring #2",
-                    itemId = "185813",
-                    itemName = "Signet of Collapsing Stars",
-                    source = "Great Vault"
-                },
-                {
-                    itemType = "Trinket #1",
-                    itemId = "242395",
-                    itemName = "Astral Antenna",
-                    source = "Loom’ithar in Manaforge Omega"
-                },
-                {
-                    itemType = "Trinket #2",
-                    itemId = "242392",
-                    itemName = "Diamantine Voidcore",
-                    source = "Fractillus in Manaforge Omega"
                 }
             },
             ["Elemental Shaman"] = {
@@ -1036,98 +938,6 @@ ns.IcyVeinsData = {
                     itemId = "242497",
                     itemName = "Azhiccaran Parapodia",
                     source = "Eco-Dome Al'dani"
-                }
-            },
-            ["Marksmanship Hunter"] = {
-                {
-                    itemType = "Weapon",
-                    itemId = "185783",
-                    itemName = "Yasahm the Riftbreaker",
-                    source = "Tazavesh: Streets of Wonder (710), or in Great Vault"
-                },
-                {
-                    itemType = "Helm",
-                    itemId = "237646",
-                    itemName = "Midnight Herald's Cowl",
-                    source = "Forgeweaver Araz/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Neck",
-                    itemId = "185842",
-                    itemName = "Ornately Engraved Amplifier",
-                    source = "Tazavesh: Streets of Wonder (710), or in Great Vault"
-                },
-                {
-                    itemType = "Shoulder",
-                    itemId = "237644",
-                    itemName = "Midnight Herald's Shadowguards",
-                    source = "The Soul Hunters/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Cloak",
-                    itemId = "235499",
-                    itemName = "Reshii Wraps",
-                    source = "Season 3 Questline"
-                },
-                {
-                    itemType = "Chest",
-                    itemId = "237649",
-                    itemName = "Midnight Herald's Hauberk",
-                    source = "Fractillus/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Bracers",
-                    itemId = "219342",
-                    itemName = "Glyph-Etched Vambraces",
-                    source = "Crafted by Leatherworking"
-                },
-                {
-                    itemType = "Gloves",
-                    itemId = "219341",
-                    itemName = "Glyph-Etched Gauntlets",
-                    source = "Crafted by Leatherworking"
-                },
-                {
-                    itemType = "Belt",
-                    itemId = "237522",
-                    itemName = "Colossal Lifetether",
-                    source = "Loom’ithar in Manaforge Omega"
-                },
-                {
-                    itemType = "Legs",
-                    itemId = "237645",
-                    itemName = "Midnight Herald's Petticoat",
-                    source = "Loom’ithar/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Boots",
-                    itemId = "243308",
-                    itemName = "Interloper's Chain Boots",
-                    source = "The Soul Hunters in Manaforge Omega"
-                },
-                {
-                    itemType = "Ring #1",
-                    itemId = "237567",
-                    itemName = "Logic Gate: Alpha",
-                    source = "Plexus Sentinel in Manaforge Omega"
-                },
-                {
-                    itemType = "Ring #2",
-                    itemId = "221136",
-                    itemName = "Devout Zealot's Ring",
-                    source = "The Dawnbreaker (710), or in Great Vault"
-                },
-                {
-                    itemType = "Trinket #1",
-                    itemId = "242396",
-                    itemName = "Unyielding Netherprism",
-                    source = "Fractillus in Manaforge Omega"
-                },
-                {
-                    itemType = "Trinket #2",
-                    itemId = "242395",
-                    itemName = "Astral Antenna",
-                    source = "Loom’ithar in Manaforge Omega"
                 }
             },
             ["Havoc Demon Hunter"] = {
@@ -1256,6 +1066,196 @@ ns.IcyVeinsData = {
                     itemId = "232541",
                     itemName = "Improvised Seaforium Pacemaker",
                     source = "Operation: Floodgate"
+                }
+            },
+            ["Fury Warrior"] = {
+                {
+                    itemType = "Mainhand Weapon",
+                    itemId = "234490",
+                    itemName = "Circuit Breaker",
+                    source = "Operation: Floodgate"
+                },
+                {
+                    itemType = "Offhand Weapon",
+                    itemId = "222443",
+                    itemName = "Everforged Greataxe",
+                    source = "Crafted — Blacksmithing"
+                },
+                {
+                    itemType = "Helm",
+                    itemId = "238028",
+                    itemName = "Bone-Melted Faceplate",
+                    source = "BoE Drop in Manaforge Omega"
+                },
+                {
+                    itemType = "Neck",
+                    itemId = "237568",
+                    itemName = "Chrysalis of Sundered Souls",
+                    source = "Soulbinder Naazindhri in Manaforge Omega"
+                },
+                {
+                    itemType = "Shoulder",
+                    itemId = "237608",
+                    itemName = "Living Weapon's Ramparts",
+                    source = "The Soul Hunters in Manaforge Omega"
+                },
+                {
+                    itemType = "Cloak",
+                    itemId = "235499",
+                    itemName = "Reshii Wraps",
+                    source = "Ghosts of K'aresh Campaign"
+                },
+                {
+                    itemType = "Chest",
+                    itemId = "237613",
+                    itemName = "Living Weapon's Bulwark",
+                    source = "Fractillus in Manaforge Omega"
+                },
+                {
+                    itemType = "Bracers",
+                    itemId = "222435",
+                    itemName = "Everforged Vambraces",
+                    source = "Crafted — Blacksmithing"
+                },
+                {
+                    itemType = "Gloves",
+                    itemId = "237611",
+                    itemName = "Living Weapon's Crushers",
+                    source = "Soulbinder Naazindhri in Manaforge Omega"
+                },
+                {
+                    itemType = "Belt",
+                    itemId = "237607",
+                    itemName = "Living Weapon's Chain",
+                    source = "Catalyst"
+                },
+                {
+                    itemType = "Legs",
+                    itemId = "237609",
+                    itemName = "Living Weapon's Legguards",
+                    source = "Loom’ithar in Manaforge Omega"
+                },
+                {
+                    itemType = "Boots",
+                    itemId = "243307",
+                    itemName = "Interloper's Plated Sabatons",
+                    source = "The Soul Hunters in Manaforge Omega"
+                },
+                {
+                    itemType = "Ring #1",
+                    itemId = "221200",
+                    itemName = "Radiant Necromancer's Band",
+                    source = "Priory of the Sacred Flame"
+                },
+                {
+                    itemType = "Ring #2",
+                    itemId = "178824",
+                    itemName = "Signet of the False Accuser",
+                    source = "Halls of Atonement"
+                },
+                {
+                    itemType = "Trinket #1",
+                    itemId = "242399",
+                    itemName = "Screams of a Forgotten Sky",
+                    source = "Dimensius The All Devouring in Manaforge Omega"
+                },
+                {
+                    itemType = "Trinket #2",
+                    itemId = "242394",
+                    itemName = "Eradicating Arcanocore",
+                    source = "Plexus Sentinel in Manaforge Omega"
+                }
+            },
+            ["Marksmanship Hunter"] = {
+                {
+                    itemType = "Weapon",
+                    itemId = "185783",
+                    itemName = "Yasahm the Riftbreaker",
+                    source = "Tazavesh: Streets of Wonder, or in Great Vault"
+                },
+                {
+                    itemType = "Helm",
+                    itemId = "237646",
+                    itemName = "Midnight Herald's Cowl",
+                    source = "Forgeweaver Araz/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Neck",
+                    itemId = "185842",
+                    itemName = "Ornately Engraved Amplifier",
+                    source = "Tazavesh: Streets of Wonder, or in Great Vault"
+                },
+                {
+                    itemType = "Shoulder",
+                    itemId = "237644",
+                    itemName = "Midnight Herald's Shadowguards",
+                    source = "The Soul Hunters/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Cloak",
+                    itemId = "235499",
+                    itemName = "Reshii Wraps",
+                    source = "Pre-Patch Questline"
+                },
+                {
+                    itemType = "Chest",
+                    itemId = "237649",
+                    itemName = "Midnight Herald's Hauberk",
+                    source = "Fractillus/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Bracers",
+                    itemId = "219342",
+                    itemName = "Glyph-Etched Vambraces",
+                    source = "Crafted by Leatherworking"
+                },
+                {
+                    itemType = "Gloves",
+                    itemId = "219341",
+                    itemName = "Glyph-Etched Gauntlets",
+                    source = "Crafted by Leatherworking"
+                },
+                {
+                    itemType = "Belt",
+                    itemId = "237522",
+                    itemName = "Colossal Lifetether",
+                    source = "Loom’ithar in Manaforge Omega"
+                },
+                {
+                    itemType = "Legs",
+                    itemId = "237645",
+                    itemName = "Midnight Herald's Petticoat",
+                    source = "Loom’ithar/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Boots",
+                    itemId = "243308",
+                    itemName = "Interloper's Chain Boots",
+                    source = "The Soul Hunters in Manaforge Omega"
+                },
+                {
+                    itemType = "Ring #1",
+                    itemId = "237567",
+                    itemName = "Logic Gate: Alpha",
+                    source = "Plexus Sentinel in Manaforge Omega"
+                },
+                {
+                    itemType = "Ring #2",
+                    itemId = "221136",
+                    itemName = "Devout Zealot's Ring",
+                    source = "The Dawnbreaker, or in Great Vault"
+                },
+                {
+                    itemType = "Trinket #1",
+                    itemId = "242396",
+                    itemName = "Unyielding Netherprism",
+                    source = "Fractillus in Manaforge Omega"
+                },
+                {
+                    itemType = "Trinket #2",
+                    itemId = "242395",
+                    itemName = "Astral Antenna",
+                    source = "Loom’ithar in Manaforge Omega"
                 }
             },
             ["Destruction Warlock"] = {
@@ -1452,104 +1452,6 @@ ns.IcyVeinsData = {
                     itemId = "242402",
                     itemName = "Araz's Ritual Forge",
                     source = "Forgeweaver Araz in Manaforge Omega"
-                }
-            },
-            ["Fury Warrior"] = {
-                {
-                    itemType = "Mainhand Weapon",
-                    itemId = "234490",
-                    itemName = "Circuit Breaker",
-                    source = "Operation: Floodgate"
-                },
-                {
-                    itemType = "Offhand Weapon",
-                    itemId = "222443",
-                    itemName = "Everforged Greataxe",
-                    source = "Crafted — Blacksmithing"
-                },
-                {
-                    itemType = "Helm",
-                    itemId = "238028",
-                    itemName = "Bone-Melted Faceplate",
-                    source = "BoE Drop in Manaforge Omega"
-                },
-                {
-                    itemType = "Neck",
-                    itemId = "237568",
-                    itemName = "Chrysalis of Sundered Souls",
-                    source = "Soulbinder Naazindhri in Manaforge Omega"
-                },
-                {
-                    itemType = "Shoulder",
-                    itemId = "237608",
-                    itemName = "Living Weapon's Ramparts",
-                    source = "The Soul Hunters in Manaforge Omega"
-                },
-                {
-                    itemType = "Cloak",
-                    itemId = "235499",
-                    itemName = "Reshii Wraps",
-                    source = "Ghosts of K'aresh Campaign"
-                },
-                {
-                    itemType = "Chest",
-                    itemId = "237613",
-                    itemName = "Living Weapon's Bulwark",
-                    source = "Fractillus in Manaforge Omega"
-                },
-                {
-                    itemType = "Bracers",
-                    itemId = "222435",
-                    itemName = "Everforged Vambraces",
-                    source = "Crafted — Blacksmithing"
-                },
-                {
-                    itemType = "Gloves",
-                    itemId = "237611",
-                    itemName = "Living Weapon's Crushers",
-                    source = "Soulbinder Naazindhri in Manaforge Omega"
-                },
-                {
-                    itemType = "Belt",
-                    itemId = "237607",
-                    itemName = "Living Weapon's Chain",
-                    source = "Catalyst"
-                },
-                {
-                    itemType = "Legs",
-                    itemId = "237609",
-                    itemName = "Living Weapon's Legguards",
-                    source = "Loom’ithar in Manaforge Omega"
-                },
-                {
-                    itemType = "Boots",
-                    itemId = "243307",
-                    itemName = "Interloper's Plated Sabatons",
-                    source = "The Soul Hunters in Manaforge Omega"
-                },
-                {
-                    itemType = "Ring #1",
-                    itemId = "221200",
-                    itemName = "Radiant Necromancer's Band",
-                    source = "Priory of the Sacred Flame"
-                },
-                {
-                    itemType = "Ring #2",
-                    itemId = "178824",
-                    itemName = "Signet of the False Accuser",
-                    source = "Halls of Atonement"
-                },
-                {
-                    itemType = "Trinket #1",
-                    itemId = "242399",
-                    itemName = "Screams of a Forgotten Sky",
-                    source = "Dimensius The All Devouring in Manaforge Omega"
-                },
-                {
-                    itemType = "Trinket #2",
-                    itemId = "242394",
-                    itemName = "Eradicating Arcanocore",
-                    source = "Plexus Sentinel in Manaforge Omega"
                 }
             },
             ["Retribution Paladin"] = {
@@ -1772,6 +1674,104 @@ ns.IcyVeinsData = {
                     source = "The Soul Hunters"
                 }
             },
+            ["Arcane Mage"] = {
+                {
+                    itemType = "Weapon",
+                    itemId = "237735",
+                    itemName = "Voidglass Sovereign's Blade",
+                    source = "Nexus King Salhadaar in Manaforge Omega"
+                },
+                {
+                    itemType = "Off-Hand",
+                    itemId = "222566",
+                    itemName = "Vagabond's Torch",
+                    source = "Crafted — Inscription"
+                },
+                {
+                    itemType = "Helm",
+                    itemId = "237718",
+                    itemName = "Augur's Ephemeral Wide-Brim",
+                    source = "Forgeweaver Araz/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Neck",
+                    itemId = "252009",
+                    itemName = "Bloodstained Memento",
+                    source = "Great Vault"
+                },
+                {
+                    itemType = "Shoulder",
+                    itemId = "237716",
+                    itemName = "Augur's Ephemeral Orbs of Power",
+                    source = "The Soul Hunters/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Cloak",
+                    itemId = "235499",
+                    itemName = "Reshii Wraps",
+                    source = "Main Story — Socketed with  Pure Precise Fiber"
+                },
+                {
+                    itemType = "Chest",
+                    itemId = "237721",
+                    itemName = "Augur's Ephemeral Habiliments",
+                    source = "Fractillus/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Bracers",
+                    itemId = "222815",
+                    itemName = "Consecrated Cuffs",
+                    source = "Crafted — Tailoring"
+                },
+                {
+                    itemType = "Gloves",
+                    itemId = "246275",
+                    itemName = "Codebreaker's Cunning Handwraps",
+                    source = "Great Vault"
+                },
+                {
+                    itemType = "Belt",
+                    itemId = "237559",
+                    itemName = "Singularity Cincture",
+                    source = "Dimensius The All Devouring in Manaforge Omega"
+                },
+                {
+                    itemType = "Legs",
+                    itemId = "237717",
+                    itemName = "Augur's Ephemeral Trousers",
+                    source = "Loom’ithar/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Boots",
+                    itemId = "243305",
+                    itemName = "Interloper's Silken Striders",
+                    source = "The Soul Hunters in Manaforge Omega"
+                },
+                {
+                    itemType = "Ring #1",
+                    itemId = "221200",
+                    itemName = "Radiant Necromancer's Band",
+                    source = "Great Vault"
+                },
+                {
+                    itemType = "Ring #2",
+                    itemId = "185813",
+                    itemName = "Signet of Collapsing Stars",
+                    source = "Great Vault"
+                },
+                {
+                    itemType = "Trinket #1",
+                    itemId = "242395",
+                    itemName = "Astral Antenna",
+                    source = "Loom’ithar in Manaforge Omega"
+                },
+                {
+                    itemType = "Trinket #2",
+                    itemId = "242392",
+                    itemName = "Diamantine Voidcore",
+                    source = "Fractillus in Manaforge Omega"
+                }
+            },
             ["Balance Druid"] = {
                 {
                     itemType = "Weapon (Two-Hand)",
@@ -1933,15 +1933,15 @@ ns.IcyVeinsData = {
                 },
                 {
                     itemType = "Ring #1",
-                    itemId = "246281",
-                    itemName = "Ring of the Panoply",
-                    source = "Tazavesh: Streets of Wonder"
+                    itemId = "237567",
+                    itemName = "Logic Gate: Alpha",
+                    source = "Plexus Sentinel"
                 },
                 {
                     itemType = "Ring #2",
-                    itemId = "242491",
-                    itemName = "Whispers of K'aresh",
-                    source = "Eco-Dome Al'dani"
+                    itemId = "237570",
+                    itemName = "Logic Gate: Omega",
+                    source = "Forgeweaver Araz"
                 },
                 {
                     itemType = "Trinket #1",
@@ -1957,9 +1957,9 @@ ns.IcyVeinsData = {
                 },
                 {
                     itemType = "2H Weapon",
-                    itemId = "242487",
-                    itemName = "Fatebound Crusader",
-                    source = "Eco-Dome Al'dani"
+                    itemId = "237737",
+                    itemName = "Photon Sabre Prime",
+                    source = "Forgeweaver Araz"
                 }
             },
             ["Assassination Rogue"] = {
@@ -2741,9 +2741,9 @@ ns.IcyVeinsData = {
                 },
                 {
                     itemType = "Neck",
-                    itemId = "185820",
-                    itemName = "Cabochon of the Infinite Flight",
-                    source = "Tazavesh: So'leah's Gambit"
+                    itemId = "242406",
+                    itemName = "Salhadaar's Folly",
+                    source = "Nexus King Salhadaar"
                 },
                 {
                     itemType = "Shoulder",
@@ -2813,15 +2813,15 @@ ns.IcyVeinsData = {
                 },
                 {
                     itemType = "Trinket #2",
-                    itemId = "242395",
-                    itemName = "Astral Antenna",
-                    source = "Loom’ithar"
-                },
-                {
-                    itemType = "Trinket Alt.",
                     itemId = "232541",
                     itemName = "Improvised Seaforium Pacemaker",
                     source = "Operation: Floodgate"
+                },
+                {
+                    itemType = "Trinket Alt.",
+                    itemId = "242395",
+                    itemName = "Astral Antenna",
+                    source = "Loom’ithar"
                 },
                 {
                     itemType = "Trinket Alt.",
@@ -2847,7 +2847,7 @@ ns.IcyVeinsData = {
                     itemType = "Weapon",
                     itemId = "242481",
                     itemName = "Spellstrike Warplance",
-                    source = "Eco-Dome Al'dani (710), or in Great Vault"
+                    source = "Eco-Dome Al'dani, or in Great Vault"
                 },
                 {
                     itemType = "Helm",
@@ -2871,7 +2871,7 @@ ns.IcyVeinsData = {
                     itemType = "Cloak",
                     itemId = "235499",
                     itemName = "Reshii Wraps",
-                    source = "Season 3 Questline"
+                    source = "Pre-Patch Questline"
                 },
                 {
                     itemType = "Chest",
@@ -2919,19 +2919,25 @@ ns.IcyVeinsData = {
                     itemType = "Ring #2",
                     itemId = "178824",
                     itemName = "Signet of the False Accuser",
-                    source = "Halls of Atonement (710), or in Great Vault"
+                    source = "Halls of Atonement, or in Great Vault"
                 },
                 {
                     itemType = "Trinket #1",
                     itemId = "242402",
                     itemName = "Araz's Ritual Forge",
-                    source = "Forgeweaver Araz (710), or in Great Vault"
+                    source = "Forgeweaver Araz, or in Great Vault"
                 },
                 {
                     itemType = "Trinket #2",
                     itemId = "242395",
                     itemName = "Astral Antenna",
-                    source = "Loom’ithar in Manaforge Omega"
+                    source = "Operation: Floodgate, or in Great Vault"
+                },
+                {
+                    itemType = "Trinket #2 (Alternative)",
+                    itemId = "232541",
+                    itemName = "Improvised Seaforium Pacemaker",
+                    source = "Operation: Floodgate, or in Great Vault"
                 }
             },
             ["Outlaw Rogue"] = {
@@ -4433,7 +4439,7 @@ ns.IcyVeinsData = {
                     itemType = "Weapon",
                     itemId = "237726",
                     itemName = "Marvel of Technomancy",
-                    source = "Forgeweaver Araz in Manaforge Omega (729)"
+                    source = "Forgeweaver Araz in Manaforge Omega"
                 },
                 {
                     itemType = "Helm",
@@ -4517,7 +4523,7 @@ ns.IcyVeinsData = {
                     itemType = "Trinket #2",
                     itemId = "242402",
                     itemName = "Araz's Ritual Forge",
-                    source = "Forgeweaver Araz in Manaforge Omega (729)"
+                    source = "Forgeweaver Araz in Manaforge Omega"
                 }
             },
             ["Blood Death Knight"] = {
@@ -4655,7 +4661,7 @@ ns.IcyVeinsData = {
                     itemType = "Cloak",
                     itemId = "235499",
                     itemName = "Reshii Wraps",
-                    source = "Season 3 Questline"
+                    source = "Pre-Patch Questline"
                 },
                 {
                     itemType = "Chest",
@@ -4706,13 +4712,7 @@ ns.IcyVeinsData = {
                     source = "Dimensius The All Devouring in Manaforge Omega"
                 },
                 {
-                    itemType = "Ring #2 ( Pack Leader)",
-                    itemId = "237570",
-                    itemName = "Logic Gate: Omega",
-                    source = "Forgeweaver Araz in Manaforge Omega"
-                },
-                {
-                    itemType = "Ring #2 ( Dark Ranger)",
+                    itemType = "Ring #2",
                     itemId = "237567",
                     itemName = "Logic Gate: Alpha",
                     source = "Plexus Sentinel in Manaforge Omega"
@@ -4730,13 +4730,7 @@ ns.IcyVeinsData = {
                     source = "The Soul Hunters in Manaforge Omega"
                 },
                 {
-                    itemType = "Trinket #2 ( Dark Ranger)",
-                    itemId = "242402",
-                    itemName = "Araz's Ritual Forge",
-                    source = "Forgeweaver Araz in Manaforge Omega"
-                },
-                {
-                    itemType = "Trinket #2 ( Pack Leader)",
+                    itemType = "Trinket #2",
                     itemId = "242395",
                     itemName = "Astral Antenna",
                     source = "Loom’ithar in Manaforge Omega"
@@ -4751,9 +4745,9 @@ ns.IcyVeinsData = {
                 },
                 {
                     itemType = "Neck",
-                    itemId = "185842",
-                    itemName = "Ornately Engraved Amplifier",
-                    source = "Tazavesh: So'leah's Gambit"
+                    itemId = "178827",
+                    itemName = "Sin Stained Pendant",
+                    source = "Halls of Atonement"
                 },
                 {
                     itemType = "Shoulder",
@@ -4828,102 +4822,16 @@ ns.IcyVeinsData = {
                     source = "Halls of Atonement"
                 },
                 {
-                    itemType = "2H Weapon",
-                    itemId = "242487",
-                    itemName = "Fatebound Crusader",
-                    source = "Eco-Dome Al'dani"
-                }
-            },
-            ["Arcane Mage"] = {
-                {
-                    itemType = "Weapon",
-                    itemId = "237730",
-                    itemName = "Voidglass Spire",
-                    source = "Soulbinder Naazindhri in Manaforge Omega"
+                    itemType = "Main Hand Weapon",
+                    itemId = "185824",
+                    itemName = "Blade of Grievous Harm",
+                    source = "Tazavesh: Streets of Wonder"
                 },
                 {
-                    itemType = "Helm",
-                    itemId = "237718",
-                    itemName = "Augur's Ephemeral Wide-Brim",
-                    source = "Forgeweaver Araz/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Neck",
-                    itemId = "237568",
-                    itemName = "Chrysalis of Sundered Souls",
-                    source = "Soulbinder Naazindhri in Manaforge Omega"
-                },
-                {
-                    itemType = "Shoulder",
-                    itemId = "237716",
-                    itemName = "Augur's Ephemeral Orbs of Power",
-                    source = "The Soul Hunters/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Cloak",
-                    itemId = "235499",
-                    itemName = "Reshii Wraps",
-                    source = "Main Story — Socketed with  Pure Precise Fiber"
-                },
-                {
-                    itemType = "Chest",
-                    itemId = "237721",
-                    itemName = "Augur's Ephemeral Habiliments",
-                    source = "Fractillus/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Bracers",
-                    itemId = "237558",
-                    itemName = "Conjoined Glass Bracers",
-                    source = "Fractillus in Manaforge Omega"
-                },
-                {
-                    itemType = "Gloves",
-                    itemId = "237549",
-                    itemName = "Bloodwrath's Gnarled Claws",
-                    source = "Soulbinder Naazindhri in Manaforge Omega"
-                },
-                {
-                    itemType = "Belt",
-                    itemId = "237559",
-                    itemName = "Singularity Cincture",
-                    source = "Dimensius The All Devouring in Manaforge Omega"
-                },
-                {
-                    itemType = "Legs",
-                    itemId = "237717",
-                    itemName = "Augur's Ephemeral Trousers",
-                    source = "Loom’ithar/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Boots",
-                    itemId = "243305",
-                    itemName = "Interloper's Silken Striders",
-                    source = "The Soul Hunters in Manaforge Omega"
-                },
-                {
-                    itemType = "Ring #1",
-                    itemId = "237570",
-                    itemName = "Logic Gate: Omega",
-                    source = "Forgeweaver Araz in Manaforge Omega"
-                },
-                {
-                    itemType = "Ring #2",
-                    itemId = "242405",
-                    itemName = "Band of the Shattered Soul",
-                    source = "Dimensius The All Devouring in Manaforge Omega"
-                },
-                {
-                    itemType = "Trinket #1",
-                    itemId = "242395",
-                    itemName = "Astral Antenna",
-                    source = "Loom’ithar in Manaforge Omega"
-                },
-                {
-                    itemType = "Trinket #2",
-                    itemId = "242392",
-                    itemName = "Diamantine Voidcore",
-                    source = "Fractillus in Manaforge Omega"
+                    itemType = "Offhand Weapon",
+                    itemId = "185824",
+                    itemName = "Blade of Grievous Harm",
+                    source = "Tazavesh: Streets of Wonder"
                 }
             },
             ["Elemental Shaman"] = {
@@ -5022,98 +4930,6 @@ ns.IcyVeinsData = {
                     itemId = "242392",
                     itemName = "Diamantine Voidcore",
                     source = "Fractillus in Manaforge Omega"
-                }
-            },
-            ["Marksmanship Hunter"] = {
-                {
-                    itemType = "Weapon",
-                    itemId = "237732",
-                    itemName = "Piercing Strandbow",
-                    source = "Loom’ithar in Manaforge Omega"
-                },
-                {
-                    itemType = "Helm",
-                    itemId = "237646",
-                    itemName = "Midnight Herald's Cowl",
-                    source = "Forgeweaver Araz/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Neck",
-                    itemId = "242406",
-                    itemName = "Salhadaar's Folly",
-                    source = "Nexus King Salhadaar in Manaforge Omega"
-                },
-                {
-                    itemType = "Shoulder",
-                    itemId = "237537",
-                    itemName = "Claws of Failed Resistance",
-                    source = "Dimensius The All Devouring in Manaforge Omega"
-                },
-                {
-                    itemType = "Cloak",
-                    itemId = "235499",
-                    itemName = "Reshii Wraps",
-                    source = "Season 3 Questline"
-                },
-                {
-                    itemType = "Chest",
-                    itemId = "237649",
-                    itemName = "Midnight Herald's Hauberk",
-                    source = "Fractillus/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Bracers",
-                    itemId = "237555",
-                    itemName = "Pactbound Vambraces",
-                    source = "Nexus King Salhadaar in Manaforge Omega"
-                },
-                {
-                    itemType = "Gloves",
-                    itemId = "237647",
-                    itemName = "Midnight Herald's Gloves",
-                    source = "Soulbinder Naazindhri/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Belt",
-                    itemId = "237522",
-                    itemName = "Colossal Lifetether",
-                    source = "Loom’ithar in Manaforge Omega"
-                },
-                {
-                    itemType = "Legs",
-                    itemId = "237645",
-                    itemName = "Midnight Herald's Petticoat",
-                    source = "Loom’ithar/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Boots",
-                    itemId = "243308",
-                    itemName = "Interloper's Chain Boots",
-                    source = "The Soul Hunters in Manaforge Omega"
-                },
-                {
-                    itemType = "Ring #1",
-                    itemId = "237567",
-                    itemName = "Logic Gate: Alpha",
-                    source = "Plexus Sentinel in Manaforge Omega"
-                },
-                {
-                    itemType = "Ring #2",
-                    itemId = "237570",
-                    itemName = "Logic Gate: Omega",
-                    source = "Forgeweaver Araz in Manaforge Omega"
-                },
-                {
-                    itemType = "Trinket #1",
-                    itemId = "242396",
-                    itemName = "Unyielding Netherprism",
-                    source = "Fractillus in Manaforge Omega"
-                },
-                {
-                    itemType = "Trinket #2",
-                    itemId = "242395",
-                    itemName = "Astral Antenna",
-                    source = "Loom’ithar in Manaforge Omega"
                 }
             },
             ["Havoc Demon Hunter"] = {
@@ -5230,6 +5046,190 @@ ns.IcyVeinsData = {
                     itemId = "242402",
                     itemName = "Araz's Ritual Forge",
                     source = "Forgeweaver Araz"
+                }
+            },
+            ["Fury Warrior"] = {
+                {
+                    itemType = "Mainhand Weapon",
+                    itemId = "237737",
+                    itemName = "Photon Sabre Prime",
+                    source = "Forgeweaver Araz in Manaforge Omega"
+                },
+                {
+                    itemType = "Offhand Weapon",
+                    itemId = "222443",
+                    itemName = "Everforged Greataxe",
+                    source = "Crafted — Blacksmithing"
+                },
+                {
+                    itemType = "Helm",
+                    itemId = "238028",
+                    itemName = "Bone-Melted Faceplate",
+                    source = "BoE Drop in Manaforge Omega"
+                },
+                {
+                    itemType = "Neck",
+                    itemId = "237568",
+                    itemName = "Chrysalis of Sundered Souls",
+                    source = "Soulbinder Naazindhri in Manaforge Omega"
+                },
+                {
+                    itemType = "Shoulder",
+                    itemId = "237608",
+                    itemName = "Living Weapon's Ramparts",
+                    source = "The Soul Hunters in Manaforge Omega"
+                },
+                {
+                    itemType = "Cloak",
+                    itemId = "235499",
+                    itemName = "Reshii Wraps",
+                    source = "Ghosts of K'aresh Campaign"
+                },
+                {
+                    itemType = "Chest",
+                    itemId = "237613",
+                    itemName = "Living Weapon's Bulwark",
+                    source = "Fractillus in Manaforge Omega"
+                },
+                {
+                    itemType = "Bracers",
+                    itemId = "222435",
+                    itemName = "Everforged Vambraces",
+                    source = "Crafted — Blacksmithing"
+                },
+                {
+                    itemType = "Gloves",
+                    itemId = "237611",
+                    itemName = "Living Weapon's Crushers",
+                    source = "Soulbinder Naazindhri in Manaforge Omega"
+                },
+                {
+                    itemType = "Belt",
+                    itemId = "237607",
+                    itemName = "Living Weapon's Chain",
+                    source = "Catalyst"
+                },
+                {
+                    itemType = "Legs",
+                    itemId = "237609",
+                    itemName = "Living Weapon's Legguards",
+                    source = "Loom’ithar in Manaforge Omega"
+                },
+                {
+                    itemType = "Boots",
+                    itemId = "243307",
+                    itemName = "Interloper's Plated Sabatons",
+                    source = "The Soul Hunters in Manaforge Omega"
+                },
+                {
+                    itemType = "Ring #2",
+                    itemId = "237570",
+                    itemName = "Logic Gate: Omega",
+                    source = "Forgeweaver Araz in Manaforge Omega"
+                },
+                {
+                    itemType = "Trinket #1",
+                    itemId = "242399",
+                    itemName = "Screams of a Forgotten Sky",
+                    source = "Dimensius The All Devouring in Manaforge Omega"
+                },
+                {
+                    itemType = "Trinket #2",
+                    itemId = "242394",
+                    itemName = "Eradicating Arcanocore",
+                    source = "Plexus Sentinel in Manaforge Omega"
+                }
+            },
+            ["Marksmanship Hunter"] = {
+                {
+                    itemType = "Weapon",
+                    itemId = "237732",
+                    itemName = "Piercing Strandbow",
+                    source = "Loom’ithar in Manaforge Omega"
+                },
+                {
+                    itemType = "Helm",
+                    itemId = "237646",
+                    itemName = "Midnight Herald's Cowl",
+                    source = "Forgeweaver Araz/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Neck",
+                    itemId = "242406",
+                    itemName = "Salhadaar's Folly",
+                    source = "Nexus King Salhadaar in Manaforge Omega"
+                },
+                {
+                    itemType = "Shoulder",
+                    itemId = "237537",
+                    itemName = "Claws of Failed Resistance",
+                    source = "Dimensius The All Devouring in Manaforge Omega"
+                },
+                {
+                    itemType = "Cloak",
+                    itemId = "235499",
+                    itemName = "Reshii Wraps",
+                    source = "Pre-Patch Questline"
+                },
+                {
+                    itemType = "Chest",
+                    itemId = "237649",
+                    itemName = "Midnight Herald's Hauberk",
+                    source = "Fractillus/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Bracers",
+                    itemId = "237555",
+                    itemName = "Pactbound Vambraces",
+                    source = "Nexus King Salhadaar in Manaforge Omega"
+                },
+                {
+                    itemType = "Gloves",
+                    itemId = "237647",
+                    itemName = "Midnight Herald's Gloves",
+                    source = "Soulbinder Naazindhri/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Belt",
+                    itemId = "237522",
+                    itemName = "Colossal Lifetether",
+                    source = "Loom’ithar in Manaforge Omega"
+                },
+                {
+                    itemType = "Legs",
+                    itemId = "237645",
+                    itemName = "Midnight Herald's Petticoat",
+                    source = "Loom’ithar/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Boots",
+                    itemId = "243308",
+                    itemName = "Interloper's Chain Boots",
+                    source = "The Soul Hunters in Manaforge Omega"
+                },
+                {
+                    itemType = "Ring #1",
+                    itemId = "237567",
+                    itemName = "Logic Gate: Alpha",
+                    source = "Plexus Sentinel in Manaforge Omega"
+                },
+                {
+                    itemType = "Ring #2",
+                    itemId = "237570",
+                    itemName = "Logic Gate: Omega",
+                    source = "Forgeweaver Araz in Manaforge Omega"
+                },
+                {
+                    itemType = "Trinket #1",
+                    itemId = "242396",
+                    itemName = "Unyielding Netherprism",
+                    source = "Fractillus in Manaforge Omega"
+                },
+                {
+                    itemType = "Trinket #2",
+                    itemId = "242395",
+                    itemName = "Astral Antenna",
+                    source = "Loom’ithar in Manaforge Omega"
                 }
             },
             ["Destruction Warlock"] = {
@@ -5428,98 +5428,6 @@ ns.IcyVeinsData = {
                     source = "Eco-Dome Al'dani"
                 }
             },
-            ["Fury Warrior"] = {
-                {
-                    itemType = "Mainhand Weapon",
-                    itemId = "237737",
-                    itemName = "Photon Sabre Prime",
-                    source = "Forgeweaver Araz in Manaforge Omega"
-                },
-                {
-                    itemType = "Offhand Weapon",
-                    itemId = "222443",
-                    itemName = "Everforged Greataxe",
-                    source = "Crafted — Blacksmithing"
-                },
-                {
-                    itemType = "Helm",
-                    itemId = "238028",
-                    itemName = "Bone-Melted Faceplate",
-                    source = "BoE Drop in Manaforge Omega"
-                },
-                {
-                    itemType = "Neck",
-                    itemId = "237568",
-                    itemName = "Chrysalis of Sundered Souls",
-                    source = "Soulbinder Naazindhri in Manaforge Omega"
-                },
-                {
-                    itemType = "Shoulder",
-                    itemId = "237608",
-                    itemName = "Living Weapon's Ramparts",
-                    source = "The Soul Hunters in Manaforge Omega"
-                },
-                {
-                    itemType = "Cloak",
-                    itemId = "235499",
-                    itemName = "Reshii Wraps",
-                    source = "Ghosts of K'aresh Campaign"
-                },
-                {
-                    itemType = "Chest",
-                    itemId = "237613",
-                    itemName = "Living Weapon's Bulwark",
-                    source = "Fractillus in Manaforge Omega"
-                },
-                {
-                    itemType = "Bracers",
-                    itemId = "222435",
-                    itemName = "Everforged Vambraces",
-                    source = "Crafted — Blacksmithing"
-                },
-                {
-                    itemType = "Gloves",
-                    itemId = "237611",
-                    itemName = "Living Weapon's Crushers",
-                    source = "Soulbinder Naazindhri in Manaforge Omega"
-                },
-                {
-                    itemType = "Belt",
-                    itemId = "237607",
-                    itemName = "Living Weapon's Chain",
-                    source = "Catalyst"
-                },
-                {
-                    itemType = "Legs",
-                    itemId = "237609",
-                    itemName = "Living Weapon's Legguards",
-                    source = "Loom’ithar in Manaforge Omega"
-                },
-                {
-                    itemType = "Boots",
-                    itemId = "243307",
-                    itemName = "Interloper's Plated Sabatons",
-                    source = "The Soul Hunters in Manaforge Omega"
-                },
-                {
-                    itemType = "Ring #2",
-                    itemId = "237570",
-                    itemName = "Logic Gate: Omega",
-                    source = "Forgeweaver Araz in Manaforge Omega"
-                },
-                {
-                    itemType = "Trinket #1",
-                    itemId = "242399",
-                    itemName = "Screams of a Forgotten Sky",
-                    source = "Dimensius The All Devouring in Manaforge Omega"
-                },
-                {
-                    itemType = "Trinket #2",
-                    itemId = "242394",
-                    itemName = "Eradicating Arcanocore",
-                    source = "Plexus Sentinel in Manaforge Omega"
-                }
-            },
             ["Retribution Paladin"] = {
                 {
                     itemType = "Weapon",
@@ -5716,6 +5624,98 @@ ns.IcyVeinsData = {
                     source = "The Soul Hunters"
                 }
             },
+            ["Arcane Mage"] = {
+                {
+                    itemType = "Weapon",
+                    itemId = "237730",
+                    itemName = "Voidglass Spire",
+                    source = "Soulbinder Naazindhri in Manaforge Omega"
+                },
+                {
+                    itemType = "Helm",
+                    itemId = "237718",
+                    itemName = "Augur's Ephemeral Wide-Brim",
+                    source = "Forgeweaver Araz/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Neck",
+                    itemId = "237568",
+                    itemName = "Chrysalis of Sundered Souls",
+                    source = "Soulbinder Naazindhri in Manaforge Omega"
+                },
+                {
+                    itemType = "Shoulder",
+                    itemId = "237716",
+                    itemName = "Augur's Ephemeral Orbs of Power",
+                    source = "The Soul Hunters/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Cloak",
+                    itemId = "235499",
+                    itemName = "Reshii Wraps",
+                    source = "Main Story — Socketed with  Pure Precise Fiber"
+                },
+                {
+                    itemType = "Chest",
+                    itemId = "237721",
+                    itemName = "Augur's Ephemeral Habiliments",
+                    source = "Fractillus/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Bracers",
+                    itemId = "237558",
+                    itemName = "Conjoined Glass Bracers",
+                    source = "Fractillus in Manaforge Omega"
+                },
+                {
+                    itemType = "Gloves",
+                    itemId = "237549",
+                    itemName = "Bloodwrath's Gnarled Claws",
+                    source = "Soulbinder Naazindhri in Manaforge Omega"
+                },
+                {
+                    itemType = "Belt",
+                    itemId = "237559",
+                    itemName = "Singularity Cincture",
+                    source = "Dimensius The All Devouring in Manaforge Omega"
+                },
+                {
+                    itemType = "Legs",
+                    itemId = "237717",
+                    itemName = "Augur's Ephemeral Trousers",
+                    source = "Loom’ithar/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Boots",
+                    itemId = "243305",
+                    itemName = "Interloper's Silken Striders",
+                    source = "The Soul Hunters in Manaforge Omega"
+                },
+                {
+                    itemType = "Ring #1",
+                    itemId = "237570",
+                    itemName = "Logic Gate: Omega",
+                    source = "Forgeweaver Araz in Manaforge Omega"
+                },
+                {
+                    itemType = "Ring #2",
+                    itemId = "242405",
+                    itemName = "Band of the Shattered Soul",
+                    source = "Dimensius The All Devouring in Manaforge Omega"
+                },
+                {
+                    itemType = "Trinket #1",
+                    itemId = "242395",
+                    itemName = "Astral Antenna",
+                    source = "Loom’ithar in Manaforge Omega"
+                },
+                {
+                    itemType = "Trinket #2",
+                    itemId = "242392",
+                    itemName = "Diamantine Voidcore",
+                    source = "Fractillus in Manaforge Omega"
+                }
+            },
             ["Balance Druid"] = {
                 {
                     itemType = "Weapon (Two-Hand)",
@@ -5823,9 +5823,9 @@ ns.IcyVeinsData = {
                 },
                 {
                     itemType = "Neck",
-                    itemId = "178827",
-                    itemName = "Sin Stained Pendant",
-                    source = "Halls of Atonement"
+                    itemId = "185842",
+                    itemName = "Ornately Engraved Amplifier",
+                    source = "Tazavesh: So'leah's Gambit"
                 },
                 {
                     itemType = "Shoulder",
@@ -5841,27 +5841,27 @@ ns.IcyVeinsData = {
                 },
                 {
                     itemType = "Chest",
-                    itemId = "178814",
-                    itemName = "Breastplate of Otherworldly Influence",
-                    source = "Halls of Atonement"
+                    itemId = "234506",
+                    itemName = "Muckdiver's Wading Plate",
+                    source = "Operation: Floodgate"
                 },
                 {
                     itemType = "Bracers",
-                    itemId = "185815",
-                    itemName = "Vambraces of Verification",
-                    source = "Tazavesh: Streets of Wonder"
+                    itemId = "221118",
+                    itemName = "Flameforged Armguard",
+                    source = "Priory of the Sacred Flame"
                 },
                 {
                     itemType = "Gloves",
-                    itemId = "221151",
-                    itemName = "Devourer's Gauntlets",
-                    source = "Ara-Kara, City of Echoes"
+                    itemId = "234504",
+                    itemName = "Jumpstarter's Scaffold-Scrapers",
+                    source = "Operation: Floodgate"
                 },
                 {
                     itemType = "Belt",
-                    itemId = "221133",
-                    itemName = "Girdle of Somber Ploys",
-                    source = "The Dawnbreaker"
+                    itemId = "242479",
+                    itemName = "Girdle of Absolute Faith",
+                    source = "Eco-Dome Al'dani"
                 },
                 {
                     itemType = "Legs",
@@ -5877,15 +5877,15 @@ ns.IcyVeinsData = {
                 },
                 {
                     itemType = "Ring #1",
-                    itemId = "246281",
-                    itemName = "Ring of the Panoply",
-                    source = "Tazavesh: Streets of Wonder"
+                    itemId = "221200",
+                    itemName = "Radiant Necromancer's Band",
+                    source = "Priory of the Sacred Flame"
                 },
                 {
                     itemType = "Ring #2",
-                    itemId = "242491",
-                    itemName = "Whispers of K'aresh",
-                    source = "Eco-Dome Al'dani"
+                    itemId = "221136",
+                    itemName = "Devout Zealot's Ring",
+                    source = "The Dawnbreaker"
                 },
                 {
                     itemType = "Trinket #1",
@@ -6667,9 +6667,9 @@ ns.IcyVeinsData = {
                 },
                 {
                     itemType = "Neck",
-                    itemId = "237569",
-                    itemName = "Duskblaze's Desperation",
-                    source = "The Soul Hunters"
+                    itemId = "242406",
+                    itemName = "Salhadaar's Folly",
+                    source = "Nexus King Salhadaar"
                 },
                 {
                     itemType = "Shoulder",
@@ -6779,7 +6779,7 @@ ns.IcyVeinsData = {
                     itemType = "Cloak",
                     itemId = "235499",
                     itemName = "Reshii Wraps",
-                    source = "Season 3 Questline"
+                    source = "Pre-Patch Questline"
                 },
                 {
                     itemType = "Chest",
@@ -6839,7 +6839,7 @@ ns.IcyVeinsData = {
                     itemType = "Trinket #2",
                     itemId = "242395",
                     itemName = "Astral Antenna",
-                    source = "Loom’ithar in Manaforge Omega"
+                    source = "Operation: Floodgate, or in Great Vault"
                 }
             },
             ["Outlaw Rogue"] = {
@@ -8225,13 +8225,13 @@ ns.IcyVeinsData = {
                     itemType = "Weapon Main-Hand",
                     itemId = "234491",
                     itemName = "Sonic Ka-BOOM!-erang",
-                    source = "Operation: Floodgate (716), or Great Vault"
+                    source = "Operation: Floodgate (157), or Great Vault"
                 },
                 {
                     itemType = "Weapon Off-Hand",
                     itemId = "234491",
                     itemName = "Sonic Ka-BOOM!-erang",
-                    source = "Operation: Floodgate (716), or Great Vault"
+                    source = "Operation: Floodgate (157), or Great Vault"
                 },
                 {
                     itemType = "Helm",
@@ -8243,7 +8243,7 @@ ns.IcyVeinsData = {
                     itemType = "Neck",
                     itemId = "185820",
                     itemName = "Cabochon of the Infinite Flight",
-                    source = "Tazavesh: So'leah's Gambit (716), or Great Vault"
+                    source = "Tazavesh: So'leah's Gambit (157), or Great Vault"
                 },
                 {
                     itemType = "Shoulder",
@@ -8267,7 +8267,7 @@ ns.IcyVeinsData = {
                     itemType = "Bracers",
                     itemId = "221142",
                     itemName = "Scheming Assailer's Bands",
-                    source = "The Dawnbreaker (716), or Great Vault"
+                    source = "The Dawnbreaker (157), or Great Vault"
                 },
                 {
                     itemType = "Gloves",
@@ -8279,7 +8279,7 @@ ns.IcyVeinsData = {
                     itemType = "Belt",
                     itemId = "185809",
                     itemName = "Venza's Powderbelt",
-                    source = "Tazavesh: Streets of Wonder (716), or Great Vault"
+                    source = "Tazavesh: Streets of Wonder (157), or Great Vault"
                 },
                 {
                     itemType = "Legs",
@@ -8291,31 +8291,31 @@ ns.IcyVeinsData = {
                     itemType = "Boots",
                     itemId = "246274",
                     itemName = "Geezle's Zapstep Boots",
-                    source = "Operation: Floodgate (716), or Great Vault"
+                    source = "Operation: Floodgate (157), or Great Vault"
                 },
                 {
                     itemType = "Ring #1",
                     itemId = "246281",
                     itemName = "Ring of the Panoply",
-                    source = "Tazavesh: Streets of Wonder (716), or Great Vault"
+                    source = "Tazavesh: Streets of Wonder (157), or Great Vault"
                 },
                 {
                     itemType = "Ring #2",
                     itemId = "185813",
                     itemName = "Signet of Collapsing Stars",
-                    source = "Tazavesh: So'leah's Gambit (716), or Great Vault"
+                    source = "Tazavesh: So'leah's Gambit (157), or Great Vault"
                 },
                 {
                     itemType = "Trinket #1",
                     itemId = "232541",
                     itemName = "Improvised Seaforium Pacemaker",
-                    source = "Operation: Floodgate (716), or Great Vault"
+                    source = "Operation: Floodgate (157), or Great Vault"
                 },
                 {
                     itemType = "Trinket #2",
                     itemId = "219314",
                     itemName = "Ara-Kara Sacbrood",
-                    source = "Ara-Kara, City of Echoes (716), or Great Vault"
+                    source = "Ara-Kara, City of Echoes (157), or Great Vault"
                 }
             },
             ["Guardian Druid"] = {
@@ -8323,7 +8323,7 @@ ns.IcyVeinsData = {
                     itemType = "Weapon",
                     itemId = "221159",
                     itemName = "Harvester's Interdiction",
-                    source = "Ara-Kara, City of Echoes or Great Vault (729)"
+                    source = "Ara-Kara, City of Echoes or Great Vault"
                 },
                 {
                     itemType = "Helm",
@@ -8512,16 +8512,16 @@ ns.IcyVeinsData = {
         dps = {
             ["Beast Mastery Hunter"] = {
                 {
-                    itemType = "Weapon ( Pack Leader)",
-                    itemId = "221143",
-                    itemName = "Recurved Hull Impaler",
-                    source = "The Dawnbreaker (710), or in Great Vault"
+                    itemType = "Weapon",
+                    itemId = "234492",
+                    itemName = "Keeza's 'B.' B.B.B.F.G",
+                    source = "Operation: Floodgate, or in Great Vault"
                 },
                 {
                     itemType = "Weapon ( Dark Ranger)",
                     itemId = "185783",
                     itemName = "Yasahm the Riftbreaker",
-                    source = "Tazavesh: So'leah's Gambit (710), or in Great Vault"
+                    source = "Tazavesh: So'leah's Gambit, or in Great Vault"
                 },
                 {
                     itemType = "Helm",
@@ -8530,16 +8530,10 @@ ns.IcyVeinsData = {
                     source = "Forgeweaver Araz/Matrix Catalyst/Great Vault"
                 },
                 {
-                    itemType = "Neck ( Pack Leader)",
-                    itemId = "178827",
-                    itemName = "Sin Stained Pendant",
-                    source = "Halls of Atonement (710), or in Great Vault"
-                },
-                {
-                    itemType = "Neck ( Dark Ranger)",
+                    itemType = "Neck",
                     itemId = "185842",
                     itemName = "Ornately Engraved Amplifier",
-                    source = "Tazavesh: Streets of Wonder (710), or in Great Vault"
+                    source = "Tazavesh: Streets of Wonder, or in Great Vault"
                 },
                 {
                     itemType = "Shoulder",
@@ -8551,7 +8545,7 @@ ns.IcyVeinsData = {
                     itemType = "Cloak",
                     itemId = "235499",
                     itemName = "Reshii Wraps",
-                    source = "Season 3 Questline"
+                    source = "Pre-Patch Questline"
                 },
                 {
                     itemType = "Chest",
@@ -8563,25 +8557,25 @@ ns.IcyVeinsData = {
                     itemType = "Bracers",
                     itemId = "185816",
                     itemName = "Confiscated Bracers of Concealment",
-                    source = "Tazavesh: Streets of Wonder (710), or in Great Vault"
+                    source = "Tazavesh: Streets of Wonder, or in Great Vault"
                 },
                 {
                     itemType = "Gloves ( Pack Leader)",
                     itemId = "246282",
                     itemName = "Order Bashers",
-                    source = "Tazavesh: Streets of Wonder (710), or in Great Vault"
+                    source = "Tazavesh: Streets of Wonder, or in Great Vault"
                 },
                 {
                     itemType = "Gloves ( Dark Ranger)",
                     itemId = "221119",
                     itemName = "Holybound Grips",
-                    source = "Priory of the Sacred Flame (710), or in Great Vault"
+                    source = "Priory of the Sacred Flame, or in Great Vault"
                 },
                 {
                     itemType = "Belt",
                     itemId = "234501",
                     itemName = "Portable Power Generator",
-                    source = "Operation: Floodgate (710), or in Great Vault"
+                    source = "Operation: Floodgate, or in Great Vault"
                 },
                 {
                     itemType = "Legs",
@@ -8593,49 +8587,43 @@ ns.IcyVeinsData = {
                     itemType = "Boots ( Pack Leader)",
                     itemId = "221152",
                     itemName = "Silksteel Striders",
-                    source = "Ara-Kara, City of Echoes (710), or in Great Vault"
+                    source = "Ara-Kara, City of Echoes, or in Great Vault"
                 },
                 {
                     itemType = "Boots ( Dark Ranger)",
                     itemId = "242483",
                     itemName = "Greaves of the Wild Pair",
-                    source = "Eco-Dome Al'dani (710), or in Great Vault"
+                    source = "Eco-Dome Al'dani, or in Great Vault"
                 },
                 {
                     itemType = "Ring #1",
                     itemId = "246281",
                     itemName = "Ring of the Panoply",
-                    source = "Tazavesh: Streets of Wonder (710), or in Great Vault"
+                    source = "Tazavesh: Streets of Wonder, or in Great Vault"
                 },
                 {
-                    itemType = "Ring #2 ( Pack Leader)",
-                    itemId = "242491",
-                    itemName = "Whispers of K'aresh",
-                    source = "Eco-Dome Al'dani (710), or in Great Vault"
-                },
-                {
-                    itemType = "Ring #2 ( Dark Ranger)",
+                    itemType = "Ring #2",
                     itemId = "221136",
                     itemName = "Devout Zealot's Ring",
-                    source = "The Dawnbreaker (710), or in Great Vault"
+                    source = "The Dawnbreaker, or in Great Vault"
                 },
                 {
                     itemType = "Trinket #1",
                     itemId = "232541",
                     itemName = "Improvised Seaforium Pacemaker",
-                    source = "Operation: Floodgate (710), or in Great Vault"
+                    source = "Operation: Floodgate, or in Great Vault"
                 },
                 {
-                    itemType = "Trinket #1 ( Dark Ranger)",
+                    itemType = "Trinket #2 ( Dark Ranger)",
                     itemId = "219308",
                     itemName = "Signet of the Priory",
-                    source = "Priory of the Sacred Flame (710), or in Great Vault"
+                    source = "Priory of the Sacred Flame, or in Great Vault"
                 },
                 {
-                    itemType = "Trinket #2",
+                    itemType = "Trinket #2 ( Pack Leader)",
                     itemId = "219314",
                     itemName = "Ara-Kara Sacbrood",
-                    source = "Ara-Kara, City of Echoes (710), or in Great Vault"
+                    source = "Ara-Kara, City of Echoes, or in Great Vault"
                 }
             },
             ["Frost Death Knight"] = {
@@ -8647,9 +8635,9 @@ ns.IcyVeinsData = {
                 },
                 {
                     itemType = "Neck",
-                    itemId = "242406",
-                    itemName = "Salhadaar's Folly",
-                    source = "Nexus King Salhadaar"
+                    itemId = "237569",
+                    itemName = "Duskblaze's Desperation",
+                    source = "The Soul Hunters"
                 },
                 {
                     itemType = "Shoulder",
@@ -8724,102 +8712,16 @@ ns.IcyVeinsData = {
                     source = "Loom’ithar"
                 },
                 {
-                    itemType = "2H Weapon",
-                    itemId = "237725",
-                    itemName = "Supermassive Starcrusher",
-                    source = "Dimensius The All Devouring"
-                }
-            },
-            ["Arcane Mage"] = {
-                {
-                    itemType = "Weapon",
-                    itemId = "185822",
-                    itemName = "Staff of Fractured Spacetime",
-                    source = "Great Vault (730) or Tazavesh: So'leah's Gambit (701)"
+                    itemType = "Main Hand Weapon",
+                    itemId = "237734",
+                    itemName = "Oath-Breaker's Recompense",
+                    source = "Nexus King Salhadaar"
                 },
                 {
-                    itemType = "Helm",
-                    itemId = "237718",
-                    itemName = "Augur's Ephemeral Wide-Brim",
-                    source = "Forgeweaver Araz/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Neck",
-                    itemId = "252009",
-                    itemName = "Bloodstained Memento",
-                    source = "Great Vault (730) or Priory of the Sacred Flame (701)"
-                },
-                {
-                    itemType = "Shoulder",
-                    itemId = "237716",
-                    itemName = "Augur's Ephemeral Orbs of Power",
-                    source = "The Soul Hunters/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Cloak",
-                    itemId = "235499",
-                    itemName = "Reshii Wraps",
-                    source = "Main Story — Socketed with  Pure Precise Fiber"
-                },
-                {
-                    itemType = "Chest",
-                    itemId = "237721",
-                    itemName = "Augur's Ephemeral Habiliments",
-                    source = "Fractillus/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Bracers",
-                    itemId = "242490",
-                    itemName = "Ancient Oracle's Caress",
-                    source = "Great Vault (730) or Eco-Dome Al'dani (701)"
-                },
-                {
-                    itemType = "Gloves",
-                    itemId = "246275",
-                    itemName = "Codebreaker's Cunning Handwraps",
-                    source = "Great Vault (730) or Tazavesh, the Veiled Market"
-                },
-                {
-                    itemType = "Belt",
-                    itemId = "221158",
-                    itemName = "Burrower's Cinch",
-                    source = "Great Vault (730) or Ara-Kara, City of Echoes (701)"
-                },
-                {
-                    itemType = "Legs",
-                    itemId = "237717",
-                    itemName = "Augur's Ephemeral Trousers",
-                    source = "Loom’ithar/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Boots",
-                    itemId = "185788",
-                    itemName = "Codebreaker's Cunning Sandals",
-                    source = "Great Vault (730) or Tazavesh: So'leah's Gambit (701)"
-                },
-                {
-                    itemType = "Ring #1",
-                    itemId = "221200",
-                    itemName = "Radiant Necromancer's Band",
-                    source = "Great Vault (730) or Priory of the Sacred Flame (701)"
-                },
-                {
-                    itemType = "Ring #2",
-                    itemId = "185813",
-                    itemName = "Signet of Collapsing Stars",
-                    source = "Great Vault (730) or Tazavesh, the Veiled Market (701)"
-                },
-                {
-                    itemType = "Trinket #1",
-                    itemId = "242497",
-                    itemName = "Azhiccaran Parapodia",
-                    source = "Great Vault (730) or Eco-Dome Al'dani (701)"
-                },
-                {
-                    itemType = "Trinket #2",
-                    itemId = "219308",
-                    itemName = "Signet of the Priory",
-                    source = "Great Vault (730) or Priory of the Sacred Flame(701)"
+                    itemType = "Offhand Weapon",
+                    itemId = "237734",
+                    itemName = "Oath-Breaker's Recompense",
+                    source = "Nexus King Salhadaar"
                 }
             },
             ["Elemental Shaman"] = {
@@ -8918,98 +8820,6 @@ ns.IcyVeinsData = {
                     itemId = "242497",
                     itemName = "Azhiccaran Parapodia",
                     source = "Eco-Dome Al'dani"
-                }
-            },
-            ["Marksmanship Hunter"] = {
-                {
-                    itemType = "Weapon",
-                    itemId = "185783",
-                    itemName = "Yasahm the Riftbreaker",
-                    source = "Tazavesh: Streets of Wonder (710), or in Great Vault"
-                },
-                {
-                    itemType = "Helm",
-                    itemId = "237646",
-                    itemName = "Midnight Herald's Cowl",
-                    source = "Forgeweaver Araz/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Neck",
-                    itemId = "185842",
-                    itemName = "Ornately Engraved Amplifier",
-                    source = "Tazavesh: Streets of Wonder (710), or in Great Vault"
-                },
-                {
-                    itemType = "Shoulder",
-                    itemId = "237644",
-                    itemName = "Midnight Herald's Shadowguards",
-                    source = "The Soul Hunters/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Cloak",
-                    itemId = "235499",
-                    itemName = "Reshii Wraps",
-                    source = "Season 3 Questline"
-                },
-                {
-                    itemType = "Chest",
-                    itemId = "237649",
-                    itemName = "Midnight Herald's Hauberk",
-                    source = "Fractillus/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Bracers",
-                    itemId = "185816",
-                    itemName = "Confiscated Bracers of Concealment",
-                    source = "Tazavesh: Streets of Wonder (710), or in Great Vault"
-                },
-                {
-                    itemType = "Gloves",
-                    itemId = "246282",
-                    itemName = "Order Bashers",
-                    source = "Tazavesh: Streets of Wonder (710), or in Great Vault"
-                },
-                {
-                    itemType = "Belt",
-                    itemId = "234501",
-                    itemName = "Portable Power Generator",
-                    source = "Operation: Floodgate (710), or in Great Vault"
-                },
-                {
-                    itemType = "Legs",
-                    itemId = "237645",
-                    itemName = "Midnight Herald's Petticoat",
-                    source = "Loom’ithar/Matrix Catalyst/Great Vault"
-                },
-                {
-                    itemType = "Boots",
-                    itemId = "178830",
-                    itemName = "Shardskin Sabatons",
-                    source = "Halls of Atonement (710), or in Great Vault"
-                },
-                {
-                    itemType = "Ring #1",
-                    itemId = "246281",
-                    itemName = "Ring of the Panoply",
-                    source = "Tazavesh: Streets of Wonder (710), or in Great Vault"
-                },
-                {
-                    itemType = "Ring #2",
-                    itemId = "221136",
-                    itemName = "Devout Zealot's Ring",
-                    source = "The Dawnbreaker (710), or in Great Vault"
-                },
-                {
-                    itemType = "Trinket #2",
-                    itemId = "242494",
-                    itemName = "Lily of the Eternal Weave",
-                    source = "Eco-Dome Al'dani (710), or in Great Vault"
-                },
-                {
-                    itemType = "Trinket #2",
-                    itemId = "232541",
-                    itemName = "Improvised Seaforium Pacemaker",
-                    source = "Operation: Floodgate (710), or in Great Vault"
                 }
             },
             ["Havoc Demon Hunter"] = {
@@ -9132,6 +8942,190 @@ ns.IcyVeinsData = {
                     itemId = "219308",
                     itemName = "Signet of the Priory",
                     source = "Priory of the Sacred Flame"
+                }
+            },
+            ["Fury Warrior"] = {
+                {
+                    itemType = "Mainhand Weapon",
+                    itemId = "222443",
+                    itemName = "Everforged Greataxe",
+                    source = "Crafted — Blacksmithing"
+                },
+                {
+                    itemType = "Offhand Weapon",
+                    itemId = "234490",
+                    itemName = "Circuit Breaker",
+                    source = "Operation: Floodgate"
+                },
+                {
+                    itemType = "Helm",
+                    itemId = "178812",
+                    itemName = "Wing Commander's Helmet",
+                    source = "Mythic+ Halls of Atonement"
+                },
+                {
+                    itemType = "Neck",
+                    itemId = "178827",
+                    itemName = "Sin Stained Pendant",
+                    source = "Mythic+ Halls of Atonement"
+                },
+                {
+                    itemType = "Shoulder",
+                    itemId = "221155",
+                    itemName = "Swarm Monarch's Spaulders",
+                    source = "Mythic+ Ara-Kara, City of Echoes"
+                },
+                {
+                    itemType = "Cloak",
+                    itemId = "235499",
+                    itemName = "Reshii Wraps",
+                    source = "Ghosts of K'aresh Campaign"
+                },
+                {
+                    itemType = "Chest",
+                    itemId = "221161",
+                    itemName = "Experimental Goresilk Chestguard",
+                    source = "Mythic+ Ara-Kara, City of Echoes"
+                },
+                {
+                    itemType = "Gloves",
+                    itemId = "185792",
+                    itemName = "Achillite's Unbreakable Grip",
+                    source = "Mythic+ Tazavesh, the Veiled Market"
+                },
+                {
+                    itemType = "Belt",
+                    itemId = "185806",
+                    itemName = "Improvisational Cinch",
+                    source = "Mythic+ Tazavesh, the Veiled Market"
+                },
+                {
+                    itemType = "Legs",
+                    itemId = "178818",
+                    itemName = "Halkias's Towering Pillars",
+                    source = "Mythic+ Halls of Atonement"
+                },
+                {
+                    itemType = "Boots",
+                    itemId = "185787",
+                    itemName = "Implacable Weatherproof Treads",
+                    source = "Mythic+ Tazavesh, the Veiled Market"
+                },
+                {
+                    itemType = "Ring #1",
+                    itemId = "221200",
+                    itemName = "Radiant Necromancer's Band",
+                    source = "Priory of the Sacred Flame"
+                },
+                {
+                    itemType = "Ring #2",
+                    itemId = "178824",
+                    itemName = "Signet of the False Accuser",
+                    source = "Halls of Atonement"
+                },
+                {
+                    itemType = "Trinket #1",
+                    itemId = "246344",
+                    itemName = "Cursed Stone Idol",
+                    source = "Halls of Atonement"
+                },
+                {
+                    itemType = "Trinket #2",
+                    itemId = "232541",
+                    itemName = "Improvised Seaforium Pacemaker",
+                    source = "Operation: Floodgate"
+                }
+            },
+            ["Marksmanship Hunter"] = {
+                {
+                    itemType = "Weapon",
+                    itemId = "185783",
+                    itemName = "Yasahm the Riftbreaker",
+                    source = "Tazavesh: Streets of Wonder, or in Great Vault"
+                },
+                {
+                    itemType = "Helm",
+                    itemId = "237646",
+                    itemName = "Midnight Herald's Cowl",
+                    source = "Forgeweaver Araz/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Neck",
+                    itemId = "185842",
+                    itemName = "Ornately Engraved Amplifier",
+                    source = "Tazavesh: Streets of Wonder, or in Great Vault"
+                },
+                {
+                    itemType = "Shoulder",
+                    itemId = "237644",
+                    itemName = "Midnight Herald's Shadowguards",
+                    source = "The Soul Hunters/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Cloak",
+                    itemId = "235499",
+                    itemName = "Reshii Wraps",
+                    source = "Pre-Patch Questline"
+                },
+                {
+                    itemType = "Chest",
+                    itemId = "237649",
+                    itemName = "Midnight Herald's Hauberk",
+                    source = "Fractillus/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Bracers",
+                    itemId = "185816",
+                    itemName = "Confiscated Bracers of Concealment",
+                    source = "Tazavesh: Streets of Wonder, or in Great Vault"
+                },
+                {
+                    itemType = "Gloves",
+                    itemId = "246282",
+                    itemName = "Order Bashers",
+                    source = "Tazavesh: Streets of Wonder, or in Great Vault"
+                },
+                {
+                    itemType = "Belt",
+                    itemId = "234501",
+                    itemName = "Portable Power Generator",
+                    source = "Operation: Floodgate, or in Great Vault"
+                },
+                {
+                    itemType = "Legs",
+                    itemId = "237645",
+                    itemName = "Midnight Herald's Petticoat",
+                    source = "Loom’ithar/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Boots",
+                    itemId = "178830",
+                    itemName = "Shardskin Sabatons",
+                    source = "Halls of Atonement, or in Great Vault"
+                },
+                {
+                    itemType = "Ring #1",
+                    itemId = "246281",
+                    itemName = "Ring of the Panoply",
+                    source = "Tazavesh: Streets of Wonder, or in Great Vault"
+                },
+                {
+                    itemType = "Ring #2",
+                    itemId = "221136",
+                    itemName = "Devout Zealot's Ring",
+                    source = "The Dawnbreaker, or in Great Vault"
+                },
+                {
+                    itemType = "Trinket #2",
+                    itemId = "242494",
+                    itemName = "Lily of the Eternal Weave",
+                    source = "Eco-Dome Al'dani, or in Great Vault"
+                },
+                {
+                    itemType = "Trinket #2",
+                    itemId = "232541",
+                    itemName = "Improvised Seaforium Pacemaker",
+                    source = "Operation: Floodgate, or in Great Vault"
                 }
             },
             ["Destruction Warlock"] = {
@@ -9330,98 +9324,6 @@ ns.IcyVeinsData = {
                     source = "Forgeweaver Araz in Manaforge Omega"
                 }
             },
-            ["Fury Warrior"] = {
-                {
-                    itemType = "Mainhand Weapon",
-                    itemId = "222443",
-                    itemName = "Everforged Greataxe",
-                    source = "Crafted — Blacksmithing"
-                },
-                {
-                    itemType = "Offhand Weapon",
-                    itemId = "234490",
-                    itemName = "Circuit Breaker",
-                    source = "Operation: Floodgate"
-                },
-                {
-                    itemType = "Helm",
-                    itemId = "178812",
-                    itemName = "Wing Commander's Helmet",
-                    source = "Mythic+ Halls of Atonement"
-                },
-                {
-                    itemType = "Neck",
-                    itemId = "178827",
-                    itemName = "Sin Stained Pendant",
-                    source = "Mythic+ Halls of Atonement"
-                },
-                {
-                    itemType = "Shoulder",
-                    itemId = "221155",
-                    itemName = "Swarm Monarch's Spaulders",
-                    source = "Mythic+ Ara-Kara, City of Echoes"
-                },
-                {
-                    itemType = "Cloak",
-                    itemId = "235499",
-                    itemName = "Reshii Wraps",
-                    source = "Ghosts of K'aresh Campaign"
-                },
-                {
-                    itemType = "Chest",
-                    itemId = "221161",
-                    itemName = "Experimental Goresilk Chestguard",
-                    source = "Mythic+ Ara-Kara, City of Echoes"
-                },
-                {
-                    itemType = "Gloves",
-                    itemId = "185792",
-                    itemName = "Achillite's Unbreakable Grip",
-                    source = "Mythic+ Tazavesh, the Veiled Market"
-                },
-                {
-                    itemType = "Belt",
-                    itemId = "185806",
-                    itemName = "Improvisational Cinch",
-                    source = "Mythic+ Tazavesh, the Veiled Market"
-                },
-                {
-                    itemType = "Legs",
-                    itemId = "178818",
-                    itemName = "Halkias's Towering Pillars",
-                    source = "Mythic+ Halls of Atonement"
-                },
-                {
-                    itemType = "Boots",
-                    itemId = "185787",
-                    itemName = "Implacable Weatherproof Treads",
-                    source = "Mythic+ Tazavesh, the Veiled Market"
-                },
-                {
-                    itemType = "Ring #1",
-                    itemId = "221200",
-                    itemName = "Radiant Necromancer's Band",
-                    source = "Priory of the Sacred Flame"
-                },
-                {
-                    itemType = "Ring #2",
-                    itemId = "178824",
-                    itemName = "Signet of the False Accuser",
-                    source = "Halls of Atonement"
-                },
-                {
-                    itemType = "Trinket #1",
-                    itemId = "246344",
-                    itemName = "Cursed Stone Idol",
-                    source = "Halls of Atonement"
-                },
-                {
-                    itemType = "Trinket #2",
-                    itemId = "232541",
-                    itemName = "Improvised Seaforium Pacemaker",
-                    source = "Operation: Floodgate"
-                }
-            },
             ["Retribution Paladin"] = {
                 {
                     itemType = "Weapon",
@@ -9607,9 +9509,9 @@ ns.IcyVeinsData = {
                 },
                 {
                     itemType = "Trinket #2",
-                    itemId = "219308",
-                    itemName = "Signet of the Priory",
-                    source = "Priory of the Sacred Flame"
+                    itemId = "242494",
+                    itemName = "Lily of the Eternal Weave",
+                    source = "Eco-Dome Al'dani"
                 },
                 {
                     itemType = "Trinket Alt.",
@@ -9627,13 +9529,105 @@ ns.IcyVeinsData = {
                     itemType = "Trinket Alt.",
                     itemId = "219312",
                     itemName = "Empowering Crystal of Anub'ikkaj",
-                    source = "Priory of the Sacred Flame"
+                    source = "The Dawnbreaker"
                 },
                 {
                     itemType = "Trinket Alt.",
-                    itemId = "242494",
-                    itemName = "Lily of the Eternal Weave",
-                    source = "Eco-Dome Al'dani"
+                    itemId = "219308",
+                    itemName = "Signet of the Priory",
+                    source = "Priory of the Sacred Flame"
+                }
+            },
+            ["Arcane Mage"] = {
+                {
+                    itemType = "Weapon",
+                    itemId = "185822",
+                    itemName = "Staff of Fractured Spacetime",
+                    source = "Great Vault (170) or Tazavesh: So'leah's Gambit (141)"
+                },
+                {
+                    itemType = "Helm",
+                    itemId = "237718",
+                    itemName = "Augur's Ephemeral Wide-Brim",
+                    source = "Forgeweaver Araz/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Neck",
+                    itemId = "252009",
+                    itemName = "Bloodstained Memento",
+                    source = "Great Vault (170) or Priory of the Sacred Flame (141)"
+                },
+                {
+                    itemType = "Shoulder",
+                    itemId = "237716",
+                    itemName = "Augur's Ephemeral Orbs of Power",
+                    source = "The Soul Hunters/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Cloak",
+                    itemId = "235499",
+                    itemName = "Reshii Wraps",
+                    source = "Main Story — Socketed with  Pure Precise Fiber"
+                },
+                {
+                    itemType = "Chest",
+                    itemId = "237721",
+                    itemName = "Augur's Ephemeral Habiliments",
+                    source = "Fractillus/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Bracers",
+                    itemId = "242490",
+                    itemName = "Ancient Oracle's Caress",
+                    source = "Great Vault (170) or Eco-Dome Al'dani (141)"
+                },
+                {
+                    itemType = "Gloves",
+                    itemId = "246275",
+                    itemName = "Codebreaker's Cunning Handwraps",
+                    source = "Great Vault (170) or Tazavesh, the Veiled Market"
+                },
+                {
+                    itemType = "Belt",
+                    itemId = "221158",
+                    itemName = "Burrower's Cinch",
+                    source = "Great Vault (170) or Ara-Kara, City of Echoes (141)"
+                },
+                {
+                    itemType = "Legs",
+                    itemId = "237717",
+                    itemName = "Augur's Ephemeral Trousers",
+                    source = "Loom’ithar/Matrix Catalyst/Great Vault"
+                },
+                {
+                    itemType = "Boots",
+                    itemId = "185788",
+                    itemName = "Codebreaker's Cunning Sandals",
+                    source = "Great Vault (170) or Tazavesh: So'leah's Gambit (141)"
+                },
+                {
+                    itemType = "Ring #1",
+                    itemId = "221200",
+                    itemName = "Radiant Necromancer's Band",
+                    source = "Great Vault (170) or Priory of the Sacred Flame (141)"
+                },
+                {
+                    itemType = "Ring #2",
+                    itemId = "185813",
+                    itemName = "Signet of Collapsing Stars",
+                    source = "Great Vault (170) or Tazavesh, the Veiled Market (141)"
+                },
+                {
+                    itemType = "Trinket #1",
+                    itemId = "242497",
+                    itemName = "Azhiccaran Parapodia",
+                    source = "Great Vault (170) or Eco-Dome Al'dani (141)"
+                },
+                {
+                    itemType = "Trinket #2",
+                    itemId = "219308",
+                    itemName = "Signet of the Priory",
+                    source = "Great Vault (170) or Priory of the Sacred Flame(141)"
                 }
             },
             ["Balance Druid"] = {
@@ -9803,9 +9797,9 @@ ns.IcyVeinsData = {
                 },
                 {
                     itemType = "Ring #2",
-                    itemId = "242405",
-                    itemName = "Band of the Shattered Soul",
-                    source = "Dimensius The All Devouring"
+                    itemId = "237567",
+                    itemName = "Logic Gate: Alpha",
+                    source = "Plexus Sentinel"
                 },
                 {
                     itemType = "Trinket #1",
@@ -10327,19 +10321,19 @@ ns.IcyVeinsData = {
                     itemType = "Weapon",
                     itemId = "185822",
                     itemName = "Staff of Fractured Spacetime",
-                    source = "Great Vault (730) or Tazavesh: So'leah's Gambit (701)"
+                    source = "Great Vault (170) or Tazavesh: So'leah's Gambit (141)"
                 },
                 {
                     itemType = "Helm",
                     itemId = "221131",
                     itemName = "Elysian Flame Crown",
-                    source = "Great Vault (730) or Priory of the Sacred Flame"
+                    source = "Great Vault (170) or Priory of the Sacred Flame"
                 },
                 {
                     itemType = "Neck",
                     itemId = "185820",
                     itemName = "Cabochon of the Infinite Flight",
-                    source = "Great Vault (730) or Tazavesh, the Veiled Market (701)"
+                    source = "Great Vault (170) or Tazavesh, the Veiled Market (141)"
                 },
                 {
                     itemType = "Shoulder",
@@ -10363,7 +10357,7 @@ ns.IcyVeinsData = {
                     itemType = "Bracers",
                     itemId = "242490",
                     itemName = "Ancient Oracle's Caress",
-                    source = "Great Vault (730) or Eco-Dome Al'dani (701)"
+                    source = "Great Vault (170) or Eco-Dome Al'dani (141)"
                 },
                 {
                     itemType = "Gloves",
@@ -10375,7 +10369,7 @@ ns.IcyVeinsData = {
                     itemType = "Belt",
                     itemId = "221158",
                     itemName = "Burrower's Cinch",
-                    source = "Great Vault (730) or Ara-Kara, City of Echoes (701)"
+                    source = "Great Vault (170) or Ara-Kara, City of Echoes (141)"
                 },
                 {
                     itemType = "Legs",
@@ -10387,31 +10381,31 @@ ns.IcyVeinsData = {
                     itemType = "Boots",
                     itemId = "185788",
                     itemName = "Codebreaker's Cunning Sandals",
-                    source = "Great Vault (730) or Tazavesh: So'leah's Gambit (701)"
+                    source = "Great Vault (170) or Tazavesh: So'leah's Gambit (141)"
                 },
                 {
                     itemType = "Ring #1",
                     itemId = "185813",
                     itemName = "Signet of Collapsing Stars",
-                    source = "Great Vault (730) or Tazavesh: So'leah's Gambit (701)"
+                    source = "Great Vault (170) or Tazavesh: So'leah's Gambit (141)"
                 },
                 {
                     itemType = "Ring #2",
                     itemId = "242491",
                     itemName = "Whispers of K'aresh",
-                    source = "Great Vault (730) or Eco-Dome Al'dani (701)"
+                    source = "Great Vault (170) or Eco-Dome Al'dani (141)"
                 },
                 {
                     itemType = "Trinket #1",
                     itemId = "242497",
                     itemName = "Azhiccaran Parapodia",
-                    source = "Great Vault (730) or Eco-Dome Al'dani (701)"
+                    source = "Great Vault (170) or Eco-Dome Al'dani (141)"
                 },
                 {
                     itemType = "Trinket #2",
                     itemId = "219314",
                     itemName = "Ara-Kara Sacbrood",
-                    source = "Great Vault (730) or Ara-Kara, City of Echoes (701)"
+                    source = "Great Vault (170) or Ara-Kara, City of Echoes (141)"
                 }
             },
             ["Affliction Warlock"] = {
@@ -10639,7 +10633,7 @@ ns.IcyVeinsData = {
                     itemType = "Weapon",
                     itemId = "242481",
                     itemName = "Spellstrike Warplance",
-                    source = "Eco-Dome Al'dani (710), or in Great Vault"
+                    source = "Eco-Dome Al'dani, or in Great Vault"
                 },
                 {
                     itemType = "Helm",
@@ -10651,7 +10645,7 @@ ns.IcyVeinsData = {
                     itemType = "Neck",
                     itemId = "178827",
                     itemName = "Sin Stained Pendant",
-                    source = "Halls of Atonement (710), or in Great Vault"
+                    source = "Halls of Atonement, or in Great Vault"
                 },
                 {
                     itemType = "Shoulder",
@@ -10663,7 +10657,7 @@ ns.IcyVeinsData = {
                     itemType = "Cloak",
                     itemId = "235499",
                     itemName = "Reshii Wraps",
-                    source = "Season 3 Questline"
+                    source = "Pre-Patch Questline"
                 },
                 {
                     itemType = "Chest",
@@ -10675,19 +10669,19 @@ ns.IcyVeinsData = {
                     itemType = "Bracers",
                     itemId = "221124",
                     itemName = "Consecrated Baron's Bindings",
-                    source = "Priory of the Sacred Flame (710), or in Great Vault"
+                    source = "Priory of the Sacred Flame, or in Great Vault"
                 },
                 {
                     itemType = "Gloves",
                     itemId = "246282",
                     itemName = "Order Bashers",
-                    source = "Tazavesh: Streets of Wonder (710), or in Great Vault"
+                    source = "Tazavesh: Streets of Wonder, or in Great Vault"
                 },
                 {
                     itemType = "Belt",
                     itemId = "237554",
                     itemName = "Clasp of Furious Freedom",
-                    source = "Eco-Dome Al'dani (710), or in Great Vault"
+                    source = "Eco-Dome Al'dani, or in Great Vault"
                 },
                 {
                     itemType = "Legs",
@@ -10699,31 +10693,31 @@ ns.IcyVeinsData = {
                     itemType = "Boots",
                     itemId = "243308",
                     itemName = "Interloper's Chain Boots",
-                    source = "Eco-Dome Al'dani (710), or in Great Vault"
+                    source = "Eco-Dome Al'dani, or in Great Vault"
                 },
                 {
                     itemType = "Ring #1",
                     itemId = "221200",
                     itemName = "Radiant Necromancer's Band",
-                    source = "Priory of the Sacred Flame (710), or in Great Vault"
+                    source = "Priory of the Sacred Flame, or in Great Vault"
                 },
                 {
                     itemType = "Ring #2",
                     itemId = "178824",
                     itemName = "Signet of the False Accuser",
-                    source = "Halls of Atonement (710), or in Great Vault"
+                    source = "Halls of Atonement, or in Great Vault"
                 },
                 {
                     itemType = "Trinket #1",
-                    itemId = "246344",
-                    itemName = "Cursed Stone Idol",
-                    source = "Halls of Atonement (710), or in Great Vault"
+                    itemId = "219308",
+                    itemName = "Signet of the Priory",
+                    source = "Priory of the Sacred Flame, or in Great Vault"
                 },
                 {
                     itemType = "Trinket #2",
                     itemId = "232541",
                     itemName = "Improvised Seaforium Pacemaker",
-                    source = "Operation: Floodgate (710), or in Great Vault"
+                    source = "Operation: Floodgate, or in Great Vault"
                 }
             },
             ["Outlaw Rogue"] = {
