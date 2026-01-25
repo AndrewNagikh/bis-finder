@@ -96,7 +96,7 @@ function ns:CreateItemRow(parent, itemType, items, yOffset)
         end
         
         -- Создаем кнопку предмета
-        local button = CreateFrame("Button", nil, row, "BackdropTemplate")
+        local button = CreateFrame("Button", nil, row, "SecureActionButtonTemplate")
         button:SetSize(50, 50)
         button:SetPoint("LEFT", row, "LEFT", itemButtonX, 0)
         
@@ -121,35 +121,110 @@ function ns:CreateItemRow(parent, itemType, items, yOffset)
             local itemLink = "item:" .. (item.itemId or "")
             GameTooltip:SetHyperlink(itemLink)
             GameTooltip:Show()
-            
-            -- Добавляем Source информацию с небольшой задержкой
-            if item.source then
-                C_Timer.After(0.05, function()
-                    if GameTooltip:IsOwned(self) then
-                        GameTooltip:AddLine(" ")
-                        GameTooltip:AddLine("----------------------------------------", 0.5, 0.5, 0.5, 1)
-                        GameTooltip:AddLine("|cffffd700SOURCE:|r", 1, 1, 1, 1)
-                        GameTooltip:AddLine("|cff00ff00" .. item.source .. "|r", 1, 1, 1, 1)
-                        GameTooltip:AddLine("----------------------------------------", 0.5, 0.5, 0.5, 1)
-                        GameTooltip:Show()
-                    end
-                end)
+
+            -- Создаем второй тултип с информацией о боссе и моделью
+            if item.itemId and ns.RaidLootData then
+                local itemIdNum = tonumber(item.itemId)
+                
+                if itemIdNum and ns.RaidLootData[itemIdNum] then
+                    local lootData = ns.RaidLootData[itemIdNum]
+                    
+                    C_Timer.After(0.05, function()
+                        if GameTooltip:IsOwned(self) then
+                            -- Создаем второй тултип
+                            local bossTooltip = ns.BossTooltip
+                            if not bossTooltip then
+                                bossTooltip = CreateFrame("GameTooltip", "BiSFinderBossTooltip", UIParent, "GameTooltipTemplate")
+                                bossTooltip:SetOwner(UIParent, "ANCHOR_NONE")
+                                ns.BossTooltip = bossTooltip
+                            end
+                            
+                            bossTooltip:ClearLines()
+                            bossTooltip:SetOwner(UIParent, "ANCHOR_NONE")
+                            
+                            -- Определяем, что показывать: Raid или Dungeon
+                            local instanceName = nil
+                            local bossName = nil
+                            local journalEncounterID = nil
+                            local instanceID = nil
+                            
+                            if lootData.dungeonName then
+                                instanceName = lootData.dungeonName
+                                bossName = lootData.dungeonBoss
+                                journalEncounterID = lootData.journalEncounterID
+                                instanceID = lootData.instanceID
+                                bossTooltip:AddLine("|cffffd700Подземелье: |r|cff00ff00" .. instanceName .. "|r", 1, 1, 1, 1)
+                            elseif lootData.raidName then
+                                instanceName = lootData.raidName
+                                bossName = lootData.bossName
+                                journalEncounterID = lootData.journalEncounterID
+                                instanceID = lootData.instanceID
+                                bossTooltip:AddLine("|cffffd700Рейд: |r|cff00ff00" .. instanceName .. "|r", 1, 1, 1, 1)
+                            end
+                            
+                            -- Добавляем строку с именем босса
+                            if bossName then
+                                bossTooltip:AddLine("|cffffd700Босс:|r |cff00ff00" .. bossName .. "|r", 1, 1, 1, 1)
+                                
+                                -- Показываем модельку босса посередине тултипа
+                                if journalEncounterID and instanceID then
+                                    EJ_SelectInstance(instanceID)
+                                    local id, name, description, displayInfo, iconImage, uiModelSceneID = EJ_GetCreatureInfo(1, journalEncounterID)
+                                    
+                                    if displayInfo then
+                                        local model = bossTooltip.modelFrame
+                                        if not model then
+                                            model = CreateFrame("PlayerModel", nil, bossTooltip)
+                                            bossTooltip.modelFrame = model
+                                        end
+                                        
+                                        -- Размер модели для тултипа
+                                        model:SetSize(150, 150)
+                                        
+                                        -- Позиционируем модель посередине тултипа
+                                        model:SetPoint("TOP", bossTooltip, "TOP", 0, -50)
+                                        
+                                        model:SetAlpha(1)
+                                        model:SetDisplayInfo(displayInfo)
+                                        model:SetFacing(0.2)
+                                        model:Show()
+                                        
+                                        -- Добавляем пустые строки для увеличения высоты тултипа
+                                        for i = 1, 12 do
+                                            bossTooltip:AddLine(" ")
+                                        end
+                                    end
+                                end
+                            end
+                            
+                            bossTooltip:Show()
+                            
+                            -- Позиционируем второй тултип под основным
+                            local tooltipX, tooltipY = GameTooltip:GetCenter()
+                            local tooltipHeight = GameTooltip:GetHeight()
+                            if tooltipX and tooltipY then
+                                bossTooltip:ClearAllPoints()
+                                bossTooltip:SetPoint("TOP", GameTooltip, "BOTTOM", 0, -5)
+                            end
+                        end
+                    end)
+                end
             end
         end)
 
-        button:SetScript("OnClick", function(self)
-            print('click')
-            local itemLink = select(2, GetItemInfo(item.itemId))
-            print(itemLink)
-            if AdventureGuide_ShowLink then
-                AdventureGuide_ShowLink(itemLink)
-            else
-                print("Adventure Guide API not available")
-            end
+        button:SetScript("OnClick", function(self, mouseButton)
+            local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expansionID, setID, isCraftingReagent = C_Item.GetItemInfo(item.itemId)
+            print(itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expansionID, setID, isCraftingReagent)
         end)
         
         button:SetScript("OnLeave", function(self)
             GameTooltip:Hide()
+            if ns.BossTooltip then
+                ns.BossTooltip:Hide()
+                if ns.BossTooltip.modelFrame then
+                    ns.BossTooltip.modelFrame:Hide()
+                end
+            end
         end)
         
         -- Сохраняем данные предмета в кнопке

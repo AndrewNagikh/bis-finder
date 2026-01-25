@@ -59,7 +59,7 @@ local function InitializeAddon()
         end
     end
     
-    -- Иконка на миникарте создается автоматически в MinimapIcon.lua при загрузке файла
+    ns:ProcessLoot()
 end
 
 -- Функция для автоматического открытия контента по специализации игрока

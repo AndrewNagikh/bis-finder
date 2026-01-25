@@ -14,11 +14,13 @@ Libs\LibDBIcon-1.0\LibDBIcon-1.0\LibDBIcon-1.0.lua
 
 # Основные файлы
 BiSFinder.lua
+Lib/ProcessLoot.lua
 Sources/PlayerInfo.lua
 Sources/SourceManager.lua
 Sources/RoleManager.lua
 Sources/SpecManager.lua
 Sources/ItemSourceManager.lua
+Sources/LootData.lua
 UI/CloseButton.lua
 UI/SideBar/SideBarButton.lua
 UI/SideBar/SideBarMenu.lua
