@@ -36,7 +36,7 @@ ns.specMap = {
     dps = {
         -- Массив для сохранения порядка
         order = {
-            253, 254, 255, 577, 251, 252, 62, 64, 63, 262, 263, 267, 266, 265, 261, 259, 260, 72, 71, 70, 103, 102, 1467, 1473, 258, 269
+            253, 254, 255, 577, 1480, 251, 252, 62, 64, 63, 262, 263, 267, 266, 265, 261, 259, 260, 72, 71, 70, 103, 102, 1467, 1473, 258, 269
         },
         -- Данные специализаций
         [253] = { -- Beast Mastery Hunter
@@ -54,6 +54,10 @@ ns.specMap = {
         [577] = { -- Havoc Demon Hunter
             name = "Havoc Demon Hunter", 
             texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\HavocDemonHunter.png"
+        },
+        [1480] = { -- Devourer Demon Hunter
+            name = "Devourer Demon Hunter", 
+            texture = "Interface\\AddOns\\BiSFinder\\Textures\\SpecButtons\\DPS\\DevourerDemonHunter.png"
         },
         [251] = { -- Frost Death Knight
             name = "Frost Death Knight", 

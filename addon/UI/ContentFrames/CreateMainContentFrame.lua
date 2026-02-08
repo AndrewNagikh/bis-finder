@@ -89,10 +89,80 @@ function ns:CreateMainContentFrame(parent)
     end
 
     ns:CreateRoleShooseFrame(MainContentFrame)
-    
+
+    -- Фрейм "Priority stats" только для Archon (под первым фреймом, скрыт по умолчанию)
+    local PRIORITY_STATS_TOP = -130   -- 64+60 (RoleShooseFrame) + 16 (отступ сверху)
+    local PRIORITY_FRAME_HEIGHT = 35
+    local SCROLL_TOP_DEFAULT = -130
+    local SCROLL_TOP_WITH_PRIORITY = -140 - PRIORITY_FRAME_HEIGHT - 10  -- фрейм + 10px отступ = -195
+
+    local priorityStatsFrame = CreateFrame("Frame", nil, MainContentFrame)
+    priorityStatsFrame:SetSize(480, PRIORITY_FRAME_HEIGHT)
+    priorityStatsFrame:SetPoint("TOPLEFT", MainContentFrame, "TOPLEFT", 10, PRIORITY_STATS_TOP)
+
+    local priorityStatsText = priorityStatsFrame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+    priorityStatsText:SetPoint("LEFT", priorityStatsFrame, "LEFT", 0, 0)
+    priorityStatsText:SetFont("Fonts\\FRIZQT__.TTF", 15, "")
+    priorityStatsText:SetTextColor(1, 1, 1, 1)
+    priorityStatsFrame:Hide()
+
+    priorityStatsFrame.priorityStatsText = priorityStatsText
+    ns.ArchonPriorityStatsFrame = priorityStatsFrame
+
+    -- Цвета для приоритета статов: 1-й #f89737, 2-й rgba(123,25,190,.9), 3-й rgba(0,90,205,.6), остальные белый
+    local STAT_COLOR_1 = "|cFFf89737"  -- оранжевый
+    local STAT_COLOR_2 = "|cE67B19BE"  -- фиолетовый 90%
+    local STAT_COLOR_3 = "|c99005ACD"  -- синий 60%
+    local STAT_COLOR_RESET = "|r"
+
+    function ns:UpdateArchonPriorityStatsText(statsArray)
+        local text = ns.ArchonPriorityStatsFrame and ns.ArchonPriorityStatsFrame.priorityStatsText
+        if not text then return end
+        if not statsArray or #statsArray == 0 then
+            text:SetText("Priority stats: —")
+            return
+        end
+        local parts = { "Priority stats: " }
+        for i, stat in ipairs(statsArray) do
+            if i > 1 then
+                parts[#parts + 1] = " > "
+            end
+            if i == 1 then
+                parts[#parts + 1] = STAT_COLOR_1 .. stat .. STAT_COLOR_RESET
+            elseif i == 2 then
+                parts[#parts + 1] = STAT_COLOR_2 .. stat .. STAT_COLOR_RESET
+            elseif i == 3 then
+                parts[#parts + 1] = STAT_COLOR_3 .. stat .. STAT_COLOR_RESET
+            else
+                parts[#parts + 1] = stat
+            end
+        end
+        text:SetText(table.concat(parts, ""))
+    end
+
+    function ns:SetArchonPriorityStatsVisible(visible)
+        if ns.ArchonPriorityStatsFrame then
+            if visible then
+                ns.ArchonPriorityStatsFrame:Show()
+                if ns.ScrollFrame then
+                    ns.ScrollFrame:ClearAllPoints()
+                    ns.ScrollFrame:SetPoint("TOPLEFT", MainContentFrame, "TOPLEFT", 0, SCROLL_TOP_WITH_PRIORITY)
+                    ns.ScrollFrame:SetPoint("BOTTOMRIGHT", MainContentFrame, "BOTTOMRIGHT", -20, 20)
+                end
+            else
+                ns.ArchonPriorityStatsFrame:Hide()
+                if ns.ScrollFrame then
+                    ns.ScrollFrame:ClearAllPoints()
+                    ns.ScrollFrame:SetPoint("TOPLEFT", MainContentFrame, "TOPLEFT", 0, SCROLL_TOP_DEFAULT)
+                    ns.ScrollFrame:SetPoint("BOTTOMRIGHT", MainContentFrame, "BOTTOMRIGHT", -20, 20)
+                end
+            end
+        end
+    end
+
     -- Создаем скролл-фрейм для кнопок специализаций
     local scrollFrame = CreateFrame("ScrollFrame", nil, MainContentFrame, "UIPanelScrollFrameTemplate")
-    scrollFrame:SetPoint("TOPLEFT", MainContentFrame, "TOPLEFT", 0, -130)
+    scrollFrame:SetPoint("TOPLEFT", MainContentFrame, "TOPLEFT", 0, SCROLL_TOP_DEFAULT)
     scrollFrame:SetPoint("BOTTOMRIGHT", MainContentFrame, "BOTTOMRIGHT", -20, 20)
     
     -- Создаем контент-фрейм для кнопок

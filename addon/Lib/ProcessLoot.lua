@@ -1,7 +1,5 @@
 local ADDON_NAME, ns = ...
 
-EJ_SelectTier(13)
-
 local isRaid = true
 local isDungeon = false
 
@@ -108,7 +106,34 @@ function ProcessBossesLootDungeon()
     end
 end
 
+-- Индекс тира "Текущий сезон" в выпадающем списке Encounter Journal
+local CURRENT_SEASON_TIER = 13
+
+-- Возвращает последний валидный индекс тира (запасной вариант, если 13 ещё недоступен)
+local function GetLatestTierIndex()
+    local lastValid = 1
+    for t = 1, 20 do
+        local ok = pcall(EJ_SelectTier, t)
+        if ok then
+            lastValid = t
+        else
+            break
+        end
+    end
+    return lastValid
+end
+
 function ns:ProcessLoot()
-    ProcessBossesLootRaid()
-    ProcessBossesLootDungeon()
+    if UnitLevel("player") >= 10 then
+        local ok = pcall(EJ_SelectTier, CURRENT_SEASON_TIER)
+        if not ok then
+            -- Тир 13 может быть недоступен до полной загрузки Journal — используем последний валидный
+            local fallback = GetLatestTierIndex()
+            ok = pcall(EJ_SelectTier, fallback)
+        end
+        if ok then
+            ProcessBossesLootRaid()
+            ProcessBossesLootDungeon()
+        end
+    end
 end

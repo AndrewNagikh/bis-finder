@@ -25,13 +25,16 @@ function ns:CreateArchonContent(parent)
     local selectedItemSourceId = ns:GetSelectedItemSourceId()
     
     if not selectedSpecId or not selectedRoleId or not selectedItemSourceId then
-        -- Показываем сообщение "нет данных"
+        if ns.SetArchonPriorityStatsVisible then
+            ns:SetArchonPriorityStatsVisible(false)
+        end
         ns:ShowNoDataMessage(contentFrame)
         return contentFrame
     end
     
     -- Получаем данные из ArchonData
     local specData = nil
+    local archonSpecBlock = nil
     if ns.ArchonData and ns.ArchonData[selectedItemSourceId] and ns.ArchonData[selectedItemSourceId][selectedRoleId] then
         -- Получаем полное имя специализации из specMap
         local specName = nil
@@ -40,12 +43,15 @@ function ns:CreateArchonContent(parent)
         end
         
         if specName and ns.ArchonData[selectedItemSourceId][selectedRoleId][specName] then
-            specData = ns.ArchonData[selectedItemSourceId][selectedRoleId][specName].items
+            archonSpecBlock = ns.ArchonData[selectedItemSourceId][selectedRoleId][specName]
+            specData = archonSpecBlock.items
         end
     end
     
     if not specData or #specData == 0 then
-        -- Показываем сообщение "нет данных"
+        if ns.SetArchonPriorityStatsVisible then
+            ns:SetArchonPriorityStatsVisible(false)
+        end
         ns:ShowNoDataMessage(contentFrame)
         return contentFrame
     end
@@ -76,7 +82,14 @@ function ns:CreateArchonContent(parent)
     
     -- Обновляем размер контент-фрейма для скролла
     ns:UpdateArchonScrollContent()
-    
+
+    if ns.SetArchonPriorityStatsVisible then
+        if ns.UpdateArchonPriorityStatsText then
+            ns:UpdateArchonPriorityStatsText(archonSpecBlock and archonSpecBlock.stats or nil)
+        end
+        ns:SetArchonPriorityStatsVisible(true)
+    end
+
     contentFrame:Show()
     return contentFrame
 end

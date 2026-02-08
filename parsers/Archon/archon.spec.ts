@@ -21,8 +21,8 @@ test('Generate archon data', async () => {
   const resultObj: Record<
     string,
     {
-      raid: { talents: any; items: any[] };
-      mythic: { talents: any; items: any[] };
+      raid: { talents: any; items: any[]; stats: string[] };
+      mythic: { talents: any; items: any[]; stats: string[] };
     }
   > = {};
 
@@ -34,8 +34,8 @@ test('Generate archon data', async () => {
 
     const specName = getArchonClassName(link);
     resultObj[specName] = {
-      raid: { talents: null, items: [] },
-      mythic: { talents: null, items: [] },
+      raid: { talents: null, items: [], stats: [] },
+      mythic: { talents: null, items: [], stats: [] },
     };
 
     let context = await createStealthContext();
@@ -56,6 +56,7 @@ test('Generate archon data', async () => {
             resultObj[specName][source] = {
               talents: result.taletns,
               items: result.items,
+              stats: result.stats,
             };
           }
 
@@ -157,8 +158,8 @@ test('Generate archon data', async () => {
 
     Object.values(resultObj).forEach(
       (specData: {
-        raid: { talents: any; items: any[] };
-        mythic: { talents: any; items: any[] };
+        raid: { talents: any; items: any[]; stats: string[] };
+        mythic: { talents: any; items: any[]; stats: string[] };
       }) => {
         (sourceStats.raid as number) += specData.raid.items.length;
         (sourceStats.mythic as number) += specData.mythic.items.length;

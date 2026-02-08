@@ -1,6 +1,9 @@
 local ADDON_NAME, ns = ...
 
 function ns:CreateIcyVeinsContent(parent)
+    if ns.SetArchonPriorityStatsVisible then
+        ns:SetArchonPriorityStatsVisible(false)
+    end
     -- Используем существующий ContentFrame из скролл-фрейма
     local contentFrame = ns.ContentFrame
     if not contentFrame then

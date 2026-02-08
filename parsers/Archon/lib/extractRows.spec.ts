@@ -1,12 +1,12 @@
 import { BrowserContext, Page } from '@playwright/test';
 import { TArchonSourceMap } from 'Archon/types';
-import { parseItems } from './parseArchonBodyItems';
+import { parseItems, parseStats } from './parseArchonBodyItems';
 
 export const extractArchonRows = async (
   page: Page,
   source: TArchonSourceMap,
   context: BrowserContext
-): Promise<{ taletns: string; items: any[] }> => {
+): Promise<{ taletns: string; items: any[]; stats: string[] }> => {
   if (source === 'raid') {
     const raidLink = await page
       .locator('a.tabbed-select__tab--rounded-square')
@@ -27,7 +27,11 @@ export const extractArchonRows = async (
       waitUntil: 'domcontentloaded',
     });
   }
-  const data: { taletns: string; items: any[] } = { taletns: '', items: [] };
+  const data: { taletns: string; items: any[]; stats: string[] } = {
+    taletns: '',
+    items: [],
+    stats: [],
+  };
   // save talents
   await context.grantPermissions(['clipboard-read', 'clipboard-write']);
   await page.click('button.talent-tree__interactions-export__copy-button ');
@@ -35,7 +39,11 @@ export const extractArchonRows = async (
   const talentsCode = await page.evaluate(() => navigator.clipboard.readText());
   if (talentsCode) data.taletns = talentsCode;
 
-  //parse items
+  // parse items
   data.items = await parseItems(page);
+
+  // parse stats (priority stats labels)
+  data.stats = await parseStats(page);
+
   return data;
 };

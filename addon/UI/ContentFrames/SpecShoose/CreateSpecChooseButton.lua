@@ -101,4 +101,7 @@ function ns:CreateButtonList(parent)
     if ns.UpdateScrollContent then
         ns:UpdateScrollContent()
     end
+    if ns.SetArchonPriorityStatsVisible then
+        ns:SetArchonPriorityStatsVisible(false)
+    end
 end

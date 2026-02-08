@@ -12,6 +12,7 @@ export interface ArchonItemInfo {
 export interface ArchonSourceData {
   talents: string;
   items: ArchonItemInfo[];
+  stats?: string[];
 }
 
 export interface ArchonSpecData {

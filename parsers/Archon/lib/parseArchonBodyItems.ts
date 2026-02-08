@@ -46,6 +46,7 @@ export const parseItems = async (page: Page) => {
         [
           '.gear-icon__item-meta__multitype a',
           '.gear-icon__item-meta__gems a',
+          '.gear-icon__item-meta__enchant a',
         ].forEach((selector) => {
           item
             .querySelectorAll(`.gear-icon__item-meta ${selector}`)
@@ -97,4 +98,19 @@ export const parseItems = async (page: Page) => {
       });
       return parsedItems;
     });
+};
+
+export const parseStats = async (page: Page): Promise<string[]> => {
+  return await page.evaluate(() => {
+    const stats: string[] = [];
+    document
+      .querySelectorAll(
+        '.builds-stat-priority-section__container__stat-box__label'
+      )
+      .forEach((item) => {
+        const text = (item as HTMLElement).innerText?.trim();
+        if (text) stats.push(text);
+      });
+    return stats;
+  });
 };

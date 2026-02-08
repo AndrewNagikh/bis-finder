@@ -58,8 +58,11 @@ local function InitializeAddon()
             ns.selectedSpecId = playerSpecId
         end
     end
-    
-    ns:ProcessLoot()
+
+    -- Отложенный вызов ProcessLoot, чтобы Encounter Journal успел инициализироваться (тир 13 = Текущий сезон)
+    C_Timer.After(2, function()
+        ns:ProcessLoot()
+    end)
 end
 
 -- Функция для автоматического открытия контента по специализации игрока
